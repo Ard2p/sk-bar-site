@@ -24,7 +24,7 @@
                         </li> --}}
 
                         <li class="nav-item">
-                            <a href="/" class="nav-link active">{{ __('Events') }}</a>
+                            <a href="{{ route('events.index') }}" class="nav-link active">{{ __('Events') }}</a>
                         </li>
 
                         <li class="nav-item">
@@ -33,10 +33,6 @@
 
                         <li class="nav-item">
                             <a href="/" class="nav-link active">Бронь столов</a>
-                        </li>
-
-                        <li class="nav-item">
-                            <a href="/" class="nav-link active">Сотрудничество</a>
                         </li>
 
                     </ul>
@@ -65,9 +61,9 @@
                     @else
                         <div>
                             <a href="{{ route('login') }}" class="btn btn-primary">{{ __('Log in') }}</a>
-                            @if (Route::has('register'))
+                            {{-- @if (Route::has('register'))
                                 <a href="{{ route('register') }}" class="btn btn-primary">{{ __('Register') }}</a>
-                            @endif
+                            @endif --}}
                         </div>
                     @endauth
 

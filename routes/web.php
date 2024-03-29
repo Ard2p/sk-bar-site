@@ -7,6 +7,14 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get('/events', function () {
+    return view('events.index');
+})->name('events.index');
+
+Route::get('/events/1', function () {
+    return view('events.show');
+})->name('events.show');
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
