@@ -48,20 +48,55 @@
 
             <div class="col-auto text-primary" style="text-shadow: 0px 0px 0.5em #161822;">
                 <p>Русский драматический театр • 19 апреля, 18:30</p>
-            </div>
-
-            <div class="col-auto ms-auto">
-                <span class="btn btn-primary">6 +</span>
-                <span class="btn btn-primary">от 1 300 ₽</span>
+                <span class="badge text-black bg-white" style="text-shadow: initial;">19 апреля</span>
+                <span class="badge text-white bg-info">6 +</span>
+                <span class="badge text-white bg-primary">от 1 300 ₽</span>
             </div>
 
         </div>
 
         <div class="row my-5">
 
-            <div class="col-12 1mx-auto">
+            <div class="col-8">
+
+                <div class="row mb-5">
+
+                    <span class="text-primary mb-3 d-block text-uppercase fw-semibold ls-xl">Фото</span>
+
+                    <div>
+
+                    </div>
+
+                </div>
+
+                <div class="row">
+
+                    <span class="text-primary mb-3 d-block text-uppercase fw-semibold ls-xl">Описание</span>
+
+                    <div>
+                        <p>Акустический концерт Константина Кулясова лидера группы «АнимациЯ». Душевный, разухабистый и
+                            мега
+                            позитивный концерт! Приходите, будет интересно и весело! </p>
+
+                        <p>
+                            «Я люблю свою Родину, вроде бы» — фраза из песни группы «АнимациЯ». Костя Кулясов, лидер
+                            группы,
+                            и тот самый автор, у которого что ни песня, то крылатое выражение. Ты услышишь полтора
+                            десятка
+                            ломовейших хитов и самые новые песни!
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="col-4">
 
                 <div class="row mb-3">
+
+                    <span class="text-primary mb-3 d-block text-uppercase fw-semibold ls-xl">Билеты</span>
+
                     <div class="col">
                         <div>Входной билет</div>
                     </div>
@@ -73,7 +108,7 @@
                     </div>
                 </div>
 
-                <div class="row">
+                <div class="row mb-3">
                     <div class="col">
                         <div>Входной билет на 2 персоны</div>
                         <sub>Танцпол парный билет</sub>
@@ -86,33 +121,10 @@
                     </div>
                 </div>
 
-            </div>
+                <div class="row ">
+                    <button class="btn btn-primary">Купить</button>
+                </div>
 
-        </div>
-
-        <div class="row mb-5">
-
-            <span class="text-primary mb-3 d-block text-uppercase fw-semibold ls-xl">Фото</span>
-
-            <div>
-
-            </div>
-
-        </div>
-
-        <div class="row">
-
-            <span class="text-primary mb-3 d-block text-uppercase fw-semibold ls-xl">Описание</span>
-
-            <div>
-                <p>Акустический концерт Константина Кулясова лидера группы «АнимациЯ». Душевный, разухабистый и мега
-                    позитивный концерт! Приходите, будет интересно и весело! </p>
-
-                <p>
-                    «Я люблю свою Родину, вроде бы» — фраза из песни группы «АнимациЯ». Костя Кулясов, лидер группы,
-                    и тот самый автор, у которого что ни песня, то крылатое выражение. Ты услышишь полтора десятка
-                    ломовейших хитов и самые новые песни!
-                </p>
             </div>
 
         </div>
@@ -157,38 +169,7 @@
 
                 @for ($i = 0; $i < 3; $i++)
                     <div class="col">
-                        <div class="d-flex flex-column position-relative">
-
-                            <div class="ratio ratio-16x9">
-                                <div>
-
-                                    <img src="{{ asset('storage/1.png') }}" class="d-block w-100 rounded">
-
-                                    <div class="position-absolute bottom-0 end-0 p-3"
-                                        style="text-shadow: 0px 0px 0.5em #161822;">
-
-                                        <span class="badge text-white text-bg-primary">6 +</span>
-                                        <span class="badge text-white" style="background-color: #8f1de9;">от 1 300
-                                            ₽</span>
-                                    </div>
-
-                                </div>
-                            </div>
-
-                            <div class="py-2">
-                                <p class="fs-5 mb-2">
-                                    <a href="/events/1"
-                                        class="link-body-emphasis stretched-link text-decoration-none">RAMMproJect</a>
-                                </p>
-
-                                <div class="small">
-                                    <div>Русский драматический театр</div>
-                                    <div>19 апреля, 18:30</div>
-                                </div>
-
-                            </div>
-
-                        </div>
+                        @include('events.parts.card')
                     </div>
                 @endfor
 

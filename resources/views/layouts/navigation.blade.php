@@ -24,15 +24,18 @@
                         </li> --}}
 
                         <li class="nav-item">
-                            <a href="{{ route('events.index') }}" class="nav-link active">{{ __('Events') }}</a>
+                            <a href="{{ route('events.index') }}" @class(['nav-link', 'active' => request()->routeIs('events.index')])>{{ __('Events') }}</a>
                         </li>
 
                         <li class="nav-item">
-                            <a href="/" class="nav-link active">Меню</a>
+                            <a href="{{ route('menu.index') }}"  @class(['nav-link', 'active' => request()->routeIs('menu.index')])>Меню</a>
                         </li>
 
                         <li class="nav-item">
-                            <a href="/" class="nav-link active">Бронь столов</a>
+                            <a href="{{ route('reservation.index') }}" @class([
+                                'nav-link',
+                                'active' => request()->routeIs('reservation.index'),
+                            ])>Бронь столов</a>
                         </li>
 
                     </ul>

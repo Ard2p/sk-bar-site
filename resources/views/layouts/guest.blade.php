@@ -12,7 +12,7 @@
     @vite(['resources/js/app.js'])
 </head>
 
-<body>
+<body data-bs-theme="dark">
 
     <!-- Page Content -->
     <main>

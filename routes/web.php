@@ -15,6 +15,15 @@ Route::get('/events/1', function () {
     return view('events.show');
 })->name('events.show');
 
+Route::get('/reservation', function () {
+    return view('reservation.index');
+})->name('reservation.index');
+
+Route::get('/menu', function () {
+    return view('menu.index');
+})->name('menu.index');
+
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth', 'verified'])->name('dashboard');
