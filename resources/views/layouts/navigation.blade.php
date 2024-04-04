@@ -41,23 +41,23 @@
                     </ul>
 
                     @auth
-                        <div class="nav dropdown text-end">
-                            <a href="#" class="avatar avatar-sm position-relative dropdown-toggle"
+                        <div class="nav">
+                            <a href="#" class="dropdown-toggle nav-link text-primary"
                                 id="dropdownUserMenu" data-bs-toggle="dropdown" aria-expanded="false">
-                                <div>{{ Auth::user()->name }}</div>
-                                <img src="https://avatars.githubusercontent.com/u/5220449?v=4"
-                                    class="avatar-img rounded-circle border border-tertiary-subtle">
+                                {{ Auth::user()->name }}
+                                {{-- <img src="https://avatars.githubusercontent.com/u/5220449?v=4"
+                                    class="avatar-img rounded-circle border border-tertiary-subtle"> --}}
                             </a>
 
-                            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownUserMenu">
-                                <li><a class="dropdown-item" href="route('profile.edit')">{{ __('Profile') }}</a></li>
-                                <li><a class="dropdown-item" href="route('dashboard')">{{ __('Dashboard') }}</a></li>
+                            <ul class="dropdown-menu dropdown-menu-end bg-body-secondary" aria-labelledby="dropdownUserMenu">
+                                <li><a class="dropdown-item" href="{{ route('profile.edit') }}">{{ __('Profile') }}</a></li>
+                                <li><a class="dropdown-item" href="{{ route('dashboard') }}">{{ __('Dashboard') }}</a></li>
 
                                 <div class="dropdown-divider"></div>
 
                                 <form class="px-3" method="POST" action="{{ route('logout') }}">
                                     @csrf
-                                    <button class="btn btn-secondary" type="submit">{{ __('Log Out') }}</button>
+                                    <button class="btn btn-primary" type="submit">{{ __('Log Out') }}</button>
                                 </form>
                             </ul>
                         </div>
