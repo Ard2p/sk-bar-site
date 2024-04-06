@@ -1,9 +1,10 @@
 <x-app-layout>
 
-    <div class="container">
+    <div class="container mb-5">
 
+        <x-menu-swiper/>
 
-        @for ($i1 = 0; $i1 < 2; $i1++)
+        @for ($i1 = 0; $i1 < 0; $i1++)
             <div class="row justify-content-between">
 
                 @for ($i2 = 0; $i2 < 2; $i2++)

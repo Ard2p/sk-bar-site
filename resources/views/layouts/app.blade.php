@@ -10,9 +10,11 @@
 
     <!-- Scripts -->
     @vite(['resources/js/app.js'])
+
+    @stack('scripts')
 </head>
 
-<body data-bs-theme="dark">
+<body>
 
     @include('layouts.navigation')
 

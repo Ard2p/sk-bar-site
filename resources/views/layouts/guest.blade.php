@@ -10,11 +10,12 @@
 
     <!-- Scripts -->
     @vite(['resources/js/app.js'])
+
+    @stack('scripts')
 </head>
 
-<body data-bs-theme="dark">
+<body>
 
-    <!-- Page Content -->
     <main>
         {{ $slot }}
     </main>

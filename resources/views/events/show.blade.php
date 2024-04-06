@@ -2,17 +2,7 @@
 
     <div class="container">
 
-        <div class="row g-4 g-md-5 justify-content-center align-items-center">
-            <div class="col-xl-7 me-auto">
-
-                <span class="text-primary mb-3 d-block text-uppercase fw-semibold ls-xl">
-                    Трибьют группы Rammstein
-                </span>
-
-                <h2 class="display-5 fw-semibold mb-5">RAMMproJect</h2>
-
-            </div>
-        </div>
+        <x-caption sub="Трибьют группы Rammstein">RAMMproJect</x-caption>
 
         <div class="row">
 
@@ -46,9 +36,9 @@
 
         <div class="row my-5">
 
-            <div class="col-auto text-primary" style="text-shadow: 0px 0px 0.5em #161822;">
+            <div class="col-auto text-primary">
                 <p>Русский драматический театр • 19 апреля, 18:30</p>
-                <span class="badge text-black bg-white" style="text-shadow: initial;">19 апреля</span>
+                <span class="badge text-black bg-body-secondary">19 апреля</span>
                 <span class="badge text-white bg-info">6 +</span>
                 <span class="badge text-white bg-primary">от 1 300 ₽</span>
             </div>
@@ -57,7 +47,7 @@
 
         <div class="row my-5">
 
-            <div class="col-8">
+            <div class="col-lg-8">
 
                 <div class="row mb-5">
 
@@ -91,7 +81,7 @@
 
             </div>
 
-            <div class="col-4">
+            <div class="col-lg-4 order-lg-0">
 
                 <div class="row mb-3">
 
@@ -131,17 +121,17 @@
 
         <div class="row mb-5">
 
-            <span class="text-primary mb-3 d-block text-uppercase fw-semibold ls-xl">Адрес</span>
+            <div class="col-12 col-md-4 mb-3">
+                <span class="text-primary mb-3 d-block text-uppercase fw-semibold ls-xl">Адрес</span>
 
-            <div class="mb-3">
                 <div>SK Bar</div>
                 <div>просп. Горького, 5, корп. 2</div>
                 <div>+7 (835) 237-49-11</div>
             </div>
 
-            <div class="map">
-                <iframe
-                    src="https://yandex.ru/map-widget/v1/?um=constructor%3Aed9e4d1da33fc1eb2311f8041fa5ae5ac98ac6b4b933ff25222f39642bbef391&amp;source=constructor"
+            <div class="col-12 col-md-8 map">
+                <iframe class="rounded"
+                    src="https://yandex.ru/map-widget/v1/?um=constructor%3Aed9e4d1da33fc1eb2311f8041fa5ae5ac98ac6b4b933ff25222f39642bbef391&amp;source=constructor&amp;scroll=false"
                     width="100%" height="400" frameborder="0"></iframe>
             </div>
 
@@ -152,29 +142,9 @@
 
     <div class="container my-4 my-xxl-5 py-5">
 
-        <div class="row g-4 g-md-5 justify-content-center align-items-center">
-            <div class="col-xl-7 me-auto">
+        <x-caption sub="Лучшее только в Sk Bar">Рекомендованные концерты</x-caption>
 
-                <span class="text-primary mb-3 d-block text-uppercase fw-semibold ls-xl">
-                    Лучшее только в Sk Bar
-                </span>
-
-                <h2 class="display-5 fw-semibold mb-5">Рекомендованные концерты</h2>
-
-            </div>
-        </div>
-
-        <div class="col-12">
-            <div class="row row-cols-lg-3 row-cols-md-3 row-cols-1 g-4">
-
-                @for ($i = 0; $i < 3; $i++)
-                    <div class="col">
-                        @include('events.parts.card')
-                    </div>
-                @endfor
-
-            </div>
-        </div>
+        @include('events.parts.list', ['col_lg' => 4, 'col_md' => 2, 'count' => 4])
 
     </div>
 

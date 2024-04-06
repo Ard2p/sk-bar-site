@@ -1,4 +1,4 @@
-<footer class="py-md-5 navbar-dark">
+<footer class="py-md-5 bg-body-secondary">
 
     <div class="container">
         <div class="row g-4 justify-content-around">
@@ -12,9 +12,9 @@
             </div>
 
             <div class="col-4 col-md-auto col-lg-3">
-                <p class="fw-normal text-white">SK Bar Concert</p>
+                <p class="fw-normal">SK Bar Concert</p>
 
-                <div class="navbar navbar-dark">
+                <div class="navbar">
                     <ul class="nav flex-column navbar-nav">
                         <li class="nav-item mb-2">
                             <a href="/" class="nav-link p-0">Меню</a>
@@ -30,9 +30,9 @@
             </div>
 
             <div class="col-4 col-md-auto col-lg-3">
-                <p class="fw-normal text-white">Взаимодействие</p>
+                <p class="fw-normal">Взаимодействие</p>
 
-                <div class="navbar navbar-dark">
+                <div class="navbar">
                     <ul class="nav flex-column navbar-nav">
                         <li class="nav-item mb-2">
                             <a href="/" class="nav-link p-0">Карьера</a>
@@ -46,7 +46,7 @@
             </div>
 
             <div class="col-12 col-md-auto col-lg-3 text-center text-lg-start">
-                <p class="fw-normal text-white">Социальные сети</p>
+                <p class="fw-normal">Социальные сети</p>
 
                 <ul class="nav justify-content-lg-start justify-content-center align-items-center list-unstyled d-flex mb-4">
 
@@ -82,7 +82,7 @@
 
                 </ul>
 
-                <div class="navbar navbar-dark justify-content-center justify-content-lg-start">
+                <div class="navbar justify-content-center justify-content-lg-start">
                     <ul class="nav flex-column navbar-nav">
                         <li class="nav-item mb-2">
                             <a href="/" class="nav-link p-0">Политика обработки персональных данных</a>

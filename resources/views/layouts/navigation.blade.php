@@ -13,7 +13,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
 
-                <div class="collapse navbar-collapse" id="navbarText">
+                <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         @php
                             //  :active="request()->routeIs('dashboard')"
@@ -41,15 +41,15 @@
                     </ul>
 
                     @auth
-                        <div class="nav">
-                            <a href="#" class="dropdown-toggle nav-link text-primary"
+                        <div class="dropdown">
+                            <a href="#" class="dropdown-toggle text-primary text-decoration-none"
                                 id="dropdownUserMenu" data-bs-toggle="dropdown" aria-expanded="false">
                                 {{ Auth::user()->name }}
                                 {{-- <img src="https://avatars.githubusercontent.com/u/5220449?v=4"
                                     class="avatar-img rounded-circle border border-tertiary-subtle"> --}}
                             </a>
 
-                            <ul class="dropdown-menu dropdown-menu-end bg-body-secondary" aria-labelledby="dropdownUserMenu">
+                            <ul class="dropdown-menu bg-body-secondary" aria-labelledby="dropdownUserMenu">
                                 <li><a class="dropdown-item" href="{{ route('profile.edit') }}">{{ __('Profile') }}</a></li>
                                 <li><a class="dropdown-item" href="{{ route('dashboard') }}">{{ __('Dashboard') }}</a></li>
 
@@ -61,6 +61,7 @@
                                 </form>
                             </ul>
                         </div>
+
                     @else
                         <div>
                             <a href="{{ route('login') }}" class="btn btn-primary">{{ __('Log in') }}</a>
