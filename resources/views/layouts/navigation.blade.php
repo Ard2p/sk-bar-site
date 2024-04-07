@@ -40,6 +40,13 @@
 
                     </ul>
 
+                    <div class="small d-none d-lg-block">
+                        <div>Чебоксары, Карла Маркса 47</div>
+                        <div>+7 835 236 26 26</div>
+                        <div>чт-вс: 17:00 - 02:00</div>
+                    </div>
+
+                    <div class="col-12 col-lg-2 d-flex justify-content-lg-end">
                     @auth
                         <div class="dropdown">
                             <a href="#" class="dropdown-toggle text-primary text-decoration-none"
@@ -70,6 +77,7 @@
                             @endif --}}
                         </div>
                     @endauth
+                    <div>
 
                 </div>
 

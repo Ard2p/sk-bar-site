@@ -2,7 +2,7 @@
 
     <div class="container mb-5">
 
-        <x-menu-swiper/>
+        <x-menu-swiper />
 
         @for ($i1 = 0; $i1 < 0; $i1++)
             <div class="row justify-content-between">

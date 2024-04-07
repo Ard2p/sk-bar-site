@@ -59,7 +59,7 @@
     </div>
 
     <div class="container mb-5">
-        <x-menu-swiper/>
+        <x-menu-swiper />
     </div>
 
     <div class="container mb-5">
@@ -78,4 +78,14 @@
 
     </div>
 
+    <div class="container mb-5">
+
+        <x-caption sub="Лучшее только в Sk Bar">Фото</x-caption>
+
+        <x-gallery/>
+
+    </div>
+
 </x-app-layout>
+
+
