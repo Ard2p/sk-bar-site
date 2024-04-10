@@ -31,7 +31,7 @@ return [
     'use_notifications' => true,
     'use_theme_switcher' => true,
 
-    'layout' => MoonShineLayout::class,
+    'layout' => App\MoonShine\MoonShineLayout::class,
 
     'disk' => 'public',
 

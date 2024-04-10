@@ -66,7 +66,7 @@
 
         <x-caption sub="Лучшее только в Sk Bar">События в ближайшие дни</x-caption>
 
-        @include('events.parts.list', ['col_lg' => 4, 'col_md' => 2, 'count' => 4])
+        @include('events.parts.list', ['col_lg' => 4, 'col_md' => 2, 'items' => $coming_events])
 
     </div>
 
@@ -74,7 +74,7 @@
 
         <x-caption sub="Лучшее только в Sk Bar">Рекомендованные концерты</x-caption>
 
-        @include('events.parts.list', ['col_lg' => 4, 'col_md' => 2, 'count' => 4])
+        @include('events.parts.list', ['col_lg' => 4, 'col_md' => 2, 'items' => $recommended_events])
 
     </div>
 

@@ -22,7 +22,7 @@
 
         </div>
 
-        @include('events.parts.list', ['col_lg' => 4, 'col_md' => 2, 'count' => 12])
+        @include('events.parts.list', ['col_lg' => 4, 'col_md' => 2, 'items' => $events])
 
     </div>
 

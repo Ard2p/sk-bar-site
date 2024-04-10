@@ -16,7 +16,7 @@
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         @php
-                            //  :active="request()->routeIs('dashboard')"
+                            //  :active="request()->routeIs('home')"
                         @endphp
 
                         {{-- <li>
@@ -58,7 +58,7 @@
 
                             <ul class="dropdown-menu bg-body-secondary" aria-labelledby="dropdownUserMenu">
                                 <li><a class="dropdown-item" href="{{ route('profile.edit') }}">{{ __('Profile') }}</a></li>
-                                <li><a class="dropdown-item" href="{{ route('dashboard') }}">{{ __('Dashboard') }}</a></li>
+                                <li><a class="dropdown-item" href="{{ route('home') }}">{{ __('Home') }}</a></li>
 
                                 <div class="dropdown-divider"></div>
 

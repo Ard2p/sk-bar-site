@@ -15,12 +15,15 @@ return new class extends Migration
             $table->id();
             $table->string('name');
             $table->string('image');
+            $table->string('banner')->nullable();
             $table->text('description')->nullable();
-            $table->dateTime('date_start');
+            $table->dateTime('event_start');
+            $table->time('guest_start');
             $table->string('status');
             $table->string('age_limit');
-            $table->string('adress');
-            $table->bigInteger('city_id');
+            $table->bigInteger('place_id')->unsigned();
+            // $table->string('adress');
+            // $table->bigInteger('city_id');
             $table->timestamps();
         });
     }

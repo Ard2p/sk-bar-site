@@ -2,20 +2,20 @@
 
     <div class="container">
 
-        <x-caption sub="Трибьют группы Rammstein">RAMMproJect</x-caption>
+        <x-caption :sub="$event->caption">{{ $event->name }}</x-caption>
 
-        <div class="row">
+        {{-- <div class="row">
 
             <div id="carouselMain" class="carousel slide carousel-fade" data-bs-ride="carousel">
 
                 <div class="carousel-inner ratio ratio-21x9 rounded">
 
                     <div class="carousel-item active" data-bs-interval="10000">
-                        <img src="{{ asset('storage/1.png') }}" class="d-block w-100">
+                        <img src="{{ asset('storage/' . $event->banner) }}" class="d-block w-100">
                     </div>
 
                     <div class="carousel-item" data-bs-interval="10000">
-                        <img src="{{ asset('storage/1.png') }}" class="d-block w-100">
+                        <img src="{{ asset('storage/' . $event->banner) }}" class="d-block w-100">
                     </div>
                 </div>
 
@@ -32,20 +32,21 @@
                 </button>
             </div>
 
-        </div>
+        </div> --}}
 
-        <div class="row my-5">
+        <div class="row mb-5">
 
             <div class="col-auto text-primary">
-                <p>Русский драматический театр • 19 апреля, 18:30</p>
-                <span class="badge text-black bg-body-secondary">19 апреля</span>
-                <span class="badge text-white bg-info">6 +</span>
+                <p>{{ $event->place->name }}, {{ $event->place->city }}, {{ $event->place->adress }}</p>
+                <span
+                    class="badge text-black bg-body-secondary">{{ $event->event_start->translatedFormat('d F') }}</span>
+                <span class="badge text-white bg-info">{{ $event->age_limit }} +</span>
                 <span class="badge text-white bg-primary">от 1 300 ₽</span>
             </div>
 
         </div>
 
-        <div class="row my-5">
+        <div class="row mb-5">
 
             <div class="col-lg-8">
 
@@ -63,25 +64,17 @@
 
                     <span class="text-primary mb-3 d-block text-uppercase fw-semibold ls-xl">Описание</span>
 
-                    <div>
-                        <p>Акустический концерт Константина Кулясова лидера группы «АнимациЯ». Душевный, разухабистый и
-                            мега
-                            позитивный концерт! Приходите, будет интересно и весело! </p>
-
-                        <p>
-                            «Я люблю свою Родину, вроде бы» — фраза из песни группы «АнимациЯ». Костя Кулясов, лидер
-                            группы,
-                            и тот самый автор, у которого что ни песня, то крылатое выражение. Ты услышишь полтора
-                            десятка
-                            ломовейших хитов и самые новые песни!
-                        </p>
-                    </div>
+                    <div>{!! $event->description !!}</div>
 
                 </div>
 
             </div>
 
-            <div class="col-lg-4 order-lg-0">
+            <div class="col-lg-4">
+
+                <div class="row mb-3">
+                    <img src="{{ asset('storage/' . $event->image) }}" class="object-fit-cover">
+                </div>
 
                 <div class="row mb-3">
 
@@ -124,8 +117,8 @@
             <div class="col-12 col-md-4 mb-3">
                 <span class="text-primary mb-3 d-block text-uppercase fw-semibold ls-xl">Адрес</span>
 
-                <div>SK Bar</div>
-                <div>просп. Горького, 5, корп. 2</div>
+                <div>{{ $event->place->name }}</div>
+                <div>{{ $event->place->adress }}</div>
                 <div>+7 (835) 237-49-11</div>
             </div>
 
@@ -144,7 +137,7 @@
 
         <x-caption sub="Лучшее только в Sk Bar">Рекомендованные концерты</x-caption>
 
-        @include('events.parts.list', ['col_lg' => 4, 'col_md' => 2, 'count' => 4])
+        @include('events.parts.list', ['col_lg' => 4, 'col_md' => 2, 'items' => $recommended_events])
 
     </div>
 

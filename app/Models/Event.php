@@ -12,16 +12,29 @@ class Event extends Model
     protected $fillable = [
         'name',
         'image',
+        'banner',
         'description',
-        'date_start',
+        'guest_start',
+        'event_start',
         'status',
         'age_limit',
-        'adress',
-        'city_id'
+        'place_id'
+        // 'adress',
+        // 'city_id'
     ];
 
-    public function city()
+    protected $with = ['place'];
+
+    protected function casts(): array
     {
-        return $this->hasOne(City::class);
+        return [
+            'guest_start' => 'datetime',
+            'event_start' => 'datetime',
+        ];
+    }
+
+    public function place()
+    {
+        return $this->belongsTo(Place::class);
     }
 }

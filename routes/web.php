@@ -1,32 +1,21 @@
 <?php
 
+use App\Http\Controllers\EventController;
+use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ProfileController;
 use Illuminate\Support\Facades\Route;
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::get('/', [HomeController::class, 'index'])->name('home');
 
-Route::get('/events', function () {
-    return view('events.index');
-})->name('events.index');
-
-Route::get('/events/1', function () {
-    return view('events.show');
-})->name('events.show');
+Route::resource('events', EventController::class)->only(['index', 'show']);
 
 Route::get('/reservation', function () {
-    return view('reservation.index');
+    return view('reservation');
 })->name('reservation.index');
 
 Route::get('/menu', function () {
-    return view('menu.index');
+    return view('menu');
 })->name('menu.index');
-
-
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
