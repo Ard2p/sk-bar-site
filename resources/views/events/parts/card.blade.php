@@ -1,6 +1,6 @@
-<div class="d-flex flex-column position-relative shadow-sm rounded">
+<div class="d-flex h-100 flex-column shadow-sm rounded">
 
-    <div class="ratio ratio-13x10">
+    <div class="ratio ratio-5x4">
         <div>
 
             <a href="{{ route('events.show', $item->id) }}">
@@ -24,10 +24,10 @@
         </div>
     </div>
 
-    <div class="p-3 pt-2">
+    <div class="p-3 pt-2 h-100 d-flex flex-column">
 
         <a href="{{ route('events.show', $item->id) }}"
-            class="fs-5 link-body-emphasis stretched-link-off text-decoration-none">{{ $item->name }}</a>
+            class="fs-5 link-body-emphasis my-auto text-decoration-none">{{ $item->name }}</a>
 
         <div>
             <span class="badge text-black bg-body-secondary">{{ $item->event_start->translatedFormat('d F') }}</span>

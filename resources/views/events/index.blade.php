@@ -24,6 +24,10 @@
 
         @include('events.parts.list', ['col_lg' => 4, 'col_md' => 2, 'items' => $events])
 
+        <div class="row mt-5">
+            {{ $events->links() }}
+        </div>
+
     </div>
 
     <script src="https://unpkg.com/@jarstone/dselect/dist/js/dselect.js"></script>

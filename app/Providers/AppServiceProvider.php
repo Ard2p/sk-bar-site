@@ -3,6 +3,7 @@
 namespace App\Providers;
 
 // use Jenssegers\Date;
+use Illuminate\Pagination\Paginator;
 use Illuminate\Support\ServiceProvider;
 
 class AppServiceProvider extends ServiceProvider
@@ -20,8 +21,6 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        // setlocale(LC_ALL, 'ru_RU.utf8');
-        // Carbon::setLocale(config('app.locale'));
-        // Date::setLocale(config('app.locale'));
+        Paginator::useBootstrap();
     }
 }
