@@ -1,6 +1,5 @@
 <x-app-layout>
-
-    <div class="container">
+    <div class="container mb-5">
 
         <x-caption :sub="$event->caption">{{ $event->name }}</x-caption>
 
@@ -41,7 +40,7 @@
                 <span
                     class="badge text-black bg-body-secondary">{{ $event->event_start->translatedFormat('d F') }}</span>
                 <span class="badge text-white bg-info">{{ $event->age_limit }} +</span>
-                <span class="badge text-white bg-primary">от 1 300 ₽</span>
+                {{-- <span class="badge text-white bg-primary">от 1 300 ₽</span> --}}
             </div>
 
         </div>
@@ -50,7 +49,7 @@
 
             <div class="col-lg-8">
 
-                <div class="row mb-5">
+                {{-- <div class="row mb-5">
 
                     <span class="text-primary mb-3 d-block text-uppercase fw-semibold ls-xl">Фото</span>
 
@@ -58,7 +57,7 @@
 
                     </div>
 
-                </div>
+                </div> --}}
 
                 <div class="row">
 
@@ -76,36 +75,71 @@
                     <img src="{{ asset('storage/' . $event->image) }}" class="object-fit-cover">
                 </div>
 
-                <div class="row mb-3">
+                <div class="row tickets">
 
-                    <span class="text-primary mb-3 d-block text-uppercase fw-semibold ls-xl">Билеты</span>
+                    <span class="text-primary mb-3 d-block text-uppercase fw-semibold ls-xl" id="buyTiketsHeader">Билеты</span>
 
                     <div class="col">
-                        <div>Входной билет</div>
+                        <button class="btn btn-primary text-white w-100" data-bs-toggle="modal"
+                            data-bs-target="#buyTikets">Купить билеты</button>
                     </div>
-                    <div class="col-auto">
-                        <span class="me-5">3 400 ₽</span>
-                        <span class="btn btn-primary"><i class="bi bi-dash-lg"></i></span>
-                        <span class="btn btn-primary">0</span>
-                        <span class="btn btn-primary"><i class="fw-bold bi bi-plus-lg"></i></span>
-                    </div>
-                </div>
 
-                <div class="row mb-3">
                     <div class="col">
-                        <div>Входной билет на 2 персоны</div>
-                        <sub>Танцпол парный билет</sub>
+                        <button class="btn btn-primary text-white w-100">Бронь стола</button>
                     </div>
-                    <div class="col-auto">
-                        <span class="me-5">3 400 ₽</span>
-                        <span class="btn btn-primary"><i class="bi bi-dash-lg"></i></span>
-                        <span class="btn btn-primary">0</span>
-                        <span class="btn btn-primary"><i class="fw-bold bi bi-plus-lg"></i></span>
-                    </div>
-                </div>
 
-                <div class="row ">
-                    <button class="btn btn-primary">Купить</button>
+                    <div class="modal" id="buyTikets" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered modal-xl">
+                            <div class="modal-content">
+
+                                <div class="modal-header">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+
+
+                                <div class="ratio ratio-16x9">
+                                    <iframe class="w-100"
+                                        src="https://iframeab-pre7093.intickets.ru/seance/16566139/"></iframe>
+                                </div>
+
+
+                            </div>
+                        </div>
+                    </div>
+
+                    @if (false)
+                        <div class="row mb-3">
+
+                            <div class="col">
+                                <div>Входной билет</div>
+                            </div>
+                            <div class="col-auto">
+                                <span>3 400 ₽</span>
+                                {{-- <span class="btn btn-primary"><i class="bi bi-dash-lg"></i></span>
+                        <span class="btn btn-primary">0</span>
+                        <span class="btn btn-primary"><i class="fw-bold bi bi-plus-lg"></i></span> --}}
+                            </div>
+                        </div>
+
+                        <div class="row mb-3">
+                            <div class="col">
+                                <div>Входной билет на 2 персоны</div>
+                                <sub>Танцпол парный билет</sub>
+                            </div>
+                            <div class="col-auto">
+                                <span>3 400 ₽</span>
+                                {{-- <span class="btn btn-primary"><i class="bi bi-dash-lg"></i></span>
+                        <span class="btn btn-primary">0</span>
+                        <span class="btn btn-primary"><i class="fw-bold bi bi-plus-lg"></i></span> --}}
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <button class="btn btn-primary w-100">Купить</button>
+                        </div>
+                    @endif
+
                 </div>
 
             </div>
@@ -119,21 +153,23 @@
 
                 <div>{{ $event->place->name }}</div>
                 <div>{{ $event->place->adress }}</div>
-                <div>+7 (835) 237-49-11</div>
+                @if ($event->place->content)
+                    <div>{{ $event->place->content }}</div>
+                @endif
             </div>
 
-            <div class="col-12 col-md-8 map">
-                <iframe class="rounded"
-                    src="https://yandex.ru/map-widget/v1/?um=constructor%3Aed9e4d1da33fc1eb2311f8041fa5ae5ac98ac6b4b933ff25222f39642bbef391&amp;source=constructor&amp;scroll=false"
-                    width="100%" height="400" frameborder="0"></iframe>
-            </div>
+            @if ($event->place->map)
+                <div class="col-12 col-md-8 map">
+                    <iframe class="rounded" src="{{ $event->place->map }}" width="100%" height="400"
+                        frameborder="0"></iframe>
+                </div>
+            @endif
 
         </div>
 
     </div>
 
-
-    <div class="container my-4 my-xxl-5 py-5">
+    <div class="container mb-5">
 
         <x-caption sub="Лучшее только в Sk Bar">Рекомендованные концерты</x-caption>
 
@@ -141,20 +177,22 @@
 
     </div>
 
-    </div>
-
-    <script src="https://unpkg.com/@jarstone/dselect/dist/js/dselect.js"></script>
-
     <script>
-        var select_city = document.querySelector('#select_city')
-        var select_box = document.querySelector('#select_box')
-
-        dselect(select_city, {
-            search: true
-        })
-
-        dselect(select_box, {
-            search: true
+        window.addEventListener('load', function (){
+            const url = new URL(document.location);
+            const searchParams = url.searchParams;
+            if (searchParams.has('buytikets')) {
+                searchParams.delete('buytikets');
+                window.history.pushState({}, '', url.toString());
+                const elementModal = document.getElementById('buyTikets')
+                if (elementModal.classList.contains('modal')) {
+                    const myModal = new window.bootstrap.Modal('#buyTikets')
+                    myModal.show()
+                } else {
+                    const element = document.getElementById('buyTiketsHeader')
+                    element.scrollIntoView()
+                }
+            }
         })
     </script>
 

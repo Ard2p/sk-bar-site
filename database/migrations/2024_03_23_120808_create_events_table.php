@@ -16,12 +16,15 @@ return new class extends Migration
             $table->string('name');
             $table->string('image');
             $table->string('banner')->nullable();
+            $table->string('gallery')->nullable();
             $table->text('description')->nullable();
             $table->dateTime('event_start');
-            $table->time('guest_start');
+            $table->dateTime('guest_start');
+            $table->boolean('recommendation')->default(false);
             $table->string('status');
             $table->string('age_limit');
             $table->bigInteger('place_id')->unsigned();
+            $table->bigInteger('genre_id')->unsigned()->nullable();
             // $table->string('adress');
             // $table->bigInteger('city_id');
             $table->timestamps();

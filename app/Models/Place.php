@@ -13,6 +13,8 @@ class Place extends Model
         'name',
         'city',
         'adress',
+        'content',
+        'map'
     ];
 
     public function events()

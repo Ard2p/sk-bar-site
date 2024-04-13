@@ -17,7 +17,7 @@ class Dashboard extends Page
 
     public function title(): string
     {
-        return $this->title ?: 'Home';
+        return $this->title ?: 'Dashboard';
     }
 
     public function components(): array

@@ -18,7 +18,7 @@
 
     @include('layouts.navigation')
 
-    <main>
+    <main data-bs-spy="scroll">
         {{ $slot }}
     </main>
 

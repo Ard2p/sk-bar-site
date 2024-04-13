@@ -7,10 +7,14 @@ use Laravel\Sanctum\HasApiTokens;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
+use Sweet1s\MoonshineRBAC\Traits\MoonshineRBACHasRoles;
 
 class User extends Authenticatable
 {
     use HasApiTokens, HasFactory, Notifiable;
+    use MoonshineRBACHasRoles;
+
+    const SUPER_ADMIN_ROLE_ID = 1;
 
     /**
      * The attributes that are mass assignable.

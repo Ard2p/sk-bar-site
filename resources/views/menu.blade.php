@@ -2,6 +2,8 @@
 
     <div class="container mb-5">
 
+        <x-caption sub="Лучшее только в Sk Bar">Меню</x-caption>
+
         <x-menu-swiper />
 
         @for ($i1 = 0; $i1 < 0; $i1++)

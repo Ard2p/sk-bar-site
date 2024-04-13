@@ -6,7 +6,9 @@
             <div class="col-12 col-md-4 col-lg-3">
 
                 <div class="text-center">
-                    <img src="{{ asset('storage/skbar.png') }}" class="w-50">
+                    <a href="/">
+                        <img src="{{ asset('storage/skbar.png') }}" class="w-50">
+                    </a>
                 </div>
 
             </div>
@@ -22,26 +24,38 @@
                         <li class="nav-item mb-2">
                             <a href="/" class="nav-link p-0">Афиша</a>
                         </li>
-                        <li class="nav-item mb-2">
+                        {{-- <li class="nav-item mb-2">
                             <a href="/" class="nav-link p-0">Бронь столов</a>
-                        </li>
+                        </li> --}}
                     </ul>
                 </div>
             </div>
 
             <div class="col-4 col-md-auto col-lg-3">
-                <p class="fw-normal">Взаимодействие</p>
+                {{-- <p class="fw-normal">Взаимодействие</p> --}}
+                <p class="fw-normal">Контакты</p>
 
-                <div class="navbar">
-                    <ul class="nav flex-column navbar-nav">
+                <div class="text-muted">
+                    <div>Чебоксары, Карла Маркса 47</div>
+                    <div>+7 835 236 26 26</div>
+                    <div>чт-вс: 17:00 - 02:00</div>
+                </div>
+                {{-- <div class="navbar"> --}}
+                    {{-- <ul class="nav flex-column navbar-nav">
                         <li class="nav-item mb-2">
                             <a href="/" class="nav-link p-0">Карьера</a>
                         </li>
                         <li class="nav-item mb-2">
                             <a href="/" class="nav-link p-0">Контакты</a>
                         </li>
-                    </ul>
-                </div>
+                    </ul> --}}
+
+                    {{-- <ul class="nav flex-column navbar-nav">
+                        <li class="nav-item mb-2">
+                            <a href="/" class="nav-link p-0">Политика обработки персональных данных</a>
+                        </li>
+                    </ul> --}}
+                {{-- </div> --}}
 
             </div>
 
@@ -82,13 +96,13 @@
 
                 </ul>
 
-                <div class="navbar justify-content-center justify-content-lg-start">
+                {{-- <div class="navbar justify-content-center justify-content-lg-start">
                     <ul class="nav flex-column navbar-nav">
                         <li class="nav-item mb-2">
                             <a href="/" class="nav-link p-0">Политика обработки персональных данных</a>
                         </li>
                     </ul>
-                </div>
+                </div> --}}
 
                 <p class="small text-muted">© SK Bar, @php echo date('Y') @endphp Все права защищены</p>
                 <p class="small text-muted">Разработано «<a href="//ea-corp.ru">Ea-Corp.ru</a>»</p>

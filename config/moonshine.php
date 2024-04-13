@@ -1,12 +1,10 @@
 <?php
 
-use MoonShine\Exceptions\MoonShineNotFoundException;
+use App\Models\User;
 use MoonShine\Forms\LoginForm;
 use MoonShine\Http\Middleware\Authenticate;
+use MoonShine\Exceptions\MoonShineNotFoundException;
 use MoonShine\Http\Middleware\SecurityHeadersMiddleware;
-use MoonShine\Models\MoonshineUser;
-use MoonShine\MoonShineLayout;
-use MoonShine\Pages\ProfilePage;
 
 return [
     'dir' => 'app/MoonShine',
@@ -62,8 +60,8 @@ return [
     ],
 
     'model_resources' => [
-        'default_with_import' => true,
-        'default_with_export' => true,
+        'default_with_import' => false,
+        'default_with_export' => false,
     ],
 
     'auth' => [
@@ -85,7 +83,7 @@ return [
         'providers' => [
             'moonshine' => [
                 'driver' => 'eloquent',
-                'model' => MoonshineUser::class,
+                'model' => User::class,
             ],
         ],
         'pipelines' => [],
@@ -101,8 +99,8 @@ return [
 
     'tinymce' => [
         'file_manager' => false, // or 'laravel-filemanager' prefix for lfm
-        'token' => env('MOONSHINE_TINYMCE_TOKEN', 'ht9l4ytqc52dq137mprfy1fhlvm62amzv3ig095kfg7mkh2d'),
-        'version' => env('MOONSHINE_TINYMCE_VERSION', '6'),
+        'token' => env('TINYMCE_TOKEN'),
+        'version' => env('TINYMCE_VERSION', '6'),
     ],
 
     'socialite' => [

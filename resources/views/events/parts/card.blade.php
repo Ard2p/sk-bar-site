@@ -32,7 +32,7 @@
         <div>
             <span class="badge text-black bg-body-secondary">{{ $item->event_start->translatedFormat('d F') }}</span>
             <span class="badge text-white bg-info">{{ $item->age_limit }} +</span>
-            <span class="badge text-white bg-primary">от 1 300 ₽</span>
+            {{-- <span class="badge text-white bg-primary">от 1 300 ₽</span> --}}
         </div>
 
         <div class="small mt-2">
@@ -41,11 +41,15 @@
             <div>Начало: {{ $item->event_start->format('H:i') }}</div>
         </div>
 
-        <div class="mt-3">
-            <a href="{{ route('events.show', $item->id) }}" class="col-auto btn btn-primary text-white">Подробнее</a>
-            <a href="{{ route('events.show', $item->id) }}" class="col-auto btn btn-primary text-white">
-                Купить Билеты
-            </a>
+
+        <div class="d-flex justify-content-between mt-3">
+
+                <a href="{{ route('events.show', $item->id) }}" class="btn btn-primary text-white">Подробнее</a>
+
+                <a href="{{ route('events.show', $item->id) }}?buytikets" class="btn btn-primary text-white">
+                    Купить Билеты
+                </a>
+
         </div>
 
     </div>

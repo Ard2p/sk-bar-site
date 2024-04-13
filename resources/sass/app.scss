@@ -35,19 +35,38 @@ $form-select-bg: var(--#{$prefix}secondary-bg);
 
 $aspect-ratios: (
     "1x1": 100%,
-    "3x1": calc(1 / 3 * 100%),
+
     // слайдер
+    "3x1": calc(1 / 3 * 100%),
+
     "4x3": calc(3 / 4 * 100%),
+
+     // 500x400
     "5x4": calc(4 / 5 * 100%),
-    // 500x400
+
     "16x9": calc(9 / 16 * 100%),
     "21x9": calc(9 / 21 * 100%),
-    "13x10": calc(10 / 13 * 100%),
+
     // все концерты
-    "99x70": calc(70 / 99 * 100%) // A4
+    "13x10": calc(10 / 13 * 100%),
+
+    // A4
+    "99x70": calc(70 / 99 * 100%)
 );
 
 @import "../node_modules/bootstrap/scss/bootstrap";
+
+#buyTikets .ratio-16x9 {
+    @include media-breakpoint-down(xl) {
+        --bs-aspect-ratio: 90%;
+    }
+    @include media-breakpoint-down(md) {
+        --bs-aspect-ratio: 130%;
+    }
+    @include media-breakpoint-down(sm) {
+        --bs-aspect-ratio: 150%;
+    }
+}
 
 // 3. Включите остальные требуемые таблицы стилей Bootstrap (включая любые отдельные таблицы стилей цветового режима)
 // @import "../node_modules/bootstrap/scss/variables";

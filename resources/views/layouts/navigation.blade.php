@@ -28,15 +28,15 @@
                         </li>
 
                         <li class="nav-item">
-                            <a href="{{ route('menu.index') }}"  @class(['nav-link', 'active' => request()->routeIs('menu.index')])>Меню</a>
+                            <a href="{{ route('menu.index') }}" @class(['nav-link', 'active' => request()->routeIs('menu.index')])>Меню</a>
                         </li>
 
-                        <li class="nav-item">
+                        {{-- <li class="nav-item">
                             <a href="{{ route('reservation.index') }}" @class([
                                 'nav-link',
                                 'active' => request()->routeIs('reservation.index'),
                             ])>Бронь столов</a>
-                        </li>
+                        </li> --}}
 
                     </ul>
 
@@ -46,38 +46,39 @@
                         <div>чт-вс: 17:00 - 02:00</div>
                     </div>
 
-                    <div class="col-12 col-lg-2 d-flex justify-content-lg-end">
-                    @auth
-                        <div class="dropdown">
-                            <a href="#" class="dropdown-toggle text-primary text-decoration-none"
-                                id="dropdownUserMenu" data-bs-toggle="dropdown" aria-expanded="false">
-                                {{ Auth::user()->name }}
-                                {{-- <img src="https://avatars.githubusercontent.com/u/5220449?v=4"
-                                    class="avatar-img rounded-circle border border-tertiary-subtle"> --}}
-                            </a>
+                    @if (false)
+                        <div class="col-12 col-lg-2 d-flex justify-content-lg-end">
+                            @auth
+                                <div class="dropdown">
+                                    <a href="#" class="dropdown-toggle text-primary text-decoration-none"
+                                        id="dropdownUserMenu" data-bs-toggle="dropdown" aria-expanded="false">
+                                        {{ Auth::user()->name }}
+                                    </a>
 
-                            <ul class="dropdown-menu bg-body-secondary" aria-labelledby="dropdownUserMenu">
-                                <li><a class="dropdown-item" href="{{ route('profile.edit') }}">{{ __('Profile') }}</a></li>
-                                <li><a class="dropdown-item" href="{{ route('home') }}">{{ __('Home') }}</a></li>
+                                    <ul class="dropdown-menu bg-body-secondary" aria-labelledby="dropdownUserMenu">
+                                        <li><a class="dropdown-item"
+                                                href="{{ route('profile.edit') }}">{{ __('Profile') }}</a>
+                                        </li>
+                                        <li><a class="dropdown-item" href="{{ route('home') }}">{{ __('Home') }}</a></li>
 
-                                <div class="dropdown-divider"></div>
+                                        <div class="dropdown-divider"></div>
 
-                                <form class="px-3" method="POST" action="{{ route('logout') }}">
-                                    @csrf
-                                    <button class="btn btn-primary" type="submit">{{ __('Log Out') }}</button>
-                                </form>
-                            </ul>
-                        </div>
-
-                    @else
-                        <div>
-                            <a href="{{ route('login') }}" class="btn btn-primary">{{ __('Log in') }}</a>
-                            {{-- @if (Route::has('register'))
+                                        <form class="px-3" method="POST" action="{{ route('logout') }}">
+                                            @csrf
+                                            <button class="btn btn-primary" type="submit">{{ __('Log Out') }}</button>
+                                        </form>
+                                    </ul>
+                                </div>
+                            @else
+                                <div>
+                                    <a href="{{ route('login') }}" class="btn btn-primary">{{ __('Log in') }}</a>
+                                    {{-- @if (Route::has('register'))
                                 <a href="{{ route('register') }}" class="btn btn-primary">{{ __('Register') }}</a>
                             @endif --}}
+                                </div>
+                            @endauth
                         </div>
-                    @endauth
-                    <div>
+                    @endif
 
                 </div>
 

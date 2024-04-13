@@ -49,6 +49,8 @@ final class MoonShineLayout implements MoonShineLayoutContract
                         now()->year
                     ))
             ])->customAttributes(['class' => 'layout-page']),
-        ])->bodyClass('theme-minimalistic');
+        ])
+        // ->bodyClass('theme-minimalistic')
+        ;
     }
 }

@@ -4,7 +4,7 @@
 
         <x-caption sub="Лучшее только в Sk Bar">Афиша Мероприятий</x-caption>
 
-        <div class="row mb-5">
+        {{-- <div class="row mb-5">
 
             <div class="col-auto">
                 <select name="city" id="select_city">
@@ -20,17 +20,21 @@
                 </select>
             </div>
 
-        </div>
+        </div> --}}
 
         @include('events.parts.list', ['col_lg' => 4, 'col_md' => 2, 'items' => $events])
 
-        <div class="row mt-5">
-            {{ $events->links() }}
-        </div>
+        {{-- @dd($events) --}}
+
+        @if ($events->lastPage() > 1)
+            <div class="row mt-5">
+                {{ $events->links() }}
+            </div>
+        @endif
 
     </div>
 
-    <script src="https://unpkg.com/@jarstone/dselect/dist/js/dselect.js"></script>
+    {{-- <script src="https://unpkg.com/@jarstone/dselect/dist/js/dselect.js"></script>
 
     <script>
         var select_city = document.querySelector('#select_city')
@@ -43,6 +47,6 @@
         dselect(select_box, {
             search: true
         })
-    </script>
+    </script> --}}
 
 </x-app-layout>
