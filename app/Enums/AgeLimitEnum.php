@@ -4,7 +4,7 @@ namespace App\Enums;
 
 enum AgeLimitEnum: string
 {
-    case AGE_0 = '0';
+    case AGE_0 = '1';
     case AGE_6 = '6';
     case AGE_12 = '12';
     case AGE_16 = '16';

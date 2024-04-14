@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Models\Seo;
 use App\Enums\EventStatusEnum;
 use Illuminate\Database\Eloquent\Model;
 use MoonShine\Layouts\Casts\LayoutsCast;
@@ -43,6 +44,11 @@ class Event extends Model
     public function place()
     {
         return $this->belongsTo(Place::class);
+    }
+
+    public function seo()
+    {
+        return $this->morphOne(Seo::class, 'model');
     }
 
     public function scopeRecommendation(Builder $query): void

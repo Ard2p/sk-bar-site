@@ -4,46 +4,37 @@ declare(strict_types=1);
 
 namespace App\MoonShine\Resources;
 
+use App\Models\Seo;
 use App\Models\Event;
-use MoonShine\Fields\ID;
 
-use MoonShine\Pages\Page;
+use App\Models\Place;
+use MoonShine\Fields\ID;
 use MoonShine\Fields\Date;
 use MoonShine\Fields\Enum;
 use MoonShine\Fields\Json;
 use MoonShine\Fields\Slug;
 use MoonShine\Fields\Text;
 use App\Enums\AgeLimitEnum;
-use MoonShine\Fields\Field;
 use MoonShine\Fields\Image;
-use MoonShine\Fields\Fields;
 use MoonShine\Fields\Select;
-use MoonShine\MoonShineAuth;
-use MoonShine\Fields\Preview;
 use MoonShine\Fields\TinyMce;
 use App\Enums\EventStatusEnum;
 use MoonShine\Decorations\Tab;
-use MoonShine\Fields\Checkbox;
-use MoonShine\Fields\Password;
 use MoonShine\Fields\Switcher;
+use MoonShine\Fields\Template;
 use MoonShine\Decorations\Flex;
 use MoonShine\Decorations\Grid;
 use MoonShine\Decorations\Tabs;
 use MoonShine\Decorations\Block;
 use MoonShine\Decorations\Column;
-use Illuminate\Support\Collection;
-use MoonShine\Decorations\Heading;
-use MoonShine\TypeCasts\ModelCast;
-use MoonShine\Fields\PasswordRepeat;
-use MoonShine\Components\FormBuilder;
+use MoonShine\Components\Components;
 use MoonShine\Layouts\Fields\Layouts;
 use MoonShine\Resources\ModelResource;
 use Illuminate\Database\Eloquent\Model;
-use Illuminate\Support\Facades\Storage;
-use MoonShine\Components\FlexibleRender;
-use App\MoonShine\Resources\PlacesResource;
+use App\MoonShine\Resources\SeoResource;
+use MoonShine\Fields\Relationships\MorphTo;
+use MoonShine\Fields\Relationships\MorphOne;
 use MoonShine\Fields\Relationships\BelongsTo;
-use MoonShine\Http\Controllers\ProfileController;
 use Sweet1s\MoonshineRBAC\Traits\WithRolePermissions;
 
 /**
@@ -70,8 +61,8 @@ class EventsResource extends ModelResource
             'update',
             'delete',
             'massDelete',
-            'restore',
-            'forceDelete',
+            // 'restore',
+            // 'forceDelete',
         ];
     }
 
@@ -81,74 +72,102 @@ class EventsResource extends ModelResource
             Grid::make([
                 Column::make([
                     Block::make([
+                        Tabs::make([
 
-                        ID::make()->sortable(),
-                        Text::make(__('Title'), 'name')->required(),
-                        // Slug::make(__('Slug'), 'slug')->from('name')->separator('-')->unique(),
-                        TinyMce::make(__('Description'), 'description'),
+                            Tab::make('Основное', [
+                                ID::make()->sortable(),
+                                Text::make(__('Title'), 'name')->required(),
+                                // Slug::make(__('Slug'), 'slug')->from('name')->separator('-')->unique(),
+                                TinyMce::make(__('Description'), 'description'),
 
-                        // Json::make('Социальные сети', 'gallery')
-                        //     ->fields([
-                        //         Select::make(__('Age limit'))
-                        //             ->options([
-                        //                 'vk' => 'vk',
-                        //                 'instagram' => 'instagram',
-                        //             ])
-                        //             ->default('vk')
-                        //             ->required(),
-                        //         Text::make('Value', 'value')
-                        //     ])->removable()->hideOnIndex(),
+                                // Json::make('Социальные сети', 'gallery')
+                                //     ->fields([
+                                //         Select::make(__('Age limit'))
+                                //             ->options([
+                                //                 'vk' => 'vk',
+                                //                 'instagram' => 'instagram',
+                                //             ])
+                                //             ->default('vk')
+                                //             ->required(),
+                                //         Text::make('Value', 'value')
+                                //     ])->removable()->hideOnIndex(),
 
-                        // Layouts::make('Content')
-                        //     ->addLayout('Contact information', 'gallery', [
-                        //         Text::make('Name'),
-                        //         Text::make('Name'),
-                        //     ]),
+                                // Layouts::make('Content')
+                                //     ->addLayout('Contact information', 'gallery', [
+                                //         Text::make('Name'),
+                                //         Text::make('Name'),
+                                //     ]),
+                            ]),
 
+                            Tab::make('Билеты', []),
+
+                            Tab::make('Seo', [
+                                // MorphOne::make('Seo', 'seo')
+                                // ->types([
+                                //     Seo::class => 'url',
+                                //     Event::class => 'name',
+                                //     Place::class => 'name'
+                                // ])
+                            ]),
+                        ]),
                     ])
                 ])->columnSpan(8),
 
                 Column::make([
                     Block::make([
+                        Tabs::make([
 
-                        Flex::make([
-                            Enum::make(__('Status'), 'status')
-                                ->attach(EventStatusEnum::class)
-                                ->default(EventStatusEnum::DRAFT->name)
-                                ->required(),
+                            Tab::make('Параметры', [
+                                Flex::make([
+                                    Enum::make(__('Status'), 'status')
+                                        ->attach(EventStatusEnum::class)
+                                        ->default(EventStatusEnum::DRAFT->name)
+                                        ->placeholder('-')
+                                        ->nullable()
+                                        ->required(),
 
-                            Enum::make(__('Age limit'), 'age_limit')
-                                ->attach(AgeLimitEnum::class)
-                                ->default(AgeLimitEnum::AGE_0->name)
-                                ->required(),
+                                    Enum::make(__('Age limit'), 'age_limit')
+                                        ->attach(AgeLimitEnum::class)
+                                        ->default(AgeLimitEnum::AGE_0->name)
+                                        ->placeholder('-')
+                                        ->nullable()
+                                        ->required(),
+                                ]),
+
+                                Flex::make([
+                                    Date::make(__('Event start'), 'event_start')->withTime()->required(),
+                                    Date::make(__('Guest start'), 'guest_start')->withTime()->required(),
+                                ]),
+
+                                BelongsTo::make(__('Place event'), 'place', fn ($item) => "$item->name, $item->city")
+                                    ->searchable()
+                                    ->placeholder('-')
+                                    ->nullable()
+                                    ->required(),
+
+                                Switcher::make(__('Recommendation'), 'recommendation')->default(false),
+
+                                Image::make(__('Image'), 'image')->when(
+                                    fn ($field) => $field->isNowOnCreateForm(),
+                                    fn ($field) => $field->required()
+                                )
+                                    ->disk(config('moonshine.disk', 'public'))->dir('events')
+                                    ->allowedExtensions(['jpg', 'png', 'jpeg', 'gif', 'webp']),
+
+                                // Image::make(__('Gallery'), 'gallery')
+                                //     ->multiple()
+                                //     ->removable()
+                                //     ->disk(config('moonshine.disk', 'public'))
+                                //     ->dir('events')
+                                //     ->allowedExtensions(['jpg', 'png', 'jpeg', 'gif', 'webp'])
+                                //     ->when(
+                                //         fn ($field) => $field->isNowOnCreateForm(),
+                                //         fn ($field) => $field->required()
+                                //     )
+                            ]),
+
+                            Tab::make('Социальные сети', []),
                         ]),
-
-                        Flex::make([
-                            Date::make(__('Event start'), 'event_start')->withTime()->required(),
-                            Date::make(__('Guest start'), 'guest_start')->withTime()->required(),
-                        ]),
-
-                        BelongsTo::make(__('Place event'), 'place', fn ($item) => "$item->name, $item->city")->searchable(),
-                        Switcher::make(__('Recommendation'), 'recommendation')->default(false),
-
-                        Image::make(__('Image'), 'image')->when(
-                            fn ($field) => $field->isNowOnCreateForm(),
-                            fn ($field) => $field->required()
-                        )
-                            ->disk(config('moonshine.disk', 'public'))->dir('events')
-                            ->allowedExtensions(['jpg', 'png', 'jpeg', 'gif', 'webp']),
-
-                        // Image::make(__('Gallery'), 'gallery')
-                        //     ->multiple()
-                        //     ->removable()
-                        //     ->disk(config('moonshine.disk', 'public'))
-                        //     ->dir('events')
-                        //     ->allowedExtensions(['jpg', 'png', 'jpeg', 'gif', 'webp'])
-                        //     ->when(
-                        //         fn ($field) => $field->isNowOnCreateForm(),
-                        //         fn ($field) => $field->required()
-                        //     )
-
                     ])
                 ])->columnSpan(4),
             ]),
@@ -183,6 +202,24 @@ class EventsResource extends ModelResource
             BelongsTo::make(__('Place event'), 'place', fn ($item) => "$item->name, $item->city"),
             Switcher::make(__('Recommendation'), 'recommendation'),
             TinyMce::make(__('Description'), 'description'),
+        ];
+    }
+
+    public function filters(): array
+    {
+        return [
+            Text::make(__('Title'), 'name'),
+            Enum::make(__('Age limit'), 'age_limit')->attach(AgeLimitEnum::class)
+                ->placeholder('-')
+                ->nullable(),
+            Enum::make(__('Status'), 'status')->attach(EventStatusEnum::class)
+                ->placeholder('-')
+                ->nullable(),
+            Date::make(__('Date start'), 'event_start')->format('d.m H.i'),
+            BelongsTo::make(__('Place event'), 'place', fn ($item) => "$item->name, $item->city")
+                ->nullable()
+                ->placeholder('-'),
+            Switcher::make(__('Recommendation'), 'recommendation')
         ];
     }
 

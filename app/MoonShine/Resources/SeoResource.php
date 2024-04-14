@@ -35,7 +35,7 @@ use Sweet1s\MoonshineRBAC\Traits\WithRolePermissions;
 /**
  * @extends ModelResource<Event>
  */
-class PlaceResource extends ModelResource
+class SeoResource extends ModelResource
 {
     use WithRolePermissions;
 

@@ -121,10 +121,7 @@ class UserResource extends ModelResource
     {
         return [
             Text::make(trans('moonshine::ui.resource.name'), 'name'),
-            Date::make(
-                trans('moonshine::ui.resource.created_at'),
-                'created_at'
-            ),
+            Date::make(trans('moonshine::ui.resource.created_at'), 'created_at'),
         ];
     }
 }
