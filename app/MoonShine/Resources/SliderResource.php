@@ -78,8 +78,8 @@ class SliderResource extends ModelResource
                             ->required(),
 
                         Flex::make([
-                            Date::make(__('Date from'), 'date_from')->withTime(),
-                            Date::make(__('Date to'), 'date_to')->withTime(),
+                            Date::make(__('Date start'), 'date_from')->withTime(),
+                            Date::make(__('Date end'), 'date_to')->withTime(),
                         ]),
 
                     ])
