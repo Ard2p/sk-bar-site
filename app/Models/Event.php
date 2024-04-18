@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use Carbon\Carbon;
 use App\Models\Seo;
 use App\Enums\EventStatusEnum;
 use Illuminate\Database\Eloquent\Model;
@@ -58,5 +59,10 @@ class Event extends Model
     public function scopeActive(Builder $query): void
     {
         $query->whereNot('status', EventStatusEnum::DRAFT);
+    }
+
+    public function scopeActual(Builder $query): void
+    {
+        $query->whereDate('event_start', '>=', Carbon::now()->toDateString());
     }
 }

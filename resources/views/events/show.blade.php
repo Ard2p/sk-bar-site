@@ -77,36 +77,38 @@
 
                 <div class="row tickets">
 
-                    <span class="text-primary mb-3 d-block text-uppercase fw-semibold ls-xl" id="buyTiketsHeader">Билеты</span>
+                    <span class="text-primary mb-3 d-block text-uppercase fw-semibold ls-xl"
+                        id="buyTiketsHeader">Билеты</span>
 
-                    <div class="col">
-                        <button class="btn btn-primary text-white w-100" data-bs-toggle="modal"
-                            data-bs-target="#buyTikets">Купить билеты</button>
-                    </div>
+                    @if ($event->tickets_link)
+                        <div class="col">
+                            <button class="btn btn-primary text-white w-100" data-bs-toggle="modal"
+                                data-bs-target="#buyTikets">Купить билеты</button>
+                        </div>
+                    @endif
 
                     <div class="col">
                         <button class="btn btn-primary text-white w-100">Бронь стола</button>
                     </div>
 
-                    <div class="modal" id="buyTikets" tabindex="-1">
-                        <div class="modal-dialog modal-dialog-centered modal-xl">
-                            <div class="modal-content">
+                    @if ($event->tickets_link)
+                        <div class="modal" id="buyTikets" tabindex="-1">
+                            <div class="modal-dialog modal-dialog-centered modal-xl">
+                                <div class="modal-content">
 
-                                <div class="modal-header">
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
+                                    <div class="modal-header">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+
+                                    <div class="ratio ratio-16x9">
+                                        <iframe class="w-100" src="{{ $event->tickets_link }}"></iframe>
+                                    </div>
+
                                 </div>
-
-
-                                <div class="ratio ratio-16x9">
-                                    <iframe class="w-100"
-                                        src="https://iframeab-pre7093.intickets.ru/seance/16566139/"></iframe>
-                                </div>
-
-
                             </div>
                         </div>
-                    </div>
+                    @endif
 
                     @if (false)
                         <div class="row mb-3">
@@ -178,7 +180,7 @@
     </div>
 
     <script>
-        window.addEventListener('load', function (){
+        window.addEventListener('load', function() {
             const url = new URL(document.location);
             const searchParams = url.searchParams;
             if (searchParams.has('buytikets')) {

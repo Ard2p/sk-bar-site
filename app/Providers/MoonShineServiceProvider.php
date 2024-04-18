@@ -12,6 +12,7 @@ use App\MoonShine\Resources\RoleResource;
 use App\MoonShine\Resources\UserResource;
 use App\MoonShine\Resources\PlaceResource;
 use App\MoonShine\Resources\EventsResource;
+use App\MoonShine\Resources\SliderResource;
 use App\MoonShine\Resources\SettingResource;
 use Sweet1s\MoonshineRBAC\Components\MenuRBAC;
 use MoonShine\Providers\MoonShineApplicationServiceProvider;
@@ -40,7 +41,9 @@ class MoonShineServiceProvider extends MoonShineApplicationServiceProvider
 
             MenuItem::make(__('Events'), new EventsResource(), 'heroicons.outline.star'),
 
-            MenuItem::make(__('Pages'), new PageResource(), 'heroicons.outline.document-text'),
+            MenuItem::make(__('Slider'), new SliderResource(), 'heroicons.outline.user-group'),
+
+            // MenuItem::make(__('Pages'), new PageResource(), 'heroicons.outline.document-text'),
 
             // MenuItem::make(__('Menu'), new PageResource(), 'heroicons.outline.bars-3'),
 

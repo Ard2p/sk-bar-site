@@ -47,6 +47,20 @@ class SeoResource extends ModelResource
 
     protected int $itemsPerPage = 20;
 
+    public function gateAbilities(): array
+    {
+        return [
+            'viewAny',
+            'view',
+            'create',
+            'update',
+            'delete',
+            'massDelete',
+            // 'restore',
+            // 'forceDelete',
+        ];
+    }
+
     public function fields(): array
     {
         return [

@@ -34,6 +34,20 @@ class UserResource extends ModelResource
         return trans('Users');
     }
 
+    public function gateAbilities(): array
+    {
+        return [
+            'viewAny',
+            'view',
+            'create',
+            'update',
+            'delete',
+            'massDelete',
+            // 'restore',
+            // 'forceDelete',
+        ];
+    }
+
     public function fields(): array
     {
         return [

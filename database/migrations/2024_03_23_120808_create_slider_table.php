@@ -11,12 +11,14 @@ return new class extends Migration
      */
     public function up(): void
     {
-        Schema::create('seo', function (Blueprint $table) {
+        Schema::create('slider', function (Blueprint $table) {
             $table->id();
-            $table->string('url')->nullable();
-            $table->string('model_id');
-            $table->string('model_type');
-            $table->json('seo')->nullable();
+            $table->string('name');
+            $table->string('image');
+            $table->dateTime('date_from')->nullable();
+            $table->dateTime('date_to')->nullable();
+            $table->string('status');
+            $table->string('link')->nullable();
             $table->timestamps();
         });
     }
@@ -26,6 +28,6 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('seo');
+        Schema::dropIfExists('slider');
     }
 };

@@ -12,7 +12,8 @@
         "laravel/tinker": "^2.9",
         "moonshine/layouts-field": "^0.0.1",
         "moonshine/moonshine": "^2.10",
-        "sweet1s/moonshine-roles-permissions": "^2.2"
+        "sweet1s/moonshine-roles-permissions": "^2.2",
+        "vkcom/vk-php-sdk": "^5.131"
     },
     "require-dev": {
         "fakerphp/faker": "^1.23",

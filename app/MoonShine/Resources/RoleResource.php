@@ -27,6 +27,20 @@ class RoleResource extends ModelResource
         return trans('Permissions');
     }
 
+    public function gateAbilities(): array
+    {
+        return [
+            'viewAny',
+            'view',
+            'create',
+            'update',
+            'delete',
+            'massDelete',
+            // 'restore',
+            // 'forceDelete',
+        ];
+    }
+
     public function fields(): array
     {
         return [
