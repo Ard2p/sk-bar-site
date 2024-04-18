@@ -25,8 +25,7 @@ return new class extends Migration
             $table->string('age_limit');
             $table->bigInteger('place_id')->unsigned();
             $table->bigInteger('genre_id')->unsigned()->nullable();
-            // $table->string('adress');
-            // $table->bigInteger('city_id');
+            $table->string('tickets_link')->nullable();
             $table->timestamps();
         });
     }

@@ -19,6 +19,6 @@ class Place extends Model
 
     public function events()
     {
-        return $this->belongsTo(Event::class);
+        return $this->hasMany(Event::class);
     }
 }

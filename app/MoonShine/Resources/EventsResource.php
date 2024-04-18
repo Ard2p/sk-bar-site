@@ -6,17 +6,13 @@ namespace App\MoonShine\Resources;
 
 use App\Models\Seo;
 use App\Models\Event;
-
-use App\Models\Place;
 use MoonShine\Fields\ID;
 use MoonShine\Fields\Date;
 use MoonShine\Fields\Enum;
-use MoonShine\Fields\Json;
-use MoonShine\Fields\Slug;
 use MoonShine\Fields\Text;
 use App\Enums\AgeLimitEnum;
 use MoonShine\Fields\Image;
-use MoonShine\Fields\Select;
+use MoonShine\Fields\Fields;
 use MoonShine\Fields\TinyMce;
 use App\Enums\EventStatusEnum;
 use MoonShine\Decorations\Tab;
@@ -28,11 +24,8 @@ use MoonShine\Decorations\Tabs;
 use MoonShine\Decorations\Block;
 use MoonShine\Decorations\Column;
 use MoonShine\Components\Components;
-use MoonShine\Layouts\Fields\Layouts;
 use MoonShine\Resources\ModelResource;
 use Illuminate\Database\Eloquent\Model;
-use App\MoonShine\Resources\SeoResource;
-use MoonShine\Fields\Relationships\MorphTo;
 use MoonShine\Fields\Relationships\MorphOne;
 use MoonShine\Fields\Relationships\BelongsTo;
 use Sweet1s\MoonshineRBAC\Traits\WithRolePermissions;
@@ -99,15 +92,26 @@ class EventsResource extends ModelResource
                                 //     ]),
                             ]),
 
-                            Tab::make('Билеты', []),
+                            Tab::make('Билеты', [
+                                Text::make(__('Tickets link'), 'tickets_link'),
+                            ]),
 
-                            Tab::make('Seo', [
-                                // MorphOne::make('Seo', 'seo')
-                                // ->types([
-                                //     Seo::class => 'url',
-                                //     Event::class => 'name',
-                                //     Place::class => 'name'
-                                // ])
+                            Tab::make(__('Seo'), [
+                                Template::make(column: 'seo')
+                                    ->changeFill(fn (Event $data) => $data->seo)
+                                    ->changePreview(fn ($data) => $data?->id ?? '-')
+                                    ->fields((new SeoResource())->getMorphFields())
+                                    ->changeRender(function (?Seo $data, Template $field) {
+                                        $fields = $field->preparedFields();
+                                        $fields->fill($data?->toArray() ?? [], $data ?? new Seo());
+                                        return Components::make($fields);
+                                    })
+                                    ->onAfterApply(function (Event $item, $value) {
+                                        $item->seo()->updateOrCreate([
+                                            'id' => $value['id']
+                                        ], $value);
+                                        return $item;
+                                    }),
                             ]),
                         ]),
                     ])

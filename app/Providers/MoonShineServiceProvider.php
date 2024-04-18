@@ -6,6 +6,8 @@ namespace App\Providers;
 
 use MoonShine\Menu\MenuItem;
 use MoonShine\Menu\MenuGroup;
+use App\MoonShine\Resources\SeoResource;
+use App\MoonShine\Resources\PageResource;
 use App\MoonShine\Resources\RoleResource;
 use App\MoonShine\Resources\UserResource;
 use App\MoonShine\Resources\PlaceResource;
@@ -18,7 +20,9 @@ class MoonShineServiceProvider extends MoonShineApplicationServiceProvider
 {
     protected function resources(): array
     {
-        return [];
+        return [
+            // new PageResource()
+        ];
     }
 
     protected function pages(): array
@@ -29,19 +33,30 @@ class MoonShineServiceProvider extends MoonShineApplicationServiceProvider
     protected function menu(): array
     {
         return MenuRBAC::menu(
+
+            MenuItem::make(__('Home site'), '/', 'heroicons.outline.globe-alt'),
+
+            MenuItem::make(__('Dashboard'), '/admin', 'heroicons.outline.presentation-chart-line'),
+
             MenuItem::make(__('Events'), new EventsResource(), 'heroicons.outline.star'),
+
+            MenuItem::make(__('Pages'), new PageResource(), 'heroicons.outline.document-text'),
+
+            // MenuItem::make(__('Menu'), new PageResource(), 'heroicons.outline.bars-3'),
+
+            MenuItem::make(__('Users'), new UserResource(), 'heroicons.outline.user-group'),
+
+            MenuItem::make(__('Permissions'), new RoleResource(), 'heroicons.outline.shield-exclamation'),
+
+            MenuItem::make(__('Seo'), new SeoResource(), 'heroicons.outline.magnifying-glass'),
 
             MenuItem::make(__('Places event'), new PlaceResource(), 'heroicons.outline.map-pin'),
 
-            // MenuGroup::make('System', [
-            //     MenuItem::make('Admins', new UserResource(), 'heroicons.outline.users'),
-            //     MenuItem::make('Roles', new RoleResource(), 'heroicons.outline.shield-exclamation'),
-            // ], 'heroicons.outline.user-group'),
-
-            MenuItem::make(__('Users'), new UserResource(), 'heroicons.outline.user-group'),
-            MenuItem::make(__('Permissions'), new RoleResource(), 'heroicons.outline.shield-exclamation'),
+            // MenuItem::make(__('Home'), new PageResource(), 'heroicons.outline.home'),
 
             // MenuItem::make(__('Settings'), new SettingResource()),
+
+            // MenuGroup::make(__('System'), [], 'heroicons.outline.user-group'),
         );
     }
 

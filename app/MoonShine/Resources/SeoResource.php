@@ -51,20 +51,25 @@ class SeoResource extends ModelResource
     {
         return [
             Grid::make([
-
                 Column::make([
                     Block::make([
-
-                        ID::make()->sortable(),
-
+                        ID::make()->sortable()->hideOnIndex(),
                         Text::make(__('Url'), 'url'),
-
-                        Text::make(__('Seo'), 'seo')
-                            ->hideOnIndex(),
-
+                        Text::make(__('Seo'), 'seo')->hideOnIndex(),
                     ])
                 ])
-            ]),
+            ])
+        ];
+    }
+
+    public function getMorphFields(): array
+    {
+        return [
+            Column::make([
+                ID::make(),
+                Text::make(__('Url'), 'url'),
+                Text::make(__('Seo'), 'seo')
+            ])
         ];
     }
 

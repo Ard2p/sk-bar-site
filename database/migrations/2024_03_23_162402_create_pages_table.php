@@ -16,7 +16,7 @@ return new class extends Migration
             $table->string('name');
             $table->string('slug');
             $table->string('status');
-            $table->bigInteger('parent_id')->unsigned();
+            $table->bigInteger('parent_id')->unsigned()->nullable();
             $table->text('content');
             $table->timestamps();
         });

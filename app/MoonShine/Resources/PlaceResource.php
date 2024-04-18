@@ -7,28 +7,14 @@ namespace App\MoonShine\Resources;
 use App\Models\Place;
 use MoonShine\Fields\ID;
 
-use MoonShine\Pages\Page;
-use MoonShine\Fields\Date;
 use MoonShine\Fields\Text;
-use MoonShine\Fields\Image;
-use MoonShine\Fields\Select;
-use MoonShine\MoonShineAuth;
+use MoonShine\Fields\Number;
 use MoonShine\Fields\TinyMce;
-use MoonShine\Decorations\Tab;
-use MoonShine\Fields\Password;
-use MoonShine\Fields\Switcher;
 use MoonShine\Decorations\Grid;
-use MoonShine\Decorations\Tabs;
 use MoonShine\Decorations\Block;
 use MoonShine\Decorations\Column;
-use MoonShine\Decorations\Heading;
-use MoonShine\TypeCasts\ModelCast;
-use MoonShine\Fields\PasswordRepeat;
-use MoonShine\Components\FormBuilder;
 use MoonShine\Resources\ModelResource;
 use Illuminate\Database\Eloquent\Model;
-use MoonShine\Components\FlexibleRender;
-use MoonShine\Http\Controllers\ProfileController;
 use Sweet1s\MoonshineRBAC\Traits\WithRolePermissions;
 
 /**
@@ -50,28 +36,15 @@ class PlaceResource extends ModelResource
     {
         return [
             Grid::make([
-
                 Column::make([
                     Block::make([
 
                         ID::make()->sortable(),
-
-                        Text::make(__('Title'), 'name')
-                            ->required()
-                            ->sortable(),
-
-                        Text::make(__('City'), 'city')
-                            ->required()
-                            ->sortable(),
-
-                        Text::make(__('Adress'), 'adress')
-                            ->required(),
-
-                        TinyMce::make(__('Content'), 'content')
-                            ->hideOnIndex(),
-
-                        Text::make(__('Map'), 'map')
-                            ->hideOnIndex(),
+                        Text::make(__('Title'), 'name')->required()->sortable(),
+                        Text::make(__('City'), 'city')->required()->sortable(),
+                        Text::make(__('Adress'), 'adress')->required(),
+                        TinyMce::make(__('Content'), 'content')->hideOnIndex(),
+                        Text::make(__('Map'), 'map')->hideOnIndex(),
 
                     ])
                 ])

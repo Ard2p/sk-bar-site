@@ -11,7 +11,7 @@ class GeneratePermissions extends Command
      *
      * @var string
      */
-    protected $signature = 'app:generate-permissions';
+    protected $signature = 'app:permissions';
 
     /**
      * The console command description.
@@ -25,19 +25,22 @@ class GeneratePermissions extends Command
      */
     public function handle(): int
     {
-        MenuRBAC::menu();
-        $this->resourceName = $this->argument('resourceName');
+        // MenuRBAC::menu();
 
-        foreach (Abilities::getAbilities() as $ability) {
-            config('permission.models.permission')::updateOrCreate([
-                'name' => "$this->resourceName.$ability",
-                'guard_name' => config('moonshine.auth.guard')
-            ]);
+        $resources = moonshine()->getResources();
+
+        foreach ($resources as $resource) {
+            $resourceName = class_basename($resource::class);
+            foreach ($resource->gateAbilities() as $ability) {
+                config('permission.models.permission')::updateOrCreate([
+                    'name' => "$resourceName.$ability",
+                    'guard_name' => config('moonshine.auth.guard')
+                ]);
+            }
+            $this->info("Permissions created successfully for $resourceName.");
         }
 
         app()['cache']->forget('spatie.permission.cache');
-
-        $this->info("Permissions created successfully for $this->resourceName.");
 
         return 0;
     }

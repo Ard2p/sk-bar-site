@@ -25,9 +25,8 @@ class Event extends Model
         'status',
         'age_limit',
         'place_id',
-        'genre_id'
-        // 'adress',
-        // 'city_id'
+        'genre_id',
+        'tickets_link'
     ];
 
     protected $with = ['place'];

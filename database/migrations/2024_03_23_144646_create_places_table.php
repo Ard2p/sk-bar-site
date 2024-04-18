@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('adress');
             $table->text('content')->nullable();
             $table->string('map')->nullable();
+            $table->timestamps();
         });
     }
 
