@@ -47,7 +47,7 @@
 
         <div class="row mb-5">
 
-            <div class="col-lg-8">
+            <div class="col-lg-8 order-lg-1 order-2">
 
                 {{-- <div class="row mb-5">
 
@@ -69,7 +69,7 @@
 
             </div>
 
-            <div class="col-lg-4">
+            <div class="col-lg-4 order-1 order-lg-2 mb-4 mb-lg-0">
 
                 <div class="row mb-3">
                     <img src="{{ asset('storage/' . $event->image) }}" class="object-fit-cover">
