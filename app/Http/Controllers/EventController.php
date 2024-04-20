@@ -15,6 +15,7 @@ class EventController extends Controller
 
     public function show(Event $event)
     {
+        // seo()->title('Im page title');
         return view('events.show', [
             'event' => $event,
             'recommended_events' => Event::active()->actual()->recommendation()->limit(4)->get()

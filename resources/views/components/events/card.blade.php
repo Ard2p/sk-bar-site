@@ -1,3 +1,5 @@
+@props(['item'])
+
 <div class="d-flex h-100 flex-column shadow-sm rounded">
 
     <div class="ratio ratio-5x4">

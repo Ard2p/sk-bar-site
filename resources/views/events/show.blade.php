@@ -3,36 +3,6 @@
 
         <x-caption :sub="$event->caption">{{ $event->name }}</x-caption>
 
-        {{-- <div class="row">
-
-            <div id="carouselMain" class="carousel slide carousel-fade" data-bs-ride="carousel">
-
-                <div class="carousel-inner ratio ratio-21x9 rounded">
-
-                    <div class="carousel-item active" data-bs-interval="10000">
-                        <img src="{{ asset('storage/' . $event->banner) }}" class="d-block w-100">
-                    </div>
-
-                    <div class="carousel-item" data-bs-interval="10000">
-                        <img src="{{ asset('storage/' . $event->banner) }}" class="d-block w-100">
-                    </div>
-                </div>
-
-                <button class="carousel-control-prev h-50 my-auto" type="button" data-bs-target="#carouselMain"
-                    data-bs-slide="prev">
-                    <i class="bi bi-chevron-compact-left text-primary fs-1"></i>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-
-                <button class="carousel-control-next h-50 my-auto" type="button" data-bs-target="#carouselMain"
-                    data-bs-slide="next">
-                    <i class="bi bi-chevron-compact-right text-primary fs-1"></i>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-
-        </div> --}}
-
         <div class="row mb-5">
 
             <div class="col-auto text-primary">
@@ -171,13 +141,15 @@
 
     </div>
 
-    <div class="container mb-5">
+    @if ($recommended_events->count())
+        <div class="container mb-5">
 
-        <x-caption sub="Лучшее только в Sk Bar">Рекомендованные концерты</x-caption>
+            <x-caption sub="Лучшее только в Sk Bar">Рекомендованные концерты</x-caption>
 
-        @include('events.parts.list', ['col_lg' => 4, 'col_md' => 2, 'items' => $recommended_events])
+            <x-events.list :items="$recommended_events" />
 
-    </div>
+        </div>
+    @endif
 
     <script>
         window.addEventListener('load', function() {

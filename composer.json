@@ -10,6 +10,7 @@
         "laravel/sanctum": "^4.0",
         "laravel/socialite": "^5.12",
         "laravel/tinker": "^2.9",
+        "lee-to/laravel-seo-by-url": "^1.0",
         "moonshine/layouts-field": "^0.0.1",
         "moonshine/moonshine": "^2.10",
         "sweet1s/moonshine-roles-permissions": "^2.2",

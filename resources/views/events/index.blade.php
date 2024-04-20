@@ -22,7 +22,9 @@
 
         </div> --}}
 
-        @include('events.parts.list', ['col_lg' => 4, 'col_md' => 2, 'items' => $events])
+        @if ($events->count())
+            <x-events.list :items="$events" />
+        @endif
 
         {{-- @dd($events) --}}
 

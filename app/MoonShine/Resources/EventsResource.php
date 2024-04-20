@@ -107,9 +107,11 @@ class EventsResource extends ModelResource
                                         return Components::make($fields);
                                     })
                                     ->onAfterApply(function (Event $item, $value) {
-                                        $item->seo()->updateOrCreate([
-                                            'id' => $value['id']
-                                        ], $value);
+                                        if($value['url'] && $value['title']){
+                                            $item->seo()->updateOrCreate([
+                                                'id' => $value['id']
+                                            ], $value);
+                                        }
                                         return $item;
                                     }),
                             ]),
