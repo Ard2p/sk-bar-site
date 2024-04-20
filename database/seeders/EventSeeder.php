@@ -22,10 +22,6 @@ class EventSeeder extends Seeder
             'https://static.tildacdn.com/tild3062-6464-4063-a266-386565343764/_WhatsApp_2024-03-01.jpg',
             'https://static.tildacdn.com/tild3466-3261-4537-a636-643438626463/_WhatsApp_2024-03-29.jpg',
             'https://static.tildacdn.com/tild3138-3365-4230-b338-666233666236/ac51572d-a069-499f-b.jpeg',
-            // '',
-            // '',
-            // '',
-            // '',
         ];
         $banners = [
             'https://static.tildacdn.com/tild6662-3336-4837-b239-373830656561/_WhatsApp_2024-03-15.jpg',
@@ -33,10 +29,6 @@ class EventSeeder extends Seeder
             'https://static.tildacdn.com/tild3730-3030-4266-b539-623761313962/_WhatsApp_2024-03-01.jpg',
             'https://static.tildacdn.com/tild3563-3061-4266-a233-623163366263/_WhatsApp_2024-03-29.jpg',
             'https://static.tildacdn.com/tild6266-3937-4132-b933-383239356461/WhatsApp_Image_2023-.jpeg',
-            // '',
-            // '',
-            // '',
-            // '',
         ];
 
         foreach ($images as $key => $image) {
@@ -57,6 +49,7 @@ class EventSeeder extends Seeder
                 'status' => 'publish',
                 'age_limit' => '16',
                 'place_id' => 1,
+                'tickets_link' => null,
                 // 'genre_id'
             ], [
                 'name' => 'BIG Mama - Рок Весна!',
@@ -70,6 +63,7 @@ class EventSeeder extends Seeder
                 'status' => 'publish',
                 'age_limit' => '16',
                 'place_id' => 1,
+                'tickets_link' => 'https://iframeab-pre7093.intickets.ru/seance/16566139',
                 // 'genre_id'
             ], [
                 'name' => 'Бригадный Подряд',
@@ -83,6 +77,7 @@ class EventSeeder extends Seeder
                 'status' => 'publish',
                 'age_limit' => '16',
                 'place_id' => 1,
+                'tickets_link' => 'https://iframeab-pre7093.intickets.ru/seance/14753211',
                 // 'genre_id'
             ], [
                 'name' => 'Трибьют Шоу - Руки Вверх & Звери',
@@ -96,6 +91,7 @@ class EventSeeder extends Seeder
                 'status' => 'publish',
                 'age_limit' => '16',
                 'place_id' => 1,
+                'tickets_link' => 'https://iframeab-pre7093.intickets.ru/seance/17671705',
                 // 'genre_id'
             ], [
                 'name' => 'План Ломоносова',
@@ -109,6 +105,7 @@ class EventSeeder extends Seeder
                 'status' => 'publish',
                 'age_limit' => '16',
                 'place_id' => 1,
+                'tickets_link' => 'https://iframeab-pre7093.intickets.ru/seance/14256508/',
                 // 'genre_id'
             ]
 
