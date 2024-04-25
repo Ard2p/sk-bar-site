@@ -151,23 +151,30 @@
         </div>
     @endif
 
-    <script>
-        window.addEventListener('load', function() {
-            const url = new URL(document.location);
-            const searchParams = url.searchParams;
-            if (searchParams.has('buytikets')) {
-                searchParams.delete('buytikets');
-                window.history.pushState({}, '', url.toString());
-                const elementModal = document.getElementById('buyTikets')
-                if (elementModal.classList.contains('modal')) {
-                    const myModal = new window.bootstrap.Modal('#buyTikets')
-                    myModal.show()
-                } else {
-                    const element = document.getElementById('buyTiketsHeader')
-                    element.scrollIntoView()
+    @push('metrics')
+
+        @if ($event->metrics)
+            {!! $event->metrics !!}
+        @endif
+
+        <script>
+            window.addEventListener('load', function() {
+                const url = new URL(document.location);
+                const searchParams = url.searchParams;
+                if (searchParams.has('buytikets')) {
+                    searchParams.delete('buytikets');
+                    window.history.pushState({}, '', url.toString());
+                    const elementModal = document.getElementById('buyTikets')
+                    if (elementModal.classList.contains('modal')) {
+                        const myModal = new window.bootstrap.Modal('#buyTikets')
+                        myModal.show()
+                    } else {
+                        const element = document.getElementById('buyTiketsHeader')
+                        element.scrollIntoView()
+                    }
                 }
-            }
-        })
-    </script>
+            })
+        </script>
+    @endpush
 
 </x-app-layout>

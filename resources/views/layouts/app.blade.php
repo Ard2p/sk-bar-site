@@ -28,6 +28,8 @@
 
     @include('layouts.footer')
 
+    @stack('metrics')
+
 </body>
 
 </html>

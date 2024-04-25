@@ -25,6 +25,8 @@
         {{ $slot }}
     </main>
 
+    @stack('metrics')
+
 </body>
 
 </html>
