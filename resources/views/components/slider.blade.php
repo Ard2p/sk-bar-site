@@ -24,7 +24,7 @@
 
         @foreach ($items as $slide)
             @if ($slide->link)
-                <a href="{{ $slide->link }}" target="_blank">
+                <a href="{{ $slide->link }}">
             @endif
 
             <div class="carousel-item active">

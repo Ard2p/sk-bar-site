@@ -41,7 +41,7 @@
                     <div>чт-вс: 17:00 - 02:00</div>
                 </div>
                 {{-- <div class="navbar"> --}}
-                    {{-- <ul class="nav flex-column navbar-nav">
+                {{-- <ul class="nav flex-column navbar-nav">
                         <li class="nav-item mb-2">
                             <a href="/" class="nav-link p-0">Карьера</a>
                         </li>
@@ -50,7 +50,7 @@
                         </li>
                     </ul> --}}
 
-                    {{-- <ul class="nav flex-column navbar-nav">
+                {{-- <ul class="nav flex-column navbar-nav">
                         <li class="nav-item mb-2">
                             <a href="/" class="nav-link p-0">Политика обработки персональных данных</a>
                         </li>
@@ -62,10 +62,11 @@
             <div class="col-12 col-md-auto col-lg-3 text-center text-lg-start">
                 <p class="fw-normal">Социальные сети</p>
 
-                <ul class="nav justify-content-lg-start justify-content-center align-items-center list-unstyled d-flex mb-4">
+                <ul
+                    class="nav justify-content-lg-start justify-content-center align-items-center list-unstyled d-flex mb-4">
 
                     <li>
-                        <a href="/" target="_blank" class="link-body-emphasis">
+                        <a href="https://vk.com/skbar21" target="_blank" class="link-body-emphasis">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 101 100"
                                 fill="currentColor" role="img" path="i.vk" componentname="icon">
                                 <g clip-path="url(#clip0_2_16)">
@@ -83,7 +84,7 @@
                     </li>
 
                     <li class="ms-3">
-                        <a href="/" target="_blank" class="link-body-emphasis">
+                        <a href="https://t.me/skrockbar" target="_blank" class="link-body-emphasis">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor"
                                 class="bi bi-telegram" viewBox="0 0 16 16" role="img" path="bs.telegram"
                                 componentname="icon">
