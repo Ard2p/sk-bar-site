@@ -13,7 +13,7 @@
 
             </div>
 
-            <div class="col-4 col-md-auto col-lg-3">
+            <div class="col-5 col-md-auto col-lg-3">
                 <p class="fw-normal">SK Bar Concert</p>
 
                 <div class="navbar">
@@ -31,14 +31,14 @@
                 </div>
             </div>
 
-            <div class="col-4 col-md-auto col-lg-3">
+            <div class="col-5 col-md-auto col-lg-3">
                 {{-- <p class="fw-normal">Взаимодействие</p> --}}
                 <p class="fw-normal">Контакты</p>
 
-                <div class="text-muted">
-                    <div>Чебоксары, Карла Маркса 47</div>
-                    <div>+7 835 236 26 26</div>
-                    <div>чт-вс: 17:00 - 02:00</div>
+                <div class="text-muted small">
+                    <div><span class="text-primary fw-bold">SK Bar,</span> Чебоксары,<br> Карла Маркса 47</div>
+                    <div class="text-primary fw-bold">+7 835 236 26 26</div>
+                    <div>чт-вс: <span class="text-primary fw-bold">17:00 - 02:00</span></div>
                 </div>
                 {{-- <div class="navbar"> --}}
                 {{-- <ul class="nav flex-column navbar-nav">
