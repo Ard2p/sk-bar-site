@@ -7,8 +7,10 @@ namespace App\MoonShine\Resources;
 use App\Models\Seo;
 use App\Models\Event;
 use MoonShine\Fields\ID;
+use MoonShine\Fields\Code;
 use MoonShine\Fields\Date;
 use MoonShine\Fields\Enum;
+use MoonShine\Fields\Json;
 use MoonShine\Fields\Text;
 use App\Enums\AgeLimitEnum;
 use MoonShine\Fields\Image;
@@ -17,6 +19,7 @@ use App\Enums\EventStatusEnum;
 use MoonShine\Decorations\Tab;
 use MoonShine\Fields\Switcher;
 use MoonShine\Fields\Template;
+use MoonShine\Fields\Textarea;
 use MoonShine\Decorations\Flex;
 use MoonShine\Decorations\Grid;
 use MoonShine\Decorations\Tabs;
@@ -26,6 +29,7 @@ use MoonShine\QueryTags\QueryTag;
 use MoonShine\Components\Components;
 use MoonShine\Resources\ModelResource;
 use Illuminate\Database\Eloquent\Model;
+use MoonShine\Components\FlexibleRender;
 use Illuminate\Database\Eloquent\Builder;
 use MoonShine\Fields\Relationships\BelongsTo;
 use Sweet1s\MoonshineRBAC\Traits\WithRolePermissions;
@@ -114,6 +118,17 @@ class EventsResource extends ModelResource
                                 Text::make(__('Tickets link'), 'tickets_link'),
                             ]),
 
+                            Tab::make('Метрика', [
+                                FlexibleRender::make(<<<'HTML'
+                                    <style>.height-code {min-height: 654px;}</style>
+                                HTML),
+
+                                Code::make('Код для вставки', 'metrics')
+                                    ->language('js')
+                                    ->lineNumbers()
+                                    ->customAttributes(['class' => 'height-code']),
+                            ]),
+
                             Tab::make(__('Seo'), [
                                 Template::make(column: 'seo')
                                     ->changeFill(fn (Event $data) => $data->seo)
@@ -134,6 +149,7 @@ class EventsResource extends ModelResource
                                         return $item;
                                     }),
                             ]),
+
                         ]),
                     ])
                 ])->columnSpan(8),
@@ -143,26 +159,27 @@ class EventsResource extends ModelResource
                         Tabs::make([
 
                             Tab::make('Параметры', [
-                                Flex::make([
-                                    Enum::make(__('Status'), 'status')
-                                        ->attach(EventStatusEnum::class)
-                                        ->default(EventStatusEnum::DRAFT->name)
-                                        ->placeholder('-')
-                                        ->nullable()
-                                        ->required(),
 
-                                    Enum::make(__('Age limit'), 'age_limit')
-                                        ->attach(AgeLimitEnum::class)
-                                        ->default(AgeLimitEnum::AGE_0->name)
-                                        ->placeholder('-')
-                                        ->nullable()
-                                        ->required(),
-                                ]),
+                                // Flex::make([
+                                Enum::make(__('Status'), 'status')
+                                    ->attach(EventStatusEnum::class)
+                                    ->default(EventStatusEnum::DRAFT->name)
+                                    ->placeholder('-')
+                                    ->nullable()
+                                    ->required(),
 
-                                Flex::make([
-                                    Date::make(__('Event start'), 'event_start')->withTime()->required(),
-                                    Date::make(__('Guest start'), 'guest_start')->withTime()->required(),
-                                ]),
+                                Enum::make(__('Age limit'), 'age_limit')
+                                    ->attach(AgeLimitEnum::class)
+                                    ->default(AgeLimitEnum::AGE_0->name)
+                                    ->placeholder('-')
+                                    ->nullable()
+                                    ->required(),
+                                // ]),
+
+                                // Flex::make([
+                                Date::make(__('Event start'), 'event_start')->withTime()->required(),
+                                Date::make(__('Guest start'), 'guest_start')->withTime()->required(),
+                                // ]),
 
                                 BelongsTo::make(__('Place event'), 'place', fn ($item) => "$item->name, $item->city")
                                     ->searchable()

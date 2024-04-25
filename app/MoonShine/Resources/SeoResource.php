@@ -44,6 +44,17 @@ class SeoResource extends ModelResource
             // 'forceDelete',
         ];
     }
+
+    protected function resolveOrder(): static
+    {
+        if (($sort = request('sort')) && is_string($sort)) {
+            return parent::resolveOrder();
+        }
+
+        $this->query()->orderBy('url', 'ASC');
+        return $this;
+    }
+
     public function fields(): array
     {
         return [
@@ -118,8 +129,8 @@ class SeoResource extends ModelResource
     public function indexButtons(): array
     {
         return [
-            ActionButton::make('Go to', static fn (Seo $item) => $item->url)
-                ->icon('heroicons.outline.paper-clip')
+            ActionButton::make('Сайт', static fn (Seo $item) => $item->url)
+                ->icon('heroicons.outline.globe-alt')
         ];
     }
 }
