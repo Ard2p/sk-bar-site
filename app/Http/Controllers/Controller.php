@@ -22,8 +22,10 @@ abstract class Controller
         if(seo()->meta()->description())
             $og['description'] = seo()->meta()->description();
 
+        $isModel = false;
         foreach ($parameters as $parameter) {
             if ($parameter instanceof Model) {
+                $isModel = true;
                 // seo()->title('SK Bar | ' . ($seo->title ?? $parameter->title ?? $parameter->name));
 
                 seo()->title($seo->title ?? $parameter->title ?? $parameter->name);
@@ -32,6 +34,10 @@ abstract class Controller
                 if($parameter->image || $parameter->photo)
                     $og['image'] = asset('storage/' . ($parameter->image ?? $parameter->photo));
             }
+        }
+
+        if (!$isModel) {
+            $og['image'] = asset('/android-chrome-192x192.png');
         }
 
         seo()->og($og);

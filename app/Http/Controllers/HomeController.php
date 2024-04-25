@@ -39,8 +39,6 @@ class HomeController extends Controller
             });
         });
 
-        // dd(Slider::active()->get());
-
         return view('home', [
             'vk_albums' => $vkAlbums,
             'slider' => Slider::active()->period()->get(),
