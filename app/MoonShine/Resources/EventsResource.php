@@ -12,7 +12,6 @@ use MoonShine\Fields\Enum;
 use MoonShine\Fields\Text;
 use App\Enums\AgeLimitEnum;
 use MoonShine\Fields\Image;
-use MoonShine\Fields\Fields;
 use MoonShine\Fields\TinyMce;
 use App\Enums\EventStatusEnum;
 use MoonShine\Decorations\Tab;
@@ -23,10 +22,11 @@ use MoonShine\Decorations\Grid;
 use MoonShine\Decorations\Tabs;
 use MoonShine\Decorations\Block;
 use MoonShine\Decorations\Column;
+use MoonShine\QueryTags\QueryTag;
 use MoonShine\Components\Components;
 use MoonShine\Resources\ModelResource;
 use Illuminate\Database\Eloquent\Model;
-use MoonShine\Fields\Relationships\MorphOne;
+use Illuminate\Database\Eloquent\Builder;
 use MoonShine\Fields\Relationships\BelongsTo;
 use Sweet1s\MoonshineRBAC\Traits\WithRolePermissions;
 
@@ -57,6 +57,24 @@ class EventsResource extends ModelResource
             // 'restore',
             // 'forceDelete',
         ];
+    }
+
+    public function queryTags(): array
+    {
+        return [
+            QueryTag::make('Актуальные', fn (Builder $query) => $query->actual())->default(),
+            QueryTag::make('Архив', fn (Builder $query) => $query->arhive())
+        ];
+    }
+
+    protected function resolveOrder(): static
+    {
+        if (request('query-tag') == 'aktualnye') {
+            $this->query()->orderBy('event_start', 'ASC');
+            return $this;
+        }
+
+        return parent::resolveOrder();
     }
 
     public function formFields(): array
@@ -107,7 +125,8 @@ class EventsResource extends ModelResource
                                         return Components::make($fields);
                                     })
                                     ->onAfterApply(function (Event $item, $value) {
-                                        if($value['url'] && $value['title']){
+                                        if ($value['title']) {
+                                            $value['url'] = route('events.show', ['event' => $item->id]);
                                             $item->seo()->updateOrCreate([
                                                 'id' => $value['id']
                                             ], $value);
@@ -185,12 +204,15 @@ class EventsResource extends ModelResource
         return [
             ID::make()->sortable(),
             Image::make(__('Image'), 'image'),
-            Text::make(__('Title'), 'name')->sortable(),
-            Enum::make(__('Age'), 'age_limit')->attach(AgeLimitEnum::class)->sortable(),
-            Enum::make(__('Status'), 'status')->attach(EventStatusEnum::class)->sortable(),
+            // StackFields::make('Время проведения')->fields([
+            //     Date::make(__('Guest start'), 'guest_start')->format('d.m H.i')->sortable(),
+            //     Date::make(__('Event start'), 'event_start')->format('d.m H.i')->sortable(),
+            // ])->sortable(),
             Date::make(__('Event start'), 'event_start')->format('d.m H.i')->sortable(),
-            Date::make(__('Guest start'), 'guest_start')->format('d.m H.i')->sortable(),
+            Text::make(__('Title'), 'name')->sortable(),
+            Enum::make(__('Status'), 'status')->attach(EventStatusEnum::class)->sortable(),
             BelongsTo::make(__('Place event'), 'place', fn ($item) => "$item->name, $item->city")->sortable(),
+            Enum::make(__('Age'), 'age_limit')->attach(AgeLimitEnum::class)->sortable(),
             Switcher::make('⭐️', 'recommendation')->sortable(),
         ];
     }

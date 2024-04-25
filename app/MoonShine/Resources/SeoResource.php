@@ -48,13 +48,11 @@ class SeoResource extends ModelResource
     {
         return [
             Block::make([
-                ID::make()
-                    ->showOnExport()
-                    ->useOnImport()
-                    ->sortable(),
+                ID::make()->hideOnAll(),
 
                 Text::make('Url')
                     ->required()
+                    ->sortable()
                     ->showOnExport()
                     ->useOnImport(),
 
@@ -83,7 +81,7 @@ class SeoResource extends ModelResource
         return [
             Column::make([
                 ID::make(),
-                Text::make('Url'),
+                // Text::make('Url')->readonly(),
                 Text::make('Title'),
                 Text::make('Description'),
                 Text::make('Keywords'),

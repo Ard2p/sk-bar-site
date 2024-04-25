@@ -6,7 +6,6 @@ use Carbon\Carbon;
 use App\Models\Seo;
 use App\Enums\EventStatusEnum;
 use Illuminate\Database\Eloquent\Model;
-use MoonShine\Layouts\Casts\LayoutsCast;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 
@@ -64,5 +63,10 @@ class Event extends Model
     public function scopeActual(Builder $query): void
     {
         $query->whereDate('event_start', '>=', Carbon::now()->toDateString());
+    }
+
+    public function scopeArhive(Builder $query): void
+    {
+        $query->whereDate('event_start', '<=', Carbon::now()->toDateString());
     }
 }
