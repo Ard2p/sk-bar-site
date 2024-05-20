@@ -66,14 +66,15 @@ class EventsResource extends ModelResource
     public function queryTags(): array
     {
         return [
-            QueryTag::make('Актуальные', fn (Builder $query) => $query->actual())->default(),
-            QueryTag::make('Архив', fn (Builder $query) => $query->arhive())
+            QueryTag::make('Актуальные', fn (Builder $query) => $query->actual())->alias('actual')->default(),
+            QueryTag::make('Архив', fn (Builder $query) => $query->arhive())->alias('arhive'),
+            QueryTag::make('Все', fn (Builder $query) => $query)->alias('all')
         ];
     }
 
     protected function resolveOrder(): static
     {
-        if (request('query-tag') == 'aktualnye') {
+        if (request('query-tag') == 'actual') {
             $this->query()->orderBy('event_start', 'ASC');
             return $this;
         }

@@ -15,6 +15,7 @@ class Event extends Model
 
     protected $fillable = [
         'name',
+        'slug',
         'image',
         'banner',
         'gallery',
@@ -38,6 +39,13 @@ class Event extends Model
             'event_start' => 'datetime',
             // 'gallery' => LayoutsCast::class,
         ];
+    }
+
+    public function resolveRouteBinding($value, $field = null)
+    {
+        return is_numeric($value)
+            ? $this->where('id', $value)->firstOrFail()
+            : $this->where('slug', $value)->firstOrFail();
     }
 
     public function place()
