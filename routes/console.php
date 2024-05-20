@@ -6,8 +6,6 @@ use App\Jobs\VKAlbumsUpdate;
 Schedule::call(function () {
     $vkService = new VkService();
 
-    $vkService->clearAlbums('-64982861');
-
     $albums = $vkService->getAlbums('-64982861');
     $albumsCache = $vkService->getCacheAlbums('-64982861');
 
@@ -18,7 +16,7 @@ Schedule::call(function () {
     });
 
     $vkService->setCacheAlbums('-64982861', $albums);
-})->hourly();
+})->name('VKAlbumsUpdate')->hourly();
 
 
-Schedule::command('queue:work --max-time=300')->everyMinute()->withoutOverlapping();
+Schedule::command('queue:work --max-time=300')->everyFiveMinutes();
