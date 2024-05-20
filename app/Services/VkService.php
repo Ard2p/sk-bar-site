@@ -30,6 +30,7 @@ class VkService
         return $this->parse(collect($this->api->photos()->get($this->token, [
             'owner_id' => $ownerId,
             'album_id' => $albumId,
+            'count' => 1000,
             'need_covers' => 1,
             'photo_sizes' => 1
         ])['items']));
