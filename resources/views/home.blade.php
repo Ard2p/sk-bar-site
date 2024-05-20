@@ -32,7 +32,7 @@
         </div>
     @endif
 
-    @if ($vk_albums->count())
+    @if ($vk_albums?->count())
         <div class="container mb-5">
 
             <x-caption sub="Лучшее только в Sk Bar">Фото</x-caption>
