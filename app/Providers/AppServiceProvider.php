@@ -7,6 +7,8 @@ use App\Models\User;
 use Illuminate\Pagination\Paginator;
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Cache\RateLimiting\Limit;
+use Illuminate\Support\Facades\RateLimiter;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -27,6 +29,11 @@ class AppServiceProvider extends ServiceProvider
 
         Gate::define('viewPulse', function (User $user) {
             return $user->id > 0;
+        });
+
+        RateLimiter::for('VKAlbumsUpdate', function (object $job) {
+            return Limit::perSecond(3);
+            // perMinute(2);
         });
     }
 }

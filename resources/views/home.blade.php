@@ -37,7 +37,11 @@
 
             <x-caption sub="Лучшее только в Sk Bar">Фото</x-caption>
 
-            <x-gallery :items="$vk_albums" />
+            <x-albums :items="$vk_albums" />
+
+            <div class="text-center mt-4">
+                <a href="/albums/" class="btn btn-primary text-white">Все альбомы</a>
+            </div>
 
         </div>
     @endif
