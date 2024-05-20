@@ -23,7 +23,7 @@ class AlbumController extends Controller
         $this->setSeo($album['title'], image: $album['photo']['small']['url']);
 
         return view('albums.show', [
-            'title' => $album['title'],
+            'album' => $album,
             'vk_photos' => $vkService->getCachePhotos('-64982861', $id),
         ]);
     }

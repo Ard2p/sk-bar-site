@@ -2,7 +2,7 @@
 
     <div class="container mb-5">
 
-        <x-caption>{{ $title }}</x-caption>
+        <x-caption>{{ $album['title'] }}</x-caption>
 
         <x-gallery :items="$vk_photos" />
 
