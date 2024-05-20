@@ -15,20 +15,13 @@
 
                 <div class="collapse navbar-collapse" id="navbarNav">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        @php
-                            //  :active="request()->routeIs('home')"
-                        @endphp
-
-                        {{-- <li>
-                            <a href="{{ route('events') }}" class="nav-link px-3 link-body-emphasis">{{ __('Events') }}</a>
-                        </li> --}}
 
                         <li class="nav-item">
                             <a href="{{ route('events.index') }}" @class(['nav-link', 'active' => request()->routeIs('events.index')])>{{ __('Events') }}</a>
                         </li>
 
                         <li class="nav-item">
-                            <a href="{{ route('menu.index') }}" @class(['nav-link', 'active' => request()->routeIs('menu.index')])>Меню</a>
+                            <a href="{{ route('rkmenu') }}" @class(['nav-link', 'active' => request()->routeIs('rkmenu')])>Меню</a>
                         </li>
 
                         {{-- <li class="nav-item">
@@ -40,13 +33,11 @@
 
                     </ul>
 
-                    {{-- <div class="small d-none d-lg-block"> --}}
-                        <div class="text-muted small d-none d-lg-block">
-                            <div><span class="text-primary fw-bold">SK Bar,</span> Чебоксары, Карла Маркса 47</div>
-                            <div class="text-primary fw-bold">+7 835 236 26 26</div>
-                            <div>чт-вс: <span class="text-primary fw-bold">17:00 - 02:00</span></div>
-                        </div>
-                    {{-- </div> --}}
+                    <div class="text-muted small d-none d-lg-block">
+                        <div><span class="text-primary fw-bold">SK Bar,</span> Чебоксары, Карла Маркса 47</div>
+                        <div class="text-primary fw-bold">+7 835 236 26 26</div>
+                        <div>чт-вс: <span class="text-primary fw-bold">17:00 - 02:00</span></div>
+                    </div>
 
                     @if (false)
                         <div class="col-12 col-lg-2 d-flex justify-content-lg-end">
