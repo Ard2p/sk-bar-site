@@ -138,9 +138,15 @@ return [
             'sample_rate' => env('PULSE_CACHE_INTERACTIONS_SAMPLE_RATE', 1),
             'ignore' => [
                 ...Pulse::defaultVendorCacheKeys(),
+                '/^.:timer*/',
+                '/^spatie.permission.cache*/'
             ],
             'groups' => [
                 '/^job-exceptions:.*/' => 'job-exceptions:*',
+                '/^vk::photos::.*/' => 'vk:photos:*',
+                '/^vk::albums::.*/' => 'vk:albums:*',
+                '/^albums.*/' => 'view:albums:*',
+                '/^events.*/' => 'view:events:*',
                 // '/:\d+/' => ':*',
             ],
         ],
