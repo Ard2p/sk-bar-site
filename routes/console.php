@@ -2,6 +2,13 @@
 
 use App\Services\VkService;
 use App\Jobs\VKAlbumsUpdate;
+use App\Services\RKService;
+
+
+Schedule::call(function () {
+    $rkService = new RKService();
+
+})->name('RKMenuUpdate')->hourly();
 
 
 Schedule::call(function () {
