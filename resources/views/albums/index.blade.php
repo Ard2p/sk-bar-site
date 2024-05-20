@@ -4,7 +4,9 @@
 
         <x-caption>Альбомы</x-caption>
 
-        <x-albums :items="$vk_albums" />
+        @if ($vk_albums?->count())
+            <x-albums :items="$vk_albums" />
+        @endif
 
     </div>
 

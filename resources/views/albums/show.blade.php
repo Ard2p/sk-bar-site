@@ -4,7 +4,9 @@
 
         <x-caption>{{ $album['title'] }}</x-caption>
 
-        <x-gallery :items="$vk_photos" />
+        @if ($vk_photos?->count())
+            <x-gallery :items="$vk_photos" />
+        @endif
 
     </div>
 
