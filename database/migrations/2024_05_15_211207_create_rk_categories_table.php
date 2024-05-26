@@ -16,7 +16,7 @@ return new class extends Migration
             $table->bigInteger('ident')->unsigned()->unique();
             $table->bigInteger('code')->unsigned();
             $table->string('name');
-            $table->integer('position')->unsigned();
+            $table->integer('position')->unsigned()->nullable();
 
             $table->timestamps();
         });

@@ -1,15 +1,12 @@
 <?php
 
+use App\Services\RKService;
 use App\Services\VkService;
 use App\Jobs\VKAlbumsUpdate;
-use App\Services\RKService;
+use App\Jobs\RKCatalogUpdate;
 
 
-Schedule::call(function () {
-    $rkService = new RKService();
-
-})->name('RKMenuUpdate')->hourly();
-
+Schedule::call(fn () => RKCatalogUpdate::dispatch())->name('RKMenuUpdate')->hourly();
 
 Schedule::call(function () {
     $vkService = new VkService();

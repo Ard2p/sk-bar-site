@@ -22,7 +22,7 @@ class RKService
             ->withOptions(['verify' => false]);
     }
 
-    public function getMenu()
+    public function getCatalog()
     {
         /* $xml = '
             <?xml version="1.0" encoding="utf-8"?>
@@ -76,41 +76,30 @@ IDENT, CODE, NAME, STATUS, PRICETYPES^3
     public function parseRKData($xml)
     {
         $xml = new SimpleXMLElement($xml);
-
         $xmlCategories = $xml->RK7Reference->Items->Item->RIChildItems->TClassificatorGroup;
 
         $menu = [];
-        $indexCategory = 0;
-
         foreach ($xmlCategories as $xmlCategory) {
-
             $products = [];
-            $indexProduct = 0;
 
             if ($xmlCategory->RIChildItems)
-                foreach ($xmlCategory?->RIChildItems?->TRK7MenuItem as $xmlProduct) {
+                foreach ($xmlCategory?->RIChildItems?->TRK7MenuItem as $xmlProduct)
                     $products[] = (object)[
                         'ident' => (int)$xmlProduct['Ident'],
                         'code' => (int)$xmlProduct['Code'],
                         'name' => (string)$xmlProduct['Name'],
                         'price' => (int)$xmlProduct['PRICETYPES-3'],
                         'instruct' => (string)$xmlProduct['Instruct'],
-                        'parent_ident' => (int)$xmlCategory['Ident'],
-                        'position' => $indexProduct,
+                        'parent_ident' => (int)$xmlCategory['Ident']
                     ];
 
-                    $indexProduct++;
-                }
 
             $menu[] = (object)[
                 'ident' => (int)$xmlCategory['Ident'],
                 'code' => (int)$xmlCategory['Code'],
                 'name' => (string)$xmlCategory['Name'],
-                'position' => $indexCategory,
                 'products' => $products
             ];
-
-            $indexCategory++;
         }
 
         return $menu;

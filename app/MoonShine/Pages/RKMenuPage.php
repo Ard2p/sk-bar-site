@@ -152,7 +152,7 @@ class RKMenuPage extends Page
 
     private function items(): Collection
     {
-        return RKCategory::query()->orderBy('position')->get();
+        return RKCategory::order()->get();
     }
 
     private function listFields(): array

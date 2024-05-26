@@ -15,7 +15,7 @@ class DatabaseSeeder extends Seeder
             PlaceSeeder::class,
             EventSeeder::class,
             SliderSeeder::class,
-            RKCategorSeeder::class,
+            // RKCategorSeeder::class,
         ]);
     }
 }

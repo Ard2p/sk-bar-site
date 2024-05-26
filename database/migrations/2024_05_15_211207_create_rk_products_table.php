@@ -19,7 +19,7 @@ return new class extends Migration
             $table->float('price')->unsigned()->nullable();
             $table->longText('instruct')->nullable();
             $table->bigInteger('parent_ident')->unsigned();
-            $table->integer('position')->unsigned();
+            $table->integer('position')->unsigned()->nullable();
 
             $table->timestamps();
         });

@@ -2,8 +2,10 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class RKCategory extends Model
 {
@@ -23,5 +25,10 @@ class RKCategory extends Model
     public function products()
     {
         return $this->hasMany(RKProduct::class, 'parent_ident', 'ident');
+    }
+
+    public function scopeOrder(Builder $query): void
+    {
+        $query->orderBy(DB::raw('ISNULL(position), position'), 'ASC');
     }
 }
