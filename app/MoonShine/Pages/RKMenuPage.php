@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace App\MoonShine\Pages;
 
+use MoonShine\Fields\Td;
 use MoonShine\Pages\Page;
 use App\Models\RKCategory;
 use MoonShine\Fields\Text;
@@ -12,9 +13,11 @@ use MoonShine\Fields\Hidden;
 use MoonShine\Fields\Preview;
 use MoonShine\Components\Icon;
 use MoonShine\Components\Link;
+use MoonShine\Decorations\Tab;
 use MoonShine\Enums\ToastType;
 use MoonShine\Fields\Position;
 use MoonShine\Decorations\Grid;
+use MoonShine\Decorations\Tabs;
 use MoonShine\MoonShineRequest;
 use MoonShine\Support\AlpineJs;
 use MoonShine\Decorations\Block;
@@ -63,10 +66,6 @@ class RKMenuPage extends Page
                 Column::make([
                     Block::make([
                         TableBuilder::make(fields: $this->listFields())
-                            ->tdAttributes(
-                                fn (mixed $data, int $row, int $cell, ComponentAttributeBag $attr) =>
-                                $attr->merge(['style' => 'padding-top: 0;padding-bottom: 0;'])
-                            )
                             ->name('rk-categories-list')
                             ->cast(ModelCast::make(RKCategory::class))
                             ->items($this->items())
@@ -157,14 +156,17 @@ class RKMenuPage extends Page
 
     private function listFields(): array
     {
-        // dd($this->getItem());
-
         return [
-            Text::make('Категория', 'name'),
+            Td::make('Категория', fn (RKCategory $category) => [
+                ActionButton::make($category->name)
+            ])->tdAttributes(fn (RKCategory $category, ComponentAttributeBag $attr) => $attr->merge([
+                'style' => 'padding: 0;'
+            ])),
 
-            // dd($this->getItem())
-            // ActionButton::make(fn($var) => dd($var))
-
+            // ->tdAttributes(
+            //     fn (mixed $data, int $row, int $cell, ComponentAttributeBag $attr) =>
+            //     $attr->merge(['style' => 'padding-top: 0;padding-bottom: 0;'])
+            // ),
 
             // ->link(
             //     fn ($value, Text $field) => to_page(page: CatalogPage::class) . '/' . $field->getData()->ident,
