@@ -12,6 +12,7 @@ use MoonShine\Fields\Text;
 use MoonShine\Enums\JsEvent;
 use MoonShine\Fields\Hidden;
 use MoonShine\Fields\Number;
+use App\Jobs\RKCatalogUpdate;
 use MoonShine\Enums\ToastType;
 use MoonShine\Fields\Position;
 use MoonShine\Decorations\Grid;
@@ -49,16 +50,17 @@ class RKMenuPage extends Page
         return [
             Grid::make([
 
-                // Column::make([
-                //     Block::make([
-                //         // Column::make([]),
-                //         // Column::make([
-                //         ActionButton::make('Обновить меню')->success()
-                //             ->icon('heroicons.outline.arrow-path')
-                //             ->customAttributes(['class' => 'col-start-auto'])
-                //         // ])
-                //     ])
-                // ]),
+                Column::make([
+                    Block::make([
+                        // Column::make([]),
+                        // Column::make([
+                        ActionButton::make('Обновить меню')->success()
+                            ->method('menuUpdate')
+                            ->icon('heroicons.outline.arrow-path')
+                            ->customAttributes(['class' => 'col-start-auto'])
+                        // ])
+                    ])
+                ]),
 
                 Column::make([
                     Block::make([
@@ -237,6 +239,12 @@ class RKMenuPage extends Page
             AlpineJs::event(JsEvent::TABLE_UPDATED, 'rk-categories-list'),
             AlpineJs::event(JsEvent::FORM_RESET, 'rk-categories-form'),
         ];
+    }
+
+    public function menuUpdate(MoonShineRequest $request)
+    {
+        RKCatalogUpdate::dispatch();
+        return MoonShineJsonResponse::make()->toast('Задание на обновление добавленно! Ждите.', ToastType::SUCCESS);
     }
 
     private function styles(): FlexibleRender
