@@ -17,21 +17,15 @@ class RKCatalogUpdate implements ShouldQueue
 {
     use Dispatchable, InteractsWithQueue, Queueable, SerializesModels;
 
-    public $tries = 1;
+    public $tries = 3;
 
     public $maxExceptions = 3;
 
-    /**
-     * Create a new job instance.
-     */
-    public function __construct()
+    public function backoff()
     {
-        //
+        return [300, 600, 900];
     }
 
-    /**
-     * Execute the job.
-     */
     public function handle(): void
     {
         $rkService = new RKService();

@@ -66,10 +66,11 @@ IDENT, CODE, NAME, STATUS, PRICETYPES^3
                 </RK7CMD>
             </RK7Query>';
 
-        // Storage::put('xml/menu.xml', (string)$xml->asXML());
-        return $this->parseRKData(Storage::get('xml/menu.xml'));
+
+        // return $this->parseRKData(Storage::get('xml/menu.xml'));
 
         $response = $this->client->send('POST', '{+url}', ['body' => $xml]);
+        // Storage::put('xml/menu.xml', (string)$response);
         return $this->parseRKData($response->body());
     }
 
@@ -92,7 +93,6 @@ IDENT, CODE, NAME, STATUS, PRICETYPES^3
                         'instruct' => (string)$xmlProduct['Instruct'],
                         'parent_ident' => (int)$xmlCategory['Ident']
                     ];
-
 
             $menu[] = (object)[
                 'ident' => (int)$xmlCategory['Ident'],
