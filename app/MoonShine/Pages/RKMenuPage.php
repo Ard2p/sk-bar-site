@@ -5,15 +5,13 @@ declare(strict_types=1);
 namespace App\MoonShine\Pages;
 
 use MoonShine\Fields\Td;
+use App\Models\RKProduct;
 use MoonShine\Pages\Page;
 use App\Models\RKCategory;
 use MoonShine\Fields\Text;
 use MoonShine\Enums\JsEvent;
 use MoonShine\Fields\Hidden;
-use MoonShine\Fields\Preview;
-use MoonShine\Components\Icon;
-use MoonShine\Components\Link;
-use MoonShine\Decorations\Tab;
+use MoonShine\Fields\Number;
 use MoonShine\Enums\ToastType;
 use MoonShine\Fields\Position;
 use MoonShine\Decorations\Grid;
@@ -25,10 +23,12 @@ use MoonShine\Decorations\Column;
 use MoonShine\Fields\StackFields;
 use MoonShine\QueryTags\QueryTag;
 use Illuminate\Support\Collection;
+use Illuminate\Support\Facades\DB;
 use MoonShine\TypeCasts\ModelCast;
 use MoonShine\Decorations\Fragment;
 use MoonShine\Components\FormBuilder;
 use MoonShine\Components\TableBuilder;
+use MoonShine\Components\FlexibleRender;
 use Illuminate\Database\Eloquent\Builder;
 use MoonShine\ActionButtons\ActionButton;
 use Illuminate\View\ComponentAttributeBag;
@@ -37,82 +37,162 @@ use MoonShine\Http\Responses\MoonShineJsonResponse;
 
 class RKMenuPage extends Page
 {
-
     protected ?string $alias = 'rk-menu';
 
-    /**
-     * @return array<string, string>
-     */
     public function breadcrumbs(): array
     {
-        return [
-            '#' => $this->title()
-        ];
+        return ['#' => $this->title()];
     }
 
-    public function title(): string
-    {
-        return $this->title ?: 'Catalog';
-    }
-
-    /**
-     * @return list<MoonShineComponent>
-     */
     public function components(): array
     {
         return [
             Grid::make([
 
+                // Column::make([
+                //     Block::make([
+                //         // Column::make([]),
+                //         // Column::make([
+                //         ActionButton::make('Обновить меню')->success()
+                //             ->icon('heroicons.outline.arrow-path')
+                //             ->customAttributes(['class' => 'col-start-auto'])
+                //         // ])
+                //     ])
+                // ]),
+
                 Column::make([
                     Block::make([
-                        TableBuilder::make(fields: $this->listFields())
-                            ->name('rk-categories-list')
-                            ->cast(ModelCast::make(RKCategory::class))
-                            ->items($this->items())
-                            ->async()
-                            ->sortable($this->asyncMethodUrl('reorder'), 'ident')
-                            ->reindex()
-                            ->withNotFound()
+                        TableBuilder::make($this->categorylistFields(), $this->categoryItems())
+                            ->cast(ModelCast::make(RKCategory::class))->withNotFound()
+                            ->sortable($this->asyncMethodUrl('categoryReorder'), 'ident')->reindex()->async()
                             ->buttons([
-                                ActionButton::make('')
-                                    ->secondary()
-                                    ->icon('heroicons.outline.pencil')
-                                    ->inModal('Редактирование', fn (RKCategory $category) => $this->formComponent($category))
+                                // ActionButton::make('')->secondary()
+                                //     ->icon('heroicons.outline.pencil')
+                                //     ->inModal('Редактирование', fn (RKCategory $category) => $this->categoryForm($category))
                             ])
+                            ->name('rk-categories-list')
                     ])
-                ])->columnSpan(3),
+                ])->customAttributes(['class' => 'col-span-12 2xl:col-span-3 xl:col-span-5 md:col-span-6']),
 
                 Column::make([
                     Block::make([
-
-                        // Fragment::make([
-                        //     TableBuilder::make(fields: $this->listFields())
-                        //         ->tdAttributes(
-                        //             fn (mixed $data, int $row, int $cell, ComponentAttributeBag $attr) =>
-                        //             $attr->merge(['style' => 'padding-top: 0;padding-bottom: 0;'])
-                        //         )
-                        //         ->name('rk-categories-list')
-                        //         ->cast(ModelCast::make(RKCategory::class))
-                        //         ->items($this->items())
-                        //         ->async()
-                        //         ->sortable($this->asyncMethodUrl('reorder'), 'ident')
-                        //         ->reindex()
-                        //         ->withNotFound()
-                        //         ->buttons([
-                        //             ActionButton::make('')
-                        //                 ->secondary()
-                        //                 ->icon('heroicons.outline.pencil')
-                        //                 ->inModal('Редактирование', fn (RKCategory $category) => $this->formComponent($category))
-                        //         ])
-                        // ])->name('fragment-name')
-
+                        Fragment::make([
+                            TableBuilder::make($this->productlistFields(), $this->productItems())
+                                ->cast(ModelCast::make(RKProduct::class))->withNotFound()
+                                ->sortable($this->asyncMethodUrl('productReorder'), 'ident')->reindex()->async()
+                                ->buttons([
+                                    // ActionButton::make('')->secondary()
+                                    //     ->icon('heroicons.outline.pencil')
+                                    //     ->inModal('Редактирование', fn (RKProduct $product) => $this->productForm($product))
+                                ])
+                                ->name('rk-products-list')
+                        ])->name('rk-products-fragment')->customAttributes(['id' => 'rk-products-fragment'])
                     ])
-                ])->columnSpan(9)
+                ])->customAttributes(['class' => 'col-span-12 2xl:col-span-9 xl:col-span-7 md:col-span-6']),
+
+            ]),
+
+            $this->styles()
+        ];
+    }
+
+    private function productItems(): Collection
+    {
+        if (moonshineRequest()->filled('ident')) {
+            return RKProduct::where('parent_ident', moonshineRequest()->ident)->order()->get();
+        }
+
+        return RKProduct::select('rk_products.*')
+            ->join('rk_categories', 'rk_products.parent_ident', '=', 'rk_categories.ident')
+            ->orderBy('rk_categories.position')->order()
+            ->get();
+    }
+
+    private function productListFields(): array
+    {
+        return [
+            // Position::make(),
+
+            Text::make('Позиция', 'name'),
+
+            Number::make('Цена', 'price', fn ($item) => ($item->price / 100) . 'р')->badge('primary')
+        ];
+    }
+
+    private function productFormFields(): array
+    {
+        return [
+            Hidden::make(column: 'ident'),
+            Text::make('Категория', 'name')->readonly(),
+            Number::make('Цена', 'price', fn ($item) => ($item->price / 100) . 'р')->readonly(),
+        ];
+    }
+
+    private function productForm(?RKProduct $product = null): FormBuilder
+    {
+        return FormBuilder::make()
+            ->name('rk-categories-form')
+            ->fields($this->productFormFields())
+            ->fillCast($product, ModelCast::make(RKProduct::class))
+            ->asyncMethod('productFormSave', events: $this->productUpdateEvents())
+            ->submit('Обновить', ['class' => 'btn-primary btn-lg']);
+    }
+
+    public function productFormSave(MoonShineRequest $request): MoonShineJsonResponse
+    {
+        $request->validate(['name' => ['required', 'string']]);
+
+        RKProduct::where('ident', $request->integer('ident'))->update([
+            'name' => $request->get('name'),
+        ]);
+
+        return MoonShineJsonResponse::make()->toast('Обновленно', ToastType::SUCCESS);
+    }
+
+    public function productReorder(MoonShineRequest $request): MoonShineJsonResponse
+    {
+        $request->string('data')->explode(',')->each(
+            fn (string $id, int $sortOrder) =>
+            RKProduct::where('ident', $id)?->update(['position' => $sortOrder])
+        );
+
+        return MoonShineJsonResponse::make()->toast('Позиция обновлена', ToastType::SUCCESS);
+    }
+
+    private function productUpdateEvents(): array
+    {
+        return [
+            AlpineJs::event(JsEvent::TABLE_UPDATED, 'rk-product-list'),
+            AlpineJs::event(JsEvent::FORM_RESET, 'rk-product-form'),
+        ];
+    }
+
+    private function categoryItems(): Collection
+    {
+        return RKCategory::order()->get();
+    }
+
+    private function categoryListFields(): array
+    {
+        // $categoryCount = RKCategory::count();
+        return [
+            // Position::make(),
+
+            Td::make('Категория', fn (RKCategory $category) => [
+
+                // StackFields::make('Title')->fields([
+                ActionButton::make(
+                    $category->name,
+                    fn () => $this->fragmentLoadUrl('rk-products-fragment', ['ident' => $category->getKey()])
+                )->async(selector: '#rk-products-fragment')->customAttributes(['class' => 'btn-link']),
+
+                // Number::make(formatted: fn($category) => $category->products->count())->badge('skbar')
+                // ])
             ])
         ];
     }
 
-    private function formFields(): array
+    private function categoryFormFields(): array
     {
         return [
             Hidden::make(column: 'ident'),
@@ -120,17 +200,17 @@ class RKMenuPage extends Page
         ];
     }
 
-    private function formComponent(?RKCategory $category = null): FormBuilder
+    private function categoryForm(?RKCategory $category = null): FormBuilder
     {
         return FormBuilder::make()
             ->name('rk-categories-form')
-            ->fields($this->formFields())
+            ->fields($this->categoryFormFields())
             ->fillCast($category, ModelCast::make(RKCategory::class))
-            ->asyncMethod('save', events: $this->updateListingEvents())
+            ->asyncMethod('categoryFormSave', events: $this->categoryUpdateEvents())
             ->submit('Обновить', ['class' => 'btn-primary btn-lg']);
     }
 
-    public function save(MoonShineRequest $request): MoonShineJsonResponse
+    public function categoryFormSave(MoonShineRequest $request): MoonShineJsonResponse
     {
         $request->validate(['name' => ['required', 'string']]);
 
@@ -141,41 +221,7 @@ class RKMenuPage extends Page
         return MoonShineJsonResponse::make()->toast('Обновленно', ToastType::SUCCESS);
     }
 
-    private function updateListingEvents(): array
-    {
-        return [
-            AlpineJs::event(JsEvent::TABLE_UPDATED, 'rk-categories-list'),
-            AlpineJs::event(JsEvent::FORM_RESET, 'rk-categories-form'),
-        ];
-    }
-
-    private function items(): Collection
-    {
-        return RKCategory::order()->get();
-    }
-
-    private function listFields(): array
-    {
-        return [
-            Td::make('Категория', fn (RKCategory $category) => [
-                ActionButton::make($category->name)
-            ])->tdAttributes(fn (RKCategory $category, ComponentAttributeBag $attr) => $attr->merge([
-                'style' => 'padding: 0;'
-            ])),
-
-            // ->tdAttributes(
-            //     fn (mixed $data, int $row, int $cell, ComponentAttributeBag $attr) =>
-            //     $attr->merge(['style' => 'padding-top: 0;padding-bottom: 0;'])
-            // ),
-
-            // ->link(
-            //     fn ($value, Text $field) => to_page(page: CatalogPage::class) . '/' . $field->getData()->ident,
-            //     withoutIcon: true
-            // )
-        ];
-    }
-
-    public function reorder(MoonShineRequest $request): MoonShineJsonResponse
+    public function categoryReorder(MoonShineRequest $request): MoonShineJsonResponse
     {
         $request->string('data')->explode(',')->each(
             fn (string $id, int $sortOrder) =>
@@ -183,5 +229,38 @@ class RKMenuPage extends Page
         );
 
         return MoonShineJsonResponse::make()->toast('Позиция обновлена', ToastType::SUCCESS);
+    }
+
+    private function categoryUpdateEvents(): array
+    {
+        return [
+            AlpineJs::event(JsEvent::TABLE_UPDATED, 'rk-categories-list'),
+            AlpineJs::event(JsEvent::FORM_RESET, 'rk-categories-form'),
+        ];
+    }
+
+    private function styles(): FlexibleRender
+    {
+        return FlexibleRender::make(<<<'HTML'
+        <style>
+            .table-list th,
+            .table-list td {padding:0!important;height:38px!important;}
+            .table-list th:not(:last-child),
+            .table-list td:not(:last-child){padding-right:0.5rem!important;}
+            .table-list td .btn-link{white-space:normal!important;}
+            .btn-link {
+                width:100%;
+                padding: 0;
+                border:none!important;
+                justify-content:start;
+                max-height:38px!important;
+                min-height:inherit!important;
+                background:inherit!important;
+            }
+            .btn-link:focus-visible {outline:none!important;}
+            .btn-link:focus {box-shadow:none!important;}
+            .badge-skbar {background:#f9322c!important;color:white;font-weight:bold;border-radius:.85rem}
+        </style>
+        HTML);
     }
 }

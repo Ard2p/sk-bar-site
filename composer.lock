@@ -2584,16 +2584,16 @@
         },
         {
             "name": "moonshine/moonshine",
-            "version": "2.14.1",
+            "version": "2.14.2",
             "source": {
                 "type": "git",
                 "url": "https://github.com/moonshine-software/moonshine.git",
-                "reference": "b98aef3905c7ea8b07b38a56faddc15de2453a4d"
+                "reference": "687a2d502602cc91d968957c701e05ea527fa14c"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/moonshine-software/moonshine/zipball/b98aef3905c7ea8b07b38a56faddc15de2453a4d",
-                "reference": "b98aef3905c7ea8b07b38a56faddc15de2453a4d",
+                "url": "https://api.github.com/repos/moonshine-software/moonshine/zipball/687a2d502602cc91d968957c701e05ea527fa14c",
+                "reference": "687a2d502602cc91d968957c701e05ea527fa14c",
                 "shasum": ""
             },
             "require": {
@@ -2669,20 +2669,20 @@
                     "type": "open_collective"
                 }
             ],
-            "time": "2024-05-21T10:15:03+00:00"
+            "time": "2024-05-27T08:27:24+00:00"
         },
         {
             "name": "nesbot/carbon",
-            "version": "3.3.1",
+            "version": "3.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/briannesbitt/Carbon.git",
-                "reference": "8ff64b92c1b1ec84fcde9f8bb9ff2ca34cb8a77a"
+                "reference": "8eab8983c83c30e0bacbef8d311e3f3b8172727f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/8ff64b92c1b1ec84fcde9f8bb9ff2ca34cb8a77a",
-                "reference": "8ff64b92c1b1ec84fcde9f8bb9ff2ca34cb8a77a",
+                "url": "https://api.github.com/repos/briannesbitt/Carbon/zipball/8eab8983c83c30e0bacbef8d311e3f3b8172727f",
+                "reference": "8eab8983c83c30e0bacbef8d311e3f3b8172727f",
                 "shasum": ""
             },
             "require": {
@@ -2775,7 +2775,7 @@
                     "type": "tidelift"
                 }
             ],
-            "time": "2024-05-01T06:54:22+00:00"
+            "time": "2024-05-24T14:26:34+00:00"
         },
         {
             "name": "nette/schema",
