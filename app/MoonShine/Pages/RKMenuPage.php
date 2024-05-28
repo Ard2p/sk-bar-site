@@ -68,9 +68,9 @@ class RKMenuPage extends Page
                             ->cast(ModelCast::make(RKCategory::class))->withNotFound()
                             ->sortable($this->asyncMethodUrl('categoryReorder'), 'ident')->reindex()->async()
                             ->buttons([
-                                // ActionButton::make('')->secondary()
-                                //     ->icon('heroicons.outline.pencil')
-                                //     ->inModal('Редактирование', fn (RKCategory $category) => $this->categoryForm($category))
+                                ActionButton::make('')->secondary()
+                                    ->icon('heroicons.outline.pencil')
+                                    ->inModal('Редактирование', fn (RKCategory $category) => $this->categoryForm($category))
                             ])
                             ->name('rk-categories-list')
                     ])
@@ -83,12 +83,12 @@ class RKMenuPage extends Page
                                 ->cast(ModelCast::make(RKProduct::class))->withNotFound()
                                 ->sortable($this->asyncMethodUrl('productReorder'), 'ident')->reindex()->async()
                                 ->buttons([
-                                    // ActionButton::make('')->secondary()
-                                    //     ->icon('heroicons.outline.pencil')
-                                    //     ->inModal('Редактирование', fn (RKProduct $product) => $this->productForm($product))
+                                    ActionButton::make('')->secondary()
+                                        ->icon('heroicons.outline.pencil')
+                                        ->inModal('Редактирование', fn (RKProduct $product) => $this->productForm($product))
                                 ])
-                                ->name('rk-products-list')
-                        ])->name('rk-products-fragment')->customAttributes(['id' => 'rk-products-fragment'])
+                                ->name('rk-product-list')
+                        ])->name('rk-product-fragment')->customAttributes(['id' => 'rk-product-fragment'])
                     ])
                 ])->customAttributes(['class' => 'col-span-12 2xl:col-span-9 xl:col-span-7 md:col-span-6']),
 
@@ -125,15 +125,18 @@ class RKMenuPage extends Page
     {
         return [
             Hidden::make(column: 'ident'),
-            Text::make('Категория', 'name')->readonly(),
-            Number::make('Цена', 'price', fn ($item) => ($item->price / 100) . 'р')->readonly(),
+            Hidden::make(column: 'name'),
+            Hidden::make(column: 'price'),
+
+            Text::make('Наименование', 'name')->disabled(),
+            Number::make('Цена', 'price', fn ($item) => ($item->price / 100) . 'р')->disabled()
         ];
     }
 
     private function productForm(?RKProduct $product = null): FormBuilder
     {
         return FormBuilder::make()
-            ->name('rk-categories-form')
+            ->name('rk-product-form')
             ->fields($this->productFormFields())
             ->fillCast($product, ModelCast::make(RKProduct::class))
             ->asyncMethod('productFormSave', events: $this->productUpdateEvents())
@@ -185,8 +188,8 @@ class RKMenuPage extends Page
                 // StackFields::make('Title')->fields([
                 ActionButton::make(
                     $category->name,
-                    fn () => $this->fragmentLoadUrl('rk-products-fragment', ['ident' => $category->getKey()])
-                )->async(selector: '#rk-products-fragment')->customAttributes(['class' => 'btn-link']),
+                    fn () => $this->fragmentLoadUrl('rk-product-fragment', ['ident' => $category->getKey()])
+                )->async(selector: '#rk-product-fragment')->customAttributes(['class' => 'btn-link']),
 
                 // Number::make(formatted: fn($category) => $category->products->count())->badge('skbar')
                 // ])
@@ -198,7 +201,9 @@ class RKMenuPage extends Page
     {
         return [
             Hidden::make(column: 'ident'),
-            Text::make('Категория', 'name')
+            Hidden::make(column: 'name'),
+
+            Text::make('Категория', 'name')->disabled()
         ];
     }
 
