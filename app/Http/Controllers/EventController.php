@@ -9,7 +9,7 @@ class EventController extends Controller
     public function index()
     {
         return view('events.index', [
-            'events' => Event::active()->actual()->paginate(16),
+            'events' => Event::active()->actual()->orderBy('event_start')->paginate(16),
         ]);
     }
 

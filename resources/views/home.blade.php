@@ -17,7 +17,7 @@
 
             <x-caption sub="Лучшее только в Sk Bar">События в ближайшие дни</x-caption>
 
-            <x-events.list :items="$coming_events" />
+            <x-events.list :items="$coming_events" hideMore/>
 
         </div>
     @endif
@@ -27,7 +27,7 @@
 
             <x-caption sub="Лучшее только в Sk Bar">Рекомендованные концерты</x-caption>
 
-            <x-events.list :items="$recommended_events" />
+            <x-events.list :items="$recommended_events" hideMore/>
 
         </div>
     @endif
@@ -37,7 +37,7 @@
 
             <x-caption sub="Лучшее только в Sk Bar">Фото</x-caption>
 
-            <x-albums :items="$vk_albums" />
+            <x-albums :items="$vk_albums"/>
 
             <div class="text-center mt-4">
                 <a href="/albums/" class="btn btn-primary text-white">Все альбомы</a>
