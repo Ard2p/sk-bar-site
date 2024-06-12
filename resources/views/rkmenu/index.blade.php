@@ -4,9 +4,9 @@
 
         <x-caption sub="Лучшее только в Sk Bar">Меню</x-caption>
 
-        <div class="col my-5">
+        {{-- <div class="col my-5">
             <x-menu-swiper />
-        </div>
+        </div> --}}
 
         @if ($menu)
 

@@ -117,6 +117,7 @@
     "Introduction": "Введение",
     "Invalid JSON was returned from the route.": "Маршрут вернул некорректный JSON.",
     "Invalid SSL Certificate": "Недействительный SSL сертификат",
+    "length": "длина",
     "Length Required": "Необходима длина",
     "Like": "Нравится",
     "Link": "Ссылка",
