@@ -34,7 +34,7 @@ class MoonShineServiceProvider extends MoonShineApplicationServiceProvider
     {
         return MenuRBAC::menu(
 
-            MenuItem::make(__('Home site'), '/', 'heroicons.outline.globe-alt'),
+            MenuItem::make(__('Home site'), '/', 'heroicons.outline.home'),
 
             // MenuItem::make(__('Dashboard'), '/admin', 'heroicons.outline.presentation-chart-line'),
 
@@ -44,21 +44,21 @@ class MoonShineServiceProvider extends MoonShineApplicationServiceProvider
 
             MenuGroup::make(__('RKeeper'), [
 
-                MenuItem::make(__('Menu'), RKMenuPage::make('Custom page'))
+                MenuItem::make(__('Меню'), RKMenuPage::make('Меню'), 'heroicons.outline.shopping-cart'),
 
             ], 'heroicons.outline.building-storefront'),
 
-            MenuGroup::make(__('System'), [
+            MenuItem::make(__('Users'), new UserResource(), 'heroicons.outline.user-group'),
 
-                MenuItem::make(__('Users'), new UserResource(), 'heroicons.outline.user-group'),
+            MenuGroup::make(__('Настройки'), [
+
+                MenuItem::make(__('Seo'), new SeoResource(), 'heroicons.outline.magnifying-glass'),
 
                 MenuItem::make(__('Permissions'), new RoleResource(), 'heroicons.outline.shield-exclamation'),
 
                 MenuItem::make(__('Places event'), new PlaceResource(), 'heroicons.outline.map-pin'),
 
-            ], 'heroicons.outline.user-group'),
-
-            MenuItem::make(__('Seo'), new SeoResource(), 'heroicons.outline.magnifying-glass'),
+            ], 'heroicons.outline.cog-8-tooth'),
 
         );
     }

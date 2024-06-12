@@ -2,8 +2,10 @@
 
 namespace App\Models;
 
-use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Factories\HasFactory;
 
 class RKProduct extends Model
 {
@@ -20,4 +22,14 @@ class RKProduct extends Model
         'parent_ident',
         'position' // sort_order
     ];
+
+    public function scopeOrder(Builder $query): void
+    {
+        $query->orderBy(DB::raw('ISNULL(rk_products.position), rk_products.position'));
+    }
+
+    public function products()
+    {
+        return $this->belongsTo(RKCategory::class, 'ident', 'parent_ident')->order();
+    }
 }
