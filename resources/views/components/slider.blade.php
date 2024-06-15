@@ -23,17 +23,19 @@
                 </div> --}}
 
         @foreach ($items as $slide)
-            @if ($slide->link)
-                <a href="{{ $slide->link }}">
-            @endif
+            <div @class(['carousel-item', 'active' => $loop->first])>
 
-            <div class="carousel-item active">
+                @if ($slide->link)
+                    <a href="{{ $slide->link }}">
+                @endif
+
                 <img src="{{ asset('storage/' . $slide->image) }}" class="d-block w-100">
-            </div>
 
-            @if ($slide->link)
-                </a>
-            @endif
+                @if ($slide->link)
+                    </a>
+                @endif
+
+            </div>
         @endforeach
 
     </div>
