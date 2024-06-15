@@ -1,6 +1,6 @@
 @props(['items'])
 
-<div class="carousel slide carousel-fade" data-bs-ride="carousel">
+<div id="carouselMain" class="carousel slide carousel-fade" data-bs-ride="carousel">
 
     <div class="carousel-inner ratio ratio-3x1 rounded">
 
@@ -23,7 +23,7 @@
                 </div> --}}
 
         @foreach ($items as $slide)
-            <div @class(['carousel-item', 'active' => $loop->first])>
+            <div @class(['carousel-item', 'active' => $loop->first]) data-bs-interval="10000">
 
                 @if ($slide->link)
                     <a href="{{ $slide->link }}">
