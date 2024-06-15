@@ -37,7 +37,7 @@
 
                 <div class="text-muted small">
                     <div><span class="text-primary fw-bold">SK Bar,</span> Чебоксары,<br> Карла Маркса 47</div>
-                    <div class="text-primary fw-bold">+7 (835) 236-26-26</div>
+                    <div class="text-primary fw-bold">+7 (8352) 36-26-26</div>
                     <div>чт-вс: <span class="text-primary fw-bold">17:00 - 02:00</span></div>
                 </div>
                 {{-- <div class="navbar"> --}}
