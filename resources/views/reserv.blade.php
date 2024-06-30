@@ -14,7 +14,7 @@
                 <div>SK Bar</div>
                 <div> ул. Карла Маркса, 47</div>
 
-                <span class="text-primary mt-5 d-block text-uppercase fw-semibold ls-xl">Контакты</span>
+                <span class="text-primary mb-3 mt-5 d-block text-uppercase fw-semibold ls-xl">Контакты</span>
 
                 <div> Бронь столов, заказ билетов - ☎ 36-26-26</div>
             </div>
