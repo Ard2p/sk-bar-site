@@ -58,7 +58,7 @@
                     @endif
 
                     <div class="col">
-                        <button class="btn btn-primary text-white w-100">Бронь стола</button>
+                        <a href="/reserv" class="btn btn-primary text-white w-100">Бронь стола</a>
                     </div>
 
                     @if ($event->tickets_link)

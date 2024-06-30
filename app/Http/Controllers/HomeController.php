@@ -20,4 +20,9 @@ class HomeController extends Controller
             'recommended_events' => Event::active()->actual()->recommendation()->limit(4)->get()
         ]);
     }
+
+    public function reserv()
+    {
+        return view('reserv');
+    }
 }
