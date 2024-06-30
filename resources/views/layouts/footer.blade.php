@@ -13,7 +13,7 @@
 
             </div>
 
-            <div class="col-5 col-md-auto col-lg-3">
+            <div class="col-5 col-md-4 col-lg-3">
                 <p class="fw-normal">SK Bar Concert</p>
 
                 <div class="navbar">
@@ -31,7 +31,7 @@
                 </div>
             </div>
 
-            <div class="col-5 col-md-auto col-lg-3">
+            <div class="col-5 col-md-4 col-lg-3">
                 {{-- <p class="fw-normal">Взаимодействие</p> --}}
                 <p class="fw-normal">Контакты</p>
 
@@ -59,7 +59,7 @@
 
             </div>
 
-            <div class="col-12 col-md-auto col-lg-3 text-center text-lg-start">
+            <div class="col-12 col-lg-3 text-center text-lg-start">
                 <p class="fw-normal">Социальные сети</p>
 
                 <ul
