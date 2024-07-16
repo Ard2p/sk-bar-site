@@ -14,7 +14,7 @@
                 @if (count($category->products) > 0)
                     <h4 class="mt-3 fw-bold text-primary">{{ $category->name }}</h4>
 
-                    <div class="row row-cols-xxl-4 row-cols-lg-3 row-cols-md-2 row-cols-1 g-4 mb-5">
+                    <div class="row row-cols-xxl-4 row-cols-lg-3 row-cols-2 g-4 mb-5">
 
                         @foreach ($category->products as $product)
                             <div class="col mt-5">
