@@ -27,6 +27,46 @@ enum ReservTablesEnum: string
     case TABLE_106 = '106';
     case TABLE_107 = '107';
 
+    public function price(): ?int
+    {
+        return match ($this) {
+            self::TABLE_1 => 3000,
+            self::TABLE_2 => 3000,
+            self::TABLE_3 => 3000,
+            self::TABLE_4 => 3000,
+            self::TABLE_5 => 3000,
+            self::TABLE_6 => 3000,
+
+            self::TABLE_7 => 2000,
+            self::TABLE_8 => 2000,
+            self::TABLE_9 => 2000,
+            self::TABLE_10 => 2000,
+            self::TABLE_11 => 2000,
+            self::TABLE_12 => 2000,
+            self::TABLE_13 => 2000,
+            self::TABLE_14 => 2000,
+
+            self::TABLE_15 => 3000,
+
+            self::TABLE_101 => 1500,
+            self::TABLE_102 => 1500,
+            self::TABLE_103 => 1500,
+            self::TABLE_104 => 1500,
+            self::TABLE_105 => 1500,
+            self::TABLE_106 => 1500,
+            self::TABLE_107 => 1500,
+        };
+    }
+
+    public function color(): ?string
+    {
+        return match ($this->price()) {
+            1500 => '#a7d91f',
+            2000 => '#7ae8f1',
+            3000 => '#a77af1',
+        };
+    }
+
     public function toString(): ?string
     {
         return match ($this) {

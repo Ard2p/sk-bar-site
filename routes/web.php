@@ -12,7 +12,6 @@ Route::get('menu', [RKMenuController::class, 'index'])->name('rkmenu');
 
 Route::resource('events', EventController::class)->only(['index', 'show']);
 Route::resource('albums', AlbumController::class)->only(['index', 'show']);
-Route::get('reserv', [HomeController::class, 'reserv'])->name('reserv');
 
 // Route::middleware('auth')->group(function () {
 //     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');

@@ -58,7 +58,8 @@
                     @endif
 
                     <div class="col">
-                        <a href="/reserv" class="btn btn-primary text-white w-100">Бронь стола</a>
+                        <button class="btn btn-primary text-white w-100" data-bs-toggle="modal"
+                            data-bs-target="#reservTable">Бронь стола</button>
                     </div>
 
                     @if ($event->tickets_link)
@@ -79,6 +80,23 @@
                             </div>
                         </div>
                     @endif
+
+                    <div class="modal" id="reservTable" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered modal-xl">
+                            <div class="modal-content">
+
+                                <div class="modal-header">
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+
+                                <div class="ratio ratio-16x9">
+                                    <x-events.reserv />
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
 
                     @if (false)
                         <div class="row mb-3">
