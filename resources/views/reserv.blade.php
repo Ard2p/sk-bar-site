@@ -1,4 +1,4 @@
-<x-app-layout>
+<x-guest-layout>
 
     <div class="container mb-5">
 
@@ -6,25 +6,44 @@
 
         <h2 class="display-5 fw-semibold mb-5">Бронирование столов</h2>
 
-        <div class="row">
+        <div class="row" x-data="{
+            step: 1,
+            tables: {},
+            async getReservs() {
+                {{-- this.tables = await (await fetch('/api/reserv/1')).json();
+                console.log(this.tables); --}}
+            }
+        }" x-init="getReservs">
 
-            <div class="col-12 col-md-6">
-                <span class="text-primary mb-3 d-block text-uppercase fw-semibold ls-xl">Адрес</span>
+            <div class="row" x-show="step == 1">
 
-                <div>SK Bar</div>
-                <div> ул. Карла Маркса, 47</div>
+                <div class="col-4">
+                    инфо о концерте
+                </div>
 
-                <span class="text-primary mb-3 mt-5 d-block text-uppercase fw-semibold ls-xl">Контакты</span>
+                <div class="col-8">
+                    {!! file_get_contents(public_path('shemes/skbar-1.svg')) !!}
+                </div>
 
-                <div> Бронь столов, заказ билетов - ☎ 36-26-26</div>
             </div>
 
-            <div class="col-12 col-md-6 map">
-                <img src="/images/reserv.png" class="d-block w-100">
+            <div x-show="step == 2">
+                2
+            </div>
+
+            <div x-show="step == 3">
+                3
+            </div>
+
+            <div class="row">
+                <button x-show="step == 1" @click="step = 2" class="btn btn-primary text-white">Дальше</button>
+                <button x-show="step == 2" @click="step = 1" class="btn btn-primary text-white">Назад</button>
+
+                <button x-show="step == 2" @click="step = 3" class="btn btn-primary text-white">Подтвердить</button>
             </div>
 
         </div>
 
     </div>
 
-</x-app-layout>
+</x-guest-layout>
