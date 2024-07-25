@@ -83,6 +83,7 @@
 <script>
     function initData() {
         return {
+            eventId: {{ $event->id }},
 
             tableId: false,
             name: null,
@@ -126,7 +127,21 @@
                     toastList.forEach(toast => toast.show())
                 else {
                     // axios
-                    this.step = 3
+                    axios.post('/api/reserv', {
+                            event_id: this.eventId,
+                            table: this.tableId,
+                            phone: this.phone,
+                            name: this.name,
+                        })
+                        .then(function(response) {
+                            // handle success
+                            console.log(response);
+                            this.step = 3
+                        })
+                        .catch(function(error) {
+                            // handle error
+                            console.log(error);
+                        });
                 }
             },
 
@@ -153,13 +168,14 @@
             },
 
             async getReservs() {
-                this.tables = await (await fetch("/api/reserv/1")).json();
+                this.tables = await (await fetch("/api/reserv/" + this.eventId)).json();
 
                 const elements = document.querySelectorAll("[data-table]");
                 elements.forEach((element) => {
                     const tableId = element.getAttribute("data-table");
                     const tableInfo = this.tables[tableId];
                     const table = element.querySelector("[table]");
+                    console.log(tableInfo.color)
                     table.setAttribute("fill", tableInfo.color);
                 });
 

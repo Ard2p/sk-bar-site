@@ -17,7 +17,7 @@ class Reserv extends Model
         'name'
     ];
 
-    protected $with = ['events'];
+    // protected $with = ['events'];
 
     public function events()
     {

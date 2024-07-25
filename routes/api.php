@@ -9,3 +9,4 @@ use App\Http\Controllers\ReservController;
 // })->middleware('auth:sanctum');
 
 Route::get('/reserv/{id}', [ReservController::class, 'show']);
+Route::post('/reserv', [ReservController::class, 'reserv']);
