@@ -14,6 +14,7 @@
         "lee-to/laravel-seo-by-url": "^1.0",
         "moonshine/layouts-field": "^0.0.1",
         "moonshine/moonshine": "^2.10",
+        "nutgram/laravel": "^1.4",
         "sweet1s/moonshine-roles-permissions": "^2.2",
         "vkcom/vk-php-sdk": "^5.131"
     },
