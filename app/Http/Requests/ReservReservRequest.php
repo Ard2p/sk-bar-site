@@ -16,17 +16,14 @@ class ReservReservRequest extends FormRequest
 
     public function rules(): array
     {
-        // dd($this->phone);
         return [
             'event_id' => 'required|exists:events,id',
-            'table' => [
-                'required',
-                // Rule::unique('users')->where(fn (Builder $query) => $query->where('account_id', 1))
-            ],
             'name' => 'required|string',
             'phone' => 'required|string',
+            'table' => [
+                'required',
+                Rule::unique('reservs', 'table')->where('event_id', $this->event_id)
+            ],
         ];
     }
 }
-
-//  'phone_number' => 'required|regex:/^([0-9\s\-\+\(\)]*)$/|min:9'
