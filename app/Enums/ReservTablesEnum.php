@@ -61,7 +61,7 @@ enum ReservTablesEnum: string
     public function color(): ?string
     {
         return match ($this->price()) {
-            1500 => '#a7d91f',
+            1500 => '#ff69b4',
             2000 => '#7ae8f1',
             3000 => '#a77af1',
         };

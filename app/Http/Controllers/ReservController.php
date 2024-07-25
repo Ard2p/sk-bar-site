@@ -15,7 +15,7 @@ class ReservController extends Controller
         $reserves = [];
         foreach (ReservTablesEnum::cases() as $table) {
             $reserves[$table->value] = [
-                'table' => $table->toString(),
+                'name' => $table->toString(),
                 'price' => $table->price(),
                 'color' => $table->color(),
                 'status' => ReservStatusEnum::FREE->value

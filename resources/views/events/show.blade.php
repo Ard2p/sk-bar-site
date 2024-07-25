@@ -83,16 +83,14 @@
 
                     <div class="modal" id="reservTable" tabindex="-1">
                         <div class="modal-dialog modal-dialog-centered modal-xl">
-                            <div class="modal-content">
+                            <div class="modal-content pb-3">
 
                                 <div class="modal-header">
                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                         aria-label="Close"></button>
                                 </div>
 
-                                <div class="ratio ratio-16x9">
-                                    <x-events.reserv />
-                                </div>
+                                <x-events.reserv :event="$event" />
 
                             </div>
                         </div>
