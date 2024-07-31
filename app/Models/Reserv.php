@@ -14,6 +14,7 @@ class Reserv extends Model
         'table',
         'status',
         'phone',
+        'seats',
         'name'
     ];
 

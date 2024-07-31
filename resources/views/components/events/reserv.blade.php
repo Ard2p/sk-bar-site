@@ -40,10 +40,34 @@
                 <input class="form-control bg-body-secondary" x-model="phone" x-mask="+7 (999) 999-99-99">
             </div>
 
+            <div class="mb-4">
+                <label for="name" class="form-label">Гостей</label>
+                <input class="form-control bg-body-secondary" x-model="seats" type="number" min="1">
+            </div>
+
         </div>
 
-        <div x-show="step == 3">
-            Заявка на бронь оставленна, скоро с вами свяжутся для подтверждения!
+        <div class="row flex-column align-items-center" x-show="step == 3">
+
+            <div class="col-2">
+                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                        <circle cx="12" cy="12" r="10" stroke="#0bad3b" stroke-width="1.5"></circle>
+                        <path d="M8.5 12.5L10.5 14.5L15.5 9.5" stroke="#0bad3b" stroke-width="1.5" stroke-linecap="round"
+                            stroke-linejoin="round"></path>
+                    </g>
+                </svg>
+
+            </div>
+            <div class="col-10">
+                Заявка на бронь оставленна, скоро с вами свяжутся для подтверждения!
+            </div>
+
+            {{-- <div class="mb-4">
+
+            </div> --}}
         </div>
 
     </div>
@@ -88,6 +112,7 @@
             tableId: false,
             name: null,
             phone: null,
+            seats: 1,
 
             step: 1,
             view: false,
@@ -105,8 +130,13 @@
                         const parent = current.closest("[data-table]");
                         const table = parent.querySelector("[table]");
 
-                        that.tableId = parent.getAttribute("data-table");
-                        that.fillSelectTable(table);
+                        const tableId = parent.getAttribute("data-table");
+                        const tableInfo = that.tables[tableId];
+
+                        if (tableInfo.status == 'free') {
+                            that.tableId = parent.getAttribute("data-table");
+                            that.fillSelectTable(table);
+                        }
                     });
                 }
 
@@ -116,6 +146,7 @@
             },
 
             check() {
+                const that = this;
                 var toastElList = [].slice.call(document.querySelectorAll('.toast'));
                 var toastList = toastElList.map(function(toastEl) {
                     return new bootstrap.Toast(toastEl, {
@@ -126,17 +157,27 @@
                 if (!this.tableId || !this.name || !this.phone)
                     toastList.forEach(toast => toast.show())
                 else {
-                    // axios
                     axios.post('/api/reserv', {
                             event_id: this.eventId,
                             table: this.tableId,
                             phone: this.phone,
+                            seats: this.seats,
                             name: this.name,
                         })
                         .then(function(response) {
-                            // handle success
-                            console.log(response);
-                            this.step = 3
+
+                            console.log('reserv ok', response);
+
+                            if (response.data == 'ok') {
+                                that.step = 3;
+
+                                that.tableId = null;
+                                that.phone = null;
+                                that.seats = null;
+                                that.name = null;
+                            }
+
+                            console.log(that.step);
                         })
                         .catch(function(error) {
                             // handle error
@@ -175,8 +216,16 @@
                     const tableId = element.getAttribute("data-table");
                     const tableInfo = this.tables[tableId];
                     const table = element.querySelector("[table]");
-                    console.log(tableInfo.color)
+
                     table.setAttribute("fill", tableInfo.color);
+
+                    if (tableId == this.tableId) {
+                        if (tableInfo.status == 'free') {
+                            this.fillSelectTable(table);
+                        } else {
+                            this.tableId = null;
+                        }
+                    }
                 });
 
                 this.view = true;
@@ -189,22 +238,4 @@
     svg {
         user-select: none
     }
-
-    /* [data-table]:hover>[table] {
-        fill: yellow;
-    } */
-
-    /* [data-table]:active>[table] {
-        stroke: red;
-        stroke-width: 4px;
-    } */
-
-    /* .tooltip {
-        position: absolute;
-        background-color: #f9f9f9;
-        padding: 5px;
-        border: 1px solid #ccc;
-        border-radius: 5px;
-        pointer-events: none;
-    } */
 </style>

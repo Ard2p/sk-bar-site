@@ -29,6 +29,7 @@ enum ReservStatusEnum: string
     public function getColorNotFree(): ?string
     {
         return match ($this) {
+            self::FREE => null,
             self::PENDING => 'yellow',
             self::RESERV => 'white'
         };

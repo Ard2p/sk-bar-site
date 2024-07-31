@@ -6,7 +6,7 @@ use Illuminate\Validation\Rule;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Foundation\Http\FormRequest;
 
-class ReservReservRequest extends FormRequest
+class StoreReservRequest extends FormRequest
 {
 
     public function authorize(): bool
@@ -20,6 +20,7 @@ class ReservReservRequest extends FormRequest
             'event_id' => 'required|exists:events,id',
             'name' => 'required|string',
             'phone' => 'required|string',
+            'seats' => 'required|numeric|min:1',
             'table' => [
                 'required',
                 Rule::unique('reservs', 'table')->where('event_id', $this->event_id)

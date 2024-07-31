@@ -18,6 +18,7 @@ return new class extends Migration
             $table->string('status');
             $table->string('name')->nullable();
             $table->string('phone')->nullable();
+            $table->integer('seats')->default(1);
             $table->timestamps();
         });
     }

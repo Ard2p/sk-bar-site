@@ -1,7 +1,10 @@
 <?php
+
 /** @var SergiX44\Nutgram\Nutgram $bot */
 
 use SergiX44\Nutgram\Nutgram;
+use App\Http\Controllers\ReservController;
+use App\Http\Handlers\ReservHandler;
 
 /*
 |--------------------------------------------------------------------------
@@ -12,7 +15,11 @@ use SergiX44\Nutgram\Nutgram;
 | handlers are loaded by the NutgramServiceProvider. Enjoy!
 |
 */
+// Nutgram $bot,
+$bot->onCallbackQueryData('confirm:{reserv}', function (Nutgram $bot, $reserv) {
+    ReservHandler::confirm($bot, $reserv);
+});
 
-$bot->onCommand('start', function (Nutgram $bot) {
-    $bot->sendMessage('Hello, world!');
-})->description('The start command!');
+$bot->onCallbackQueryData('cancel:{reserv}', function (Nutgram $bot, $reserv) {
+    ReservHandler::cancel($bot, $reserv);
+});
