@@ -14,16 +14,8 @@ class ReservHandler
 
     public static function reserv(Nutgram $bot, Reserv $reserv)
     {
-        $template = (string)view('reservs.telegram.admin', [
-            'status' => __('⚠️ Ожидает подтверждения'),
-            'table' => $reserv->table,
-            'name' => $reserv->name,
-            'phone' => $reserv->phone,
-            'seats' => $reserv->seats
-        ]);
-
         $bot->sendMessage(
-            $template,
+            self::templateBuilder($reserv, __('⚠️ Ожидает подтверждения')),
             config('nutgram.reserv_group'),
             parse_mode: 'HTML',
             reply_markup: InlineKeyboardMarkup::make()->addRow(
@@ -35,15 +27,7 @@ class ReservHandler
 
     public static function confirm(Nutgram $bot, $reservId)
     {
-        $reserv = Reserv::find($reservId);
-
-        $template = (string)view('reservs.telegram.admin', [
-            'status' => __('✅ Бронь подтверждена'),
-            'table' => $reserv->table,
-            'name' => $reserv->name,
-            'phone' => $reserv->phone,
-            'seats' => $reserv->seats
-        ]);
+        $reserv = Reserv::with('event')->find($reservId);
 
         $otherReserv = Reserv::where('event_id', $reserv->event_id)->where('table', $reserv->table)->whereNot('id', $reservId)->get();
         if (!count($otherReserv)) {
@@ -51,7 +35,7 @@ class ReservHandler
             $reserv->save();
 
             $bot->editMessageText(
-                $template,
+                self::templateBuilder($reserv, __('✅ Бронь подтверждена')),
                 parse_mode: ParseMode::HTML,
                 reply_markup: InlineKeyboardMarkup::make()->addRow(
                     InlineKeyboardButton::make(__('❌ Отменить'), callback_data: 'cancel:' . $reserv->id)
@@ -62,21 +46,26 @@ class ReservHandler
 
     public static function cancel(Nutgram $bot, $reservId)
     {
-        $reserv = Reserv::find($reservId);
-
-        $template = (string)view('reservs.telegram.admin', [
-            'status' => __('❌ Бронь отменена'),
-            'table' => $reserv->table,
-            'name' => $reserv->name,
-            'phone' => $reserv->phone,
-            'seats' => $reserv->seats
-        ]);
+        $reserv = Reserv::with('event')->find($reservId);
 
         $reserv->delete();
 
         $bot->editMessageText(
-            $template,
+            self::templateBuilder($reserv, __('❌ Бронь отменена')),
             parse_mode: ParseMode::HTML
         );
+    }
+
+    public static function templateBuilder($reserv, $status)
+    {
+        return (string)view('reservs.telegram.admin', [
+            'status' => $status,
+            'table' => $reserv->table,
+            'name' => $reserv->name,
+            'phone' => $reserv->phone,
+            'seats' => $reserv->seats,
+            'event' => $reserv->event->name,
+            'date' => $reserv->event->guest_start->format('d.m'),
+        ]);
     }
 }

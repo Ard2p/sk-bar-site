@@ -18,9 +18,9 @@ class Reserv extends Model
         'name'
     ];
 
-    // protected $with = ['events'];
+    // protected $with = ['event'];
 
-    public function events()
+    public function event()
     {
         return $this->belongsTo(Event::class);
     }

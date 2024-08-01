@@ -55,19 +55,16 @@
                     <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
                     <g id="SVGRepo_iconCarrier">
                         <circle cx="12" cy="12" r="10" stroke="#0bad3b" stroke-width="1.5"></circle>
-                        <path d="M8.5 12.5L10.5 14.5L15.5 9.5" stroke="#0bad3b" stroke-width="1.5" stroke-linecap="round"
-                            stroke-linejoin="round"></path>
+                        <path d="M8.5 12.5L10.5 14.5L15.5 9.5" stroke="#0bad3b" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round"></path>
                     </g>
                 </svg>
 
             </div>
+
             <div class="col-10">
                 Заявка на бронь оставленна, скоро с вами свяжутся для подтверждения!
             </div>
-
-            {{-- <div class="mb-4">
-
-            </div> --}}
         </div>
 
     </div>
@@ -80,28 +77,6 @@
             <button x-show="step == 2" @click="check()" class="btn btn-primary text-white">Подтвердить</button>
         </div>
     </div>
-
-    <div aria-live="polite" aria-atomic="true" class="bg-dark position-relative bd-example-toasts">
-        <div class="toast-container position-fixed p-3 top-0 end-0">
-
-            <div x-show="!tableId || !name || !phone" class="toast text-white bg-primary border-0" role="alert"
-                aria-live="assertive" aria-atomic="true">
-                <div class="d-flex justify-content-between">
-                    <div class="toast-body">
-                        <ul class="m-0">
-                            <li x-show="!tableId">Выберите стол</li>
-                            <li x-show="!name">Заполните ФИО</li>
-                            <li x-show="!phone">Заполните телефон</li>
-                        </ul>
-                    </div>
-                    <button class="btn-close btn-close-white me-2 mt-2" data-bs-dismiss="toast"
-                        aria-label="Close"></button>
-                </div>
-            </div>
-
-        </div>
-    </div>
-
 </div>
 
 <script>
@@ -154,9 +129,29 @@
                     })
                 })
 
-                if (!this.tableId || !this.name || !this.phone)
-                    toastList.forEach(toast => toast.show())
-                else {
+                if (!this.tableId || !this.name || !this.phone) {
+
+                    if (!this.tableId)
+                        new window.bs5.Toast({
+                            body: 'Выберите стол',
+                            delay: 5000,
+                            className: 'border-0 bg-primary text-white',
+                        }).show()
+
+                    if (!this.phone)
+                        new window.bs5.Toast({
+                            body: 'Заполните телефон',
+                            delay: 5000,
+                            className: 'border-0 bg-primary text-white',
+                        }).show()
+
+                    if (!this.name)
+                        new window.bs5.Toast({
+                            body: 'Заполните ФИО',
+                            delay: 5000,
+                            className: 'border-0 bg-primary text-white',
+                        }).show()
+                } else {
                     axios.post('/api/reserv', {
                             event_id: this.eventId,
                             table: this.tableId,
@@ -165,9 +160,6 @@
                             name: this.name,
                         })
                         .then(function(response) {
-
-                            console.log('reserv ok', response);
-
                             if (response.data == 'ok') {
                                 that.step = 3;
 
@@ -176,12 +168,17 @@
                                 that.seats = null;
                                 that.name = null;
                             }
-
-                            console.log(that.step);
                         })
                         .catch(function(error) {
-                            // handle error
-                            console.log(error);
+                            Object.keys(error.response.data.errors).forEach(function(key) {
+                                error.response.data.errors[key].forEach(async (error) => {
+                                    new window.bs5.Toast({
+                                        body: error,
+                                        delay: 5000,
+                                        className: 'border-0 bg-primary text-white',
+                                    }).show()
+                                });
+                            });
                         });
                 }
             },
