@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RK7QueryResult ServerVersion="7.7.0.212" XmlVersion="248" NetName="SKBAR_MID" Status="Ok" CMD="GetFunctions" ErrorText="" DateTime="2024-05-15T16:24:23" WorkTime="16" Processed="1" ArrivalDateTime="2024-05-15T16:24:23">
+	<Query name="AddExternalTariff"/>
+	<Query name="AddReservation"/>
+	<Query name="ApplyPersonalCard"/>
+	<Query name="CalcOrder"/>
+	<Query name="CalcOrder2"/>
+	<Query name="CalcOrder3"/>
+	<Query name="CallDeviceMenu"/>
+	<Query name="ChangeDrawerBalance"/>
+	<Query name="ChangeSessionCourse"/>
+	<Query name="CheckLicense"/>
+	<Query name="ClearDishRests"/>
+	<Query name="CloseCardValShift"/>
+	<Query name="CloseCashShift"/>
+	<Query name="CloseCommonShift"/>
+	<Query name="CloseSeat"/>
+	<Query name="CloseVisit"/>
+	<Query name="CloseWebForm"/>
+	<Query name="ConfirmOperation"/>
+	<Query name="CreateInvoice"/>
+	<Query name="CreateOrder"/>
+	<Query name="CreateVisit"/>
+	<Query name="DeleteReceipt"/>
+	<Query name="DeleteReceiptPayments"/>
+	<Query name="DeliveryCancelEdit"/>
+	<Query name="DeliveryChangeRestState"/>
+	<Query name="DeliveryConfirmEdit"/>
+	<Query name="DeliveryEditOrder"/>
+	<Query name="DeliveryGetOrderList"/>
+	<Query name="DeliveryLockOrder" deprecated="1"/>
+	<Query name="DeliveryPayOrders"/>
+	<Query name="DeliveryPostOrder"/>
+	<Query name="DeliveryPrintInvoice"/>
+	<Query name="DeliveryServPrint"/>
+	<Query name="DeliverySetForwarder"/>
+	<Query name="DeliverySetLastProcessTime"/>
+	<Query name="DeliverySetOrderNumGen"/>
+	<Query name="DeliveryUpdateStatus"/>
+	<Query name="DeliveryValidateOrder"/>
+	<Query name="DeliveryVoidOrder"/>
+	<Query name="DelReservation"/>
+	<Query name="DelWaiterMessages"/>
+	<Query name="DeviceStatuses"/>
+	<Query name="FarCardsAnyInfoRaw"/>
+	<Query name="FarCardsAnyInfoXML"/>
+	<Query name="FindEmployee"/>
+	<Query name="FindReceiptsForReturn"/>
+	<Query name="GetCardInfo"/>
+	<Query name="GetConnectInfoForNode"/>
+	<Query name="GetDataListInfo"/>
+	<Query name="GetDishRest"/>
+	<Query name="GetDishRests"/>
+	<Query name="GetDocByLayout" deprecated="1"/>
+	<Query name="GetDrawerBalance"/>
+	<Query name="GetEmployeeInfo"/>
+	<Query name="GetEmployeeInfo2"/>
+	<Query name="GetFunctions"/>
+	<Query name="GetInvoice"/>
+	<Query name="GetItemBlob"/>
+	<Query name="GetOrder"/>
+	<Query name="GetOrderBindings"/>
+	<Query name="GetOrderList"/>
+	<Query name="GetOrderList2"/>
+	<Query name="GetOrderMenu"/>
+	<Query name="GetOrderMenu2"/>
+	<Query name="GetOrders"/>
+	<Query name="GetParamValue"/>
+	<Query name="GetPrintLayout"/>
+	<Query name="GetReceiptList"/>
+	<Query name="GetReceipts" deprecated="1"/>
+	<Query name="GetRefData"/>
+	<Query name="GetRefDataFiltered"/>
+	<Query name="GetRefItemBlob"/>
+	<Query name="GetRefList"/>
+	<Query name="GetReservationResults"/>
+	<Query name="GetSystemInfo2"/>
+	<Query name="GetUsageValue"/>
+	<Query name="GetWaiterList"/>
+	<Query name="GetWaiterMessages"/>
+	<Query name="GetXMLLicenseInstanceSeqNumber"/>
+	<Query name="KDSGetDishData" deprecated="1"/>
+	<Query name="KDSGetDishData2"/>
+	<Query name="KDSGetDishData3"/>
+	<Query name="KDSGetRefsData"/>
+	<Query name="KDSGetSystemInfo"/>
+	<Query name="KDSSetDishData" deprecated="1"/>
+	<Query name="KDSSetDishData2"/>
+	<Query name="KDSSetDishData3"/>
+	<Query name="KDSSetDishFlag"/>
+	<Query name="ListDeviceMenu"/>
+	<Query name="LoadOrderFromXML" deprecated="1"/>
+	<Query name="LockOrder"/>
+	<Query name="LogicalDevices"/>
+	<Query name="LoginOnStation"/>
+	<Query name="MakeCardDeposit"/>
+	<Query name="MakeReturnGoods"/>
+	<Query name="OpenSeat"/>
+	<Query name="OpenWebForm"/>
+	<Query name="ParseMCR"/>
+	<Query name="PayOrder"/>
+	<Query name="PrintBill"/>
+	<Query name="PrintDataXML"/>
+	<Query name="PrintMaket"/>
+	<Query name="PrintRawData"/>
+	<Query name="ProcessOperation" deprecated="1"/>
+	<Query name="ReadOrderData" deprecated="1"/>
+	<Query name="RegisterEmployee"/>
+	<Query name="RegisterLogs"/>
+	<Query name="SaveOrder"/>
+	<Query name="SendToVDU"/>
+	<Query name="SetDishRate"/>
+	<Query name="SetDishRests"/>
+	<Query name="TerminalAuthError"/>
+	<Query name="TerminalAuthError2"/>
+	<Query name="TerminalAuthPay"/>
+	<Query name="TerminalAuthPay2"/>
+	<Query name="TerminalAuthStart"/>
+	<Query name="TerminalAuthStart2"/>
+	<Query name="TransferDishes"/>
+	<Query name="UndoBill"/>
+	<Query name="UndoPersonalCard"/>
+	<Query name="UndoReceipt"/>
+	<Query name="UnregisterEmployee"/>
+	<Query name="UpdateOrder"/>
+	<Query name="ValidateOrder"/>
+	<Query name="VectorBrunswickData" deprecated="1"/>
+	<Query name="VoidOrder"/>
+	<Query name="WaiterMessage"/>
+	<Query name="WriteOrderData" deprecated="1"/>
+</RK7QueryResult>

@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RK7QueryResult ServerVersion="7.7.0.212" XmlVersion="248" NetName="SKBAR_MID" Status="Ok" CMD="GetRefData" ErrorText="" DateTime="2024-05-14T00:53:50" WorkTime="0" Processed="1" ArrivalDateTime="2024-05-14T00:53:50">
+	<RK7Reference DataVersion="90" ClassName="Trk7Tables" Name="TABLES" MinIdent="1" MaxIdent="0" ViewRight="0" UpdateRight="53" ChildRight="53" DeleteRight="53" XMLExport="true" XMLMask="*" TotalItemCount="49">
+		<Items>
+			<Item Ident="1000017" ItemIdent="1000017" SourceIdent="0" GUIDString="{61CED10C-DDAD-4570-8269-F3BF1C8927E5}" AssignChildsOnServer="false" ActiveHierarchy="true" Code="1" Name="1" MainParentIdent="1000016" Status="rsActive" VisualType_Image="78" VisualType_BColor="536870911" VisualType_TextColor="536870911" VisualType_Flags="bsPictureTop" ServingPosition="0" TableGroup="0" Hall="1000016" RightLvl="0" DoserDevice="0" HallPlanItemKind="pikTable" TableUseKind="tukNone" MaxGuests="10" ButtonNum="0" PagerMsgNum="0" DeviceFlags="[rdfShutDownOnLimitExceeded]" LogDevice="0" Tariff="0" MaxDeviceTime="0" OnOffInterval="0" Lane="0" UserAttribute1="" UserAttribute2="" UserAttribute3="" ShutDownOnLimitExceeded="true" UseDeviceAsTable="false" AllowReservation="true">
+				<TableAttributes ClassName="TTableAttributesAssigns">
+					<Items/>
+				</TableAttributes>
+				<Childs ClassName="tChildCollection"/>
+			</Item>
+			<Item Ident="1000018" ItemIdent="1000018" SourceIdent="0" GUIDString="{BB96DEB6-D09A-4472-B299-D5187515977F}" AssignChildsOnServer="false" ActiveHierarchy="true" Code="2" Name="2" MainParentIdent="1000016" Status="rsActive" VisualType_Image="78" VisualType_BColor="536870911" VisualType_TextColor="536870911" VisualType_Flags="bsPictureTop" ServingPosition="0" TableGroup="0" Hall="1000016" RightLvl="0" DoserDevice="0" HallPlanItemKind="pikTable" TableUseKind="tukNone" MaxGuests="10" ButtonNum="0" PagerMsgNum="0" DeviceFlags="[rdfShutDownOnLimitExceeded]" LogDevice="0" Tariff="0" MaxDeviceTime="0" OnOffInterval="0" Lane="0" UserAttribute1="" UserAttribute2="" UserAttribute3="" ShutDownOnLimitExceeded="true" UseDeviceAsTable="false" AllowReservation="true">
+				<TableAttributes ClassName="TTableAttributesAssigns">
+					<Items/>
+				</TableAttributes>
+				<Childs ClassName="tChildCollection"/>
+			</Item>
+			<Item Ident="1000019" ItemIdent="1000019" SourceIdent="0" GUIDString="{C9C039A5-4CC7-4952-8361-0E3394B8BAE4}" AssignChildsOnServer="false" ActiveHierarchy="true" Code="3" Name="3" MainParentIdent="1000016" Status="rsActive" VisualType_Image="78" VisualType_BColor="536870911" VisualType_TextColor="536870911" VisualType_Flags="bsPictureTop" ServingPosition="0" TableGroup="0" Hall="1000016" RightLvl="0" DoserDevice="0" HallPlanItemKind="pikTable" TableUseKind="tukNone" MaxGuests="10" ButtonNum="0" PagerMsgNum="0" DeviceFlags="[rdfShutDownOnLimitExceeded]" LogDevice="0" Tariff="0" MaxDeviceTime="0" OnOffInterval="0" Lane="0" UserAttribute1="" UserAttribute2="" UserAttribute3="" ShutDownOnLimitExceeded="true" UseDeviceAsTable="false" AllowReservation="true">
+				<TableAttributes ClassName="TTableAttributesAssigns">
+					<Items/>
+				</TableAttributes>
+				<Childs ClassName="tChildCollection"/>
+			</Item>
+			<Item Ident="1000020" ItemIdent="1000020" SourceIdent="0" GUIDString="{5DFC0B80-6C79-40D8-B9B2-FDE596EF7CD9}" AssignChildsOnServer="false" ActiveHierarchy="true" Code="4" Name="4" MainParentIdent="1000016" Status="rsActive" VisualType_Image="78" VisualType_BColor="536870911" VisualType_TextColor="536870911" VisualType_Flags="bsPictureTop" ServingPosition="0" TableGroup="0" Hall="1000016" RightLvl="0" DoserDevice="0" HallPlanItemKind="pikTable" TableUseKind="tukNone" MaxGuests="10" ButtonNum="0" PagerMsgNum="0" DeviceFlags="[rdfShutDownOnLimitExceeded]" LogDevice="0" Tariff="0" MaxDeviceTime="0" OnOffInterval="0" Lane="0" UserAttribute1="" UserAttribute2="" UserAttribute3="" ShutDownOnLimitExceeded="true" UseDeviceAsTable="false" AllowReservation="true">
+				<TableAttributes ClassName="TTableAttributesAssigns">
+					<Items/>
+				</TableAttributes>
+				<Childs ClassName="tChildCollection"/>
+			</Item>
+			<Item Ident="1000021" ItemIdent="1000021" SourceIdent="0" GUIDString="{F2D4CDBB-B195-41D7-9225-9A753704FF8F}" AssignChildsOnServer="false" ActiveHierarchy="true" Code="5" Name="5" MainParentIdent="1000016" Status="rsActive" VisualType_Image="41" VisualType_BColor="536870911" VisualType_TextColor="536870911" VisualType_Flags="bsPictureTop" ServingPosition="0" TableGroup="0" Hall="1000016" RightLvl="0" DoserDevice="0" HallPlanItemKind="pikTable" TableUseKind="tukNone" MaxGuests="10" ButtonNum="0" PagerMsgNum="0" DeviceFlags="[rdfShutDownOnLimitExceeded]" LogDevice="0" Tariff="0" MaxDeviceTime="0" OnOffInterval="0" Lane="0" UserAttribute1="" UserAttribute2="" UserAttribute3="" ShutDownOnLimitExceeded="true" UseDeviceAsTable="false" AllowReservation="true">
+				<TableAttributes ClassName="TTableAttributesAssigns">
+					<Items/>
+				</TableAttributes>
+				<Childs ClassName="tChildCollection"/>
+			</Item>
+			<Item Ident="1000022" ItemIdent="1000022" SourceIdent="0" GUIDString="{6590F65E-F09A-438C-8138-34CEADDAA53D}" AssignChildsOnServer="false" ActiveHierarchy="true" Code="6" Name="6" MainParentIdent="1000016" Status="rsActive" VisualType_Image="41" VisualType_BColor="536870911" VisualType_TextColor="536870911" VisualType_Flags="bsPictureTop" ServingPosition="0" TableGroup="0" Hall="1000016" RightLvl="0" DoserDevice="0" HallPlanItemKind="pikTable" TableUseKind="tukNone" MaxGuests="10" ButtonNum="0" PagerMsgNum="0" DeviceFlags="[rdfShutDownOnLimitExceeded]" LogDevice="0" Tariff="0" MaxDeviceTime="0" OnOffInterval="0" Lane="0" UserAttribute1="" UserAttribute2="" UserAttribute3="" ShutDownOnLimitExceeded="true" UseDeviceAsTable="false" AllowReservation="true">
+				<TableAttributes ClassName="TTableAttributesAssigns">
+					<Items/>
+				</TableAttributes>
+				<Childs ClassName="tChildCollection"/>
+			</Item>
+			<Item Ident="1000023" ItemIdent="1000023" SourceIdent="0" GUIDString="{C987CF34-690A-446C-B89A-35B59E5EF859}" AssignChildsOnServer="false" ActiveHierarchy="true" Code="7" Name="7" MainParentIdent="1000016" Status="rsActive" VisualType_Image="41" VisualType_BColor="536870911" VisualType_TextColor="536870911" VisualType_Flags="bsPictureTop" ServingPosition="0" TableGroup="0" Hall="1000016" RightLvl="0" DoserDevice="0" HallPlanItemKind="pikTable" TableUseKind="tukNone" MaxGuests="10" ButtonNum="0" PagerMsgNum="0" DeviceFlags="[rdfShutDownOnLimitExceeded]" LogDevice="0" Tariff="0" MaxDeviceTime="0" OnOffInterval="0" Lane="0" UserAttribute1="" UserAttribute2="" UserAttribute3="" ShutDownOnLimitExceeded="true" UseDeviceAsTable="false" AllowReservation="true">
+				<TableAttributes ClassName="TTableAttributesAssigns">
+					<Items/>
+				</TableAttributes>
+				<Childs ClassName="tChildCollection"/>
+			</Item>
+			<Item Ident="1000024" ItemIdent="1000024" SourceIdent="0" GUIDString="{491196C4-B27D-4F21-AE91-47FACE8D06FD}" AssignChildsOnServer="false" ActiveHierarchy="true" Code="8" Name="8" MainParentIdent="1000016" Status="rsActive" VisualType_Image="41" VisualType_BColor="536870911" VisualType_TextColor="536870911" VisualType_Flags="bsPictureTop" ServingPosition="0" TableGroup="0" Hall="1000016" RightLvl="0" DoserDevice="0" HallPlanItemKind="pikTable" TableUseKind="tukNone" MaxGuests="10" ButtonNum="0" PagerMsgNum="0" DeviceFlags="[rdfShutDownOnLimitExceeded]" LogDevice="0" Tariff="0" MaxDeviceTime="0" OnOffInterval="0" Lane="0" UserAttribute1="" UserAttribute2="" UserAttribute3="" ShutDownOnLimitExceeded="true" UseDeviceAsTable="false" AllowReservation="true">
+				<TableAttributes ClassName="TTableAttributesAssigns">
+					<Items/>
+				</TableAttributes>
+				<Childs ClassName="tChildCollection"/>
+			</Item>
+			<Item Ident="1000025" ItemIdent="1000025" SourceIdent="0" GUIDString="{80A306B9-D859-4499-B5EC-C4762DADB8AD}" AssignChildsOnServer="false" ActiveHierarchy="true" Code="9" Name="9" MainParentIdent="1000016" Status="rsActive" VisualType_Image="41" VisualType_BColor="536870911" VisualType_TextColor="536870911" VisualType_Flags="bsPictureTop" ServingPosition="0" TableGroup="0" Hall="1000016" RightLvl="0" DoserDevice="0" HallPlanItemKind="pikTable" TableUseKind="tukNone" MaxGuests="10" ButtonNum="0" PagerMsgNum="0" DeviceFlags="[rdfShutDownOnLimitExceeded]" LogDevice="0" Tariff="0" MaxDeviceTime="0" OnOffInterval="0" Lane="0" UserAttribute1="" UserAttribute2="" UserAttribute3="" ShutDownOnLimitExceeded="true" UseDeviceAsTable="false" AllowReservation="true">
+				<TableAttributes ClassName="TTableAttributesAssigns">
+					<Items/>
+				</TableAttributes>
+				<Childs ClassName="tChildCollection"/>
+			</Item>
+			<Item Ident="1000026" ItemIdent="1000026" SourceIdent="0" GUIDString="{B8E2B5F5-707F-4D1B-B46C-7685CBFE491E}" AssignChildsOnServer="false" ActiveHierarchy="true" Code="10" Name="10" MainParentIdent="1000016" Status="rsActive" VisualType_Image="41" VisualType_BColor="536870911" VisualType_TextColor="536870911" VisualType_Flags="bsPictureTop" ServingPosition="0" TableGroup="0" Hall="1000016" RightLvl="0" DoserDevice="0" HallPlanItemKind="pikTable" TableUseKind="tukNone" MaxGuests="10" ButtonNum="0" PagerMsgNum="0" DeviceFlags="[rdfShutDownOnLimitExceeded]" LogDevice="0" Tariff="0" MaxDeviceTime="0" OnOffInterval="0" Lane="0" UserAttribute1="" UserAttribute2="" UserAttribute3="" ShutDownOnLimitExceeded="true" UseDeviceAsTable="false" AllowReservation="true">
+				<TableAttributes ClassName="TTableAttributesAssigns">
+					<Items/>
+				</TableAttributes>
+				<Childs ClassName="tChildCollection"/>
+			</Item>
+			<Item Ident="1000027" ItemIdent="1000027" SourceIdent="0" GUIDString="{341C2A00-7CB9-4D84-8BC3-BB987DC82049}" AssignChildsOnServer="false" ActiveHierarchy="true" Code="11" Name="11" MainParentIdent="1000016" Status="rsActive" VisualType_Image="41" VisualType_BColor="536870911" VisualType_TextColor="536870911" VisualType_Flags="bsPictureTop" ServingPosition="0" TableGroup="0" Hall="1000016" RightLvl="0" DoserDevice="0" HallPlanItemKind="pikTable" TableUseKind="tukNone" MaxGuests="10" ButtonNum="0" PagerMsgNum="0" DeviceFlags="[rdfShutDownOnLimitExceeded]" LogDevice="0" Tariff="0" MaxDeviceTime="0" OnOffInterval="0" Lane="0" UserAttribute1="" UserAttribute2="" UserAttribute3="" ShutDownOnLimitExceeded="true" UseDeviceAsTable="false" AllowReservation="true">
+				<TableAttributes ClassName="TTableAttributesAssigns">
+					<Items/>
+				</TableAttributes>
+				<Childs ClassName="tChildCollection"/>
+			</Item>
+			<Item Ident="1000028" ItemIdent="1000028" SourceIdent="0" GUIDString="{869DEC7D-13EA-4D3D-BD48-BEC69F9D7C2F}" AssignChildsOnServer="false" ActiveHierarchy="true" Code="12" Name="12" MainParentIdent="1000016" Status="rsActive" VisualType_Image="81" VisualType_BColor="536870911" VisualType_TextColor="536870911" VisualType_Flags="bsPictureTop" ServingPosition="0" TableGroup="0" Hall="1000016" RightLvl="0" DoserDevice="0" HallPlanItemKind="pikTable" TableUseKind="tukNone" MaxGuests="10" ButtonNum="0" PagerMsgNum="0" DeviceFlags="[rdfShutDownOnLimitExceeded]" LogDevice="0" Tariff="0" MaxDeviceTime="0" OnOffInterval="0" Lane="0" UserAttribute1="" UserAttribute2="" UserAttribute3="" ShutDownOnLimitExceeded="true" UseDeviceAsTable="false" AllowReservation="true">
+				<TableAttributes ClassName="TTableAttributesAssigns">
+					<Items/>
+				</TableAttributes>
+				<Childs ClassName="tChildCollection"/>
+			</Item>
+			<Item Ident="1000029" ItemIdent="1000029" SourceIdent="0" GUIDString="{189242A9-CC05-43F8-956B-B1D5EBC9B2A7}" AssignChildsOnServer="false" ActiveHierarchy="true" Code="13" Name="13" MainParentIdent="1000016" Status="rsActive" VisualType_Image="81" VisualType_BColor="536870911" VisualType_TextColor="536870911" VisualType_Flags="bsPictureTop" ServingPosition="0" TableGroup="0" Hall="1000016" RightLvl="0" DoserDevice="0" HallPlanItemKind="pikTable" TableUseKind="tukNone" MaxGuests="10" ButtonNum="0" PagerMsgNum="0" DeviceFlags="[rdfShutDownOnLimitExceeded]" LogDevice="0" Tariff="0" MaxDeviceTime="0" OnOffInterval="0" Lane="0" UserAttribute1="" UserAttribute2="" UserAttribute3="" ShutDownOnLimitExceeded="true" UseDeviceAsTable="false" AllowReservation="true">
+				<TableAttributes ClassName="TTableAttributesAssigns">
+					<Items/>
+				</TableAttributes>
+				<Childs ClassName="tChildCollection"/>
+			</Item>
+			<Item Ident="1000030" ItemIdent="1000030" SourceIdent="0" GUIDString="{F9265EA9-9A87-4F6A-AFC2-BB2087F97931}" AssignChildsOnServer="false" ActiveHierarchy="true" Code="14" Name="14" MainParentIdent="1000016" Status="rsActive" VisualType_Image="81" VisualType_BColor="536870911" VisualType_TextColor="536870911" VisualType_Flags="bsPictureTop" ServingPosition="0" TableGroup="0" Hall="1000016" RightLvl="0" DoserDevice="0" HallPlanItemKind="pikTable" TableUseKind="tukNone" MaxGuests="10" ButtonNum="0" PagerMsgNum="0" DeviceFlags="[rdfShutDownOnLimitExceeded]" LogDevice="0" Tariff="0" MaxDeviceTime="0" OnOffInterval="0" Lane="0" UserAttribute1="" UserAttribute2="" UserAttribute3="" ShutDownOnLimitExceeded="true" UseDeviceAsTable="false" AllowReservation="true">
+				<TableAttributes ClassName="TTableAttributesAssigns">
+					<Items/>
+				</TableAttributes>
+				<Childs ClassName="tChildCollection"/>
+			</Item>
+			<Item Ident="1000031" ItemIdent="1000031" SourceIdent="0" GUIDString="{AD42A032-218B-4934-B92E-0A6FA34EACD6}" AssignChildsOnServer="false" ActiveHierarchy="true" Code="15" Name="15" MainParentIdent="1000016" Status="rsActive" VisualType_Image="41" VisualType_BColor="536870911" VisualType_TextColor="536870911" VisualType_Flags="bsPictureTop" ServingPosition="0" TableGroup="0" Hall="1000016" RightLvl="0" DoserDevice="0" HallPlanItemKind="pikTable" TableUseKind="tukNone" MaxGuests="10" ButtonNum="0" PagerMsgNum="0" DeviceFlags="[rdfShutDownOnLimitExceeded]" LogDevice="0" Tariff="0" MaxDeviceTime="0" OnOffInterval="0" Lane="0" UserAttribute1="" UserAttribute2="" UserAttribute3="" ShutDownOnLimitExceeded="true" UseDeviceAsTable="false" AllowReservation="true">
+				<TableAttributes ClassName="TTableAttributesAssigns">
+					<Items/>
+				</TableAttributes>
+				<Childs ClassName="tChildCollection"/>
+			</Item>
+			<Item Ident="1000032" ItemIdent="1000032" SourceIdent="0" GUIDString="{1FCBD9BC-A64B-4EB4-B20C-F5593E319F14}" AssignChildsOnServer="false" ActiveHierarchy="true" Code="16" Name="16" MainParentIdent="1000016" Status="rsActive" VisualType_Image="41" VisualType_BColor="536870911" VisualType_TextColor="536870911" VisualType_Flags="bsPictureTop" ServingPosition="0" TableGroup="0" Hall="1000016" RightLvl="0" DoserDevice="0" HallPlanItemKind="pikTable" TableUseKind="tukNone" MaxGuests="10" ButtonNum="0" PagerMsgNum="0" DeviceFlags="[rdfShutDownOnLimitExceeded]" LogDevice="0" Tariff="0" MaxDeviceTime="0" OnOffInterval="0" Lane="0" UserAttribute1="" UserAttribute2="" UserAttribute3="" ShutDownOnLimitExceeded="true" UseDeviceAsTable="false" AllowReservation="true">
+				<TableAttributes ClassName="TTableAttributesAssigns">
+					<Items/>
+				</TableAttributes>
+				<Childs ClassName="tChildCollection"/>
+			</Item>
+			<Item Ident="1000033" ItemIdent="1000033" SourceIdent="0" GUIDString="{833639CD-7E4D-4191-B0BB-EB2FBB674409}" AssignChildsOnServer="false" ActiveHierarchy="true" Code="17" Name="17" MainParentIdent="1000016" Status="rsActive" VisualType_Image="41" VisualType_BColor="536870911" VisualType_TextColor="536870911" VisualType_Flags="bsPictureTop" ServingPosition="0" TableGroup="0" Hall="1000016" RightLvl="0" DoserDevice="0" HallPlanItemKind="pikTable" TableUseKind="tukNone" MaxGuests="10" ButtonNum="0" PagerMsgNum="0" DeviceFlags="[rdfShutDownOnLimitExceeded]" LogDevice="0" Tariff="0" MaxDeviceTime="0" OnOffInterval="0" Lane="0" UserAttribute1="" UserAttribute2="" UserAttribute3="" ShutDownOnLimitExceeded="true" UseDeviceAsTable="false" AllowReservation="true">
+				<TableAttributes ClassName="TTableAttributesAssigns">
+					<Items/>
+				</TableAttributes>
+				<Childs ClassName="tChildCollection"/>
+			</Item>
+			<Item Ident="1000034" ItemIdent="1000034" SourceIdent="0" GUIDString="{63B084B4-8F8F-4A90-A2A9-C874146CABBB}" AssignChildsOnServer="false" ActiveHierarchy="true" Code="18" Name="VIP1" MainParentIdent="1000016" Status="rsActive" VisualType_Image="41" VisualType_BColor="536870911" VisualType_TextColor="536870911" VisualType_Flags="bsPictureTop" ServingPosition="0" TableGroup="0" Hall="1000016" RightLvl="0" DoserDevice="0" HallPlanItemKind="pikTable" TableUseKind="tukNone" MaxGuests="10" ButtonNum="0" PagerMsgNum="0" DeviceFlags="[rdfShutDownOnLimitExceeded]" LogDevice="0" Tariff="0" MaxDeviceTime="0" OnOffInterval="0" Lane="0" UserAttribute1="" UserAttribute2="" UserAttribute3="" ShutDownOnLimitExceeded="true" UseDeviceAsTable="false" AllowReservation="true">
+				<TableAttributes ClassName="TTableAttributesAssigns">
+					<Items/>
+				</TableAttributes>
+				<Childs ClassName="tChildCollection"/>
+			</Item>
+			<Item Ident="1000035" ItemIdent="1000035" SourceIdent="0" GUIDString="{5DD4F331-3E6A-4197-A0A1-1D776484BB4F}" AssignChildsOnServer="false" ActiveHierarchy="true" Code="19" Name="VIP2" MainParentIdent="1000016" Status="rsActive" VisualType_Image="41" VisualType_BColor="536870911" VisualType_TextColor="536870911" VisualType_Flags="bsPictureTop" ServingPosition="0" TableGroup="0" Hall="1000016" RightLvl="0" DoserDevice="0" HallPlanItemKind="pikTable" TableUseKind="tukNone" MaxGuests="10" ButtonNum="0" PagerMsgNum="0" DeviceFlags="[rdfShutDownOnLimitExceeded]" LogDevice="0" Tariff="0" MaxDeviceTime="0" OnOffInterval="0" Lane="0" UserAttribute1="" UserAttribute2="" UserAttribute3="" ShutDownOnLimitExceeded="true" UseDeviceAsTable="false" AllowReservation="true">
+				<TableAttributes ClassName="TTableAttributesAssigns">
+					<Items/>
+				</TableAttributes>
+				<Childs ClassName="tChildCollection"/>
+			</Item>
+			<Item Ident="1000036" ItemIdent="1000036" SourceIdent="0" GUIDString="{50909C1C-CD8E-4383-9794-939E6C25B6DA}" AssignChildsOnServer="false" ActiveHierarchy="true" Code="20" Name="ART" MainParentIdent="1000016" Status="rsActive" VisualType_Image="470" VisualType_BColor="536870911" VisualType_TextColor="536870911" VisualType_Flags="bsPictureTop" ServingPosition="0" TableGroup="0" Hall="1000016" RightLvl="0" DoserDevice="0" HallPlanItemKind="pikTable" TableUseKind="tukNone" MaxGuests="10" ButtonNum="0" PagerMsgNum="0" DeviceFlags="[rdfShutDownOnLimitExceeded]" LogDevice="0" Tariff="0" MaxDeviceTime="0" OnOffInterval="0" Lane="0" UserAttribute1="" UserAttribute2="" UserAttribute3="" ShutDownOnLimitExceeded="true" UseDeviceAsTable="false" AllowReservation="true">
+				<TableAttributes ClassName="TTableAttributesAssigns">
+					<Items/>
+				</TableAttributes>
+				<Childs ClassName="tChildCollection"/>
+			</Item>
+			<Item Ident="1000037" ItemIdent="1000037" SourceIdent="0" GUIDString="{AC709C33-8B8F-425E-AF75-B02DE6027A45}" AssignChildsOnServer="false" ActiveHierarchy="true" Code="21" Name="BAR1" MainParentIdent="1000016" Status="rsActive" VisualType_Image="250" VisualType_BColor="536870911" VisualType_TextColor="536870911" VisualType_Flags="bsPictureTop" ServingPosition="0" TableGroup="0" Hall="1000016" RightLvl="0" DoserDevice="0" HallPlanItemKind="pikTable" TableUseKind="tukNone" MaxGuests="10" ButtonNum="0" PagerMsgNum="0" DeviceFlags="[rdfShutDownOnLimitExceeded]" LogDevice="0" Tariff="0" MaxDeviceTime="0" OnOffInterval="0" Lane="0" UserAttribute1="" UserAttribute2="" UserAttribute3="" ShutDownOnLimitExceeded="true" UseDeviceAsTable="false" AllowReservation="true">
+				<TableAttributes ClassName="TTableAttributesAssigns">
+					<Items/>
+				</TableAttributes>
+				<Childs ClassName="tChildCollection"/>
+			</Item>
+			<Item Ident="1000038" ItemIdent="1000038" SourceIdent="0" GUIDString="{2DA11F3A-6FA2-4BB6-826D-CC5646FA5F00}" AssignChildsOnServer="false" ActiveHierarchy="true" Code="22" Name="BAR2" MainParentIdent="1000016" Status="rsActive" VisualType_Image="250" VisualType_BColor="536870911" VisualType_TextColor="536870911" VisualType_Flags="bsPictureTop" ServingPosition="0" TableGroup="0" Hall="1000016" RightLvl="0" DoserDevice="0" HallPlanItemKind="pikTable" TableUseKind="tukNone" MaxGuests="10" ButtonNum="0" PagerMsgNum="0" DeviceFlags="[rdfShutDownOnLimitExceeded]" LogDevice="0" Tariff="0" MaxDeviceTime="0" OnOffInterval="0" Lane="0" UserAttribute1="" UserAttribute2="" UserAttribute3="" ShutDownOnLimitExceeded="true" UseDeviceAsTable="false" AllowReservation="true">
+				<TableAttributes ClassName="TTableAttributesAssigns">
+					<Items/>
+				</TableAttributes>
+				<Childs ClassName="tChildCollection"/>
+			</Item>
+			<Item Ident="1000039" ItemIdent="1000039" SourceIdent="0" GUIDString="{C4ED3A19-3E11-4F45-A71C-FE0AE1A3074B}" AssignChildsOnServer="false" ActiveHierarchy="true" Code="23" Name="BAR3" MainParentIdent="1000016" Status="rsActive" VisualType_Image="250" VisualType_BColor="536870911" VisualType_TextColor="536870911" VisualType_Flags="bsPictureTop" ServingPosition="0" TableGroup="0" Hall="1000016" RightLvl="0" DoserDevice="0" HallPlanItemKind="pikTable" TableUseKind="tukNone" MaxGuests="10" ButtonNum="0" PagerMsgNum="0" DeviceFlags="[rdfShutDownOnLimitExceeded]" LogDevice="0" Tariff="0" MaxDeviceTime="0" OnOffInterval="0" Lane="0" UserAttribute1="" UserAttribute2="" UserAttribute3="" ShutDownOnLimitExceeded="true" UseDeviceAsTable="false" AllowReservation="true">
+				<TableAttributes ClassName="TTableAttributesAssigns">
+					<Items/>
+				</TableAttributes>
+				<Childs ClassName="tChildCollection"/>
+			</Item>
+			<Item Ident="1000040" ItemIdent="1000040" SourceIdent="0" GUIDString="{F677573F-4595-4E89-8296-CFEA10F4EC2F}" AssignChildsOnServer="false" ActiveHierarchy="true" Code="24" Name="BAR4" MainParentIdent="1000016" Status="rsActive" VisualType_Image="250" VisualType_BColor="536870911" VisualType_TextColor="536870911" VisualType_Flags="bsPictureTop" ServingPosition="0" TableGroup="0" Hall="1000016" RightLvl="0" DoserDevice="0" HallPlanItemKind="pikTable" TableUseKind="tukNone" MaxGuests="10" ButtonNum="0" PagerMsgNum="0" DeviceFlags="[rdfShutDownOnLimitExceeded]" LogDevice="0" Tariff="0" MaxDeviceTime="0" OnOffInterval="0" Lane="0" UserAttribute1="" UserAttribute2="" UserAttribute3="" ShutDownOnLimitExceeded="true" UseDeviceAsTable="false" AllowReservation="true">
+				<TableAttributes ClassName="TTableAttributesAssigns">
+					<Items/>
+				</TableAttributes>
+				<Childs ClassName="tChildCollection"/>
+			</Item>
+			<Item Ident="1000041" ItemIdent="1000041" SourceIdent="0" GUIDString="{9BA846AC-2700-468B-8D1B-FA8857C5383C}" AssignChildsOnServer="false" ActiveHierarchy="true" Code="25" Name="BAR5" MainParentIdent="1000016" Status="rsActive" VisualType_Image="250" VisualType_BColor="536870911" VisualType_TextColor="536870911" VisualType_Flags="bsPictureTop" ServingPosition="0" TableGroup="0" Hall="1000016" RightLvl="0" DoserDevice="0" HallPlanItemKind="pikTable" TableUseKind="tukNone" MaxGuests="10" ButtonNum="0" PagerMsgNum="0" DeviceFlags="[rdfShutDownOnLimitExceeded]" LogDevice="0" Tariff="0" MaxDeviceTime="0" OnOffInterval="0" Lane="0" UserAttribute1="" UserAttribute2="" UserAttribute3="" ShutDownOnLimitExceeded="true" UseDeviceAsTable="false" AllowReservation="true">
+				<TableAttributes ClassName="TTableAttributesAssigns">
+					<Items/>
+				</TableAttributes>
+				<Childs ClassName="tChildCollection"/>
+			</Item>
+			<Item Ident="1000042" ItemIdent="1000042" SourceIdent="0" GUIDString="{716755C1-6C8C-412D-8D6C-9C9949C3AD32}" AssignChildsOnServer="false" ActiveHierarchy="true" Code="26" Name="BAR6" MainParentIdent="1000016" Status="rsActive" VisualType_Image="250" VisualType_BColor="536870911" VisualType_TextColor="536870911" VisualType_Flags="bsPictureTop" ServingPosition="0" TableGroup="0" Hall="1000016" RightLvl="0" DoserDevice="0" HallPlanItemKind="pikTable" TableUseKind="tukNone" MaxGuests="10" ButtonNum="0" PagerMsgNum="0" DeviceFlags="[rdfShutDownOnLimitExceeded]" LogDevice="0" Tariff="0" MaxDeviceTime="0" OnOffInterval="0" Lane="0" UserAttribute1="" UserAttribute2="" UserAttribute3="" ShutDownOnLimitExceeded="true" UseDeviceAsTable="false" AllowReservation="true">
+				<TableAttributes ClassName="TTableAttributesAssigns">
+					<Items/>
+				</TableAttributes>
+				<Childs ClassName="tChildCollection"/>
+			</Item>
+			<Item Ident="1000043" ItemIdent="1000043" SourceIdent="0" GUIDString="{FF395E2B-E9C7-4122-ABA9-C5185FE21037}" AssignChildsOnServer="false" ActiveHierarchy="true" Code="27" Name="BAR7" MainParentIdent="1000016" Status="rsActive" VisualType_Image="250" VisualType_BColor="536870911" VisualType_TextColor="536870911" VisualType_Flags="bsPictureTop" ServingPosition="0" TableGroup="0" Hall="1000016" RightLvl="0" DoserDevice="0" HallPlanItemKind="pikTable" TableUseKind="tukNone" MaxGuests="10" ButtonNum="0" PagerMsgNum="0" DeviceFlags="[rdfShutDownOnLimitExceeded]" LogDevice="0" Tariff="0" MaxDeviceTime="0" OnOffInterval="0" Lane="0" UserAttribute1="" UserAttribute2="" UserAttribute3="" ShutDownOnLimitExceeded="true" UseDeviceAsTable="false" AllowReservation="true">
+				<TableAttributes ClassName="TTableAttributesAssigns">
+					<Items/>
+				</TableAttributes>
+				<Childs ClassName="tChildCollection"/>
+			</Item>
+			<Item Ident="1000044" ItemIdent="1000044" SourceIdent="0" GUIDString="{BCD88A85-A65A-48B1-A6FB-8991657A9F1F}" AssignChildsOnServer="false" ActiveHierarchy="true" Code="28" Name="BAR8" MainParentIdent="1000016" Status="rsActive" VisualType_Image="250" VisualType_BColor="536870911" VisualType_TextColor="536870911" VisualType_Flags="bsPictureTop" ServingPosition="0" TableGroup="0" Hall="1000016" RightLvl="0" DoserDevice="0" HallPlanItemKind="pikTable" TableUseKind="tukNone" MaxGuests="10" ButtonNum="0" PagerMsgNum="0" DeviceFlags="[rdfShutDownOnLimitExceeded]" LogDevice="0" Tariff="0" MaxDeviceTime="0" OnOffInterval="0" Lane="0" UserAttribute1="" UserAttribute2="" UserAttribute3="" ShutDownOnLimitExceeded="true" UseDeviceAsTable="false" AllowReservation="true">
+				<TableAttributes ClassName="TTableAttributesAssigns">
+					<Items/>
+				</TableAttributes>
+				<Childs ClassName="tChildCollection"/>
+			</Item>
+			<Item Ident="1000650" ItemIdent="1000650" SourceIdent="0" GUIDString="{7B3A50D8-C2D9-42A4-8910-FF3C71EF8A5E}" AssignChildsOnServer="false" ActiveHierarchy="true" Code="29" Name="111" MainParentIdent="1000016" Status="rsActive" VisualType_Image="41" VisualType_BColor="536870911" VisualType_TextColor="536870911" VisualType_Flags="bsPictureTop" ServingPosition="0" TableGroup="0" Hall="1000016" RightLvl="0" DoserDevice="0" HallPlanItemKind="pikTable" TableUseKind="tukNone" MaxGuests="10" ButtonNum="0" PagerMsgNum="0" DeviceFlags="[rdfShutDownOnLimitExceeded]" LogDevice="0" Tariff="0" MaxDeviceTime="0" OnOffInterval="0" Lane="0" UserAttribute1="" UserAttribute2="" UserAttribute3="" ShutDownOnLimitExceeded="true" UseDeviceAsTable="false" AllowReservation="true">
+				<TableAttributes ClassName="TTableAttributesAssigns">
+					<Items/>
+				</TableAttributes>
+				<Childs ClassName="tChildCollection"/>
+			</Item>
+			<Item Ident="1000651" ItemIdent="1000651" SourceIdent="0" GUIDString="{BD8D6F89-C7B2-454B-BA7C-50902636371F}" AssignChildsOnServer="false" ActiveHierarchy="true" Code="30" Name="222" MainParentIdent="1000016" Status="rsActive" VisualType_Image="41" VisualType_BColor="536870911" VisualType_TextColor="536870911" VisualType_Flags="bsPictureTop" ServingPosition="0" TableGroup="0" Hall="1000016" RightLvl="0" DoserDevice="0" HallPlanItemKind="pikTable" TableUseKind="tukNone" MaxGuests="10" ButtonNum="0" PagerMsgNum="0" DeviceFlags="[rdfShutDownOnLimitExceeded]" LogDevice="0" Tariff="0" MaxDeviceTime="0" OnOffInterval="0" Lane="0" UserAttribute1="" UserAttribute2="" UserAttribute3="" ShutDownOnLimitExceeded="true" UseDeviceAsTable="false" AllowReservation="true">
+				<TableAttributes ClassName="TTableAttributesAssigns">
+					<Items/>
+				</TableAttributes>
+				<Childs ClassName="tChildCollection"/>
+			</Item>
+			<Item Ident="1000652" ItemIdent="1000652" SourceIdent="0" GUIDString="{6B31C1CC-0B46-46C4-8569-B9AADF6080D7}" AssignChildsOnServer="false" ActiveHierarchy="true" Code="31" Name="777" MainParentIdent="1000016" Status="rsActive" VisualType_Image="41" VisualType_BColor="536870911" VisualType_TextColor="536870911" VisualType_Flags="bsPictureTop" ServingPosition="0" TableGroup="0" Hall="1000016" RightLvl="0" DoserDevice="0" HallPlanItemKind="pikTable" TableUseKind="tukNone" MaxGuests="10" ButtonNum="0" PagerMsgNum="0" DeviceFlags="[rdfShutDownOnLimitExceeded]" LogDevice="0" Tariff="0" MaxDeviceTime="0" OnOffInterval="0" Lane="0" UserAttribute1="" UserAttribute2="" UserAttribute3="" ShutDownOnLimitExceeded="true" UseDeviceAsTable="false" AllowReservation="true">
+				<TableAttributes ClassName="TTableAttributesAssigns">
+					<Items/>
+				</TableAttributes>
+				<Childs ClassName="tChildCollection"/>
+			</Item>
+			<Item Ident="1000653" ItemIdent="1000653" SourceIdent="0" GUIDString="{A10F08A6-59B8-45C3-8A1F-66E9B1DA1576}" AssignChildsOnServer="false" ActiveHierarchy="true" Code="32" Name="888" MainParentIdent="1000016" Status="rsActive" VisualType_Image="41" VisualType_BColor="536870911" VisualType_TextColor="536870911" VisualType_Flags="bsPictureTop" ServingPosition="0" TableGroup="0" Hall="1000016" RightLvl="0" DoserDevice="0" HallPlanItemKind="pikTable" TableUseKind="tukNone" MaxGuests="10" ButtonNum="0" PagerMsgNum="0" DeviceFlags="[rdfShutDownOnLimitExceeded]" LogDevice="0" Tariff="0" MaxDeviceTime="0" OnOffInterval="0" Lane="0" UserAttribute1="" UserAttribute2="" UserAttribute3="" ShutDownOnLimitExceeded="true" UseDeviceAsTable="false" AllowReservation="true">
+				<TableAttributes ClassName="TTableAttributesAssigns">
+					<Items/>
+				</TableAttributes>
+				<Childs ClassName="tChildCollection"/>
+			</Item>
+			<Item Ident="1000767" ItemIdent="1000767" SourceIdent="0" GUIDString="{6C98E9E8-D4F0-423B-A14C-59A6D86A253A}" AssignChildsOnServer="false" ActiveHierarchy="true" Code="33" Name="Дост" MainParentIdent="1000766" Status="rsActive" VisualType_Image="41" VisualType_BColor="536870911" VisualType_TextColor="536870911" VisualType_Flags="bsPictureTop" ServingPosition="0" TableGroup="0" Hall="1000766" RightLvl="0" DoserDevice="0" HallPlanItemKind="pikTable" TableUseKind="tukNone" MaxGuests="10" ButtonNum="0" PagerMsgNum="0" DeviceFlags="[rdfShutDownOnLimitExceeded]" LogDevice="0" Tariff="0" MaxDeviceTime="0" OnOffInterval="0" Lane="0" UserAttribute1="" UserAttribute2="" UserAttribute3="" ShutDownOnLimitExceeded="true" UseDeviceAsTable="false" AllowReservation="true">
+				<TableAttributes ClassName="TTableAttributesAssigns">
+					<Items/>
+				</TableAttributes>
+				<Childs ClassName="tChildCollection"/>
+			</Item>
+			<Item Ident="1001326" ItemIdent="1001326" SourceIdent="0" GUIDString="{C749A4DB-D54E-4B9C-96E6-BB38799ADBE5}" AssignChildsOnServer="false" ActiveHierarchy="true" Code="34" Name="333" MainParentIdent="1000016" Status="rsActive" VisualType_Image="41" VisualType_BColor="536870911" VisualType_TextColor="536870911" VisualType_Flags="bsPictureTop" ServingPosition="0" TableGroup="0" Hall="1000016" RightLvl="0" DoserDevice="0" HallPlanItemKind="pikTable" TableUseKind="tukNone" MaxGuests="10" ButtonNum="0" PagerMsgNum="0" DeviceFlags="[rdfShutDownOnLimitExceeded]" LogDevice="0" Tariff="0" MaxDeviceTime="0" OnOffInterval="0" Lane="0" UserAttribute1="" UserAttribute2="" UserAttribute3="" ShutDownOnLimitExceeded="true" UseDeviceAsTable="false" AllowReservation="true">
+				<TableAttributes ClassName="TTableAttributesAssigns">
+					<Items/>
+				</TableAttributes>
+				<Childs ClassName="tChildCollection"/>
+			</Item>
+			<Item Ident="1001327" ItemIdent="1001327" SourceIdent="0" GUIDString="{7888CF9D-0CA0-4B39-94EA-1B655623903A}" AssignChildsOnServer="false" ActiveHierarchy="true" Code="35" Name="444" MainParentIdent="1000016" Status="rsActive" VisualType_Image="41" VisualType_BColor="536870911" VisualType_TextColor="536870911" VisualType_Flags="bsPictureTop" ServingPosition="0" TableGroup="0" Hall="1000016" RightLvl="0" DoserDevice="0" HallPlanItemKind="pikTable" TableUseKind="tukNone" MaxGuests="10" ButtonNum="0" PagerMsgNum="0" DeviceFlags="[rdfShutDownOnLimitExceeded]" LogDevice="0" Tariff="0" MaxDeviceTime="0" OnOffInterval="0" Lane="0" UserAttribute1="" UserAttribute2="" UserAttribute3="" ShutDownOnLimitExceeded="true" UseDeviceAsTable="false" AllowReservation="true">
+				<TableAttributes ClassName="TTableAttributesAssigns">
+					<Items/>
+				</TableAttributes>
+				<Childs ClassName="tChildCollection"/>
+			</Item>
+			<Item Ident="1001329" ItemIdent="1001329" SourceIdent="0" GUIDString="{6581B153-4787-4AEA-826B-E5DFD0F5417D}" AssignChildsOnServer="false" ActiveHierarchy="true" Code="37" Name="666" MainParentIdent="1000016" Status="rsActive" VisualType_Image="41" VisualType_BColor="536870911" VisualType_TextColor="536870911" VisualType_Flags="bsPictureTop" ServingPosition="0" TableGroup="0" Hall="1000016" RightLvl="0" DoserDevice="0" HallPlanItemKind="pikTable" TableUseKind="tukNone" MaxGuests="10" ButtonNum="0" PagerMsgNum="0" DeviceFlags="[rdfShutDownOnLimitExceeded]" LogDevice="0" Tariff="0" MaxDeviceTime="0" OnOffInterval="0" Lane="0" UserAttribute1="" UserAttribute2="" UserAttribute3="" ShutDownOnLimitExceeded="true" UseDeviceAsTable="false" AllowReservation="true">
+				<TableAttributes ClassName="TTableAttributesAssigns">
+					<Items/>
+				</TableAttributes>
+				<Childs ClassName="tChildCollection"/>
+			</Item>
+			<Item Ident="1001348" ItemIdent="1001348" SourceIdent="0" GUIDString="{9B772B9F-18EF-49DD-8483-0F137E856FED}" AssignChildsOnServer="false" ActiveHierarchy="true" Code="38" Name="101" MainParentIdent="1000016" Status="rsActive" VisualType_Image="73" VisualType_BColor="536870911" VisualType_TextColor="536870911" VisualType_Flags="bsPictureTop" ServingPosition="0" TableGroup="0" Hall="1000016" RightLvl="0" DoserDevice="0" HallPlanItemKind="pikTable" TableUseKind="tukNone" MaxGuests="10" ButtonNum="0" PagerMsgNum="0" DeviceFlags="[rdfShutDownOnLimitExceeded]" LogDevice="0" Tariff="0" MaxDeviceTime="0" OnOffInterval="0" Lane="0" UserAttribute1="" UserAttribute2="" UserAttribute3="" ShutDownOnLimitExceeded="true" UseDeviceAsTable="false" AllowReservation="true">
+				<TableAttributes ClassName="TTableAttributesAssigns">
+					<Items/>
+				</TableAttributes>
+				<Childs ClassName="tChildCollection"/>
+			</Item>
+			<Item Ident="1001349" ItemIdent="1001349" SourceIdent="0" GUIDString="{0E5D10B5-4472-455A-AB8B-79E9A24DDD07}" AssignChildsOnServer="false" ActiveHierarchy="true" Code="39" Name="102" MainParentIdent="1000016" Status="rsActive" VisualType_Image="78" VisualType_BColor="536870911" VisualType_TextColor="536870911" VisualType_Flags="bsPictureTop" ServingPosition="0" TableGroup="0" Hall="1000016" RightLvl="0" DoserDevice="0" HallPlanItemKind="pikTable" TableUseKind="tukNone" MaxGuests="10" ButtonNum="0" PagerMsgNum="0" DeviceFlags="[rdfShutDownOnLimitExceeded]" LogDevice="0" Tariff="0" MaxDeviceTime="0" OnOffInterval="0" Lane="0" UserAttribute1="" UserAttribute2="" UserAttribute3="" ShutDownOnLimitExceeded="true" UseDeviceAsTable="false" AllowReservation="true">
+				<TableAttributes ClassName="TTableAttributesAssigns">
+					<Items/>
+				</TableAttributes>
+				<Childs ClassName="tChildCollection"/>
+			</Item>
+			<Item Ident="1001350" ItemIdent="1001350" SourceIdent="0" GUIDString="{B5AD99A0-C127-488D-BF4C-F27C7177A265}" AssignChildsOnServer="false" ActiveHierarchy="true" Code="40" Name="103" MainParentIdent="1000016" Status="rsActive" VisualType_Image="78" VisualType_BColor="536870911" VisualType_TextColor="536870911" VisualType_Flags="bsPictureTop" ServingPosition="0" TableGroup="0" Hall="1000016" RightLvl="0" DoserDevice="0" HallPlanItemKind="pikTable" TableUseKind="tukNone" MaxGuests="10" ButtonNum="0" PagerMsgNum="0" DeviceFlags="[rdfShutDownOnLimitExceeded]" LogDevice="0" Tariff="0" MaxDeviceTime="0" OnOffInterval="0" Lane="0" UserAttribute1="" UserAttribute2="" UserAttribute3="" ShutDownOnLimitExceeded="true" UseDeviceAsTable="false" AllowReservation="true">
+				<TableAttributes ClassName="TTableAttributesAssigns">
+					<Items/>
+				</TableAttributes>
+				<Childs ClassName="tChildCollection"/>
+			</Item>
+			<Item Ident="1001351" ItemIdent="1001351" SourceIdent="0" GUIDString="{E8DB5C16-F613-4209-AB07-72BF75FC6CEA}" AssignChildsOnServer="false" ActiveHierarchy="true" Code="41" Name="104" MainParentIdent="1000016" Status="rsActive" VisualType_Image="78" VisualType_BColor="536870911" VisualType_TextColor="536870911" VisualType_Flags="bsPictureTop" ServingPosition="0" TableGroup="0" Hall="1000016" RightLvl="0" DoserDevice="0" HallPlanItemKind="pikTable" TableUseKind="tukNone" MaxGuests="10" ButtonNum="0" PagerMsgNum="0" DeviceFlags="[rdfShutDownOnLimitExceeded]" LogDevice="0" Tariff="0" MaxDeviceTime="0" OnOffInterval="0" Lane="0" UserAttribute1="" UserAttribute2="" UserAttribute3="" ShutDownOnLimitExceeded="true" UseDeviceAsTable="false" AllowReservation="true">
+				<TableAttributes ClassName="TTableAttributesAssigns">
+					<Items/>
+				</TableAttributes>
+				<Childs ClassName="tChildCollection"/>
+			</Item>
+			<Item Ident="1001352" ItemIdent="1001352" SourceIdent="0" GUIDString="{6A876D87-96F7-480A-B048-759AEB07C7F5}" AssignChildsOnServer="false" ActiveHierarchy="true" Code="42" Name="105" MainParentIdent="1000016" Status="rsActive" VisualType_Image="78" VisualType_BColor="536870911" VisualType_TextColor="536870911" VisualType_Flags="bsPictureTop" ServingPosition="0" TableGroup="0" Hall="1000016" RightLvl="0" DoserDevice="0" HallPlanItemKind="pikTable" TableUseKind="tukNone" MaxGuests="10" ButtonNum="0" PagerMsgNum="0" DeviceFlags="[rdfShutDownOnLimitExceeded]" LogDevice="0" Tariff="0" MaxDeviceTime="0" OnOffInterval="0" Lane="0" UserAttribute1="" UserAttribute2="" UserAttribute3="" ShutDownOnLimitExceeded="true" UseDeviceAsTable="false" AllowReservation="true">
+				<TableAttributes ClassName="TTableAttributesAssigns">
+					<Items/>
+				</TableAttributes>
+				<Childs ClassName="tChildCollection"/>
+			</Item>
+			<Item Ident="1001353" ItemIdent="1001353" SourceIdent="0" GUIDString="{DE9EA51E-C44C-4949-B69A-195480913BE1}" AssignChildsOnServer="false" ActiveHierarchy="true" Code="43" Name="106" MainParentIdent="1000016" Status="rsActive" VisualType_Image="78" VisualType_BColor="536870911" VisualType_TextColor="536870911" VisualType_Flags="bsPictureTop" ServingPosition="0" TableGroup="0" Hall="1000016" RightLvl="0" DoserDevice="0" HallPlanItemKind="pikTable" TableUseKind="tukNone" MaxGuests="10" ButtonNum="0" PagerMsgNum="0" DeviceFlags="[rdfShutDownOnLimitExceeded]" LogDevice="0" Tariff="0" MaxDeviceTime="0" OnOffInterval="0" Lane="0" UserAttribute1="" UserAttribute2="" UserAttribute3="" ShutDownOnLimitExceeded="true" UseDeviceAsTable="false" AllowReservation="true">
+				<TableAttributes ClassName="TTableAttributesAssigns">
+					<Items/>
+				</TableAttributes>
+				<Childs ClassName="tChildCollection"/>
+			</Item>
+			<Item Ident="1001445" ItemIdent="1001445" SourceIdent="0" GUIDString="{FF6C6F50-6D8A-40FC-A398-CEC1C54749C7}" AssignChildsOnServer="false" ActiveHierarchy="true" Code="36" Name="107" MainParentIdent="1000016" Status="rsActive" VisualType_Image="78" VisualType_BColor="536870911" VisualType_TextColor="536870911" VisualType_Flags="bsPictureTop" ServingPosition="0" TableGroup="0" Hall="1000016" RightLvl="0" DoserDevice="0" HallPlanItemKind="pikTable" TableUseKind="tukNone" MaxGuests="10" ButtonNum="0" PagerMsgNum="0" DeviceFlags="[rdfShutDownOnLimitExceeded]" LogDevice="0" Tariff="0" MaxDeviceTime="0" OnOffInterval="0" Lane="0" UserAttribute1="" UserAttribute2="" UserAttribute3="" ShutDownOnLimitExceeded="true" UseDeviceAsTable="false" AllowReservation="true">
+				<TableAttributes ClassName="TTableAttributesAssigns">
+					<Items/>
+				</TableAttributes>
+				<Childs ClassName="tChildCollection"/>
+			</Item>
+			<Item Ident="1001472" ItemIdent="1001472" SourceIdent="0" GUIDString="{5134D85B-59AF-425C-823B-F7BA49E05A5F}" AssignChildsOnServer="false" ActiveHierarchy="true" Code="44" Name="555" MainParentIdent="1000016" Status="rsActive" VisualType_Image="41" VisualType_BColor="536870911" VisualType_TextColor="536870911" VisualType_Flags="bsPictureTop" ServingPosition="0" TableGroup="0" Hall="1000016" RightLvl="0" DoserDevice="0" HallPlanItemKind="pikTable" TableUseKind="tukNone" MaxGuests="10" ButtonNum="0" PagerMsgNum="0" DeviceFlags="[rdfShutDownOnLimitExceeded]" LogDevice="0" Tariff="0" MaxDeviceTime="0" OnOffInterval="0" Lane="0" UserAttribute1="" UserAttribute2="" UserAttribute3="" ShutDownOnLimitExceeded="true" UseDeviceAsTable="false" AllowReservation="true">
+				<TableAttributes ClassName="TTableAttributesAssigns">
+					<Items/>
+				</TableAttributes>
+				<Childs ClassName="tChildCollection"/>
+			</Item>
+			<Item Ident="1001919" ItemIdent="1001919" SourceIdent="0" GUIDString="{F95877B0-6493-45A8-A644-543C285C0431}" AssignChildsOnServer="false" ActiveHierarchy="true" Code="45" Name="100" MainParentIdent="1000016" Status="rsActive" VisualType_Image="73" VisualType_BColor="536870911" VisualType_TextColor="536870911" VisualType_Flags="bsPictureTop" ServingPosition="0" TableGroup="0" Hall="1000016" RightLvl="0" DoserDevice="0" HallPlanItemKind="pikTable" TableUseKind="tukNone" MaxGuests="10" ButtonNum="0" PagerMsgNum="0" DeviceFlags="[rdfShutDownOnLimitExceeded]" LogDevice="0" Tariff="0" MaxDeviceTime="0" OnOffInterval="0" Lane="0" UserAttribute1="" UserAttribute2="" UserAttribute3="" ShutDownOnLimitExceeded="true" UseDeviceAsTable="false" AllowReservation="true">
+				<TableAttributes ClassName="TTableAttributesAssigns">
+					<Items/>
+				</TableAttributes>
+				<Childs ClassName="tChildCollection"/>
+			</Item>
+			<Item Ident="1002140" ItemIdent="1002140" SourceIdent="0" GUIDString="{1BD44A00-4193-493F-9046-589FC7F229C2}" AssignChildsOnServer="false" ActiveHierarchy="true" Code="46" Name="мал 1" MainParentIdent="1000016" Status="rsActive" VisualType_Image="41" VisualType_BColor="536870911" VisualType_TextColor="536870911" VisualType_Flags="bsPictureTop" ServingPosition="0" TableGroup="0" Hall="1000016" RightLvl="0" DoserDevice="0" HallPlanItemKind="pikTable" TableUseKind="tukNone" MaxGuests="10" ButtonNum="0" PagerMsgNum="0" DeviceFlags="[rdfShutDownOnLimitExceeded]" LogDevice="0" Tariff="0" MaxDeviceTime="0" OnOffInterval="0" Lane="0" UserAttribute1="" UserAttribute2="" UserAttribute3="" ShutDownOnLimitExceeded="true" UseDeviceAsTable="false" AllowReservation="true">
+				<TableAttributes ClassName="TTableAttributesAssigns">
+					<Items/>
+				</TableAttributes>
+				<Childs ClassName="tChildCollection"/>
+			</Item>
+			<Item Ident="1002141" ItemIdent="1002141" SourceIdent="0" GUIDString="{73CB8FD5-F02E-4E33-85FA-1153CAC19C3A}" AssignChildsOnServer="false" ActiveHierarchy="true" Code="47" Name="мал 2" MainParentIdent="1000016" Status="rsActive" VisualType_Image="41" VisualType_BColor="536870911" VisualType_TextColor="536870911" VisualType_Flags="bsPictureTop" ServingPosition="0" TableGroup="0" Hall="1000016" RightLvl="0" DoserDevice="0" HallPlanItemKind="pikTable" TableUseKind="tukNone" MaxGuests="10" ButtonNum="0" PagerMsgNum="0" DeviceFlags="[rdfShutDownOnLimitExceeded]" LogDevice="0" Tariff="0" MaxDeviceTime="0" OnOffInterval="0" Lane="0" UserAttribute1="" UserAttribute2="" UserAttribute3="" ShutDownOnLimitExceeded="true" UseDeviceAsTable="false" AllowReservation="true">
+				<TableAttributes ClassName="TTableAttributesAssigns">
+					<Items/>
+				</TableAttributes>
+				<Childs ClassName="tChildCollection"/>
+			</Item>
+			<Item Ident="1002369" ItemIdent="1002369" SourceIdent="0" GUIDString="{00000002-E410-4260-88CC-B4B11BF041F5}" AssignChildsOnServer="false" ActiveHierarchy="true" Code="49" Name="WSA3" MainParentIdent="1002359" Status="rsActive" VisualType_Image="41" VisualType_BColor="536870911" VisualType_TextColor="536870911" VisualType_Flags="bsPictureTop" ServingPosition="0" TableGroup="0" Hall="1002359" RightLvl="257" DoserDevice="0" HallPlanItemKind="pikTable" TableUseKind="tukNone" MaxGuests="2147483647" ButtonNum="0" PagerMsgNum="0" DeviceFlags="[rdfShutDownOnLimitExceeded]" LogDevice="0" Tariff="0" MaxDeviceTime="0" OnOffInterval="0" Lane="0" UserAttribute1="" UserAttribute2="" UserAttribute3="" ShutDownOnLimitExceeded="true" UseDeviceAsTable="false" AllowReservation="true">
+				<TableAttributes ClassName="TTableAttributesAssigns">
+					<Items/>
+				</TableAttributes>
+				<Childs ClassName="tChildCollection"/>
+			</Item>
+			<Item Ident="1002377" ItemIdent="1002377" SourceIdent="0" GUIDString="{AD3C4CE1-D2E3-409A-85CE-67ECBB6B0522}" AssignChildsOnServer="false" ActiveHierarchy="true" Code="51" Name="WSA1" MainParentIdent="1002356" Status="rsActive" VisualType_Image="41" VisualType_BColor="536870911" VisualType_TextColor="536870911" VisualType_Flags="bsPictureTop" ServingPosition="0" TableGroup="0" Hall="1002356" RightLvl="257" DoserDevice="0" HallPlanItemKind="pikTable" TableUseKind="tukNone" MaxGuests="2147483647" ButtonNum="0" PagerMsgNum="0" DeviceFlags="[rdfShutDownOnLimitExceeded]" LogDevice="0" Tariff="0" MaxDeviceTime="0" OnOffInterval="0" Lane="0" UserAttribute1="" UserAttribute2="" UserAttribute3="" ShutDownOnLimitExceeded="true" UseDeviceAsTable="false" AllowReservation="true">
+				<TableAttributes ClassName="TTableAttributesAssigns">
+					<Items/>
+				</TableAttributes>
+				<Childs ClassName="tChildCollection"/>
+			</Item>
+		</Items>
+	</RK7Reference>
+</RK7QueryResult>

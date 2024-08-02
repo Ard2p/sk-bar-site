@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RK7QueryResult ServerVersion="7.7.0.212" XmlVersion="248" NetName="SKBAR_MID" Status="Ok" CMD="GetRefData" ErrorText="" DateTime="2024-05-14T00:50:51" WorkTime="0" Processed="1" ArrivalDateTime="2024-05-14T00:50:51">
+	<RK7Reference BlobNames="DFM,ORDIMG04,ORDIMG24,SERVIMG" DataVersion="510" ClassName="THallPlans" Name="HALLPLANS" MinIdent="1" MaxIdent="0" ViewRight="0" UpdateRight="52" ChildRight="53" DeleteRight="52" XMLExport="true" XMLMask="*" LeafCollectionCount="1" TotalItemCount="4">
+		<Items>
+			<Item Ident="1000016" ItemIdent="1000016" SourceIdent="0" GUIDString="{93359B4C-887D-4FBF-95A8-02A9662DB714}" AssignChildsOnServer="false" ActiveHierarchy="true" Code="1" Name="SKBar" AltName="" MainParentIdent="1" Status="rsActive" VisualType_Image="0" VisualType_BColor="536870911" VisualType_TextColor="536870911" VisualType_Flags="bsPictureTop" EditRight="0" RightLvl="0" ServingPosition="0" Restaurant="1" VisualType_TZColor="536870911" ServedAtCashServer="0">
+				<Items ClassName="THallPlanItems">
+					<Items>
+						<Item Ident="1000017" Left="614" Top="50" ImageIndex="78" Text="1" TextAlign="htaBottom" FontColor="0" FontType="10" TouchRange="25" Synchronized="true"/>
+						<Item Ident="1000018" Left="614" Top="125" ImageIndex="78" Text="2" TextAlign="htaBottom" FontColor="0" FontType="10" TouchRange="25" Synchronized="true"/>
+						<Item Ident="1000019" Left="614" Top="195" ImageIndex="78" Text="3" TextAlign="htaBottom" FontColor="0" FontType="10" TouchRange="25" Synchronized="true"/>
+						<Item Ident="1000020" Left="614" Top="256" ImageIndex="78" Text="4" TextAlign="htaBottom" FontColor="0" FontType="10" TouchRange="25" Synchronized="true"/>
+						<Item Ident="1000021" Left="545" Top="256" ImageIndex="78" Text="5" TextAlign="htaBottom" FontColor="0" FontType="10" TouchRange="25" Synchronized="false"/>
+						<Item Ident="1000022" Left="476" Top="256" ImageIndex="78" Text="6" TextAlign="htaBottom" FontColor="0" FontType="10" TouchRange="25" Synchronized="false"/>
+						<Item Ident="1000023" Left="205" Top="32" ImageIndex="41" Text="7" TextAlign="htaBottom" FontColor="0" FontType="10" TouchRange="25" Synchronized="true"/>
+						<Item Ident="1000024" Left="208" Top="100" ImageIndex="41" Text="8" TextAlign="htaBottom" FontColor="0" FontType="10" TouchRange="25" Synchronized="true"/>
+						<Item Ident="1000025" Left="206" Top="159" ImageIndex="41" Text="9" TextAlign="htaBottom" FontColor="0" FontType="10" TouchRange="25" Synchronized="true"/>
+						<Item Ident="1000026" Left="147" Top="31" ImageIndex="41" Text="10" TextAlign="htaBottom" FontColor="0" FontType="10" TouchRange="25" Synchronized="true"/>
+						<Item Ident="1000027" Left="152" Top="97" ImageIndex="41" Text="11" TextAlign="htaBottom" FontColor="0" FontType="10" TouchRange="25" Synchronized="true"/>
+						<Item Ident="1000028" Left="154" Top="170" ImageIndex="60" Text="12" TextAlign="htaBottom" FontColor="0" FontType="10" TouchRange="25" Synchronized="false"/>
+						<Item Ident="1000029" Left="90" Top="34" ImageIndex="81" Text="13" TextAlign="htaBottom" FontColor="0" FontType="10" TouchRange="25" Synchronized="true"/>
+						<Item Ident="1000030" Left="90" Top="103" ImageIndex="81" Text="14" TextAlign="htaBottom" FontColor="0" FontType="10" TouchRange="25" Synchronized="true"/>
+						<Item Ident="1000031" Left="92" Top="169" ImageIndex="81" Text="15" TextAlign="htaBottom" FontColor="0" FontType="10" TouchRange="25" Synchronized="false"/>
+						<Item Ident="1000032" Left="104" Top="400" ImageIndex="635" Text="16" TextAlign="htaBottom" FontColor="0" FontType="10" TouchRange="25" Synchronized="false"/>
+						<Item Ident="1000033" Left="40" Top="399" ImageIndex="1" Text="17" TextAlign="htaBottom" FontColor="0" FontType="10" TouchRange="25" Synchronized="false"/>
+						<Item Ident="1000034" Left="28" Top="149" ImageIndex="41" Text="VIP1" TextAlign="htaBottom" FontColor="0" FontType="10" TouchRange="25" Synchronized="true"/>
+						<Item Ident="1000035" Left="28" Top="219" ImageIndex="41" Text="VIP2" TextAlign="htaBottom" FontColor="0" FontType="10" TouchRange="25" Synchronized="true"/>
+						<Item Ident="1000036" Left="28" Top="54" ImageIndex="279" Text="ART" TextAlign="htaBottom" FontColor="0" FontType="10" TouchRange="25" Synchronized="false"/>
+						<Item Ident="1000037" Left="221" Top="335" ImageIndex="212" Text="BAR1" TextAlign="htaBottom" FontColor="0" FontType="10" TouchRange="15" Synchronized="false"/>
+						<Item Ident="1000038" Left="264" Top="336" ImageIndex="250" Text="BAR2" TextAlign="htaBottom" FontColor="0" FontType="10" TouchRange="15" Synchronized="true"/>
+						<Item Ident="1000039" Left="312" Top="335" ImageIndex="250" Text="BAR3" TextAlign="htaBottom" FontColor="0" FontType="10" TouchRange="15" Synchronized="true"/>
+						<Item Ident="1000040" Left="360" Top="334" ImageIndex="250" Text="BAR4" TextAlign="htaBottom" FontColor="0" FontType="10" TouchRange="15" Synchronized="true"/>
+						<Item Ident="1000041" Left="403" Top="333" ImageIndex="250" Text="BAR5" TextAlign="htaBottom" FontColor="0" FontType="10" TouchRange="15" Synchronized="true"/>
+						<Item Ident="1000042" Left="450" Top="334" ImageIndex="250" Text="BAR6" TextAlign="htaBottom" FontColor="0" FontType="10" TouchRange="15" Synchronized="true"/>
+						<Item Ident="1000043" Left="495" Top="334" ImageIndex="250" Text="BAR7" TextAlign="htaBottom" FontColor="0" FontType="10" TouchRange="15" Synchronized="true"/>
+						<Item Ident="1000044" Left="543" Top="332" ImageIndex="250" Text="BAR8" TextAlign="htaBottom" FontColor="0" FontType="10" TouchRange="15" Synchronized="true"/>
+						<Item Ident="1000650" Left="220" Top="407" ImageIndex="58" Text="111" TextAlign="htaBottom" FontColor="0" FontType="10" TouchRange="25" Synchronized="false"/>
+						<Item Ident="1000651" Left="270" Top="407" ImageIndex="58" Text="222" TextAlign="htaBottom" FontColor="0" FontType="10" TouchRange="25" Synchronized="false"/>
+						<Item Ident="1000652" Left="520" Top="407" ImageIndex="58" Text="777" TextAlign="htaBottom" FontColor="0" FontType="10" TouchRange="25" Synchronized="false"/>
+						<Item Ident="1000653" Left="570" Top="407" ImageIndex="58" Text="888" TextAlign="htaBottom" FontColor="0" FontType="10" TouchRange="25" Synchronized="false"/>
+						<Item Ident="1001326" Left="320" Top="407" ImageIndex="58" Text="333" TextAlign="htaBottom" FontColor="0" FontType="10" TouchRange="25" Synchronized="false"/>
+						<Item Ident="1001327" Left="370" Top="407" ImageIndex="58" Text="444" TextAlign="htaBottom" FontColor="0" FontType="10" TouchRange="25" Synchronized="false"/>
+						<Item Ident="1001329" Left="470" Top="407" ImageIndex="58" Text="666" TextAlign="htaBottom" FontColor="0" FontType="10" TouchRange="25" Synchronized="false"/>
+						<Item Ident="1001348" Left="535" Top="21" ImageIndex="49" Text="101" TextAlign="htaBottom" FontColor="0" FontType="10" TouchRange="25" Synchronized="false"/>
+						<Item Ident="1001349" Left="535" Top="81" ImageIndex="49" Text="102" TextAlign="htaBottom" FontColor="0" FontType="10" TouchRange="25" Synchronized="false"/>
+						<Item Ident="1001350" Left="535" Top="141" ImageIndex="49" Text="103" TextAlign="htaBottom" FontColor="0" FontType="10" TouchRange="25" Synchronized="false"/>
+						<Item Ident="1001351" Left="535" Top="200" ImageIndex="49" Text="104" TextAlign="htaBottom" FontColor="0" FontType="10" TouchRange="25" Synchronized="false"/>
+						<Item Ident="1001352" Left="478" Top="140" ImageIndex="49" Text="105" TextAlign="htaBottom" FontColor="0" FontType="10" TouchRange="25" Synchronized="false"/>
+						<Item Ident="1001353" Left="480" Top="201" ImageIndex="49" Text="106" TextAlign="htaBottom" FontColor="0" FontType="10" TouchRange="25" Synchronized="false"/>
+						<Item Ident="1001445" Left="415" Top="205" ImageIndex="49" Text="107" TextAlign="htaBottom" FontColor="0" FontType="10" TouchRange="25" Synchronized="false"/>
+						<Item Ident="1001472" Left="420" Top="407" ImageIndex="58" Text="555" TextAlign="htaBottom" FontColor="0" FontType="10" TouchRange="25" Synchronized="false"/>
+						<Item Ident="1002140" Left="481" Top="82" ImageIndex="92" Text="мал 1" TextAlign="htaBottom" FontColor="0" FontType="10" TouchRange="25" Synchronized="false"/>
+						<Item Ident="1002141" Left="427" Top="146" ImageIndex="92" Text="мал 2" TextAlign="htaBottom" FontColor="0" FontType="10" TouchRange="25" Synchronized="false"/>
+					</Items>
+				</Items>
+				<Childs ClassName="tChildCollection">
+					<Child ChildIdent="1000017" IsTerminal="1"/>
+					<Child ChildIdent="1000018" IsTerminal="1"/>
+					<Child ChildIdent="1000019" IsTerminal="1"/>
+					<Child ChildIdent="1000020" IsTerminal="1"/>
+					<Child ChildIdent="1000021" IsTerminal="1"/>
+					<Child ChildIdent="1000022" IsTerminal="1"/>
+					<Child ChildIdent="1000023" IsTerminal="1"/>
+					<Child ChildIdent="1000024" IsTerminal="1"/>
+					<Child ChildIdent="1000025" IsTerminal="1"/>
+					<Child ChildIdent="1000026" IsTerminal="1"/>
+					<Child ChildIdent="1000027" IsTerminal="1"/>
+					<Child ChildIdent="1000028" IsTerminal="1"/>
+					<Child ChildIdent="1000029" IsTerminal="1"/>
+					<Child ChildIdent="1000030" IsTerminal="1"/>
+					<Child ChildIdent="1000031" IsTerminal="1"/>
+					<Child ChildIdent="1000032" IsTerminal="1"/>
+					<Child ChildIdent="1000033" IsTerminal="1"/>
+					<Child ChildIdent="1000034" IsTerminal="1"/>
+					<Child ChildIdent="1000035" IsTerminal="1"/>
+					<Child ChildIdent="1000036" IsTerminal="1"/>
+					<Child ChildIdent="1000037" IsTerminal="1"/>
+					<Child ChildIdent="1000038" IsTerminal="1"/>
+					<Child ChildIdent="1000039" IsTerminal="1"/>
+					<Child ChildIdent="1000040" IsTerminal="1"/>
+					<Child ChildIdent="1000041" IsTerminal="1"/>
+					<Child ChildIdent="1000042" IsTerminal="1"/>
+					<Child ChildIdent="1000043" IsTerminal="1"/>
+					<Child ChildIdent="1000044" IsTerminal="1"/>
+					<Child ChildIdent="1000650" IsTerminal="1"/>
+					<Child ChildIdent="1000651" IsTerminal="1"/>
+					<Child ChildIdent="1000652" IsTerminal="1"/>
+					<Child ChildIdent="1000653" IsTerminal="1"/>
+					<Child ChildIdent="1001326" IsTerminal="1"/>
+					<Child ChildIdent="1001327" IsTerminal="1"/>
+					<Child ChildIdent="1001329" IsTerminal="1"/>
+					<Child ChildIdent="1001348" IsTerminal="1"/>
+					<Child ChildIdent="1001349" IsTerminal="1"/>
+					<Child ChildIdent="1001350" IsTerminal="1"/>
+					<Child ChildIdent="1001351" IsTerminal="1"/>
+					<Child ChildIdent="1001352" IsTerminal="1"/>
+					<Child ChildIdent="1001353" IsTerminal="1"/>
+					<Child ChildIdent="1001445" IsTerminal="1"/>
+					<Child ChildIdent="1001472" IsTerminal="1"/>
+					<Child ChildIdent="1001919" IsTerminal="1"/>
+					<Child ChildIdent="1002140" IsTerminal="1"/>
+					<Child ChildIdent="1002141" IsTerminal="1"/>
+				</Childs>
+			</Item>
+			<Item Ident="1000766" ItemIdent="1000766" SourceIdent="0" GUIDString="{1EC9DC34-DAEF-446E-A438-9CE4115E5115}" AssignChildsOnServer="false" ActiveHierarchy="true" Code="2" Name="Доставка" AltName="" MainParentIdent="1" Status="rsActive" VisualType_Image="0" VisualType_BColor="536870911" VisualType_TextColor="536870911" VisualType_Flags="bsPictureTop" EditRight="0" RightLvl="257" ServingPosition="0" Restaurant="1" VisualType_TZColor="536870911" ServedAtCashServer="0">
+				<Items ClassName="THallPlanItems">
+					<Items>
+						<Item Ident="1000767" Left="210" Top="63" ImageIndex="41" Text="Дост" TextAlign="htaBottom" FontColor="536870911" FontType="10" TouchRange="25" Synchronized="true"/>
+					</Items>
+				</Items>
+				<Childs ClassName="tChildCollection">
+					<Child ChildIdent="1000767" IsTerminal="1"/>
+				</Childs>
+			</Item>
+			<Item Ident="1002356" ItemIdent="1002356" SourceIdent="0" GUIDString="{00000001-E410-4260-88CC-B4B11BF041F5}" AssignChildsOnServer="false" ActiveHierarchy="true" Code="4" Name="Виртуальный зал WSA" AltName="" MainParentIdent="1" Status="rsActive" VisualType_Image="0" VisualType_BColor="536870911" VisualType_TextColor="536870911" VisualType_Flags="bsPictureTop" EditRight="0" RightLvl="257" ServingPosition="0" Restaurant="1" VisualType_TZColor="536870911" ServedAtCashServer="0">
+				<Items ClassName="THallPlanItems">
+					<Items/>
+				</Items>
+				<Childs ClassName="tChildCollection">
+					<Child ChildIdent="1002377" IsTerminal="1"/>
+				</Childs>
+			</Item>
+			<Item Ident="1002359" ItemIdent="1002359" SourceIdent="0" GUIDString="{00000002-E410-4260-88CC-B4B11BF041F5}" AssignChildsOnServer="false" ActiveHierarchy="true" Code="5" Name="Виртуальный зал WSA" AltName="" MainParentIdent="2" Status="rsActive" VisualType_Image="0" VisualType_BColor="536870911" VisualType_TextColor="536870911" VisualType_Flags="bsPictureTop" EditRight="0" RightLvl="257" ServingPosition="0" Restaurant="2" VisualType_TZColor="536870911" ServedAtCashServer="0">
+				<Items ClassName="THallPlanItems">
+					<Items/>
+				</Items>
+				<Childs ClassName="tChildCollection">
+					<Child ChildIdent="1002369" IsTerminal="1"/>
+				</Childs>
+			</Item>
+		</Items>
+	</RK7Reference>
+</RK7QueryResult>

@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RK7QueryResult ServerVersion="7.7.0.212" XmlVersion="248" NetName="SKBAR_MID" Status="Ok" CMD="GetRefData" ErrorText="" DateTime="2024-05-19T16:16:30" WorkTime="15" Processed="1" ArrivalDateTime="2024-05-19T16:16:30">
+	<RK7Reference DataVersion="6075" TotalItemCount="0">
+		<Items>
+			<Item Ident="2816" Code="1" Name="QRmenu">
+				<RIChildItems>
+					<TClassificatorGroup Code="8" Name="Бургеры и сэндвичи" Ident="2817">
+						<RIChildItems>
+							<TRK7MenuItem Code="120" Name="Сэндвич с курицей" Instruct="Хлеб для тостов, филе куриное, салат айсберг, томат, огурец, соус чесночный" PRICETYPES-3="22000" Ident="1000254"/>
+							<TRK7MenuItem Code="121" Name="Сэндвич с ветчиной и сыром" Instruct="Хлеб для тостов, ветчина, сыр, помидор, соус, салат айсберг" PRICETYPES-3="22000" Ident="1000255"/>
+							<TRK7MenuItem Code="122" Name="SK Burger" Instruct="" PRICETYPES-3="37000" Ident="1000257"/>
+							<TRK7MenuItem Code="123" Name="Чикен Бургер" Instruct="" PRICETYPES-3="35000" Ident="1000259"/>
+							<TRK7MenuItem Code="126" Name="100% Боль" Instruct="" PRICETYPES-3="33000" Ident="1000266"/>
+							<TRK7MenuItem Code="127" Name="Беконатор" Instruct="" PRICETYPES-3="44000" Ident="1000268"/>
+						</RIChildItems>
+					</TClassificatorGroup>
+					<TClassificatorGroup Code="9" Name="Пицца" Ident="2818">
+						<RIChildItems>
+							<TRK7MenuItem Code="7" Name="Калорийная пицца" Instruct="Сервилат, шампиньоны, сыр микс, соус майонезный" PRICETYPES-3="28000" Ident="1000058"/>
+							<TRK7MenuItem Code="8" Name="Ассорти пицца" Instruct="Куриное филе, ветчина, п/к колбаса, соус майонез, сыр микс" PRICETYPES-3="28000" Ident="1000059"/>
+							<TRK7MenuItem Code="9" Name="Пикантная пицца" Instruct="Ветчина, помидор, сыр микс" PRICETYPES-3="26000" Ident="1000061"/>
+							<TRK7MenuItem Code="10" Name="Грибная пицца" Instruct="Шампиньоны, соус майонез, сыр микс" PRICETYPES-3="27000" Ident="1000063"/>
+							<TRK7MenuItem Code="11" Name="Охотничья пицца" Instruct="Охотничьи колбаски, карнишоны, соус майонезный, сыр микс" PRICETYPES-3="27000" Ident="1000065"/>
+							<TRK7MenuItem Code="12" Name="Дьябло пицца" Instruct="Соус майонез, ветчина, куринное филе, холопеньо, сыр микс, соус чили" PRICETYPES-3="28000" Ident="1000067"/>
+							<TRK7MenuItem Code="13" Name="Четыре сыра пицца" Instruct="Сыр микс, дор блю, пармезан, соус майонезный" PRICETYPES-3="28000" Ident="1000069"/>
+							<TRK7MenuItem Code="14" Name="Цезарь пицца" Instruct="Соус цезарь, куриное филе, помидор, сыр микс, айсберг, пармезан" PRICETYPES-3="30000" Ident="1000071"/>
+							<TRK7MenuItem Code="921" Name="Куриная пицца" Instruct="" PRICETYPES-3="27000" Ident="1001865"/>
+							<TRK7MenuItem Code="922" Name="Куриная пицца 33 см" Instruct="" PRICETYPES-3="55000" Ident="1001867"/>
+							<TRK7MenuItem Code="923" Name="Грибная пицца 33 см" Instruct="Шампиньоны, соус майонез, сыр микс" PRICETYPES-3="50000" Ident="1001869"/>
+							<TRK7MenuItem Code="924" Name="Пикантная  пицца 33 см" Instruct="Ветчина, помидор, сыр микс" PRICETYPES-3="50000" Ident="1001871"/>
+							<TRK7MenuItem Code="925" Name="Дьябло пицца 33 см" Instruct="Соус майонез, ветчина, куринное филе, холопеньо, сыр микс, соус чили" PRICETYPES-3="55000" Ident="1001873"/>
+							<TRK7MenuItem Code="926" Name="Калорийная пицца 33 см" Instruct="Сервилат, шампиньоны, сыр микс, соус майонезный" PRICETYPES-3="55000" Ident="1001875"/>
+							<TRK7MenuItem Code="927" Name="Четыре сыра  пицца 33 см" Instruct="Сыр микс, дор блю, пармезан, соус майонезный" PRICETYPES-3="59000" Ident="1001877"/>
+							<TRK7MenuItem Code="928" Name="Цезарь пицца 33 см" Instruct="Соус цезарь, куриное филе, помидор, сыр микс, айсберг, пармезан" PRICETYPES-3="65000" Ident="1001879"/>
+							<TRK7MenuItem Code="929" Name="Охотничья пицца 33 см" Instruct="Охотничьи колбаски, карнишоны, соус майонезный, сыр микс" PRICETYPES-3="55000" Ident="1001881"/>
+							<TRK7MenuItem Code="930" Name="Ассорти пицца 33 см" Instruct="Куриное филе, ветчина, п/к колбаса, соус майонез, сыр микс&#13;&#10;485 г." PRICETYPES-3="55000" Ident="1001883"/>
+						</RIChildItems>
+					</TClassificatorGroup>
+					<TClassificatorGroup Code="10" Name="Горячие блюда и Сковородки" Ident="2819">
+						<RIChildItems>
+							<TRK7MenuItem Code="16" Name="Сковородка с курицей" Instruct="" PRICETYPES-3="28000" Ident="1000074"/>
+							<TRK7MenuItem Code="17" Name="Сковородка со свининой" Instruct="" PRICETYPES-3="30000" Ident="1000075"/>
+							<TRK7MenuItem Code="18" Name="Сковородка с грибами" Instruct="" PRICETYPES-3="30000" Ident="1000077"/>
+							<TRK7MenuItem Code="19" Name="Сковородка с охотнич. колбас" Instruct="" PRICETYPES-3="29000" Ident="1000079"/>
+							<TRK7MenuItem Code="194" Name="Охотничьи колбаски" Instruct="" PRICETYPES-3="37000" Ident="1000397"/>
+						</RIChildItems>
+					</TClassificatorGroup>
+					<TClassificatorGroup Code="11" Name="Закуски к пиву" Ident="2820">
+						<RIChildItems>
+							<TRK7MenuItem Code="21" Name="Чесночные гренки" Instruct="" PRICETYPES-3="12000" Ident="1000082"/>
+							<TRK7MenuItem Code="24" Name="Соленый арахис" Instruct="" PRICETYPES-3="10000" Ident="1000087"/>
+							<TRK7MenuItem Code="26" Name="Крылья  куриные bbq" Instruct="" PRICETYPES-3="28000" Ident="1000093"/>
+							<TRK7MenuItem Code="27" Name="Пельмешки фри" Instruct="" PRICETYPES-3="22000" Ident="1000095"/>
+							<TRK7MenuItem Code="29" Name="Сырные шарики" Instruct="" PRICETYPES-3="32000" Ident="1000099"/>
+							<TRK7MenuItem Code="163" Name="Картофель фри" Instruct="" PRICETYPES-3="13000" Ident="1000343"/>
+							<TRK7MenuItem Code="164" Name="Картофель по деревенски" Instruct="" PRICETYPES-3="13000" Ident="1000345"/>
+							<TRK7MenuItem Code="165" Name="Наггетсы 6 шт" Instruct="" PRICETYPES-3="20000" Ident="1000347"/>
+							<TRK7MenuItem Code="166" Name="Большой пивной сет" Instruct="" PRICETYPES-3="72000" Ident="1000349"/>
+							<TRK7MenuItem Code="167" Name="Малый пивной сет" Instruct="" PRICETYPES-3="43000" Ident="1000351"/>
+							<TRK7MenuItem Code="168" Name="Зверское фри" Instruct="" PRICETYPES-3="30000" Ident="1000353"/>
+							<TRK7MenuItem Code="169" Name="Зверские дольки" Instruct="" PRICETYPES-3="30000" Ident="1000355"/>
+							<TRK7MenuItem Code="320" Name="Луковые кольца" Instruct="" PRICETYPES-3="18000" Ident="1000638"/>
+							<TRK7MenuItem Code="350" Name="Фисташки 50 гр" Instruct="" PRICETYPES-3="10000" Ident="1000693"/>
+							<TRK7MenuItem Code="1291" Name="Наггетсы 4 штуки" Instruct="Нагетсы куринные, соус на выбор" PRICETYPES-3="16000" Ident="1002419"/>
+							<TRK7MenuItem Code="1292" Name="Наггетсы 8 штук" Instruct="" PRICETYPES-3="26000" Ident="1002420"/>
+							<TRK7MenuItem Code="1304" Name="Мини - Чебуреки 4 шт" Instruct="" PRICETYPES-3="22000" Ident="1002449"/>
+						</RIChildItems>
+					</TClassificatorGroup>
+					<TClassificatorGroup Code="12" Name="Разливное Пиво" Ident="2821">
+						<RIChildItems>
+							<TRK7MenuItem Code="38" Name="Фирменное темное 0.4" Instruct="" PRICETYPES-3="13000" Ident="1000114"/>
+							<TRK7MenuItem Code="39" Name="Фирменное светлое 0.4" Instruct="" PRICETYPES-3="13000" Ident="1000115"/>
+							<TRK7MenuItem Code="42" Name="Вишневое 0.4" Instruct="" PRICETYPES-3="15000" Ident="1000121"/>
+							<TRK7MenuItem Code="43" Name="Сидр Яблочный 0.4" Instruct="" PRICETYPES-3="13000" Ident="1000123"/>
+							<TRK7MenuItem Code="47" Name="Вишневое 1л" Instruct="" PRICETYPES-3="27000" Ident="1000131"/>
+							<TRK7MenuItem Code="49" Name="Фирменное светлое 1л" Instruct="" PRICETYPES-3="24000" Ident="1000135"/>
+							<TRK7MenuItem Code="50" Name="Фирменное темное 1л" Instruct="" PRICETYPES-3="24000" Ident="1000137"/>
+							<TRK7MenuItem Code="51" Name="Сидр Яблочный 1л" Instruct="" PRICETYPES-3="24000" Ident="1000139"/>
+							<TRK7MenuItem Code="1063" Name="Кроненбург Бланш 0,4 л" Instruct="" PRICETYPES-3="17000" Ident="1002147"/>
+							<TRK7MenuItem Code="1064" Name="Кроненбург Бланш 1 л" Instruct="" PRICETYPES-3="34000" Ident="1002148"/>
+							<TRK7MenuItem Code="1254" Name="Томатное 1л" Instruct="" PRICETYPES-3="36000" Ident="1002381"/>
+							<TRK7MenuItem Code="1255" Name="Томатное 0.4" Instruct="" PRICETYPES-3="18000" Ident="1002382"/>
+							<TRK7MenuItem Code="1256" Name="Темное Бастион 0.4" Instruct="" PRICETYPES-3="18000" Ident="1002383"/>
+							<TRK7MenuItem Code="1257" Name="Темное Бастион 1л" Instruct="" PRICETYPES-3="36000" Ident="1002384"/>
+							<TRK7MenuItem Code="1258" Name="Абрикосовое 0.4" Instruct="" PRICETYPES-3="18000" Ident="1002385"/>
+							<TRK7MenuItem Code="1259" Name="Абрикосовое 1л" Instruct="" PRICETYPES-3="36000" Ident="1002386"/>
+							<TRK7MenuItem Code="1260" Name="Малиновое 0.4" Instruct="" PRICETYPES-3="18000" Ident="1002387"/>
+							<TRK7MenuItem Code="1261" Name="Малиновое 1л" Instruct="" PRICETYPES-3="36000" Ident="1002388"/>
+							<TRK7MenuItem Code="1262" Name="Ипа 0.4" Instruct="" PRICETYPES-3="18000" Ident="1002389"/>
+							<TRK7MenuItem Code="1263" Name="Ипа 1л" Instruct="" PRICETYPES-3="36000" Ident="1002390"/>
+							<TRK7MenuItem Code="1271" Name="сидр яблоко крафт 0.4" Instruct="" PRICETYPES-3="18000" Ident="1002398"/>
+							<TRK7MenuItem Code="1272" Name="сидр яблоко крафт 1л" Instruct="" PRICETYPES-3="36000" Ident="1002399"/>
+							<TRK7MenuItem Code="1273" Name="Бланш 1+1=3" Instruct="" PRICETYPES-3="32000" Ident="1002400"/>
+						</RIChildItems>
+					</TClassificatorGroup>
+					<TClassificatorGroup Code="13" Name="Пиво крафт бут" Ident="2822">
+						<RIChildItems>
+							<TRK7MenuItem Code="826" Name="Медовуха Поцелуй Фрейи 0.5" Instruct="" PRICETYPES-3="33000" Ident="1001653"/>
+							<TRK7MenuItem Code="828" Name="Медовуха Кровь Ётуна  0.5" Instruct="" PRICETYPES-3="34000" Ident="1001657"/>
+							<TRK7MenuItem Code="830" Name="Бакунин Рука бога  Голден Эль 0.5" Instruct="" PRICETYPES-3="36000" Ident="1001661"/>
+							<TRK7MenuItem Code="858" Name="Медовуха Черный Вепрь , 0.5" Instruct="" PRICETYPES-3="33000" Ident="1001736"/>
+							<TRK7MenuItem Code="859" Name="Медовуха Рагнарек , 0.5" Instruct="" PRICETYPES-3="34000" Ident="1001738"/>
+							<TRK7MenuItem Code="860" Name="Медовуха Огненный Великан Сурт 0.5" Instruct="" PRICETYPES-3="34000" Ident="1001740"/>
+							<TRK7MenuItem Code="877" Name="Медовуха Гнев Эгира 0.5" Instruct="" PRICETYPES-3="34000" Ident="1001773"/>
+							<TRK7MenuItem Code="878" Name="Медовуха Кровь Валькирий  0.5" Instruct="" PRICETYPES-3="34000" Ident="1001775"/>
+							<TRK7MenuItem Code="880" Name="Бакунин Финабоначи  Двойная Ипа 0.5" Instruct="" PRICETYPES-3="39000" Ident="1001779"/>
+							<TRK7MenuItem Code="882" Name="Сидр Бессмертие Идунн, 0.5" Instruct="" PRICETYPES-3="33000" Ident="1001783"/>
+							<TRK7MenuItem Code="883" Name="ZERO IN Бакунин алко фри  0.5" Instruct="" PRICETYPES-3="30000" Ident="1001785"/>
+							<TRK7MenuItem Code="887" Name="Сидр Проделки Локи 0,5" Instruct="" PRICETYPES-3="33000" Ident="1001849"/>
+							<TRK7MenuItem Code="957" Name="Медовуха Мощь Берсерка  0.5" Instruct="" PRICETYPES-3="34000" Ident="1001950"/>
+							<TRK7MenuItem Code="1068" Name="Медовуха Хель Владычица 0.5" Instruct="" PRICETYPES-3="34000" Ident="1002152"/>
+							<TRK7MenuItem Code="1069" Name="Медовуха СИВ  0.45" Instruct="" PRICETYPES-3="28000" Ident="1002153"/>
+							<TRK7MenuItem Code="1070" Name="New Rigas brewery American IPA Puzzle" Instruct="" PRICETYPES-3="31000" Ident="1002154"/>
+							<TRK7MenuItem Code="1071" Name="White Moon Srout" Instruct="" PRICETYPES-3="31000" Ident="1002155"/>
+							<TRK7MenuItem Code="1072" Name="New Rigas Коза В малине" Instruct="" PRICETYPES-3="31000" Ident="1002156"/>
+							<TRK7MenuItem Code="1073" Name="Varka Cerry Ale" Instruct="" PRICETYPES-3="30000" Ident="1002157"/>
+							<TRK7MenuItem Code="1080" Name="New Rigas Blanche Varka" Instruct="" PRICETYPES-3="30000" Ident="1002166"/>
+							<TRK7MenuItem Code="1083" Name="Panzer Black Cat" Instruct="" PRICETYPES-3="33000" Ident="1002169"/>
+							<TRK7MenuItem Code="1087" Name="Медовуха Дыхание Одина , 0.5" Instruct="" PRICETYPES-3="33000" Ident="1002181"/>
+							<TRK7MenuItem Code="1094" Name="New rigas tomato gose" Instruct="" PRICETYPES-3="33000" Ident="1002189"/>
+							<TRK7MenuItem Code="1097" Name="New Rigas Комета Ipa" Instruct="" PRICETYPES-3="31000" Ident="1002192"/>
+							<TRK7MenuItem Code="1098" Name="Медовуха Мед и Ежевика" Instruct="" PRICETYPES-3="35000" Ident="1002193"/>
+							<TRK7MenuItem Code="1109" Name="Varka Premium Lager" Instruct="" PRICETYPES-3="26000" Ident="1002204"/>
+							<TRK7MenuItem Code="1111" Name="New rigas Love Memories" Instruct="" PRICETYPES-3="31000" Ident="1002206"/>
+							<TRK7MenuItem Code="1115" Name="Panzer Banana Kraken" Instruct="" PRICETYPES-3="33000" Ident="1002209"/>
+							<TRK7MenuItem Code="1117" Name="Run Forrest" Instruct="" PRICETYPES-3="30000" Ident="1002211"/>
+							<TRK7MenuItem Code="1118" Name="Медовуха Мед с черной смородиной  0.45" Instruct="" PRICETYPES-3="35000" Ident="1002212"/>
+							<TRK7MenuItem Code="1328" Name="Медовуха Ореховая Рататоск 0.5" Instruct="" PRICETYPES-3="34000" Ident="1002475"/>
+							<TRK7MenuItem Code="1329" Name="Медовуха Мплата Имира 0.5" Instruct="" PRICETYPES-3="34000" Ident="1002476"/>
+						</RIChildItems>
+					</TClassificatorGroup>
+					<TClassificatorGroup Code="14" Name="Пиво бутылочное" Ident="2823">
+						<RIChildItems>
+							<TRK7MenuItem Code="67" Name="Козел темное" Instruct="" PRICETYPES-3="16000" Ident="1000162"/>
+							<TRK7MenuItem Code="68" Name="Хугарден" Instruct="" PRICETYPES-3="18000" Ident="1000163"/>
+							<TRK7MenuItem Code="69" Name="BUD" Instruct="" PRICETYPES-3="18000" Ident="1000165"/>
+							<TRK7MenuItem Code="71" Name="Балтика б\а 0" Instruct="" PRICETYPES-3="15000" Ident="1000169"/>
+							<TRK7MenuItem Code="76" Name="IPA Горьковская" Instruct="" PRICETYPES-3="19000" Ident="1000178"/>
+							<TRK7MenuItem Code="80" Name="Манго в троем" Instruct="" PRICETYPES-3="22000" Ident="1000185"/>
+							<TRK7MenuItem Code="82" Name="Шоколадный стаут" Instruct="" PRICETYPES-3="23000" Ident="1000189"/>
+							<TRK7MenuItem Code="279" Name="Pilsener" Instruct="" PRICETYPES-3="28000" Ident="1000561"/>
+							<TRK7MenuItem Code="280" Name="Schwarzbier" Instruct="" PRICETYPES-3="28000" Ident="1000563"/>
+							<TRK7MenuItem Code="281" Name="Weisssbier" Instruct="" PRICETYPES-3="28000" Ident="1000565"/>
+							<TRK7MenuItem Code="282" Name="Bohemian pils" Instruct="" PRICETYPES-3="19000" Ident="1000567"/>
+							<TRK7MenuItem Code="361" Name="APA Горьковская" Instruct="" PRICETYPES-3="19000" Ident="1000713"/>
+							<TRK7MenuItem Code="692" Name="American Amber Lager" Instruct="" PRICETYPES-3="19000" Ident="1001393"/>
+							<TRK7MenuItem Code="729" Name="Лев Чех Лайон 0.5" Instruct="" PRICETYPES-3="27000" Ident="1001456"/>
+							<TRK7MenuItem Code="1074" Name="Холстен свет" Instruct="" PRICETYPES-3="16000" Ident="1002158"/>
+							<TRK7MenuItem Code="1077" Name="IPA  Двойная Горьковская" Instruct="" PRICETYPES-3="27000" Ident="1002163"/>
+							<TRK7MenuItem Code="1092" Name="Вишневый эль горьк" Instruct="" PRICETYPES-3="24000" Ident="1002187"/>
+							<TRK7MenuItem Code="1099" Name="Туборг манго" Instruct="" PRICETYPES-3="16000" Ident="1002194"/>
+							<TRK7MenuItem Code="1100" Name="Горьковское б\а 0" Instruct="" PRICETYPES-3="13000" Ident="1002195"/>
+							<TRK7MenuItem Code="1124" Name="Корона Экстра" Instruct="" PRICETYPES-3="28000" Ident="1002218"/>
+							<TRK7MenuItem Code="1128" Name="Гараж Грейпфрут" Instruct="" PRICETYPES-3="15000" Ident="1002222"/>
+							<TRK7MenuItem Code="1136" Name="Кроненбург 1664  б\а 0" Instruct="" PRICETYPES-3="13000" Ident="1002230"/>
+							<TRK7MenuItem Code="1305" Name="Русский Имперский Стаут" Instruct="" PRICETYPES-3="24000" Ident="1002450"/>
+						</RIChildItems>
+					</TClassificatorGroup>
+					<TClassificatorGroup Code="15" Name="Джин" Ident="2825">
+						<RIChildItems>
+							<TRK7MenuItem Code="337" Name="Джин Барристер 40" Instruct="" PRICETYPES-3="16000" Ident="1000670"/>
+							<TRK7MenuItem Code="349" Name="Джин Барристер 100" Instruct="" PRICETYPES-3="38000" Ident="1000691"/>
+							<TRK7MenuItem Code="721" Name="Джин Гордонс 40" Instruct="" PRICETYPES-3="22000" Ident="1001441"/>
+							<TRK7MenuItem Code="722" Name="Джин Гордонс 100" Instruct="" PRICETYPES-3="55000" Ident="1001443"/>
+						</RIChildItems>
+					</TClassificatorGroup>
+					<TClassificatorGroup Code="16" Name="Кофе" Ident="2826">
+						<RIChildItems>
+							<TRK7MenuItem Code="150" Name="Американо" Instruct="" PRICETYPES-3="9000" Ident="1000311"/>
+							<TRK7MenuItem Code="151" Name="Эспрессо" Instruct="" PRICETYPES-3="9000" Ident="1000312"/>
+							<TRK7MenuItem Code="152" Name="Капучино" Instruct="" PRICETYPES-3="12000" Ident="1000314"/>
+						</RIChildItems>
+					</TClassificatorGroup>
+					<TClassificatorGroup Code="17" Name="Вермут" Ident="2827">
+						<RIChildItems>
+							<TRK7MenuItem Code="60" Name="Мартини Бьянко 100 мл" Instruct="" PRICETYPES-3="29000" Ident="1000152"/>
+							<TRK7MenuItem Code="61" Name="Мартини экстра драй   100 мл" Instruct="" PRICETYPES-3="29000" Ident="1000153"/>
+							<TRK7MenuItem Code="62" Name="Мартини Росато 100 мл" Instruct="" PRICETYPES-3="29000" Ident="1000155"/>
+							<TRK7MenuItem Code="703" Name="Мартини Фиеро 100 мл" Instruct="" PRICETYPES-3="29000" Ident="1001405"/>
+							<TRK7MenuItem Code="708" Name="Мартини Россо 100 мл" Instruct="" PRICETYPES-3="29000" Ident="1001415"/>
+							<TRK7MenuItem Code="1129" Name="Мартини Бьянко 40 мл" Instruct="" PRICETYPES-3="14000" Ident="1002223"/>
+							<TRK7MenuItem Code="1130" Name="Мартини Росато 40 мл" Instruct="" PRICETYPES-3="14000" Ident="1002224"/>
+							<TRK7MenuItem Code="1131" Name="Мартини Россо 40 мл" Instruct="" PRICETYPES-3="14000" Ident="1002225"/>
+							<TRK7MenuItem Code="1132" Name="Мартини Фиеро 40 мл" Instruct="" PRICETYPES-3="14000" Ident="1002226"/>
+							<TRK7MenuItem Code="1133" Name="Мартини экстра драй  40 мл" Instruct="" PRICETYPES-3="14000" Ident="1002227"/>
+						</RIChildItems>
+					</TClassificatorGroup>
+					<TClassificatorGroup Code="18" Name="Гриль" Ident="2828">
+						<RIChildItems>
+							<TRK7MenuItem Code="1085" Name="Люля по-домашнему" Instruct="" PRICETYPES-3="36000" Ident="1002179"/>
+							<TRK7MenuItem Code="1088" Name="Люля из свинины" Instruct="" PRICETYPES-3="34000" Ident="1002182"/>
+						</RIChildItems>
+					</TClassificatorGroup>
+					<TClassificatorGroup Code="19" Name="Паста" Ident="2829">
+						<RIChildItems>
+							<TRK7MenuItem Code="183" Name="Карбонара" Instruct="" PRICETYPES-3="28000" Ident="1000380"/>
+							<TRK7MenuItem Code="185" Name="Паста с креветками" Instruct="" PRICETYPES-3="38000" Ident="1000383"/>
+							<TRK7MenuItem Code="186" Name="Паста с грибами" Instruct="" PRICETYPES-3="28000" Ident="1000385"/>
+							<TRK7MenuItem Code="1300" Name="Паста с Лососем" Instruct="" PRICETYPES-3="38000" Ident="1002438"/>
+						</RIChildItems>
+					</TClassificatorGroup>
+					<TClassificatorGroup Code="20" Name="Салаты" Ident="2830">
+						<RIChildItems>
+							<TRK7MenuItem Code="188" Name="Греческий" Instruct="" PRICETYPES-3="25000" Ident="1000388"/>
+							<TRK7MenuItem Code="189" Name="Цезарь с Курицей" Instruct="Салат айсберг, помидоры чери, сыр пармезан, соус цезарь&#13;&#10;185 г.&#13;&#10;310 ккал." PRICETYPES-3="28000" Ident="1000389"/>
+							<TRK7MenuItem Code="190" Name="Цезарь с Креветками" Instruct="" PRICETYPES-3="38000" Ident="1000391"/>
+						</RIChildItems>
+					</TClassificatorGroup>
+					<TClassificatorGroup Code="21" Name="Соуса" Ident="2831">
+						<RIChildItems>
+							<TRK7MenuItem Code="99" Name="Сырный 40г" Instruct="" PRICETYPES-3="5000" Ident="1000218"/>
+							<TRK7MenuItem Code="100" Name="Чесночный 40г" Instruct="" PRICETYPES-3="5000" Ident="1000219"/>
+							<TRK7MenuItem Code="101" Name="Кетчуп 40г" Instruct="" PRICETYPES-3="5000" Ident="1000221"/>
+							<TRK7MenuItem Code="170" Name="BBQ40г" Instruct="" PRICETYPES-3="5000" Ident="1000357"/>
+							<TRK7MenuItem Code="172" Name="Хрен 40г" Instruct="" PRICETYPES-3="5000" Ident="1000361"/>
+							<TRK7MenuItem Code="173" Name="Горчица 40г" Instruct="" PRICETYPES-3="5000" Ident="1000363"/>
+							<TRK7MenuItem Code="958" Name="Мед 40г" Instruct="" PRICETYPES-3="5000" Ident="1001952"/>
+							<TRK7MenuItem Code="1086" Name="Соус шашлычный 40 гр" Instruct="" PRICETYPES-3="5000" Ident="1002180"/>
+						</RIChildItems>
+					</TClassificatorGroup>
+					<TClassificatorGroup Code="22" Name="Супы" Ident="2832">
+						<RIChildItems>
+							<TRK7MenuItem Code="103" Name="Крем-суп из шампиньонов" Instruct="" PRICETYPES-3="25000" Ident="1000224"/>
+							<TRK7MenuItem Code="104" Name="Куриный суп-лапша" Instruct="" PRICETYPES-3="23000" Ident="1000225"/>
+						</RIChildItems>
+					</TClassificatorGroup>
+					<TClassificatorGroup Code="23" Name="Холодные закуски" Ident="2833">
+						<RIChildItems>
+							<TRK7MenuItem Code="175" Name="Домашние соленья" Instruct="" PRICETYPES-3="24000" Ident="1000366"/>
+							<TRK7MenuItem Code="176" Name="Овощная нарезка" Instruct="" PRICETYPES-3="22000" Ident="1000367"/>
+							<TRK7MenuItem Code="177" Name="Селедочка с картофелем" Instruct="" PRICETYPES-3="25000" Ident="1000369"/>
+							<TRK7MenuItem Code="178" Name="Сырная тарелка" Instruct="" PRICETYPES-3="47000" Ident="1000371"/>
+							<TRK7MenuItem Code="179" Name="Домашнее сало" Instruct="" PRICETYPES-3="27000" Ident="1000373"/>
+							<TRK7MenuItem Code="1101" Name="Сет под водочку" Instruct="" PRICETYPES-3="65000" Ident="1002196"/>
+						</RIChildItems>
+					</TClassificatorGroup>
+					<TClassificatorGroup Code="24" Name="Виски" Ident="2834">
+						<RIChildItems>
+							<TRK7MenuItem Code="136" Name="Вильям Лоусонс 40" Instruct="" PRICETYPES-3="16000" Ident="1000285"/>
+							<TRK7MenuItem Code="138" Name="Джемесон 40" Instruct="" PRICETYPES-3="35000" Ident="1000288"/>
+							<TRK7MenuItem Code="140" Name="Джек Дениэлс 40" Instruct="" PRICETYPES-3="38000" Ident="1000293"/>
+							<TRK7MenuItem Code="141" Name="Баллантайнс 40" Instruct="" PRICETYPES-3="30000" Ident="1000295"/>
+							<TRK7MenuItem Code="142" Name="Чивас Ригал 12 лет 40" Instruct="" PRICETYPES-3="50000" Ident="1000297"/>
+							<TRK7MenuItem Code="202" Name="Джек Дениэлс Хани 40" Instruct="" PRICETYPES-3="38000" Ident="1000411"/>
+							<TRK7MenuItem Code="205" Name="Вильям Лоусонс 100" Instruct="" PRICETYPES-3="38000" Ident="1000417"/>
+							<TRK7MenuItem Code="207" Name="Джемесон 100" Instruct="" PRICETYPES-3="75000" Ident="1000421"/>
+							<TRK7MenuItem Code="208" Name="Чивас Ригал 12 лет 100" Instruct="" PRICETYPES-3="95000" Ident="1000423"/>
+							<TRK7MenuItem Code="209" Name="Джек Дениэлс 100" Instruct="" PRICETYPES-3="80000" Ident="1000425"/>
+							<TRK7MenuItem Code="210" Name="Баллантайнс 100" Instruct="" PRICETYPES-3="65000" Ident="1000427"/>
+							<TRK7MenuItem Code="212" Name="Джек Дениэлс Хани 100" Instruct="" PRICETYPES-3="80000" Ident="1000431"/>
+							<TRK7MenuItem Code="215" Name="Джим бим Бурбон 40" Instruct="" PRICETYPES-3="30000" Ident="1000437"/>
+							<TRK7MenuItem Code="216" Name="Джим бим Бурбон 100" Instruct="" PRICETYPES-3="66000" Ident="1000439"/>
+							<TRK7MenuItem Code="219" Name="Джим бим Ред стаг 40" Instruct="" PRICETYPES-3="30000" Ident="1000445"/>
+							<TRK7MenuItem Code="220" Name="Джим бим Ред стаг 100" Instruct="" PRICETYPES-3="66000" Ident="1000447"/>
+							<TRK7MenuItem Code="1311" Name="Bushmills 40" Instruct="" PRICETYPES-3="26000" Ident="1002458"/>
+							<TRK7MenuItem Code="1312" Name="Bushmills 100" Instruct="" PRICETYPES-3="55000" Ident="1002459"/>
+						</RIChildItems>
+					</TClassificatorGroup>
+					<TClassificatorGroup Code="25" Name="Водка" Ident="2835">
+						<RIChildItems>
+							<TRK7MenuItem Code="32" Name="Мягков 40" Instruct="" PRICETYPES-3="10000" Ident="1000104"/>
+							<TRK7MenuItem Code="33" Name="Мягков клюква 40" Instruct="" PRICETYPES-3="10000" Ident="1000105"/>
+							<TRK7MenuItem Code="34" Name="Хаски 40" Instruct="" PRICETYPES-3="12000" Ident="1000107"/>
+							<TRK7MenuItem Code="35" Name="Акатуй 40" Instruct="" PRICETYPES-3="10000" Ident="1000109"/>
+							<TRK7MenuItem Code="93" Name="Акатуй 100" Instruct="" PRICETYPES-3="24000" Ident="1000207"/>
+							<TRK7MenuItem Code="94" Name="Мягков 100" Instruct="" PRICETYPES-3="24000" Ident="1000209"/>
+							<TRK7MenuItem Code="95" Name="Мягков клюква 100" Instruct="" PRICETYPES-3="24000" Ident="1000211"/>
+							<TRK7MenuItem Code="96" Name="Хаски 100" Instruct="" PRICETYPES-3="26000" Ident="1000213"/>
+							<TRK7MenuItem Code="287" Name="Водка хаус 40" Instruct="" PRICETYPES-3="6000" Ident="1000577"/>
+							<TRK7MenuItem Code="288" Name="Водка хаус 100" Instruct="" PRICETYPES-3="14000" Ident="1000578"/>
+							<TRK7MenuItem Code="775" Name="Органика 40" Instruct="" PRICETYPES-3="17000" Ident="1001546"/>
+							<TRK7MenuItem Code="776" Name="Органика 100" Instruct="" PRICETYPES-3="39000" Ident="1001548"/>
+							<TRK7MenuItem Code="804" Name="Ledoff Light 100" Instruct="" PRICETYPES-3="17000" Ident="1001609"/>
+							<TRK7MenuItem Code="805" Name="Ledoff Lemon 40" Instruct="" PRICETYPES-3="7000" Ident="1001611"/>
+							<TRK7MenuItem Code="807" Name="Ledoff Клюква 40" Instruct="" PRICETYPES-3="7000" Ident="1001615"/>
+							<TRK7MenuItem Code="808" Name="Ledoff Light 40" Instruct="" PRICETYPES-3="7000" Ident="1001617"/>
+							<TRK7MenuItem Code="809" Name="Ledoff Чернослив Коньяк 40" Instruct="" PRICETYPES-3="7000" Ident="1001619"/>
+							<TRK7MenuItem Code="810" Name="Ledoff Перец 40" Instruct="" PRICETYPES-3="7000" Ident="1001621"/>
+							<TRK7MenuItem Code="813" Name="Ledoff Клюква 100" Instruct="" PRICETYPES-3="17000" Ident="1001627"/>
+							<TRK7MenuItem Code="815" Name="Ledoff Lemon 100" Instruct="" PRICETYPES-3="17000" Ident="1001631"/>
+							<TRK7MenuItem Code="817" Name="Ledoff Перец 100" Instruct="" PRICETYPES-3="17000" Ident="1001635"/>
+							<TRK7MenuItem Code="818" Name="Ledoff Чернослив Коньяк 100" Instruct="" PRICETYPES-3="17000" Ident="1001637"/>
+							<TRK7MenuItem Code="819" Name="Ledoff Клюква брусника 40" Instruct="" PRICETYPES-3="7000" Ident="1001639"/>
+							<TRK7MenuItem Code="820" Name="Ledoff Клюква Брусника 100" Instruct="" PRICETYPES-3="17000" Ident="1001641"/>
+							<TRK7MenuItem Code="821" Name="Ledoff Рябина на Коньяке 40" Instruct="" PRICETYPES-3="7000" Ident="1001643"/>
+							<TRK7MenuItem Code="822" Name="Ledoff Рябина на Коньяке 100" Instruct="" PRICETYPES-3="17000" Ident="1001645"/>
+							<TRK7MenuItem Code="823" Name="Ledoff 40" Instruct="" PRICETYPES-3="7000" Ident="1001647"/>
+							<TRK7MenuItem Code="824" Name="Ledoff 100" Instruct="" PRICETYPES-3="17000" Ident="1001649"/>
+						</RIChildItems>
+					</TClassificatorGroup>
+					<TClassificatorGroup Code="26" Name="Коньяк" Ident="2836">
+						<RIChildItems>
+							<TRK7MenuItem Code="56" Name="Арарат 3 звезды 40" Instruct="" PRICETYPES-3="19000" Ident="1000146"/>
+							<TRK7MenuItem Code="57" Name="Арарат 5 звезд 40" Instruct="" PRICETYPES-3="22000" Ident="1000147"/>
+							<TRK7MenuItem Code="256" Name="Арарат 3 звезды 100" Instruct="" PRICETYPES-3="40000" Ident="1000517"/>
+							<TRK7MenuItem Code="257" Name="Арарат 5 звезд 100" Instruct="" PRICETYPES-3="48000" Ident="1000519"/>
+							<TRK7MenuItem Code="850" Name="Асканели 3 звезды 100" Instruct="" PRICETYPES-3="42000" Ident="1001722"/>
+							<TRK7MenuItem Code="851" Name="Асканели 3 звезды 40" Instruct="" PRICETYPES-3="20000" Ident="1001724"/>
+							<TRK7MenuItem Code="852" Name="Асканели 5 звезд 100" Instruct="" PRICETYPES-3="50000" Ident="1001726"/>
+							<TRK7MenuItem Code="853" Name="Асканели  5 звезд 40" Instruct="" PRICETYPES-3="24000" Ident="1001728"/>
+						</RIChildItems>
+					</TClassificatorGroup>
+					<TClassificatorGroup Code="27" Name="Ликеры" Ident="2837">
+						<RIChildItems>
+							<TRK7MenuItem Code="130" Name="Апероль 40" Instruct="" PRICETYPES-3="22000" Ident="1000274"/>
+							<TRK7MenuItem Code="131" Name="Кампари 40" Instruct="" PRICETYPES-3="22000" Ident="1000275"/>
+							<TRK7MenuItem Code="132" Name="Егермейстер 40" Instruct="" PRICETYPES-3="23000" Ident="1000277"/>
+							<TRK7MenuItem Code="133" Name="Абсент 40" Instruct="" PRICETYPES-3="28000" Ident="1000279"/>
+							<TRK7MenuItem Code="134" Name="Бейлис 40" Instruct="" PRICETYPES-3="25000" Ident="1000281"/>
+							<TRK7MenuItem Code="258" Name="Абсент 100" Instruct="" PRICETYPES-3="65000" Ident="1000521"/>
+							<TRK7MenuItem Code="259" Name="Апероль 100" Instruct="" PRICETYPES-3="48000" Ident="1000523"/>
+							<TRK7MenuItem Code="260" Name="Бейлис 100" Instruct="" PRICETYPES-3="55000" Ident="1000525"/>
+							<TRK7MenuItem Code="261" Name="Егермейстер 100" Instruct="" PRICETYPES-3="55000" Ident="1000527"/>
+							<TRK7MenuItem Code="262" Name="Кампари 100" Instruct="" PRICETYPES-3="48000" Ident="1000529"/>
+							<TRK7MenuItem Code="263" Name="Самбука 40" Instruct="" PRICETYPES-3="22000" Ident="1000531"/>
+							<TRK7MenuItem Code="264" Name="Самбука 100" Instruct="" PRICETYPES-3="48000" Ident="1000533"/>
+							<TRK7MenuItem Code="275" Name="Болс кофе 40" Instruct="" PRICETYPES-3="18000" Ident="1000553"/>
+							<TRK7MenuItem Code="276" Name="Болс кофе 100" Instruct="" PRICETYPES-3="40000" Ident="1000555"/>
+							<TRK7MenuItem Code="854" Name="Болс банан 40" Instruct="" PRICETYPES-3="18000" Ident="1001730"/>
+							<TRK7MenuItem Code="855" Name="Болс банан 100" Instruct="" PRICETYPES-3="40000" Ident="1001732"/>
+							<TRK7MenuItem Code="1044" Name="Амаретто 40" Instruct="" PRICETYPES-3="16000" Ident="1002126"/>
+							<TRK7MenuItem Code="1045" Name="Амаретто 100" Instruct="" PRICETYPES-3="38000" Ident="1002127"/>
+							<TRK7MenuItem Code="1286" Name="Ликер Монин персик 40" Instruct="" PRICETYPES-3="22000" Ident="1002413"/>
+							<TRK7MenuItem Code="1287" Name="Ликер Монин Персик 100" Instruct="" PRICETYPES-3="48000" Ident="1002414"/>
+						</RIChildItems>
+					</TClassificatorGroup>
+					<TClassificatorGroup Code="28" Name="Вино и Шампанское" Ident="2838">
+						<RIChildItems>
+							<TRK7MenuItem Code="64" Name="Российское" Instruct="" PRICETYPES-3="60000" Ident="1000158"/>
+							<TRK7MenuItem Code="65" Name="Абрау Дюрсо" Instruct="" PRICETYPES-3="100000" Ident="1000159"/>
+							<TRK7MenuItem Code="1301" Name="САНТО-СТЕФАНО" Instruct="" PRICETYPES-3="65000" Ident="1002439"/>
+						</RIChildItems>
+					</TClassificatorGroup>
+					<TClassificatorGroup Code="29" Name="Чай" Ident="2839"/>
+					<TClassificatorGroup Code="30" Name="Текила" Ident="2840">
+						<RIChildItems>
+							<TRK7MenuItem Code="1075" Name="Текила Сомбрерос 40 мл" Instruct="" PRICETYPES-3="20000" Ident="1002161"/>
+							<TRK7MenuItem Code="1076" Name="Текила сомбрерос 100 мл" Instruct="" PRICETYPES-3="48000" Ident="1002162"/>
+							<TRK7MenuItem Code="1095" Name="Текила Рио Гранде Сильвер 40" Instruct="" PRICETYPES-3="19000" Ident="1002190"/>
+							<TRK7MenuItem Code="1096" Name="Текила Рио Гранде Сильвер 100" Instruct="" PRICETYPES-3="46000" Ident="1002191"/>
+						</RIChildItems>
+					</TClassificatorGroup>
+					<TClassificatorGroup Code="31" Name="Коктейли" Ident="2841"/>
+					<TClassificatorGroup Code="32" Name="Напитки" Ident="2842">
+						<RIChildItems>
+							<TRK7MenuItem Code="106" Name="Квас букет чувашия" Instruct="" PRICETYPES-3="6000" Ident="1000228"/>
+							<TRK7MenuItem Code="110" Name="Букет чувашия 0.5 с/без газ" Instruct="" PRICETYPES-3="6000" Ident="1000235"/>
+							<TRK7MenuItem Code="111" Name="Аква минерале 0.5 с газ" Instruct="" PRICETYPES-3="10000" Ident="1000237"/>
+							<TRK7MenuItem Code="112" Name="Аква минерале 0.5 без газ" Instruct="" PRICETYPES-3="10000" Ident="1000239"/>
+							<TRK7MenuItem Code="368" Name="Адреналин энергетик" Instruct="" PRICETYPES-3="15000" Ident="1000729"/>
+							<TRK7MenuItem Code="847" Name="Everwess жб" Instruct="" PRICETYPES-3="10000" Ident="1001716"/>
+							<TRK7MenuItem Code="966" Name="Фантола ЖБ" Instruct="" PRICETYPES-3="10000" Ident="1001967"/>
+							<TRK7MenuItem Code="1019" Name="Волчонок арбуз 0.45" Instruct="" PRICETYPES-3="16000" Ident="1002095"/>
+							<TRK7MenuItem Code="1298" Name="Кола ЧИЛЛАУТ ЖБ" Instruct="" PRICETYPES-3="10000" Ident="1002436"/>
+						</RIChildItems>
+					</TClassificatorGroup>
+				</RIChildItems>
+			</Item>
+		</Items>
+	</RK7Reference>
+</RK7QueryResult>

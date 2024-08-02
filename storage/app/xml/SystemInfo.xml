@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RK7QueryResult ServerVersion="7.7.0.212" XmlVersion="248" NetName="SKBAR_MID" Status="Ok" CMD="GetSystemInfo" ErrorText="" DateTime="2024-05-14T00:48:01" WorkTime="0" Processed="1" ArrivalDateTime="2024-05-14T00:48:01">
+	<SystemInfo SystemTime="3924809281757" ReqSysVer="2" NetName="SKBAR_MID" ProcessID="404" CashServerVersion="7.7.0.212" ShiftDate="20240512" RestCode="243620001">
+		<BusinessPeriod id="0" code="0"/>
+		<CashGroup id="15001" code="15001" name="SKBAR"/>
+		<Restaurant id="1" code="1" name="SKBar"/>
+	</SystemInfo>
+</RK7QueryResult>

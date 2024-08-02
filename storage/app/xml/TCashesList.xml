@@ -1,0 +1,667 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RK7QueryResult ServerVersion="7.7.0.212" XmlVersion="248" NetName="SKBAR_MID" Status="Ok" CMD="GetRefData" ErrorText="" DateTime="2024-05-14T00:48:58" WorkTime="16" Processed="1" ArrivalDateTime="2024-05-14T00:48:58">
+	<RK7Reference DataVersion="161" ClassName="TCashesList" Name="CASHES" MinIdent="1" MaxIdent="0" ViewRight="0" UpdateRight="62" ChildRight="62" DeleteRight="62" XMLExport="true" XMLMask="*" LeafCollectionCount="1" TotalItemCount="12">
+		<Items>
+			<Item Ident="15002" ItemIdent="15002" SourceIdent="0" GUIDString="{F008C47C-4FE5-4D27-8D67-8D104E9E6253}" AssignChildsOnServer="false" ActiveHierarchy="true" Name="Касса" AltName="" Code="1" MainParentIdent="15001" Status="rsActive" NetName="SK_KACCA" Resolution="5" Colors="cdTrueColor" RightLvl="0" OSType="ostWindows" STType="sttCash" DefHallPlanID="1000016" FileManagerPath="" WaitDataSended="false" AfterShiftClosure="ascShutdown" SyncStatesFlags="[ssfAutoSelfUpdate, ssfSyncReferences, ssfWorkModulesDBs, ssfSendShiftsData, ssfSendOnLineData]" DataSendTimeout="0" LogFileMasks="" ReserveCashGroupID="0" AutoSelfUpdate="true" GraphicParameters="[gpHideMouse]" CashGroup="15001" HTTPServPort="0" HTTPBindAddr="" HTTPGetAvail="false" HTTPLogQuery="false" HTTPLogPath="" HTTPNoLogginQueries="" HTTPLogFiles="0" HTTPWebPrivilege="0" HTTPAPIPrivilege="0" HTTPXMLPrivilege="0">
+				<ConfigList ClassName="TCashConfList">
+					<Items>
+						<Item Ident="0" FileName="ComWin.dll" ModIdent="0" Number="0" HostName="" HostNum="0" ModClass="1110" Flags="131462">
+							<Params ClassName="TCashParamList">
+								<Items>
+									<Item Ident="0" ValInt="0" ValStr="COM5" ValBlb=""/>
+									<Item Ident="2" ValInt="1" ValStr="" ValBlb=""/>
+								</Items>
+							</Params>
+						</Item>
+						<Item Ident="0" FileName="Drawer.dll" ModIdent="0" Number="0" HostName="UniFR.dll" HostNum="0" ModClass="1220" Flags="128">
+							<Params ClassName="TCashParamList">
+								<Items/>
+							</Params>
+						</Item>
+						<Item Ident="0" FileName="graphwin.dll" ModIdent="0" Number="0" HostName="" HostNum="0" ModClass="1100" Flags="404">
+							<Params ClassName="TCashParamList">
+								<Items/>
+							</Params>
+						</Item>
+						<Item Ident="0" FileName="httpcard.dll" ModIdent="1" Number="0" HostName="" HostNum="0" ModClass="1150" Flags="386">
+							<Params ClassName="TCashParamList">
+								<Items>
+									<Item Ident="0" ValInt="14" ValStr="" ValBlb=""/>
+									<Item Ident="1" ValInt="7070" ValStr="" ValBlb=""/>
+									<Item Ident="2" ValInt="180" ValStr="" ValBlb=""/>
+								</Items>
+							</Params>
+						</Item>
+						<Item Ident="0" FileName="KbdEmuw.dll" ModIdent="0" Number="0" HostName="" HostNum="0" ModClass="1110" Flags="65930">
+							<Params ClassName="TCashParamList">
+								<Items/>
+							</Params>
+						</Item>
+						<Item Ident="0" FileName="MC_KBD.dll" ModIdent="0" Number="0" HostName="KbdEmuw.dll" HostNum="0" ModClass="1150" Flags="138">
+							<Params ClassName="TCashParamList">
+								<Items/>
+							</Params>
+						</Item>
+						<Item Ident="0" FileName="PrtTCPw.dll" ModIdent="0" Number="0" HostName="" HostNum="0" ModClass="1110" Flags="2097540">
+							<Params ClassName="TCashParamList">
+								<Items>
+									<Item Ident="0" ValInt="0" ValStr="192.168.0.102" ValBlb=""/>
+									<Item Ident="1" ValInt="9100" ValStr="" ValBlb=""/>
+								</Items>
+							</Params>
+						</Item>
+						<Item Ident="0" FileName="PrtTCPw.dll" ModIdent="0" Number="1" HostName="" HostNum="0" ModClass="1110" Flags="2097540">
+							<Params ClassName="TCashParamList">
+								<Items>
+									<Item Ident="0" ValInt="0" ValStr="192.168.0.101" ValBlb=""/>
+									<Item Ident="1" ValInt="9100" ValStr="" ValBlb=""/>
+								</Items>
+							</Params>
+						</Item>
+						<Item Ident="0" FileName="p_epson.dll" ModIdent="0" Number="0" HostName="PrtTCPw.dll" HostNum="0" ModClass="1180" Flags="524420">
+							<Params ClassName="TCashParamList">
+								<Items/>
+							</Params>
+						</Item>
+						<Item Ident="0" FileName="p_epson.dll" ModIdent="0" Number="1" HostName="ComWin.dll" HostNum="0" ModClass="1180" Flags="524420">
+							<Params ClassName="TCashParamList">
+								<Items/>
+							</Params>
+						</Item>
+						<Item Ident="0" FileName="p_epson.dll" ModIdent="0" Number="2" HostName="PrtTCPw.dll" HostNum="1" ModClass="1180" Flags="524420">
+							<Params ClassName="TCashParamList">
+								<Items/>
+							</Params>
+						</Item>
+						<Item Ident="0" FileName="SB_Pilot.dll" ModIdent="1" Number="0" HostName="" HostNum="0" ModClass="2130" Flags="9088">
+							<Params ClassName="TCashParamList">
+								<Items>
+									<Item Ident="8" ValInt="0" ValStr="c:\sc552" ValBlb=""/>
+								</Items>
+							</Params>
+						</Item>
+						<Item Ident="0" FileName="UniFR.dll" ModIdent="1" Number="0" HostName="" HostNum="0" ModClass="1200" Flags="1573508">
+							<Params ClassName="TCashParamList">
+								<Items>
+									<Item Ident="0" ValInt="0" ValStr="fpRU_AtolDTO.dll" ValBlb=""/>
+									<Item Ident="1" ValInt="0" ValStr="** BLOB **" ValBlb="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#13;&#10;&lt;xmlConfig&gt;&#13;&#10;&#9;&lt;Parameters&gt;&#13;&#10;&#9;&#9;&lt;LogLevel&gt;0&lt;/LogLevel&gt;&#13;&#10;&#9;&#9;&lt;LogRotateSize&gt;10&lt;/LogRotateSize&gt;&#13;&#10;&#9;&#9;&lt;LogRotateCount&gt;1&lt;/LogRotateCount&gt;&#13;&#10;&#9;&#9;&lt;MsgLanguage&gt;RUS&lt;/MsgLanguage&gt;&#13;&#10;&#9;&#9;&lt;LibFilePath&gt;c:\Program Files (x86)\ATOL\Drivers10\KKT\bin\&lt;/LibFilePath&gt;&#13;&#10;&#9;&#9;&lt;ConnectType&gt;1&lt;/ConnectType&gt;&#13;&#10;&#9;&#9;&lt;COMnum&gt;8&lt;/COMnum&gt;&#13;&#10;&#9;&#9;&lt;COMbaud&gt;9600&lt;/COMbaud&gt;&#13;&#10;&#9;&#9;&lt;IPaddress&gt;192.168.0.1&lt;/IPaddress&gt;&#13;&#10;&#9;&#9;&lt;IPport&gt;5555&lt;/IPport&gt;&#13;&#10;&#9;&#9;&lt;BluetoothMAC&gt;&lt;/BluetoothMAC&gt;&#13;&#10;&#9;&#9;&lt;FNinstalled&gt;1&lt;/FNinstalled&gt;&#13;&#10;&#9;&#9;&lt;UseFNserialN&gt;0&lt;/UseFNserialN&gt;&#13;&#10;&#9;&#9;&lt;OFDunSendWarn&gt;0&lt;/OFDunSendWarn&gt;&#13;&#10;&#9;&#9;&lt;OFDunSendErr&gt;0&lt;/OFDunSendErr&gt;&#13;&#10;&#9;&#9;&lt;OFDchannelLib&gt;0&lt;/OFDchannelLib&gt;&#13;&#10;&#9;&#9;&lt;WEBsrvDevID&gt;&lt;/WEBsrvDevID&gt;&#13;&#10;&#9;&#9;&lt;NonOperatingIncomeName&gt;&lt;/NonOperatingIncomeName&gt;&#13;&#10;&#9;&#9;&lt;NonPaperZReport&gt;0&lt;/NonPaperZReport&gt;&#13;&#10;&#9;&#9;&lt;PrintUnfiscalFooter&gt;0&lt;/PrintUnfiscalFooter&gt;&#13;&#10;&#9;&lt;/Parameters&gt;&#13;&#10;&lt;/xmlConfig&gt;"/>
+									<Item Ident="2" ValInt="169" ValStr="" ValBlb=""/>
+									<Item Ident="28" ValInt="0" ValStr="" ValBlb=""/>
+								</Items>
+							</Params>
+						</Item>
+					</Items>
+				</ConfigList>
+				<Rights>
+					<Data BinaryCoding="Base64Text">/////////////////////////////////////////3//////////////////////////////////////&#13;
+////////////////////////////////////////////////////////////////////////////////&#13;
+////////////////////////////////////////////////////////////////////////////////&#13;
+////////////////////////////////////////////////////////////////////////////////&#13;
+////////////////////&#13;
+					</Data>
+				</Rights>
+				<PrinterAssigns ClassName="TPrinterAssigns">
+					<Items>
+						<Item Ident="1" Printer="1000011"/>
+						<Item Ident="2" Printer="1000013"/>
+						<Item Ident="3" Printer="1000013"/>
+						<Item Ident="8" Printer="1000014"/>
+					</Items>
+				</PrinterAssigns>
+				<Childs ClassName="tChildCollection">
+					<Child ChildIdent="1000011" IsTerminal="1"/>
+					<Child ChildIdent="1000012" IsTerminal="1"/>
+					<Child ChildIdent="1000013" IsTerminal="1"/>
+					<Child ChildIdent="1000014" IsTerminal="1"/>
+					<Child ChildIdent="1001585" IsTerminal="1"/>
+				</Childs>
+			</Item>
+			<Item Ident="15003" ItemIdent="15003" SourceIdent="0" GUIDString="{89A08E47-3177-41D4-88DB-7B7F7B579B77}" AssignChildsOnServer="false" ActiveHierarchy="true" Name="Бар" AltName="" Code="2" MainParentIdent="15001" Status="rsActive" NetName="BAR_KACCA" Resolution="5" Colors="cdTrueColor" RightLvl="0" OSType="ostWindows" STType="sttCash" DefHallPlanID="1000016" FileManagerPath="" WaitDataSended="false" AfterShiftClosure="ascShutdown" SyncStatesFlags="[ssfAutoSelfUpdate, ssfSyncReferences, ssfWorkModulesDBs, ssfSendShiftsData, ssfSendOnLineData]" DataSendTimeout="0" LogFileMasks="" ReserveCashGroupID="0" AutoSelfUpdate="true" GraphicParameters="[gpHideMouse]" CashGroup="15001" HTTPServPort="0" HTTPBindAddr="" HTTPGetAvail="false" HTTPLogQuery="false" HTTPLogPath="" HTTPNoLogginQueries="" HTTPLogFiles="0" HTTPWebPrivilege="0" HTTPAPIPrivilege="0" HTTPXMLPrivilege="0">
+				<ConfigList ClassName="TCashConfList">
+					<Items>
+						<Item Ident="0" FileName="graphwin.dll" ModIdent="0" Number="0" HostName="" HostNum="0" ModClass="1100" Flags="404">
+							<Params ClassName="TCashParamList">
+								<Items/>
+							</Params>
+						</Item>
+						<Item Ident="0" FileName="InpasPos.dll" ModIdent="1" Number="0" HostName="" HostNum="0" ModClass="2130" Flags="9088">
+							<Params ClassName="TCashParamList">
+								<Items>
+									<Item Ident="0" ValInt="0" ValStr="91759266" ValBlb=""/>
+									<Item Ident="1" ValInt="0" ValStr="" ValBlb=""/>
+								</Items>
+							</Params>
+						</Item>
+						<Item Ident="0" FileName="KbdEmuw.dll" ModIdent="0" Number="0" HostName="" HostNum="0" ModClass="1110" Flags="65930">
+							<Params ClassName="TCashParamList">
+								<Items/>
+							</Params>
+						</Item>
+						<Item Ident="0" FileName="MC_KBD.dll" ModIdent="0" Number="0" HostName="KbdEmuw.dll" HostNum="0" ModClass="1150" Flags="138">
+							<Params ClassName="TCashParamList">
+								<Items/>
+							</Params>
+						</Item>
+					</Items>
+				</ConfigList>
+				<Rights>
+					<Data BinaryCoding="Base64Text">/////////////////////////////////////////3//////////////////////////////////////&#13;
+////////////////////////////////////////////////////////////////////////////////&#13;
+////////////////////////////////////////////////////////////////////////////////&#13;
+////////////////////////////////////////////////////////////////////////////////&#13;
+////////////////////&#13;
+					</Data>
+				</Rights>
+				<PrinterAssigns ClassName="TPrinterAssigns">
+					<Items>
+						<Item Ident="1" Printer="1000011"/>
+						<Item Ident="2" Printer="1000013"/>
+						<Item Ident="3" Printer="1000013"/>
+						<Item Ident="8" Printer="1002421"/>
+					</Items>
+				</PrinterAssigns>
+				<Childs ClassName="tChildCollection">
+					<Child ChildIdent="1001584" IsTerminal="1"/>
+					<Child ChildIdent="1002421" IsTerminal="1"/>
+				</Childs>
+			</Item>
+			<Item Ident="15004" ItemIdent="15004" SourceIdent="0" GUIDString="{C2A95804-787E-4C7E-AEDF-D77C719A8511}" AssignChildsOnServer="false" ActiveHierarchy="true" Name="Официант" AltName="" Code="3" MainParentIdent="15001" Status="rsActive" NetName="OF" Resolution="5" Colors="cdTrueColor" RightLvl="0" OSType="ostWindows" STType="sttCash" DefHallPlanID="1000016" FileManagerPath="" WaitDataSended="false" AfterShiftClosure="ascShutdown" SyncStatesFlags="[ssfAutoSelfUpdate, ssfSyncReferences, ssfWorkModulesDBs, ssfSendShiftsData, ssfSendOnLineData]" DataSendTimeout="0" LogFileMasks="" ReserveCashGroupID="0" AutoSelfUpdate="true" GraphicParameters="[gpHideMouse]" CashGroup="15001" HTTPServPort="0" HTTPBindAddr="" HTTPGetAvail="false" HTTPLogQuery="false" HTTPLogPath="" HTTPNoLogginQueries="" HTTPLogFiles="0" HTTPWebPrivilege="0" HTTPAPIPrivilege="0" HTTPXMLPrivilege="0">
+				<ConfigList ClassName="TCashConfList">
+					<Items>
+						<Item Ident="0" FileName="graphwin.dll" ModIdent="0" Number="0" HostName="" HostNum="0" ModClass="1100" Flags="404">
+							<Params ClassName="TCashParamList">
+								<Items/>
+							</Params>
+						</Item>
+						<Item Ident="0" FileName="KbdEmuw.dll" ModIdent="0" Number="0" HostName="" HostNum="0" ModClass="1110" Flags="65930">
+							<Params ClassName="TCashParamList">
+								<Items/>
+							</Params>
+						</Item>
+						<Item Ident="0" FileName="MC_KBD.dll" ModIdent="0" Number="0" HostName="KbdEmuw.dll" HostNum="0" ModClass="1150" Flags="138">
+							<Params ClassName="TCashParamList">
+								<Items/>
+							</Params>
+						</Item>
+					</Items>
+				</ConfigList>
+				<Rights>
+					<Data BinaryCoding="Base64Text">/////////////////////////////////////////3//////////////////////////////////////&#13;
+////////////////////////////////////////////////////////////////////////////////&#13;
+////////////////////////////////////////////////////////////////////////////////&#13;
+////////////////////////////////////////////////////////////////////////////////&#13;
+////////////////////&#13;
+					</Data>
+				</Rights>
+				<PrinterAssigns ClassName="TPrinterAssigns">
+					<Items>
+						<Item Ident="1" Printer="1000011"/>
+						<Item Ident="2" Printer="1000013"/>
+						<Item Ident="3" Printer="1000013"/>
+					</Items>
+				</PrinterAssigns>
+				<Childs ClassName="tChildCollection"/>
+			</Item>
+			<Item Ident="15005" ItemIdent="15005" SourceIdent="0" GUIDString="{F3388609-06B3-4556-8E2C-792E52E810B4}" AssignChildsOnServer="false" ActiveHierarchy="true" Name="Официант2" AltName="" Code="4" MainParentIdent="15001" Status="rsActive" NetName="OF2" Resolution="5" Colors="cdTrueColor" RightLvl="0" OSType="ostWindows" STType="sttCash" DefHallPlanID="1000016" FileManagerPath="" WaitDataSended="false" AfterShiftClosure="ascShutdown" SyncStatesFlags="[ssfAutoSelfUpdate, ssfSyncReferences, ssfWorkModulesDBs, ssfSendShiftsData, ssfSendOnLineData]" DataSendTimeout="0" LogFileMasks="" ReserveCashGroupID="0" AutoSelfUpdate="true" GraphicParameters="[gpHideMouse]" CashGroup="15001" HTTPServPort="0" HTTPBindAddr="" HTTPGetAvail="false" HTTPLogQuery="false" HTTPLogPath="" HTTPNoLogginQueries="" HTTPLogFiles="0" HTTPWebPrivilege="0" HTTPAPIPrivilege="0" HTTPXMLPrivilege="0">
+				<ConfigList ClassName="TCashConfList">
+					<Items>
+						<Item Ident="0" FileName="graphwin.dll" ModIdent="0" Number="0" HostName="" HostNum="0" ModClass="1100" Flags="404">
+							<Params ClassName="TCashParamList">
+								<Items/>
+							</Params>
+						</Item>
+						<Item Ident="0" FileName="KbdEmuw.dll" ModIdent="0" Number="0" HostName="" HostNum="0" ModClass="1110" Flags="65930">
+							<Params ClassName="TCashParamList">
+								<Items/>
+							</Params>
+						</Item>
+						<Item Ident="0" FileName="MC_KBD.dll" ModIdent="0" Number="0" HostName="KbdEmuw.dll" HostNum="0" ModClass="1150" Flags="138">
+							<Params ClassName="TCashParamList">
+								<Items/>
+							</Params>
+						</Item>
+					</Items>
+				</ConfigList>
+				<Rights>
+					<Data BinaryCoding="Base64Text">/////////////////////////////////////////3//////////////////////////////////////&#13;
+////////////////////////////////////////////////////////////////////////////////&#13;
+////////////////////////////////////////////////////////////////////////////////&#13;
+////////////////////////////////////////////////////////////////////////////////&#13;
+////////////////////&#13;
+					</Data>
+				</Rights>
+				<PrinterAssigns ClassName="TPrinterAssigns">
+					<Items>
+						<Item Ident="1" Printer="1000011"/>
+						<Item Ident="2" Printer="1000013"/>
+						<Item Ident="3" Printer="1000013"/>
+					</Items>
+				</PrinterAssigns>
+				<Childs ClassName="tChildCollection"/>
+			</Item>
+			<Item Ident="15007" ItemIdent="15007" SourceIdent="0" GUIDString="{26BDB75D-7C56-46F7-A84F-831F04192966}" AssignChildsOnServer="false" ActiveHierarchy="true" Name="БАР11" AltName="" Code="5" MainParentIdent="15006" Status="rsActive" NetName="BAR11" Resolution="5" Colors="cdTrueColor" RightLvl="0" OSType="ostWindows" STType="sttCash" DefHallPlanID="0" FileManagerPath="" WaitDataSended="false" AfterShiftClosure="ascShutdown" SyncStatesFlags="[ssfAutoSelfUpdate, ssfSyncReferences, ssfWorkModulesDBs, ssfSendShiftsData, ssfSendOnLineData]" DataSendTimeout="0" LogFileMasks="" ReserveCashGroupID="0" AutoSelfUpdate="true" GraphicParameters="[gpHideMouse]" CashGroup="15006" HTTPServPort="0" HTTPBindAddr="" HTTPGetAvail="false" HTTPLogQuery="false" HTTPLogPath="" HTTPNoLogginQueries="" HTTPLogFiles="0" HTTPWebPrivilege="0" HTTPAPIPrivilege="0" HTTPXMLPrivilege="0">
+				<ConfigList ClassName="TCashConfList">
+					<Items>
+						<Item Ident="0" FileName="graphwin.dll" ModIdent="0" Number="0" HostName="" HostNum="0" ModClass="1100" Flags="404">
+							<Params ClassName="TCashParamList">
+								<Items/>
+							</Params>
+						</Item>
+						<Item Ident="0" FileName="InpasPos.dll" ModIdent="1" Number="0" HostName="" HostNum="0" ModClass="2130" Flags="9088">
+							<Params ClassName="TCashParamList">
+								<Items>
+									<Item Ident="0" ValInt="0" ValStr="91759268" ValBlb=""/>
+									<Item Ident="1" ValInt="0" ValStr="" ValBlb=""/>
+									<Item Ident="2" ValInt="10" ValStr="" ValBlb=""/>
+									<Item Ident="13" ValInt="40" ValStr="" ValBlb=""/>
+									<Item Ident="14" ValInt="0" ValStr="" ValBlb=""/>
+								</Items>
+							</Params>
+						</Item>
+						<Item Ident="0" FileName="KbdEmuw.dll" ModIdent="0" Number="0" HostName="" HostNum="0" ModClass="1110" Flags="65930">
+							<Params ClassName="TCashParamList">
+								<Items/>
+							</Params>
+						</Item>
+						<Item Ident="0" FileName="MC_KBD.dll" ModIdent="0" Number="0" HostName="KbdEmuw.dll" HostNum="0" ModClass="1150" Flags="138">
+							<Params ClassName="TCashParamList">
+								<Items/>
+							</Params>
+						</Item>
+						<Item Ident="0" FileName="UniFR.dll" ModIdent="1" Number="0" HostName="" HostNum="0" ModClass="1200" Flags="1573508">
+							<Params ClassName="TCashParamList">
+								<Items>
+									<Item Ident="0" ValInt="0" ValStr="fpATOL54.DLL" ValBlb=""/>
+									<Item Ident="1" ValInt="0" ValStr="** BLOB **" ValBlb="&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;&#13;&#10;&lt;xmlConfig&gt;&#13;&#10;&#9;&lt;Parameters&gt;&#13;&#10;&#9;&#9;&lt;LogLevel&gt;3&lt;/LogLevel&gt;&#13;&#10;&#9;&#9;&lt;LogRotateSize&gt;10&lt;/LogRotateSize&gt;&#13;&#10;&#9;&#9;&lt;LogRotateCount&gt;1&lt;/LogRotateCount&gt;&#13;&#10;&#9;&#9;&lt;MsgLanguage&gt;RUS&lt;/MsgLanguage&gt;&#13;&#10;&#9;&#9;&lt;COMnum&gt;12&lt;/COMnum&gt;&#13;&#10;&#9;&#9;&lt;COMbaud&gt;115200&lt;/COMbaud&gt;&#13;&#10;&#9;&#9;&lt;SysAdminPassw&gt;30&lt;/SysAdminPassw&gt;&#13;&#10;&#9;&#9;&lt;InvertDrawerOpened&gt;0&lt;/InvertDrawerOpened&gt;&#13;&#10;&#9;&#9;&lt;CommunicatPassw&gt;0&lt;/CommunicatPassw&gt;&#13;&#10;&#9;&#9;&lt;UseSectionAs&gt;Department&lt;/UseSectionAs&gt;&#13;&#10;&#9;&#9;&lt;PaperWidth&gt;0&lt;/PaperWidth&gt;&#13;&#10;&#9;&#9;&lt;DisabledTLVTags&gt;&lt;/DisabledTLVTags&gt;&#13;&#10;&#9;&#9;&lt;UseFnSerial&gt;0&lt;/UseFnSerial&gt;&#13;&#10;&#9;&#9;&lt;OFDStatusUnsendWarningTime&gt;0&lt;/OFDStatusUnsendWarningTime&gt;&#13;&#10;&#9;&#9;&lt;OFDStatusUnsendErrorTime&gt;0&lt;/OFDStatusUnsendErrorTime&gt;&#13;&#10;&#9;&#9;&lt;FFDversion&gt;-1&lt;/FFDversion&gt;&#13;&#10;&#9;&#9;&lt;Protocol&gt;3&lt;/Protocol&gt;&#13;&#10;&#9;&#9;&lt;FNNotInstalled&gt;0&lt;/FNNotInstalled&gt;&#13;&#10;&#9;&#9;&lt;CashierNamePrefix&gt;&lt;/CashierNamePrefix&gt;&#13;&#10;&#9;&#9;&lt;PhysicalLevel&gt;0&lt;/PhysicalLevel&gt;&#13;&#10;&#9;&#9;&lt;IPaddress&gt;192.168.0.1&lt;/IPaddress&gt;&#13;&#10;&#9;&#9;&lt;IPport&gt;5555&lt;/IPport&gt;&#13;&#10;&#9;&#9;&lt;AutomaticMode&gt;0&lt;/AutomaticMode&gt;&#13;&#10;&#9;&#9;&lt;QRcodePrintType&gt;0&lt;/QRcodePrintType&gt;&#13;&#10;&#9;&#9;&lt;AllowCMD87&gt;1&lt;/AllowCMD87&gt;&#13;&#10;&#9;&#9;&lt;AllowDeviceDiscount&gt;1&lt;/AllowDeviceDiscount&gt;&#13;&#10;&#9;&#9;&lt;PresenterTimeout_sec&gt;0&lt;/PresenterTimeout_sec&gt;&#13;&#10;&#9;&#9;&lt;CheckTax20&gt;0&lt;/CheckTax20&gt;&#13;&#10;&#9;&#9;&lt;PrintDiscTextInLine&gt;1&lt;/PrintDiscTextInLine&gt;&#13;&#10;&#9;&#9;&lt;IsOpenShiftOnZreport&gt;1&lt;/IsOpenShiftOnZreport&gt;&#13;&#10;&#9;&lt;/Parameters&gt;&#13;&#10;&lt;/xmlConfig&gt;"/>
+									<Item Ident="2" ValInt="154" ValStr="" ValBlb=""/>
+									<Item Ident="28" ValInt="0" ValStr="" ValBlb=""/>
+								</Items>
+							</Params>
+						</Item>
+					</Items>
+				</ConfigList>
+				<Rights>
+					<Data BinaryCoding="Base64Text">/////////////////////////////////////////3//////////////////////////////////////&#13;
+////////////////////////////////////////////////////////////////////////////////&#13;
+////////////////////////////////////////////////////////////////////////////////&#13;
+////////////////////////////////////////////////////////////////////////////////&#13;
+////////////////////&#13;
+					</Data>
+				</Rights>
+				<PrinterAssigns ClassName="TPrinterAssigns">
+					<Items>
+						<Item Ident="1" Printer="1001981"/>
+						<Item Ident="2" Printer="1001981"/>
+						<Item Ident="3" Printer="1001981"/>
+						<Item Ident="8" Printer="1001982"/>
+					</Items>
+				</PrinterAssigns>
+				<Childs ClassName="tChildCollection">
+					<Child ChildIdent="1001981" IsTerminal="1"/>
+					<Child ChildIdent="1001982" IsTerminal="1"/>
+				</Childs>
+			</Item>
+			<Item Ident="15008" ItemIdent="15008" SourceIdent="0" GUIDString="{4B38206E-7BBA-4AAA-9832-61E3E3011ED7}" AssignChildsOnServer="false" ActiveHierarchy="true" Name="БАР12" AltName="" Code="6" MainParentIdent="15006" Status="rsActive" NetName="BAR12" Resolution="5" Colors="cdTrueColor" RightLvl="0" OSType="ostWindows" STType="sttCash" DefHallPlanID="0" FileManagerPath="" WaitDataSended="false" AfterShiftClosure="ascShutdown" SyncStatesFlags="[ssfAutoSelfUpdate, ssfSyncReferences, ssfWorkModulesDBs, ssfSendShiftsData, ssfSendOnLineData]" DataSendTimeout="0" LogFileMasks="" ReserveCashGroupID="0" AutoSelfUpdate="true" GraphicParameters="[gpHideMouse]" CashGroup="15006" HTTPServPort="0" HTTPBindAddr="" HTTPGetAvail="false" HTTPLogQuery="false" HTTPLogPath="" HTTPNoLogginQueries="" HTTPLogFiles="0" HTTPWebPrivilege="0" HTTPAPIPrivilege="0" HTTPXMLPrivilege="0">
+				<ConfigList ClassName="TCashConfList">
+					<Items>
+						<Item Ident="0" FileName="graphwin.dll" ModIdent="0" Number="0" HostName="" HostNum="0" ModClass="1100" Flags="404">
+							<Params ClassName="TCashParamList">
+								<Items/>
+							</Params>
+						</Item>
+						<Item Ident="0" FileName="InpasPos.dll" ModIdent="1" Number="0" HostName="" HostNum="0" ModClass="2130" Flags="9088">
+							<Params ClassName="TCashParamList">
+								<Items>
+									<Item Ident="0" ValInt="0" ValStr="91644753" ValBlb=""/>
+									<Item Ident="1" ValInt="0" ValStr="" ValBlb=""/>
+									<Item Ident="13" ValInt="40" ValStr="" ValBlb=""/>
+									<Item Ident="14" ValInt="0" ValStr="" ValBlb=""/>
+								</Items>
+							</Params>
+						</Item>
+						<Item Ident="0" FileName="KbdEmuw.dll" ModIdent="0" Number="0" HostName="" HostNum="0" ModClass="1110" Flags="65930">
+							<Params ClassName="TCashParamList">
+								<Items/>
+							</Params>
+						</Item>
+						<Item Ident="0" FileName="MC_KBD.dll" ModIdent="0" Number="0" HostName="KbdEmuw.dll" HostNum="0" ModClass="1150" Flags="138">
+							<Params ClassName="TCashParamList">
+								<Items/>
+							</Params>
+						</Item>
+					</Items>
+				</ConfigList>
+				<Rights>
+					<Data BinaryCoding="Base64Text">/////////////////////////////////////////3//////////////////////////////////////&#13;
+////////////////////////////////////////////////////////////////////////////////&#13;
+////////////////////////////////////////////////////////////////////////////////&#13;
+////////////////////////////////////////////////////////////////////////////////&#13;
+////////////////////&#13;
+					</Data>
+				</Rights>
+				<PrinterAssigns ClassName="TPrinterAssigns">
+					<Items>
+						<Item Ident="1" Printer="1001981"/>
+						<Item Ident="2" Printer="1001981"/>
+						<Item Ident="3" Printer="1001981"/>
+						<Item Ident="8" Printer="1001983"/>
+					</Items>
+				</PrinterAssigns>
+				<Childs ClassName="tChildCollection">
+					<Child ChildIdent="1001983" IsTerminal="1"/>
+				</Childs>
+			</Item>
+			<Item Ident="15009" ItemIdent="15009" SourceIdent="0" GUIDString="{61FA6EA2-625F-486B-A24D-3817F782C0B2}" AssignChildsOnServer="false" ActiveHierarchy="true" Name="БАР13" AltName="" Code="7" MainParentIdent="15006" Status="rsActive" NetName="BAR12_COPY" Resolution="5" Colors="cdTrueColor" RightLvl="0" OSType="ostWindows" STType="sttCash" DefHallPlanID="0" FileManagerPath="" WaitDataSended="false" AfterShiftClosure="ascShutdown" SyncStatesFlags="[ssfAutoSelfUpdate, ssfSyncReferences, ssfWorkModulesDBs, ssfSendShiftsData, ssfSendOnLineData]" DataSendTimeout="0" LogFileMasks="" ReserveCashGroupID="0" AutoSelfUpdate="true" GraphicParameters="[gpHideMouse]" CashGroup="15006" HTTPServPort="0" HTTPBindAddr="" HTTPGetAvail="false" HTTPLogQuery="false" HTTPLogPath="" HTTPNoLogginQueries="" HTTPLogFiles="0" HTTPWebPrivilege="0" HTTPAPIPrivilege="0" HTTPXMLPrivilege="0">
+				<ConfigList ClassName="TCashConfList">
+					<Items>
+						<Item Ident="0" FileName="graphwin.dll" ModIdent="0" Number="0" HostName="" HostNum="0" ModClass="1100" Flags="404">
+							<Params ClassName="TCashParamList">
+								<Items/>
+							</Params>
+						</Item>
+						<Item Ident="0" FileName="InpasPos.dll" ModIdent="1" Number="0" HostName="" HostNum="0" ModClass="2130" Flags="9088">
+							<Params ClassName="TCashParamList">
+								<Items>
+									<Item Ident="0" ValInt="0" ValStr="91644753" ValBlb=""/>
+									<Item Ident="1" ValInt="0" ValStr="" ValBlb=""/>
+									<Item Ident="13" ValInt="40" ValStr="" ValBlb=""/>
+									<Item Ident="14" ValInt="0" ValStr="" ValBlb=""/>
+								</Items>
+							</Params>
+						</Item>
+						<Item Ident="0" FileName="KbdEmuw.dll" ModIdent="0" Number="0" HostName="" HostNum="0" ModClass="1110" Flags="65930">
+							<Params ClassName="TCashParamList">
+								<Items/>
+							</Params>
+						</Item>
+						<Item Ident="0" FileName="MC_KBD.dll" ModIdent="0" Number="0" HostName="KbdEmuw.dll" HostNum="0" ModClass="1150" Flags="138">
+							<Params ClassName="TCashParamList">
+								<Items/>
+							</Params>
+						</Item>
+					</Items>
+				</ConfigList>
+				<Rights>
+					<Data BinaryCoding="Base64Text">/////////////////////////////////////////3//////////////////////////////////////&#13;
+////////////////////////////////////////////////////////////////////////////////&#13;
+////////////////////////////////////////////////////////////////////////////////&#13;
+////////////////////////////////////////////////////////////////////////////////&#13;
+////////////////////&#13;
+					</Data>
+				</Rights>
+				<PrinterAssigns ClassName="TPrinterAssigns">
+					<Items>
+						<Item Ident="1" Printer="1001981"/>
+						<Item Ident="2" Printer="1001981"/>
+						<Item Ident="3" Printer="1001981"/>
+						<Item Ident="8" Printer="1001984"/>
+					</Items>
+				</PrinterAssigns>
+				<Childs ClassName="tChildCollection">
+					<Child ChildIdent="1001984" IsTerminal="1"/>
+				</Childs>
+			</Item>
+			<Item Ident="15012" ItemIdent="15012" SourceIdent="0" GUIDString="{853B4D79-3733-4A37-9E72-45F2315C2FC6}" AssignChildsOnServer="false" ActiveHierarchy="true" Name="БАР21" AltName="" Code="8" MainParentIdent="15010" Status="rsActive" NetName="BAR21" Resolution="5" Colors="cdTrueColor" RightLvl="0" OSType="ostWindows" STType="sttCash" DefHallPlanID="0" FileManagerPath="" WaitDataSended="false" AfterShiftClosure="ascShutdown" SyncStatesFlags="[ssfAutoSelfUpdate, ssfSyncReferences, ssfWorkModulesDBs, ssfSendShiftsData, ssfSendOnLineData]" DataSendTimeout="0" LogFileMasks="" ReserveCashGroupID="0" AutoSelfUpdate="true" GraphicParameters="[gpHideMouse]" CashGroup="15010" HTTPServPort="0" HTTPBindAddr="" HTTPGetAvail="false" HTTPLogQuery="false" HTTPLogPath="" HTTPNoLogginQueries="" HTTPLogFiles="0" HTTPWebPrivilege="0" HTTPAPIPrivilege="0" HTTPXMLPrivilege="0">
+				<ConfigList ClassName="TCashConfList">
+					<Items>
+						<Item Ident="0" FileName="ComWin.dll" ModIdent="0" Number="0" HostName="" HostNum="0" ModClass="1110" Flags="131462">
+							<Params ClassName="TCashParamList">
+								<Items>
+									<Item Ident="2" ValInt="1" ValStr="" ValBlb=""/>
+								</Items>
+							</Params>
+						</Item>
+						<Item Ident="0" FileName="graphwin.dll" ModIdent="0" Number="0" HostName="" HostNum="0" ModClass="1100" Flags="404">
+							<Params ClassName="TCashParamList">
+								<Items/>
+							</Params>
+						</Item>
+						<Item Ident="0" FileName="InpasPos.dll" ModIdent="1" Number="0" HostName="" HostNum="0" ModClass="2130" Flags="9088">
+							<Params ClassName="TCashParamList">
+								<Items>
+									<Item Ident="0" ValInt="0" ValStr="91644753" ValBlb=""/>
+									<Item Ident="1" ValInt="0" ValStr="" ValBlb=""/>
+									<Item Ident="13" ValInt="40" ValStr="" ValBlb=""/>
+									<Item Ident="14" ValInt="0" ValStr="" ValBlb=""/>
+								</Items>
+							</Params>
+						</Item>
+						<Item Ident="0" FileName="KbdEmuw.dll" ModIdent="0" Number="0" HostName="" HostNum="0" ModClass="1110" Flags="65930">
+							<Params ClassName="TCashParamList">
+								<Items/>
+							</Params>
+						</Item>
+						<Item Ident="0" FileName="MC_KBD.dll" ModIdent="0" Number="0" HostName="KbdEmuw.dll" HostNum="0" ModClass="1150" Flags="138">
+							<Params ClassName="TCashParamList">
+								<Items/>
+							</Params>
+						</Item>
+						<Item Ident="0" FileName="p_epson.dll" ModIdent="0" Number="0" HostName="ComWin.dll" HostNum="0" ModClass="1180" Flags="524420">
+							<Params ClassName="TCashParamList">
+								<Items>
+									<Item Ident="0" ValInt="4" ValStr="" ValBlb=""/>
+								</Items>
+							</Params>
+						</Item>
+					</Items>
+				</ConfigList>
+				<Rights>
+					<Data BinaryCoding="Base64Text">/////////////////////////////////////////3//////////////////////////////////////&#13;
+////////////////////////////////////////////////////////////////////////////////&#13;
+////////////////////////////////////////////////////////////////////////////////&#13;
+////////////////////////////////////////////////////////////////////////////////&#13;
+////////////////////&#13;
+					</Data>
+				</Rights>
+				<PrinterAssigns ClassName="TPrinterAssigns">
+					<Items>
+						<Item Ident="1" Printer="1002014"/>
+						<Item Ident="2" Printer="1002014"/>
+						<Item Ident="3" Printer="1002014"/>
+						<Item Ident="8" Printer="1001986"/>
+					</Items>
+				</PrinterAssigns>
+				<Childs ClassName="tChildCollection">
+					<Child ChildIdent="1001985" IsTerminal="1"/>
+					<Child ChildIdent="1001986" IsTerminal="1"/>
+					<Child ChildIdent="1002014" IsTerminal="1"/>
+				</Childs>
+			</Item>
+			<Item Ident="15013" ItemIdent="15013" SourceIdent="0" GUIDString="{781E944B-6408-4483-B1C2-79AF0C09FF44}" AssignChildsOnServer="false" ActiveHierarchy="true" Name="БАР31" AltName="" Code="9" MainParentIdent="15011" Status="rsActive" NetName="BAR31" Resolution="5" Colors="cdTrueColor" RightLvl="0" OSType="ostWindows" STType="sttCash" DefHallPlanID="0" FileManagerPath="" WaitDataSended="false" AfterShiftClosure="ascShutdown" SyncStatesFlags="[ssfAutoSelfUpdate, ssfSyncReferences, ssfWorkModulesDBs, ssfSendShiftsData, ssfSendOnLineData]" DataSendTimeout="0" LogFileMasks="" ReserveCashGroupID="0" AutoSelfUpdate="true" GraphicParameters="[gpHideMouse]" CashGroup="15011" HTTPServPort="0" HTTPBindAddr="" HTTPGetAvail="false" HTTPLogQuery="false" HTTPLogPath="" HTTPNoLogginQueries="" HTTPLogFiles="0" HTTPWebPrivilege="0" HTTPAPIPrivilege="0" HTTPXMLPrivilege="0">
+				<ConfigList ClassName="TCashConfList">
+					<Items>
+						<Item Ident="0" FileName="ComWin.dll" ModIdent="0" Number="0" HostName="" HostNum="0" ModClass="1110" Flags="131462">
+							<Params ClassName="TCashParamList">
+								<Items>
+									<Item Ident="2" ValInt="1" ValStr="" ValBlb=""/>
+								</Items>
+							</Params>
+						</Item>
+						<Item Ident="0" FileName="graphwin.dll" ModIdent="0" Number="0" HostName="" HostNum="0" ModClass="1100" Flags="404">
+							<Params ClassName="TCashParamList">
+								<Items/>
+							</Params>
+						</Item>
+						<Item Ident="0" FileName="InpasPos.dll" ModIdent="1" Number="0" HostName="" HostNum="0" ModClass="2130" Flags="9088">
+							<Params ClassName="TCashParamList">
+								<Items>
+									<Item Ident="0" ValInt="0" ValStr="91759248" ValBlb=""/>
+									<Item Ident="1" ValInt="0" ValStr="" ValBlb=""/>
+									<Item Ident="2" ValInt="7" ValStr="" ValBlb=""/>
+									<Item Ident="13" ValInt="40" ValStr="" ValBlb=""/>
+									<Item Ident="14" ValInt="0" ValStr="" ValBlb=""/>
+								</Items>
+							</Params>
+						</Item>
+						<Item Ident="0" FileName="KbdEmuw.dll" ModIdent="0" Number="0" HostName="" HostNum="0" ModClass="1110" Flags="65930">
+							<Params ClassName="TCashParamList">
+								<Items/>
+							</Params>
+						</Item>
+						<Item Ident="0" FileName="MC_KBD.dll" ModIdent="0" Number="0" HostName="KbdEmuw.dll" HostNum="0" ModClass="1150" Flags="138">
+							<Params ClassName="TCashParamList">
+								<Items/>
+							</Params>
+						</Item>
+						<Item Ident="0" FileName="p_epson.dll" ModIdent="0" Number="0" HostName="ComWin.dll" HostNum="0" ModClass="1180" Flags="524420">
+							<Params ClassName="TCashParamList">
+								<Items>
+									<Item Ident="0" ValInt="4" ValStr="" ValBlb=""/>
+								</Items>
+							</Params>
+						</Item>
+					</Items>
+				</ConfigList>
+				<Rights>
+					<Data BinaryCoding="Base64Text">/////////////////////////////////////////3//////////////////////////////////////&#13;
+////////////////////////////////////////////////////////////////////////////////&#13;
+////////////////////////////////////////////////////////////////////////////////&#13;
+////////////////////////////////////////////////////////////////////////////////&#13;
+////////////////////&#13;
+					</Data>
+				</Rights>
+				<PrinterAssigns ClassName="TPrinterAssigns">
+					<Items>
+						<Item Ident="1" Printer="1002015"/>
+						<Item Ident="2" Printer="1002015"/>
+						<Item Ident="3" Printer="1002015"/>
+						<Item Ident="8" Printer="1002016"/>
+					</Items>
+				</PrinterAssigns>
+				<Childs ClassName="tChildCollection">
+					<Child ChildIdent="1002015" IsTerminal="1"/>
+					<Child ChildIdent="1002016" IsTerminal="1"/>
+				</Childs>
+			</Item>
+			<Item Ident="15014" ItemIdent="15014" SourceIdent="0" GUIDString="{3C994AFB-3E45-4583-80F3-6F3FA866C31C}" AssignChildsOnServer="false" ActiveHierarchy="true" Name="БАР32" AltName="" Code="10" MainParentIdent="15011" Status="rsActive" NetName="BAR32" Resolution="5" Colors="cdTrueColor" RightLvl="0" OSType="ostWindows" STType="sttCash" DefHallPlanID="0" FileManagerPath="" WaitDataSended="false" AfterShiftClosure="ascShutdown" SyncStatesFlags="[ssfAutoSelfUpdate, ssfSyncReferences, ssfWorkModulesDBs, ssfSendShiftsData, ssfSendOnLineData]" DataSendTimeout="0" LogFileMasks="" ReserveCashGroupID="0" AutoSelfUpdate="true" GraphicParameters="[gpHideMouse]" CashGroup="15011" HTTPServPort="0" HTTPBindAddr="" HTTPGetAvail="false" HTTPLogQuery="false" HTTPLogPath="" HTTPNoLogginQueries="" HTTPLogFiles="0" HTTPWebPrivilege="0" HTTPAPIPrivilege="0" HTTPXMLPrivilege="0">
+				<ConfigList ClassName="TCashConfList">
+					<Items>
+						<Item Ident="0" FileName="graphwin.dll" ModIdent="0" Number="0" HostName="" HostNum="0" ModClass="1100" Flags="404">
+							<Params ClassName="TCashParamList">
+								<Items/>
+							</Params>
+						</Item>
+						<Item Ident="0" FileName="InpasPos.dll" ModIdent="1" Number="0" HostName="" HostNum="0" ModClass="2130" Flags="9088">
+							<Params ClassName="TCashParamList">
+								<Items>
+									<Item Ident="0" ValInt="0" ValStr="91759248" ValBlb=""/>
+									<Item Ident="1" ValInt="0" ValStr="" ValBlb=""/>
+									<Item Ident="2" ValInt="7" ValStr="" ValBlb=""/>
+									<Item Ident="13" ValInt="40" ValStr="" ValBlb=""/>
+									<Item Ident="14" ValInt="0" ValStr="" ValBlb=""/>
+								</Items>
+							</Params>
+						</Item>
+						<Item Ident="0" FileName="KbdEmuw.dll" ModIdent="0" Number="0" HostName="" HostNum="0" ModClass="1110" Flags="65930">
+							<Params ClassName="TCashParamList">
+								<Items/>
+							</Params>
+						</Item>
+						<Item Ident="0" FileName="MC_KBD.dll" ModIdent="0" Number="0" HostName="KbdEmuw.dll" HostNum="0" ModClass="1150" Flags="138">
+							<Params ClassName="TCashParamList">
+								<Items/>
+							</Params>
+						</Item>
+					</Items>
+				</ConfigList>
+				<Rights>
+					<Data BinaryCoding="Base64Text">/////////////////////////////////////////3//////////////////////////////////////&#13;
+////////////////////////////////////////////////////////////////////////////////&#13;
+////////////////////////////////////////////////////////////////////////////////&#13;
+////////////////////////////////////////////////////////////////////////////////&#13;
+////////////////////&#13;
+					</Data>
+				</Rights>
+				<PrinterAssigns ClassName="TPrinterAssigns">
+					<Items>
+						<Item Ident="1" Printer="1002015"/>
+						<Item Ident="2" Printer="1002015"/>
+						<Item Ident="3" Printer="1002015"/>
+						<Item Ident="8" Printer="1002027"/>
+					</Items>
+				</PrinterAssigns>
+				<Childs ClassName="tChildCollection">
+					<Child ChildIdent="1002027" IsTerminal="1"/>
+				</Childs>
+			</Item>
+			<Item Ident="15015" ItemIdent="15015" SourceIdent="0" GUIDString="{81ABA20E-F0E7-472F-9A76-BF327758BE38}" AssignChildsOnServer="false" ActiveHierarchy="true" Name="БАР22" AltName="" Code="11" MainParentIdent="15010" Status="rsActive" NetName="BAR22" Resolution="5" Colors="cdTrueColor" RightLvl="0" OSType="ostWindows" STType="sttCash" DefHallPlanID="0" FileManagerPath="" WaitDataSended="false" AfterShiftClosure="ascShutdown" SyncStatesFlags="[ssfAutoSelfUpdate, ssfSyncReferences, ssfWorkModulesDBs, ssfSendShiftsData, ssfSendOnLineData]" DataSendTimeout="0" LogFileMasks="" ReserveCashGroupID="0" AutoSelfUpdate="true" GraphicParameters="[gpHideMouse]" CashGroup="15010" HTTPServPort="0" HTTPBindAddr="" HTTPGetAvail="false" HTTPLogQuery="false" HTTPLogPath="" HTTPNoLogginQueries="" HTTPLogFiles="0" HTTPWebPrivilege="0" HTTPAPIPrivilege="0" HTTPXMLPrivilege="0">
+				<ConfigList ClassName="TCashConfList">
+					<Items>
+						<Item Ident="0" FileName="graphwin.dll" ModIdent="0" Number="0" HostName="" HostNum="0" ModClass="1100" Flags="404">
+							<Params ClassName="TCashParamList">
+								<Items/>
+							</Params>
+						</Item>
+						<Item Ident="0" FileName="InpasPos.dll" ModIdent="1" Number="0" HostName="" HostNum="0" ModClass="2130" Flags="9088">
+							<Params ClassName="TCashParamList">
+								<Items>
+									<Item Ident="0" ValInt="0" ValStr="91759248" ValBlb=""/>
+									<Item Ident="1" ValInt="0" ValStr="" ValBlb=""/>
+									<Item Ident="2" ValInt="7" ValStr="" ValBlb=""/>
+									<Item Ident="13" ValInt="40" ValStr="" ValBlb=""/>
+									<Item Ident="14" ValInt="0" ValStr="" ValBlb=""/>
+								</Items>
+							</Params>
+						</Item>
+						<Item Ident="0" FileName="KbdEmuw.dll" ModIdent="0" Number="0" HostName="" HostNum="0" ModClass="1110" Flags="65930">
+							<Params ClassName="TCashParamList">
+								<Items/>
+							</Params>
+						</Item>
+						<Item Ident="0" FileName="MC_KBD.dll" ModIdent="0" Number="0" HostName="KbdEmuw.dll" HostNum="0" ModClass="1150" Flags="138">
+							<Params ClassName="TCashParamList">
+								<Items/>
+							</Params>
+						</Item>
+					</Items>
+				</ConfigList>
+				<Rights>
+					<Data BinaryCoding="Base64Text">/////////////////////////////////////////3//////////////////////////////////////&#13;
+////////////////////////////////////////////////////////////////////////////////&#13;
+////////////////////////////////////////////////////////////////////////////////&#13;
+////////////////////////////////////////////////////////////////////////////////&#13;
+////////////////////&#13;
+					</Data>
+				</Rights>
+				<PrinterAssigns ClassName="TPrinterAssigns">
+					<Items>
+						<Item Ident="1" Printer="1002014"/>
+						<Item Ident="2" Printer="1002014"/>
+						<Item Ident="3" Printer="1002014"/>
+						<Item Ident="8" Printer="1002028"/>
+					</Items>
+				</PrinterAssigns>
+				<Childs ClassName="tChildCollection">
+					<Child ChildIdent="1002028" IsTerminal="1"/>
+				</Childs>
+			</Item>
+			<Item Ident="15017" ItemIdent="15017" SourceIdent="0" GUIDString="{73EFC9BB-5D53-432C-82E9-59120659B44F}" AssignChildsOnServer="false" ActiveHierarchy="true" Name="Доставка" AltName="" Code="12" MainParentIdent="15001" Status="rsActive" NetName="SK_DELIV" Resolution="5" Colors="cdTrueColor" RightLvl="0" OSType="ostWindows" STType="sttCash" DefHallPlanID="1002356" FileManagerPath="" WaitDataSended="false" AfterShiftClosure="ascContinue" SyncStatesFlags="[ssfAutoSelfUpdate, ssfSyncReferences, ssfWorkModulesDBs, ssfSendShiftsData, ssfSendOnLineData]" DataSendTimeout="0" LogFileMasks="" ReserveCashGroupID="0" AutoSelfUpdate="true" GraphicParameters="[]" CashGroup="15001" HTTPServPort="0" HTTPBindAddr="" HTTPGetAvail="false" HTTPLogQuery="false" HTTPLogPath="" HTTPNoLogginQueries="" HTTPLogFiles="0" HTTPWebPrivilege="0" HTTPAPIPrivilege="0" HTTPXMLPrivilege="0">
+				<ConfigList ClassName="TCashConfList">
+					<Items>
+						<Item Ident="0" FileName="graphwin.dll" ModIdent="0" Number="0" HostName="" HostNum="0" ModClass="1100" Flags="404">
+							<Params ClassName="TCashParamList">
+								<Items/>
+							</Params>
+						</Item>
+					</Items>
+				</ConfigList>
+				<Rights>
+					<Data BinaryCoding="Base64Text">////////////////////////////////////////////////////////////////////////////////&#13;
+////////////////////////////////////////////////////////////////////////////////&#13;
+////////////////////////////////////////////////////////////////////////////////&#13;
+////////////////////////////////////////////////////////////////////////////////&#13;
+////////////////////&#13;
+					</Data>
+				</Rights>
+				<PrinterAssigns ClassName="TPrinterAssigns">
+					<Items>
+						<Item Ident="1" Printer="1000011"/>
+						<Item Ident="2" Printer="1000013"/>
+						<Item Ident="3" Printer="1000013"/>
+					</Items>
+				</PrinterAssigns>
+				<Childs ClassName="tChildCollection"/>
+			</Item>
+		</Items>
+	</RK7Reference>
+</RK7QueryResult>
