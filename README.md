@@ -2,6 +2,8 @@
 
 ### Телеграм Бот
 
+    Для работы бота нужно установить вебхук на ваш домен 
+
 - php artisan nutgram:hook:set https://site.ru/api/telegram/webhook
 - php artisan nutgram:hook:remove
 
