@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\HomeController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ReservController;
@@ -10,3 +11,5 @@ use App\Http\Controllers\ReservController;
 
 Route::get('/reserv/{id}', [ReservController::class, 'show']);
 Route::post('/reserv', [ReservController::class, 'reserv']);
+
+Route::post('/telegram/webhook', [HomeController::class, 'telegramWebhook']);

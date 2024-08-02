@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Event;
 use App\Models\Slider;
 use App\Services\VkService;
+use SergiX44\Nutgram\Nutgram;
 
 
 class HomeController extends Controller
@@ -21,8 +22,8 @@ class HomeController extends Controller
         ]);
     }
 
-    public function reserv()
+    public function telegramWebhook(Nutgram $bot)
     {
-        return view('reserv');
+        $bot->run();
     }
 }
