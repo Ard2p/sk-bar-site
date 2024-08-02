@@ -6,6 +6,7 @@ namespace App\Providers;
 
 use MoonShine\Menu\MenuItem;
 use MoonShine\Menu\MenuGroup;
+use App\MoonShine\Pages\ReservPage;
 use App\MoonShine\Pages\RKMenuPage;
 use App\MoonShine\Resources\SeoResource;
 use App\MoonShine\Resources\RoleResource;
@@ -47,6 +48,8 @@ class MoonShineServiceProvider extends MoonShineApplicationServiceProvider
                 MenuItem::make(__('Меню'), RKMenuPage::make('Меню'), 'heroicons.outline.shopping-cart'),
 
             ], 'heroicons.outline.building-storefront'),
+
+            // MenuItem::make(__('Reserv'), ReservPage::make('Бронирование'), 'heroicons.outline.user-group'),
 
             MenuItem::make(__('Users'), new UserResource(), 'heroicons.outline.user-group'),
 
