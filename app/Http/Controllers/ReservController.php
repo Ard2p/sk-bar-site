@@ -8,7 +8,7 @@ use SergiX44\Nutgram\Nutgram;
 use App\Enums\ReservStatusEnum;
 use App\Enums\ReservTablesEnum;
 use App\Http\Handlers\ReservHandler;
-use App\Http\Requests\StoreReservRequest;
+use App\Http\Requests\ReservStoreRequest;
 use SergiX44\Nutgram\Telegram\Types\Keyboard\InlineKeyboardButton;
 use SergiX44\Nutgram\Telegram\Types\Keyboard\InlineKeyboardMarkup;
 
@@ -38,7 +38,7 @@ class ReservController extends Controller
         return $reservs;
     }
 
-    public function reserv(StoreReservRequest $request, Nutgram $bot)
+    public function reserv(ReservStoreRequest $request, Nutgram $bot)
     {
         $reserv = Reserv::create([
             ...$request->validated(),

@@ -6,7 +6,7 @@ use Illuminate\Validation\Rule;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Foundation\Http\FormRequest;
 
-class StoreReservRequest extends FormRequest
+class ReservStoreRequest extends FormRequest
 {
 
     public function authorize(): bool
@@ -27,4 +27,6 @@ class StoreReservRequest extends FormRequest
             ],
         ];
     }
+
+    //TODO: Сообщения ошибок, сделать понятными
 }
