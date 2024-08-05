@@ -5,6 +5,7 @@ declare(strict_types=1);
 namespace App\MoonShine\Pages;
 
 use App\Models\Event;
+use App\Models\Reserv;
 use MoonShine\Fields\Td;
 use App\Models\RKProduct;
 use MoonShine\Pages\Page;
@@ -14,8 +15,12 @@ use MoonShine\Enums\JsEvent;
 use MoonShine\Fields\Hidden;
 use MoonShine\Fields\Number;
 use App\Jobs\RKCatalogUpdate;
+use MoonShine\Fields\Preview;
 use MoonShine\Enums\ToastType;
 use MoonShine\Fields\Position;
+use App\Enums\ReservStatusEnum;
+use App\Enums\ReservTablesEnum;
+use MoonShine\Decorations\Flex;
 use MoonShine\Decorations\Grid;
 use MoonShine\Decorations\Tabs;
 use MoonShine\MoonShineRequest;
@@ -26,8 +31,10 @@ use MoonShine\Fields\StackFields;
 use MoonShine\QueryTags\QueryTag;
 use Illuminate\Support\Collection;
 use Illuminate\Support\Facades\DB;
+use MoonShine\Decorations\Heading;
 use MoonShine\TypeCasts\ModelCast;
 use MoonShine\Decorations\Fragment;
+use MoonShine\Components\ActionGroup;
 use MoonShine\Components\FormBuilder;
 use MoonShine\Components\TableBuilder;
 use MoonShine\Components\FlexibleRender;
@@ -48,32 +55,76 @@ class ReservPage extends Page
 
     public function components(): array
     {
-        $event = Event::find(5);
+        $events = $this->eventsItems();
+
+        $eventsListButtons = [];
+        foreach ($events as $event) {
+            $eventsListButtons[] =  ActionButton::make(
+                $event->guest_start->format('d.m'),
+                fn () => $this->fragmentLoadUrl('event-reserv-fragment', ['id' => $event->getKey()])
+            )->async(selector: '#event-reserv-fragment');
+        }
+
+        $event = $events->first();
+        if (moonshineRequest()->filled('id')) {
+            $event = Event::find(moonshineRequest()->id);
+        }
+
+        $reservsDB = Reserv::where('event_id', $event->id)->get()->keyBy('table');
+
+        $reservs = [];
+        $tableListButtons = [];
+        foreach (ReservTablesEnum::cases() as $table) {
+
+            $tableDB = $reservsDB->get($table->value);
+
+            if ($tableDB) {
+                $status = ReservStatusEnum::from($tableDB->status);
+            }
+
+            $tableListButtons[] =  ActionButton::make(
+                $table->toString(),
+                fn () => $this->fragmentLoadUrl('event-reserv-fragment', ['table' => $table->value])
+            )
+                ->primary()->customAttributes(['style' => '--primary: 20, 167, 233;'])
+                ->async(selector: '#event-reserv-fragment');
+
+            $reservs[$table->value] = [
+                'name' => $table->toString(),
+                'price' => $table->price(),
+                'color' => $tableDB ? $status->getColorNotFree() : $table->color(),
+                'status' => $tableDB ? $status->value : ReservStatusEnum::FREE->value
+            ];
+        }
+
         return [
+
             Grid::make([
+                Column::make([
+                    ActionGroup::make($eventsListButtons),
+                ]),
 
                 Column::make([
-                    Block::make([
-                        TableBuilder::make($this->categorylistFields(), $this->categoryItems())
-                            ->cast(ModelCast::make(RKCategory::class))->withNotFound()
-                            ->sortable($this->asyncMethodUrl('categoryReorder'), 'ident')->reindex()->async()
-                            ->buttons([
-                                ActionButton::make('')->secondary()
-                                    ->icon('heroicons.outline.pencil')
-                                    ->inModal('Редактирование', fn (RKCategory $category) => $this->categoryForm($category))
-                            ])
-                            ->name('rk-categories-list')
-                    ])
-                ])->customAttributes(['class' => 'col-span-12 2xl:col-span-3 xl:col-span-5 md:col-span-6']),
+                    Fragment::make([
+                        Grid::make([
 
-                Column::make([
-                    Block::make([
-                        Fragment::make([
-                            FlexibleRender::make(view('components.events.reserv', ['event' => $event]))
-                        ])->name('event-reserv-fragment')
-                        // ->customAttributes(['id' => 'event-reserv-fragment'])
-                    ])
-                ])->customAttributes(['class' => 'col-span-12 2xl:col-span-9 xl:col-span-7 md:col-span-6']),
+                            Column::make([
+                                Block::make([
+                                    Heading::make($event->name)->h(2),
+                                    Heading::make($event->guest_start->format('d.m'))->h(4),
+                                    ActionGroup::make($tableListButtons),
+                                ]),
+                            ])->customAttributes(['class' => 'col-span-12 2xl:col-span-4 xl:col-span-5 md:col-span-6']),
+
+                            Column::make([
+                                Block::make([
+                                    FlexibleRender::make(view('reservs.admin', ['event' => $event]))
+                                ])
+                            ])->customAttributes(['class' => 'col-span-12 2xl:col-span-8 xl:col-span-7 md:col-span-6']),
+
+                        ]),
+                    ])->name('event-reserv-fragment')->customAttributes(['id' => 'event-reserv-fragment'])
+                ])
 
             ]),
 
@@ -81,159 +132,97 @@ class ReservPage extends Page
         ];
     }
 
-    private function productItems(): Collection
+    private function eventsItems(): Collection
     {
-        if (moonshineRequest()->filled('ident')) {
-            return RKProduct::where('parent_ident', moonshineRequest()->ident)->order()->get();
-        }
-
-        return RKProduct::select('rk_products.*')
-            ->join('rk_categories', 'rk_products.parent_ident', '=', 'rk_categories.ident')
-            ->orderBy('rk_categories.position')->order()
-            ->get();
+        return Event::active()
+            // ->actual()
+            ->orderBy('event_start')->get();
     }
 
-    private function productListFields(): array
+    private function eventsListFields(): array
     {
         return [
-            // Position::make(),
-
-            Text::make('Позиция', 'name'),
-
-            Number::make('Цена', 'price', fn ($item) => ($item->price / 100) . 'р')->badge('primary')
-        ];
-    }
-
-    private function productFormFields(): array
-    {
-        return [
-            Hidden::make(column: 'ident'),
-            Hidden::make(column: 'name'),
-            Hidden::make(column: 'price'),
-
-            Text::make('Наименование', 'name')->disabled(),
-            Number::make('Цена', 'price', fn ($item) => ($item->price / 100) . 'р')->disabled()
-        ];
-    }
-
-    private function productForm(?RKProduct $product = null): FormBuilder
-    {
-        return FormBuilder::make()
-            ->name('rk-product-form')
-            ->fields($this->productFormFields())
-            ->fillCast($product, ModelCast::make(RKProduct::class))
-            ->asyncMethod('productFormSave', events: $this->productUpdateEvents())
-            ->submit('Обновить', ['class' => 'btn-primary btn-lg']);
-    }
-
-    public function productFormSave(MoonShineRequest $request): MoonShineJsonResponse
-    {
-        $request->validate(['name' => ['required', 'string']]);
-
-        RKProduct::where('ident', $request->integer('ident'))->update([
-            'name' => $request->get('name'),
-        ]);
-
-        return MoonShineJsonResponse::make()->toast('Обновленно', ToastType::SUCCESS);
-    }
-
-    public function productReorder(MoonShineRequest $request): MoonShineJsonResponse
-    {
-        $request->string('data')->explode(',')->each(
-            fn (string $id, int $sortOrder) =>
-            RKProduct::where('ident', $id)?->update(['position' => $sortOrder])
-        );
-
-        return MoonShineJsonResponse::make()->toast('Позиция обновлена', ToastType::SUCCESS);
-    }
-
-    private function productUpdateEvents(): array
-    {
-        return [
-            AlpineJs::event(JsEvent::TABLE_UPDATED, 'rk-product-list'),
-            AlpineJs::event(JsEvent::FORM_RESET, 'rk-product-form'),
-        ];
-    }
-
-    private function categoryItems(): Collection
-    {
-        return RKCategory::order()->get();
-    }
-
-    private function categoryListFields(): array
-    {
-        // $categoryCount = RKCategory::count();
-        return [
-            // Position::make(),
-
-            Td::make('Категория', fn (RKCategory $category) => [
-
-                // StackFields::make('Title')->fields([
+            Td::make('Даты мероприятий', fn (Event $event) => [
                 ActionButton::make(
-                    $category->name,
-                    fn () => $this->fragmentLoadUrl('rk-product-fragment', ['ident' => $category->getKey()])
-                )->async(selector: '#rk-product-fragment')->customAttributes(['class' => 'btn-link']),
-
-                // Number::make(formatted: fn($category) => $category->products->count())->badge('skbar')
-                // ])
+                    $event->guest_start->format('d.m'),
+                    fn () => $this->fragmentLoadUrl('event-reserv-fragment', ['id' => $event->getKey()])
+                )->async(selector: '#event-reserv-fragment'),
+                // ->customAttributes(['class' => 'btn-link'])
             ])
         ];
     }
 
-    private function categoryFormFields(): array
-    {
-        return [
-            Hidden::make(column: 'ident'),
-            Hidden::make(column: 'name'),
+    // private function productItems(): Collection
+    // {
+    //     if (moonshineRequest()->filled('ident')) {
+    //         return RKProduct::where('parent_ident', moonshineRequest()->ident)->order()->get();
+    //     }
 
-            Text::make('Категория', 'name')->disabled()
-        ];
-    }
+    //     return RKProduct::select('rk_products.*')
+    //         ->join('rk_categories', 'rk_products.parent_ident', '=', 'rk_categories.ident')
+    //         ->orderBy('rk_categories.position')->order()
+    //         ->get();
+    // }
 
-    private function categoryForm(?RKCategory $category = null): FormBuilder
-    {
-        return FormBuilder::make()
-            ->name('rk-categories-form')
-            ->fields($this->categoryFormFields())
-            ->fillCast($category, ModelCast::make(RKCategory::class))
-            ->asyncMethod('categoryFormSave', events: $this->categoryUpdateEvents())
-            ->submit('Обновить', ['class' => 'btn-primary btn-lg']);
-    }
+    // private function productListFields(): array
+    // {
+    //     return [
+    //         // Position::make(),
 
-    public function categoryFormSave(MoonShineRequest $request): MoonShineJsonResponse
-    {
-        $request->validate(['name' => ['required', 'string']]);
+    //         Text::make('Позиция', 'name'),
 
-        RKCategory::where('ident', $request->integer('ident'))->update([
-            'name' => $request->get('name'),
-        ]);
+    //         Number::make('Цена', 'price', fn ($item) => ($item->price / 100) . 'р')->badge('primary')
+    //     ];
+    // }
 
-        return MoonShineJsonResponse::make()->toast('Обновленно', ToastType::SUCCESS);
-    }
+    // private function productFormFields(): array
+    // {
+    //     return [
+    //         Hidden::make(column: 'ident'),
+    //         Hidden::make(column: 'name'),
+    //         Hidden::make(column: 'price'),
 
-    public function categoryReorder(MoonShineRequest $request): MoonShineJsonResponse
-    {
-        $request->string('data')->explode(',')->each(
-            fn (string $id, int $sortOrder) =>
-            RKCategory::where('ident', $id)?->update(['position' => $sortOrder])
-        );
+    //         Text::make('Наименование', 'name')->disabled(),
+    //         Number::make('Цена', 'price', fn ($item) => ($item->price / 100) . 'р')->disabled()
+    //     ];
+    // }
 
-        return MoonShineJsonResponse::make()->toast('Позиция обновлена', ToastType::SUCCESS);
-    }
+    // private function productForm(?RKProduct $product = null): FormBuilder
+    // {
+    //     return FormBuilder::make()
+    //         ->name('rk-product-form')
+    //         ->fields($this->productFormFields())
+    //         ->fillCast($product, ModelCast::make(RKProduct::class))
+    //         ->asyncMethod('productFormSave', events: $this->productUpdateEvents())
+    //         ->submit('Обновить', ['class' => 'btn-primary btn-lg']);
+    // }
 
-    private function categoryUpdateEvents(): array
-    {
-        return [
-            AlpineJs::event(JsEvent::TABLE_UPDATED, 'rk-categories-list'),
-            AlpineJs::event(JsEvent::FORM_RESET, 'rk-categories-form'),
-        ];
-    }
+    // public function productFormSave(MoonShineRequest $request): MoonShineJsonResponse
+    // {
+    //     $request->validate(['name' => ['required', 'string']]);
 
-    public function menuUpdate(MoonShineRequest $request)
-    {
-        RKCatalogUpdate::dispatch();
-        return MoonShineJsonResponse::make()->toast('Задание на обновление добавленно! Ждите.', ToastType::SUCCESS);
-    }
+    //     RKProduct::where('ident', $request->integer('ident'))->update([
+    //         'name' => $request->get('name'),
+    //     ]);
+
+    //     return MoonShineJsonResponse::make()->toast('Обновленно', ToastType::SUCCESS);
+    // }
+
+
+
+    // private function productUpdateEvents(): array
+    // {
+    //     return [
+    //         AlpineJs::event(JsEvent::TABLE_UPDATED, 'rk-product-list'),
+    //         AlpineJs::event(JsEvent::FORM_RESET, 'rk-product-form'),
+    //     ];
+    // }
+
+    // public function menuUpdate(MoonShineRequest $request)
+    // {
+    //     RKCatalogUpdate::dispatch();
+    //     return MoonShineJsonResponse::make()->toast('Задание на обновление добавленно! Ждите.', ToastType::SUCCESS);
+    // }
 
     private function styles(): FlexibleRender
     {

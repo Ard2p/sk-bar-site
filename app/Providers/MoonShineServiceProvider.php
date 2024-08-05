@@ -43,13 +43,19 @@ class MoonShineServiceProvider extends MoonShineApplicationServiceProvider
 
             MenuItem::make(__('Slider'), new SliderResource(), 'heroicons.outline.rectangle-stack'),
 
-            MenuGroup::make(__('RKeeper'), [
+            // MenuGroup::make(__('RKeeper'), [
 
-                MenuItem::make(__('Меню'), RKMenuPage::make('Меню'), 'heroicons.outline.shopping-cart'),
+            //     MenuItem::make(__('RKeeper Меню'), RKMenuPage::make('Меню'), 'heroicons.outline.shopping-cart'),
 
-            ], 'heroicons.outline.building-storefront'),
+            // ], 'heroicons.outline.building-storefront'),
 
-            // MenuItem::make(__('Reserv'), ReservPage::make('Бронирование'), 'heroicons.outline.user-group'),
+            MenuItem::make(__('RKeeper Меню'), RKMenuPage::make('Меню'), 'heroicons.outline.shopping-cart'),
+
+            MenuItem::make(__('Бронирование'), ReservPage::make('Бронирование'), 'heroicons.outline.calendar-days'),
+
+            // book-open
+            // calendar-days
+            // computer-desktop
 
             MenuItem::make(__('Users'), new UserResource(), 'heroicons.outline.user-group'),
 

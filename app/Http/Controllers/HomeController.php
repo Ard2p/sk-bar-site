@@ -18,7 +18,7 @@ class HomeController extends Controller
             'vk_albums' => $vkService->getCacheAlbums('-64982861')?->slice(0, 18),
             'slider' => Slider::active()->period()->get(),
             'coming_events' => Event::active()->actual()->orderBy('event_start')->limit(4)->get(),
-            'recommended_events' => Event::active()->actual()->recommendation()->limit(4)->get()
+            'recommended_events' => Event::active()->actual()->orderBy('event_start')->recommendation()->limit(4)->get()
         ]);
     }
 

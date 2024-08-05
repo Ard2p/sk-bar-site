@@ -17,7 +17,7 @@ class EventController extends Controller
     {
         return view('events.show', [
             'event' => $event,
-            'recommended_events' => Event::active()->actual()->recommendation()->limit(4)->get()
+            'recommended_events' => Event::active()->actual()->orderBy('event_start')->recommendation()->limit(4)->get()
         ]);
     }
 }
