@@ -37,7 +37,7 @@
 
             <div class="mb-4">
                 <label for="name" class="form-label">Телефон</label>
-                <input class="form-control bg-body-secondary" x-model="phone" x-mask="+7 (999) 999-99-99">
+                <input class="form-control bg-body-secondary" x-model="phone" x-mask="+7 (999) 999-99-99" min="18">
             </div>
 
             <div class="mb-4">
@@ -129,7 +129,21 @@
                     })
                 })
 
-                if (!this.tableId || !this.name || !this.phone) {
+                if (!this.tableId || !this.name || !this.phone || this.phone.length != 18) {
+
+                    if (this.phone.length != 18)
+                        new window.bs5.Toast({
+                            body: 'Введите полный сотовый номер',
+                            delay: 5000,
+                            className: 'border-0 bg-primary text-white',
+                        }).show()
+
+                    if (!this.tableId)
+                        new window.bs5.Toast({
+                            body: 'Выберите стол',
+                            delay: 5000,
+                            className: 'border-0 bg-primary text-white',
+                        }).show()
 
                     if (!this.tableId)
                         new window.bs5.Toast({
