@@ -37,7 +37,8 @@
 
             <div class="mb-4">
                 <label for="name" class="form-label">Телефон</label>
-                <input class="form-control bg-body-secondary" x-model="phone" x-mask="+7 (999) 999-99-99" min="18">
+                <input class="form-control bg-body-secondary" x-model="phone" x-mask="+7 (999) 999-99-99" min="18"
+                    id="phone">
             </div>
 
             <div class="mb-4">
@@ -86,7 +87,7 @@
 
             tableId: false,
             name: null,
-            phone: null,
+            phone: +7,
             seats: 1,
 
             step: 1,
@@ -96,6 +97,11 @@
             init() {
                 const that = this;
                 const items = document.querySelectorAll("[data-table]");
+                const inputPhone = document.querySelector("#phone");
+
+                inputPhone.addEventListener("input", function(event) {
+                    if(event.target.value.length < 4) inputPhone.value = "+7 ("
+                });
 
                 for (let i = 0; i < items.length; ++i) {
                     const item = items[i];
