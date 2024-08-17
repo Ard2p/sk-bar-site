@@ -149,9 +149,7 @@ class ReservPage extends Page
 
     private function eventsItems(): Collection
     {
-        return Event::active()
-            // ->actual()
-            ->orderBy('event_start')->get();
+        return Event::active()->actual()->orderBy('event_start')->get();
     }
 
     private function productListFields(): array
