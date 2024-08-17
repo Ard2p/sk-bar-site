@@ -42,6 +42,7 @@ use Illuminate\Database\Eloquent\Builder;
 use MoonShine\ActionButtons\ActionButton;
 use Illuminate\View\ComponentAttributeBag;
 use MoonShine\Components\MoonShineComponent;
+use MoonShine\Fields\Color;
 use MoonShine\Http\Responses\MoonShineJsonResponse;
 
 class ReservPage extends Page
@@ -61,7 +62,7 @@ class ReservPage extends Page
         foreach ($events as $event) {
             $eventsListButtons[] =  ActionButton::make(
                 $event->guest_start->format('d.m'),
-                fn () => $this->fragmentLoadUrl('event-reserv-fragment', ['id' => $event->getKey()])
+                fn() => $this->fragmentLoadUrl('event-reserv-fragment', ['id' => $event->getKey()])
             )->async(selector: '#event-reserv-fragment');
         }
 
@@ -84,16 +85,20 @@ class ReservPage extends Page
 
             $tableListButtons[] =  ActionButton::make(
                 $table->toString(),
-                fn () => $this->fragmentLoadUrl('event-reserv-fragment', ['table' => $table->value])
+                fn() => $this->fragmentLoadUrl('event-reserv-fragment', ['table' => $table->value])
             )
                 ->primary()->customAttributes(['style' => '--primary: 20, 167, 233;'])
                 ->async(selector: '#event-reserv-fragment');
 
             $reservs[$table->value] = [
+                'id' => $tableDB ? $tableDB->id : null,
                 'name' => $table->toString(),
                 'price' => $table->price(),
                 'color' => $tableDB ? $status->getColorNotFree() : $table->color(),
-                'status' => $tableDB ? $status->value : ReservStatusEnum::FREE->value
+                'status' => $tableDB ? $status->value : ReservStatusEnum::FREE->value,
+                'fio' => $tableDB ? $tableDB->name : null,
+                'seats' => $tableDB ? $tableDB->seats : null,
+                'phone' => $tableDB ? $tableDB->phone : null,
             ];
         }
 
@@ -112,13 +117,23 @@ class ReservPage extends Page
                                 Block::make([
                                     Heading::make($event->name)->h(2),
                                     Heading::make($event->guest_start->format('d.m'))->h(4),
-                                    ActionGroup::make($tableListButtons),
+                                    // ActionGroup::make($tableListButtons),
                                 ]),
                             ])->customAttributes(['class' => 'col-span-12 2xl:col-span-4 xl:col-span-5 md:col-span-6']),
 
                             Column::make([
                                 Block::make([
-                                    FlexibleRender::make(view('reservs.admin', ['event' => $event]))
+                                    // FlexibleRender::make(view('reservs.admin', ['event' => $event]))
+
+                                    TableBuilder::make($this->productlistFields(), $reservs)
+                                        // ->sortable($this->asyncMethodUrl('productReorder'), 'table')->reindex()->async()
+                                        // ->buttons([
+                                        //     ActionButton::make('')->secondary()
+                                        //         ->icon('heroicons.outline.pencil')
+                                        //         ->inModal('Редактирование', fn($reserv) => $this->productForm($reserv))
+                                        // ])
+                                        ->name('rk-product-list')
+
                                 ])
                             ])->customAttributes(['class' => 'col-span-12 2xl:col-span-8 xl:col-span-7 md:col-span-6']),
 
@@ -139,90 +154,57 @@ class ReservPage extends Page
             ->orderBy('event_start')->get();
     }
 
-    private function eventsListFields(): array
+    private function productListFields(): array
     {
         return [
-            Td::make('Даты мероприятий', fn (Event $event) => [
-                ActionButton::make(
-                    $event->guest_start->format('d.m'),
-                    fn () => $this->fragmentLoadUrl('event-reserv-fragment', ['id' => $event->getKey()])
-                )->async(selector: '#event-reserv-fragment'),
-                // ->customAttributes(['class' => 'btn-link'])
-            ])
+            Text::make('Стол', 'name'),
+            Text::make('Гостей', 'seats'),
+            Text::make('ФИО', 'fio'),
+            Text::make('Телефон', 'phone'),
+            // Text::make('Статус', 'status'),
+            // Color::make('Статус', 'color')
         ];
     }
 
-    // private function productItems(): Collection
-    // {
-    //     if (moonshineRequest()->filled('ident')) {
-    //         return RKProduct::where('parent_ident', moonshineRequest()->ident)->order()->get();
-    //     }
+    private function productForm($reserv = null): FormBuilder
+    {
+        return FormBuilder::make()
+            ->name('rk-product-form')
+            ->fill($reserv)
+            ->fields($this->productFormFields())
+            ->asyncMethod('productFormSave', events: $this->productUpdateEvents())
+            ->submit('Обновить', ['class' => 'btn-primary btn-lg']);
+    }
 
-    //     return RKProduct::select('rk_products.*')
-    //         ->join('rk_categories', 'rk_products.parent_ident', '=', 'rk_categories.ident')
-    //         ->orderBy('rk_categories.position')->order()
-    //         ->get();
-    // }
+    private function productFormFields(): array
+    {
+        return [
+            Hidden::make(column: 'id'),
 
-    // private function productListFields(): array
-    // {
-    //     return [
-    //         // Position::make(),
+            Text::make('ФИО', 'fio'),
+            Text::make('Телефон', 'phone'),
+            Number::make('Гостей', 'seats'),
+        ];
+    }
 
-    //         Text::make('Позиция', 'name'),
+    public function productFormSave(MoonShineRequest $request): MoonShineJsonResponse
+    {
+        $request->validate(['fio' => ['required', 'string']]);
 
-    //         Number::make('Цена', 'price', fn ($item) => ($item->price / 100) . 'р')->badge('primary')
-    //     ];
-    // }
+        Reserv::where('id', $request->get('id'))->update([
+            'name' => $request->get('fio'),
+        ]);
 
-    // private function productFormFields(): array
-    // {
-    //     return [
-    //         Hidden::make(column: 'ident'),
-    //         Hidden::make(column: 'name'),
-    //         Hidden::make(column: 'price'),
+        return MoonShineJsonResponse::make()->toast('Обновленно', ToastType::SUCCESS);
+    }
 
-    //         Text::make('Наименование', 'name')->disabled(),
-    //         Number::make('Цена', 'price', fn ($item) => ($item->price / 100) . 'р')->disabled()
-    //     ];
-    // }
-
-    // private function productForm(?RKProduct $product = null): FormBuilder
-    // {
-    //     return FormBuilder::make()
-    //         ->name('rk-product-form')
-    //         ->fields($this->productFormFields())
-    //         ->fillCast($product, ModelCast::make(RKProduct::class))
-    //         ->asyncMethod('productFormSave', events: $this->productUpdateEvents())
-    //         ->submit('Обновить', ['class' => 'btn-primary btn-lg']);
-    // }
-
-    // public function productFormSave(MoonShineRequest $request): MoonShineJsonResponse
-    // {
-    //     $request->validate(['name' => ['required', 'string']]);
-
-    //     RKProduct::where('ident', $request->integer('ident'))->update([
-    //         'name' => $request->get('name'),
-    //     ]);
-
-    //     return MoonShineJsonResponse::make()->toast('Обновленно', ToastType::SUCCESS);
-    // }
-
-
-
-    // private function productUpdateEvents(): array
-    // {
-    //     return [
-    //         AlpineJs::event(JsEvent::TABLE_UPDATED, 'rk-product-list'),
-    //         AlpineJs::event(JsEvent::FORM_RESET, 'rk-product-form'),
-    //     ];
-    // }
-
-    // public function menuUpdate(MoonShineRequest $request)
-    // {
-    //     RKCatalogUpdate::dispatch();
-    //     return MoonShineJsonResponse::make()->toast('Задание на обновление добавленно! Ждите.', ToastType::SUCCESS);
-    // }
+    private function productUpdateEvents(): array
+    {
+        return [
+            AlpineJs::event(JsEvent::TABLE_UPDATED, 'rk-product-list'),
+            AlpineJs::event(JsEvent::FORM_RESET, 'rk-product-form'),
+        ];
+    }
 
     private function styles(): FlexibleRender
     {
