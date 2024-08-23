@@ -9,7 +9,7 @@ class EventController extends Controller
     public function index()
     {
         return view('events.index', [
-            'events' => Event::active()->actual()->orderBy('event_start')->paginate(16),
+            'events' => Event::general()->skbar()->paginate(16),
         ]);
     }
 
@@ -17,7 +17,7 @@ class EventController extends Controller
     {
         return view('events.show', [
             'event' => $event,
-            'recommended_events' => Event::active()->actual()->orderBy('event_start')->recommendation()->limit(4)->get()
+            'recommended_events' => Event::general()->recommendation()->limit(4)->get()
         ]);
     }
 }

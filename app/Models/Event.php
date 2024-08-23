@@ -78,4 +78,15 @@ class Event extends Model
     {
         $query->whereDate('event_start', '<=', Carbon::now()->toDateString());
     }
+
+    public function scopeSkbar(Builder $query): void
+    {
+        $query->where('place_id', 1);
+    }
+
+    public function scopeGeneral(Builder $query): void
+    {
+        $query->active()->actual()->orderBy('event_start');
+    }
+
 }
