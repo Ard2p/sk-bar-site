@@ -38,6 +38,37 @@ class ReservController extends Controller
         return $reservs;
     }
 
+    public function print(Event $event)
+    {
+        $reservsDB = Reserv::where('event_id', $event->id)->get()->keyBy('table');
+
+        $reservs = [];
+        foreach (ReservTablesEnum::cases() as $table) {
+
+            $tableDB = $reservsDB->get($table->value);
+
+            if ($tableDB) {
+                $status = ReservStatusEnum::from($tableDB->status);
+            }
+
+            $reservs[$table->value] = (object)[
+                'id' => $tableDB ? $tableDB->id : null,
+                'name' => $table->toString(),
+                'price' => $table->price(),
+                'color' => $tableDB ? $status->getColorNotFree() : $table->color(),
+                'status' => $tableDB ? $status->value : ReservStatusEnum::FREE->value,
+                'fio' => $tableDB ? $tableDB->name : null,
+                'seats' => $tableDB ? $tableDB->seats : null,
+                'phone' => $tableDB ? $tableDB->phone : null,
+            ];
+        }
+
+        return view('reservs.print', [
+            'event' => $event,
+            'reservs' => $reservs
+        ]);
+    }
+
     public function reserv(ReservStoreRequest $request, Nutgram $bot)
     {
         $reserv = Reserv::create([
