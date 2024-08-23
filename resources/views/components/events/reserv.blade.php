@@ -6,7 +6,7 @@
 
         <div x-show="step != 3" class="col-lg-4 col-12">
 
-            <h3>{{ $event->name }}</h3>
+            <h3>{!! $event->name !!}</h3>
 
             <div class="mb-3 text-primary">
                 <p>{{ $event->place->name }}, {{ $event->place->city }}, {{ $event->place->adress }}</p>
