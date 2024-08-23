@@ -1,20 +1,33 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="-.5 -.5 1064 831">
-  <g class="prefix__wall"><text x="200" y="93" font-family="Helvetica" font-weight="bold"
-      text-anchor="middle" font-size="32">Туалет</text>
+  <g  class="prefix__legends">
+    <ellipse cx="820" cy="547" rx="15" ry="15" fill="#ff69b4" />
+    <text x="840" y="554" font-family="Helvetica" font-weight="bold" text-anchor="left" font-size="26">- 1500р депозит</text>
+
+    <ellipse cx="820" cy="587" rx="15" ry="15" fill="#7ae8f1" />
+    <text x="840" y="594" font-family="Helvetica" font-weight="bold" text-anchor="left" font-size="26">- 2000р депозит</text>
+
+    <ellipse cx="820" cy="627" rx="15" ry="15" fill="#a77af1" />
+    <text x="840" y="634" font-family="Helvetica" font-weight="bold" text-anchor="left" font-size="26">- 3000р депозит</text>
+
+    <ellipse cx="820" cy="667" rx="15" ry="15" fill="yellow" />
+    <text x="840" y="674" font-family="Helvetica" font-weight="bold" text-anchor="left" font-size="26">- не подтверждён</text>
+
+    <ellipse cx="820" cy="707" rx="15" ry="15" fill="#fff" stroke="#000" />
+    <text x="840" y="714" font-family="Helvetica" font-weight="bold" text-anchor="left" font-size="26">- занят</text>
+  </g>
+  <g class="prefix__wall">
+    <text x="200" y="93" font-family="Helvetica" font-weight="bold" text-anchor="middle" font-size="32">Туалет</text>
     <path d="M418.16 0v163H.01v-10h408.15V0z" stroke="#000" stroke-miterlimit="10" pointer-events="all" />
     <path d="M0 520.65V0h1062v520.65h-10V10H10v510.65z" stroke="#000" stroke-miterlimit="10" pointer-events="all" />
     <path fill="#fff" stroke="#000" pointer-events="all" d="M405.98 161.29h-53.85v-5h53.85z" />
-    <path d="M800 515.56V815H0V515.56h10V805h780V515.56zM350.12 163v100H10.34v-10h329.78v-90z" stroke="#000"
-      stroke-miterlimit="10" pointer-events="all" />
+    <path d="M800 515.56V815H0V515.56h10V805h780V515.56zM350.12 163v100H10.34v-10h329.78v-90z" stroke="#000" stroke-miterlimit="10" pointer-events="all" />
     <path fill="rgba(166, 166, 166, 1)" stroke="#000"  d="M289.89 469.27h45.91v45.91h-45.91z" />
     <path stroke="#000"  d="M800 515.5h261.43v10H800z" />
-    <path fill="#fff" stroke="#000"
-      d="M360.48 791h87.31v38h-87.31zM472.01 684h317.03v120H472.01z" />
-    <path d="M405.98 156.29c0-29.74-24.11-53.85-53.85-53.85v53.85" fill="none" stroke="#000" stroke-miterlimit="10"
-      pointer-events="all" /><text x="313" y="500" font-family="Helvetica" font-weight="bold"
-      text-anchor="middle" font-size="20">Кол.</text><text x="630" y="755" font-family="Helvetica" font-weight="bold"
-       text-anchor="middle" font-size="32">Сцена</text><text x="403" y="820"
-      font-family="Helvetica" font-weight="bold" text-anchor="middle" font-size="32">Вход</text>
+    <path fill="#fff" stroke="#000" d="M360.48 791h87.31v38h-87.31zM472.01 684h317.03v120H472.01z" />
+    <path d="M405.98 156.29c0-29.74-24.11-53.85-53.85-53.85v53.85" fill="none" stroke="#000" stroke-miterlimit="10" pointer-events="all" />
+    <text x="313" y="500" font-family="Helvetica" font-weight="bold" text-anchor="middle" font-size="20">Кол.</text>
+    <text x="630" y="755" font-family="Helvetica" font-weight="bold" text-anchor="middle" font-size="32">Сцена</text>
+    <text x="403" y="820" font-family="Helvetica" font-weight="bold" text-anchor="middle" font-size="32">Вход</text>
   </g>
   <g class="prefix__bar" >
     <path
@@ -124,7 +137,7 @@
     <path table fill="#fff" stroke="#000" d="M800 450.58h68.11v42.57H800z" /><text x="833.56" y="481.36"
       font-family="Helvetica" font-weight="bold" text-anchor="middle" font-size="22">7</text>
   </g>
-  <g table data-table="8" >
+  <g data-table="8" >
     <path
       d="M828.28 377.53l1.27 10.25c.25 1.5-.42 3.01-1.69 3.84-4.36.69-8.8.69-13.15 0a3.85 3.85 0 01-1.7-3.84l1.27-10.25c.25-1.14 1.46-2.01 2.97-2.14h8.06c1.51.13 2.73 1 2.97 2.14zM814.28 430.08l-1.27-10.25c-.25-1.51.42-3.02 1.69-3.85 4.36-.68 8.8-.68 13.15 0 1.28.83 1.94 2.34 1.7 3.85l-1.27 10.25c-.25 1.13-1.46 2.01-2.97 2.13h-8.06c-1.51-.12-2.73-1-2.97-2.13z"
       fill="#fff" stroke="#000" stroke-miterlimit="10" />

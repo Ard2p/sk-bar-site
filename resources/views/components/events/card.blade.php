@@ -29,7 +29,7 @@
     <div class="p-3 pt-2 h-100 d-flex flex-column">
 
         <a href="{{ route('events.show', $item->id) }}"
-            class="fs-5 link-body-emphasis my-auto text-decoration-none">{{ $item->name }}</a>
+            class="fs-5 link-body-emphasis my-auto text-decoration-none">{!! $item->name !!}</a>
 
         <div>
             <span class="badge text-black bg-body-secondary">{{ $item->event_start->translatedFormat('d F') }}</span>

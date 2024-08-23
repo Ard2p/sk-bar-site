@@ -1,7 +1,7 @@
 <x-app-layout>
     <div class="container mb-5">
 
-        <x-caption :sub="$event->caption">{{ $event->name }}</x-caption>
+        <x-caption :sub="$event->caption">{!! $event->name !!}</x-caption>
 
         <div class="row mb-5">
 
