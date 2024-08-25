@@ -5,7 +5,7 @@
             <h2>{!! $event->name !!}</h2>
             <h4>Дата: {{ $event->event_start->translatedFormat('d.m.Y') }}</h4>
 
-            <x-events.reserv :event="$event" :isAdmin="true"/>
+            <x-events.reserv :event="$event" :isAdmin="true" />
 
         </div>
 
@@ -42,6 +42,11 @@
 <style>
     @page {
         size: A4 landscape;
+    }
+
+    html,
+    body {
+        font-size: 14px
     }
 
     @media print {}
