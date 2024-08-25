@@ -7,44 +7,29 @@ namespace App\MoonShine\Pages;
 use App\Models\Event;
 use App\Models\Reserv;
 use MoonShine\Fields\Td;
-use App\Models\RKProduct;
 use MoonShine\Pages\Page;
-use App\Models\RKCategory;
 use MoonShine\Fields\Enum;
 use MoonShine\Fields\Text;
 use MoonShine\Fields\Color;
-use MoonShine\Fields\Field;
 use MoonShine\Enums\JsEvent;
 use MoonShine\Fields\Hidden;
 use MoonShine\Fields\Number;
-use App\Jobs\RKCatalogUpdate;
-use MoonShine\Fields\Preview;
 use MoonShine\Enums\ToastType;
-use MoonShine\Fields\Position;
 use App\Enums\ReservStatusEnum;
-use App\Enums\ReservTablesEnum;
-use MoonShine\Decorations\Flex;
+use App\Services\ReservService;
 use MoonShine\Decorations\Grid;
-use MoonShine\Decorations\Tabs;
 use MoonShine\MoonShineRequest;
 use MoonShine\Support\AlpineJs;
 use MoonShine\Decorations\Block;
 use MoonShine\Decorations\Column;
-use MoonShine\Fields\StackFields;
-use MoonShine\QueryTags\QueryTag;
 use Illuminate\Support\Collection;
-use Illuminate\Support\Facades\DB;
 use MoonShine\Decorations\Heading;
-use MoonShine\TypeCasts\ModelCast;
 use MoonShine\Decorations\Fragment;
 use MoonShine\Components\ActionGroup;
 use MoonShine\Components\FormBuilder;
 use MoonShine\Components\TableBuilder;
 use MoonShine\Components\FlexibleRender;
-use Illuminate\Database\Eloquent\Builder;
 use MoonShine\ActionButtons\ActionButton;
-use Illuminate\View\ComponentAttributeBag;
-use MoonShine\Components\MoonShineComponent;
 use MoonShine\Http\Responses\MoonShineJsonResponse;
 
 class ReservPage extends Page
@@ -79,38 +64,8 @@ class ReservPage extends Page
         if (moonshineRequest()->filled('id')) {
             $event = Event::find(moonshineRequest()->id);
         }
-
-        $reservsDB = Reserv::where('event_id', $event->id)->get()->keyBy('table');
-
-        $reservs = [];
-        foreach (ReservTablesEnum::cases() as $table) {
-
-            $reservs[$table->value] = [
-                'name' => $table->toString(),
-                'price' => $table->price(),
-                'color' => $table->color(),
-                'status' => ReservStatusEnum::FREE->value,
-                'fio' => null,
-                'seats' => null,
-                'phone' => null,
-            ];
-
-            $tableDB = $reservsDB->get($table->value);
-
-            if ($tableDB) {
-                $status = ReservStatusEnum::from($tableDB->status);
-                $statusRemoved = $status != ReservStatusEnum::REMOVED;
-
-                $reservs[$table->value] = array_merge($reservs[$table->value], [
-                    'id' =>  $tableDB->id,
-                    'color' =>  $status->getColor(),
-                    'status' => $status->value,
-                    'fio' => $statusRemoved ? $tableDB->name : null,
-                    'seats' => $statusRemoved ? $tableDB->seats ?: null : null,
-                    'phone' => $statusRemoved ? $tableDB->phone : null,
-                ]);
-            }
-        }
+        $reservService = new ReservService();
+        $reservs = $reservService->show($event, true);
 
         return [
 
