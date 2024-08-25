@@ -1,84 +1,92 @@
-@props(['event'])
+@props(['event', 'isAdmin'])
 
-<div class="container" x-show="view" x-data="initData()" x-init="getReservs">
+@if (!$isAdmin)
+    <div class="container" x-show="view" x-data="initData()" x-init="getReservs">
 
-    <div class="row">
+        <div class="row">
 
-        <div x-show="step != 3" class="col-lg-4 col-12">
+            <div x-show="step != 3" class="col-lg-4 col-12">
 
-            <h3>{!! $event->name !!}</h3>
+                <h3>{!! $event->name !!}</h3>
 
-            <div class="mb-3 text-primary">
-                <p>{{ $event->place->name }}, {{ $event->place->city }}, {{ $event->place->adress }}</p>
+                <div class="mb-3 text-primary">
+                    <p>{{ $event->place->name }}, {{ $event->place->city }}, {{ $event->place->adress }}</p>
 
-                <span class="badge text-black bg-body-secondary">
-                    {{ $event->event_start->translatedFormat('d F') }}
-                </span>
-                <span class="badge text-white bg-info">{{ $event->age_limit }} +</span>
+                    <span class="badge text-black bg-body-secondary">
+                        {{ $event->event_start->translatedFormat('d F') }}
+                    </span>
+                    <span class="badge text-white bg-info">{{ $event->age_limit }} +</span>
+                </div>
+
+                <div class="mb-3" x-show="tableName">
+                    <span>Бронь стола № </span>
+                    <span x-text="tableName"></span>
+                    <span class="float-end text-primary" x-text="tablePrice + 'р'"> x 3000</span>
+                </div>
             </div>
 
-            <div class="mb-3" x-show="tableName">
-                <span>Бронь стола № </span>
-                <span x-text="tableName"></span>
-                <span class="float-end text-primary" x-text="tablePrice + 'р'"> x 3000</span>
+            <div x-show="step == 1" class="col-lg-8 col-12">
+                {!! file_get_contents(public_path('shemes/skbar-1.svg')) !!}
             </div>
+
+            <div x-show="step == 2" class="col-lg-4 col-12 ms-auto me-auto">
+
+                <div class="mb-4">
+                    <label for="name" class="form-label">ФИО</label>
+                    <input class="form-control bg-body-secondary" x-model="name">
+                </div>
+
+                <div class="mb-4">
+                    <label for="name" class="form-label">Телефон</label>
+                    <input class="form-control bg-body-secondary" x-model="phone" x-mask="+7 (999) 999-99-99"
+                        min="18" id="phone">
+                </div>
+
+                <div class="mb-4">
+                    <label for="name" class="form-label">Гостей</label>
+                    <input class="form-control bg-body-secondary" x-model="seats" type="number" min="1">
+                </div>
+
+            </div>
+
+            <div class="row flex-column align-items-center" x-show="step == 3">
+
+                <div class="col-2">
+                    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                        <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                        <g id="SVGRepo_iconCarrier">
+                            <circle cx="12" cy="12" r="10" stroke="#0bad3b" stroke-width="1.5"></circle>
+                            <path d="M8.5 12.5L10.5 14.5L15.5 9.5" stroke="#0bad3b" stroke-width="1.5"
+                                stroke-linecap="round" stroke-linejoin="round"></path>
+                        </g>
+                    </svg>
+
+                </div>
+
+                <div class="col-10">
+                    Заявка на бронь оставленна, скоро с вами свяжутся для подтверждения!
+                </div>
+            </div>
+
         </div>
 
-        <div x-show="step == 1" class="col-lg-8 col-12">
-            {!! file_get_contents(public_path('shemes/skbar-1.svg')) !!}
-        </div>
+        <div class="row">
+            <div class="col-auto ms-auto">
+                <button x-show="step == 1" @click="step = 2" class="btn btn-primary text-white">Дальше</button>
+                <button x-show="step == 2" @click="step = 1" class="btn btn-primary text-white">Назад</button>
 
-        <div x-show="step == 2" class="col-lg-4 col-12 ms-auto me-auto">
-
-            <div class="mb-4">
-                <label for="name" class="form-label">ФИО</label>
-                <input class="form-control bg-body-secondary" x-model="name">
-            </div>
-
-            <div class="mb-4">
-                <label for="name" class="form-label">Телефон</label>
-                <input class="form-control bg-body-secondary" x-model="phone" x-mask="+7 (999) 999-99-99" min="18"
-                    id="phone">
-            </div>
-
-            <div class="mb-4">
-                <label for="name" class="form-label">Гостей</label>
-                <input class="form-control bg-body-secondary" x-model="seats" type="number" min="1">
-            </div>
-
-        </div>
-
-        <div class="row flex-column align-items-center" x-show="step == 3">
-
-            <div class="col-2">
-                <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
-                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
-                    <g id="SVGRepo_iconCarrier">
-                        <circle cx="12" cy="12" r="10" stroke="#0bad3b" stroke-width="1.5"></circle>
-                        <path d="M8.5 12.5L10.5 14.5L15.5 9.5" stroke="#0bad3b" stroke-width="1.5"
-                            stroke-linecap="round" stroke-linejoin="round"></path>
-                    </g>
-                </svg>
-
-            </div>
-
-            <div class="col-10">
-                Заявка на бронь оставленна, скоро с вами свяжутся для подтверждения!
+                <button x-show="step == 2" @click="check()" class="btn btn-primary text-white">Подтвердить</button>
             </div>
         </div>
 
     </div>
-
-    <div class="row">
-        <div class="col-auto ms-auto">
-            <button x-show="step == 1" @click="step = 2" class="btn btn-primary text-white">Дальше</button>
-            <button x-show="step == 2" @click="step = 1" class="btn btn-primary text-white">Назад</button>
-
-            <button x-show="step == 2" @click="check()" class="btn btn-primary text-white">Подтвердить</button>
-        </div>
+@else
+    <div class="col-span-10 bg-white" x-show="view" x-data="initData()" x-init="getReservs">
+        {!! file_get_contents(public_path('shemes/skbar-1.svg')) !!}
     </div>
-</div>
+@endif
+
 
 <script>
     function initData() {
@@ -99,9 +107,10 @@
                 const items = document.querySelectorAll("[data-table]");
                 const inputPhone = document.querySelector("#phone");
 
-                inputPhone.addEventListener("input", function(event) {
-                    if (event.target.value.length < 4) inputPhone.value = "+7 ("
-                });
+                if (inputPhone)
+                    inputPhone.addEventListener("input", function(event) {
+                        if (event.target.value.length < 4) inputPhone.value = "+7 ("
+                    });
 
                 for (let i = 0; i < items.length; ++i) {
                     const item = items[i];
