@@ -1,4 +1,4 @@
-@props(['event', 'isAdmin'])
+@props(['event', 'isAdmin' => false])
 
 @if (!$isAdmin)
     <div class="container" x-show="view" x-data="initData()" x-init="getReservs">
