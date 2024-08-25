@@ -66,9 +66,9 @@ class EventsResource extends ModelResource
     public function queryTags(): array
     {
         return [
-            QueryTag::make('Актуальные', fn (Builder $query) => $query->actual())->alias('actual')->default(),
-            QueryTag::make('Архив', fn (Builder $query) => $query->arhive())->alias('arhive'),
-            QueryTag::make('Все', fn (Builder $query) => $query)->alias('all')
+            QueryTag::make('Актуальные', fn(Builder $query) => $query->actual())->alias('actual')->default(),
+            QueryTag::make('Архив', fn(Builder $query) => $query->arhive())->alias('arhive'),
+            QueryTag::make('Все', fn(Builder $query) => $query)->alias('all')
         ];
     }
 
@@ -132,8 +132,8 @@ class EventsResource extends ModelResource
 
                             Tab::make(__('Seo'), [
                                 Template::make(column: 'seo')
-                                    ->changeFill(fn (Event $data) => $data->seo)
-                                    ->changePreview(fn ($data) => $data?->id ?? '-')
+                                    ->changeFill(fn(Event $data) => $data->seo)
+                                    ->changePreview(fn($data) => $data?->id ?? '-')
                                     ->fields((new SeoResource())->getMorphFields())
                                     ->changeRender(function (?Seo $data, Template $field) {
                                         $fields = $field->preparedFields();
@@ -182,7 +182,7 @@ class EventsResource extends ModelResource
                                 Date::make(__('Guest start'), 'guest_start')->withTime()->required(),
                                 // ]),
 
-                                BelongsTo::make(__('Place event'), 'place', fn ($item) => "$item->name, $item->city")
+                                BelongsTo::make(__('Place event'), 'place', fn($item) => "$item->name, $item->city")
                                     ->searchable()
                                     ->placeholder('-')
                                     ->nullable()
@@ -191,8 +191,8 @@ class EventsResource extends ModelResource
                                 Switcher::make(__('Recommendation'), 'recommendation')->default(false),
 
                                 Image::make(__('Image'), 'image')->when(
-                                    fn ($field) => $field->isNowOnCreateForm(),
-                                    fn ($field) => $field->required()
+                                    fn($field) => $field->isNowOnCreateForm(),
+                                    fn($field) => $field->required()
                                 )
                                     ->disk(config('moonshine.disk', 'public'))->dir('events')
                                     ->allowedExtensions(['jpg', 'png', 'jpeg', 'gif', 'webp']),
@@ -227,9 +227,9 @@ class EventsResource extends ModelResource
             //     Date::make(__('Event start'), 'event_start')->format('d.m H.i')->sortable(),
             // ])->sortable(),
             Date::make(__('Event start'), 'event_start')->format('d.m H.i')->sortable(),
-            Text::make(__('Title'), 'name')->sortable(),
+            Text::make(__('Title'), 'name', fn($item) => htmlspecialchars_decode($item->name))->sortable(),
             Enum::make(__('Status'), 'status')->attach(EventStatusEnum::class)->sortable(),
-            BelongsTo::make(__('Place event'), 'place', fn ($item) => "$item->name, $item->city")->sortable(),
+            BelongsTo::make(__('Place event'), 'place', fn($item) => "$item->name, $item->city")->sortable(),
             Enum::make(__('Age'), 'age_limit')->attach(AgeLimitEnum::class)->sortable(),
             Switcher::make('⭐️', 'recommendation')->sortable(),
         ];
@@ -240,12 +240,12 @@ class EventsResource extends ModelResource
         return [
             ID::make(),
             Image::make(__('Image'), 'image'),
-            Text::make(__('Title'), 'name'),
+            Text::make(__('Title'), 'name', fn($item) => htmlspecialchars_decode($item->name)),
             Enum::make(__('Age limit'), 'age_limit')->attach(AgeLimitEnum::class),
             Enum::make(__('Status'), 'status')->attach(EventStatusEnum::class),
             Date::make(__('Event start'), 'event_start')->format('d.m H.i'),
             Date::make(__('Guest start'), 'guest_start')->format('d.m H.i'),
-            BelongsTo::make(__('Place event'), 'place', fn ($item) => "$item->name, $item->city"),
+            BelongsTo::make(__('Place event'), 'place', fn($item) => "$item->name, $item->city"),
             Switcher::make(__('Recommendation'), 'recommendation'),
             TinyMce::make(__('Description'), 'description'),
         ];
@@ -262,7 +262,7 @@ class EventsResource extends ModelResource
                 ->placeholder('-')
                 ->nullable(),
             Date::make(__('Date start'), 'event_start')->format('d.m H.i'),
-            BelongsTo::make(__('Place event'), 'place', fn ($item) => "$item->name, $item->city")
+            BelongsTo::make(__('Place event'), 'place', fn($item) => "$item->name, $item->city")
                 ->nullable()
                 ->placeholder('-'),
             Switcher::make(__('Recommendation'), 'recommendation')

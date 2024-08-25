@@ -100,7 +100,7 @@
                 const inputPhone = document.querySelector("#phone");
 
                 inputPhone.addEventListener("input", function(event) {
-                    if(event.target.value.length < 4) inputPhone.value = "+7 ("
+                    if (event.target.value.length < 4) inputPhone.value = "+7 ("
                 });
 
                 for (let i = 0; i < items.length; ++i) {
@@ -233,6 +233,9 @@
                     const tableId = element.getAttribute("data-table");
                     const tableInfo = this.tables[tableId];
                     const table = element.querySelector("[table]");
+
+                    if (tableInfo.status == 'removed') element.style.display = 'none';
+                    else element.style.display = 'block';
 
                     table.setAttribute("fill", tableInfo.color);
 

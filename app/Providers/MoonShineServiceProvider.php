@@ -51,7 +51,9 @@ class MoonShineServiceProvider extends MoonShineApplicationServiceProvider
 
             MenuItem::make(__('RKeeper Меню'), RKMenuPage::make('Меню'), 'heroicons.outline.shopping-cart'),
 
-            MenuItem::make(__('Бронирование'), ReservPage::make('Бронирование'), 'heroicons.outline.calendar-days'),
+            MenuItem::make(__('Бронирование'), ReservPage::make('Бронирование'), 'heroicons.outline.calendar-days')
+                // ->canSee(fn() => false)
+                ,
 
             // book-open
             // calendar-days

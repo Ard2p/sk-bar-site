@@ -10,7 +10,10 @@ use MoonShine\Fields\Td;
 use App\Models\RKProduct;
 use MoonShine\Pages\Page;
 use App\Models\RKCategory;
+use MoonShine\Fields\Enum;
 use MoonShine\Fields\Text;
+use MoonShine\Fields\Color;
+use MoonShine\Fields\Field;
 use MoonShine\Enums\JsEvent;
 use MoonShine\Fields\Hidden;
 use MoonShine\Fields\Number;
@@ -42,7 +45,6 @@ use Illuminate\Database\Eloquent\Builder;
 use MoonShine\ActionButtons\ActionButton;
 use Illuminate\View\ComponentAttributeBag;
 use MoonShine\Components\MoonShineComponent;
-use MoonShine\Fields\Color;
 use MoonShine\Http\Responses\MoonShineJsonResponse;
 
 class ReservPage extends Page
@@ -53,6 +55,13 @@ class ReservPage extends Page
     {
         return ['#' => $this->title()];
     }
+
+    // public function beforeRender(): void
+    // {
+    //     if (auth()->user()->id !== 5) {
+    //         abort(403);
+    //     }
+    // }
 
     public function components(): array
     {
@@ -74,37 +83,39 @@ class ReservPage extends Page
         $reservsDB = Reserv::where('event_id', $event->id)->get()->keyBy('table');
 
         $reservs = [];
-        $tableListButtons = [];
         foreach (ReservTablesEnum::cases() as $table) {
+
+            $reservs[$table->value] = [
+                'name' => $table->toString(),
+                'price' => $table->price(),
+                'color' => $table->color(),
+                'status' => ReservStatusEnum::FREE->value,
+                'fio' => null,
+                'seats' => null,
+                'phone' => null,
+            ];
 
             $tableDB = $reservsDB->get($table->value);
 
             if ($tableDB) {
                 $status = ReservStatusEnum::from($tableDB->status);
+                $statusRemoved = $status != ReservStatusEnum::REMOVED;
+
+                $reservs[$table->value] = array_merge($reservs[$table->value], [
+                    'id' =>  $tableDB->id,
+                    'color' =>  $status->getColor(),
+                    'status' => $status->value,
+                    'fio' => $statusRemoved ? $tableDB->name : null,
+                    'seats' => $statusRemoved ? $tableDB->seats ?: null : null,
+                    'phone' => $statusRemoved ? $tableDB->phone : null,
+                ]);
             }
-
-            $tableListButtons[] =  ActionButton::make(
-                $table->toString(),
-                fn() => $this->fragmentLoadUrl('event-reserv-fragment', ['table' => $table->value])
-            )
-                ->primary()->customAttributes(['style' => '--primary: 20, 167, 233;'])
-                ->async(selector: '#event-reserv-fragment');
-
-            $reservs[$table->value] = [
-                'id' => $tableDB ? $tableDB->id : null,
-                'name' => $table->toString(),
-                'price' => $table->price(),
-                'color' => $tableDB ? $status->getColorNotFree() : $table->color(),
-                'status' => $tableDB ? $status->value : ReservStatusEnum::FREE->value,
-                'fio' => $tableDB ? $tableDB->name : null,
-                'seats' => $tableDB ? $tableDB->seats : null,
-                'phone' => $tableDB ? $tableDB->phone : null,
-            ];
         }
 
         return [
 
             Grid::make([
+
                 Column::make([
                     ActionGroup::make($eventsListButtons),
                 ]),
@@ -115,25 +126,22 @@ class ReservPage extends Page
 
                             Column::make([
                                 Block::make([
-                                    Heading::make($event->name)->h(2),
-                                    Heading::make($event->guest_start->format('d.m'))->h(4),
-                                    // ActionGroup::make($tableListButtons),
+                                    Heading::make(htmlspecialchars_decode($event->name))->h(2),
+                                    Heading::make($event->guest_start->format('d.m.Y'))->h(4),
+
+                                    FlexibleRender::make(view('reservs.admin', ['event' => $event]))
                                 ]),
                             ])->customAttributes(['class' => 'col-span-12 2xl:col-span-4 xl:col-span-5 md:col-span-6']),
 
                             Column::make([
                                 Block::make([
-                                    // FlexibleRender::make(view('reservs.admin', ['event' => $event]))
-
                                     TableBuilder::make($this->productlistFields(), $reservs)
-                                        // ->sortable($this->asyncMethodUrl('productReorder'), 'table')->reindex()->async()
-                                        // ->buttons([
-                                        //     ActionButton::make('')->secondary()
-                                        //         ->icon('heroicons.outline.pencil')
-                                        //         ->inModal('Редактирование', fn($reserv) => $this->productForm($reserv))
-                                        // ])
+                                        ->buttons([
+                                            ActionButton::make('')->secondary()
+                                                ->icon('heroicons.outline.pencil')
+                                                ->inModal('Редактирование', fn($reserv) => $this->productForm($reserv, $event->id))
+                                        ])
                                         ->name('rk-product-list')
-
                                 ])
                             ])->customAttributes(['class' => 'col-span-12 2xl:col-span-8 xl:col-span-7 md:col-span-6']),
 
@@ -159,47 +167,71 @@ class ReservPage extends Page
             Text::make('Гостей', 'seats'),
             Text::make('ФИО', 'fio'),
             Text::make('Телефон', 'phone'),
-            // Text::make('Статус', 'status'),
-            // Color::make('Статус', 'color')
+
+            Td::make('Статус', function ($data) {
+                return [
+                    Color::make('Статус', 'color')->changePreview(fn() => view('moonshine::fields.color', [
+                        'color' => $data['color'],
+                        'status' => ReservStatusEnum::from($data['status'])->toString(),
+                    ]))
+                ];
+            })
         ];
     }
 
-    private function productForm($reserv = null): FormBuilder
+    private function productForm($reserv = null, $eventId): FormBuilder
     {
         return FormBuilder::make()
             ->name('rk-product-form')
             ->fill($reserv)
-            ->fields($this->productFormFields())
-            ->asyncMethod('productFormSave', events: $this->productUpdateEvents())
+            ->fields([
+                Hidden::make(column: 'id'),
+                Hidden::make(column: 'name'),
+                Hidden::make(column: 'event_id')->fill($eventId),
+
+                Enum::make(__('Status'), 'status')->attach(ReservStatusEnum::class)->required(),
+
+                Text::make('ФИО', 'fio'),
+                Text::make('Телефон', 'phone')->mask("+7 (999) 999-99-99"),
+                Number::make('Гостей', 'seats'),
+            ])
+            ->asyncMethod('productFormSave', events: $this->productUpdateEvents($eventId))
             ->submit('Обновить', ['class' => 'btn-primary btn-lg']);
-    }
-
-    private function productFormFields(): array
-    {
-        return [
-            Hidden::make(column: 'id'),
-
-            Text::make('ФИО', 'fio'),
-            Text::make('Телефон', 'phone'),
-            Number::make('Гостей', 'seats'),
-        ];
     }
 
     public function productFormSave(MoonShineRequest $request): MoonShineJsonResponse
     {
-        $request->validate(['fio' => ['required', 'string']]);
-
-        Reserv::where('id', $request->get('id'))->update([
-            'name' => $request->get('fio'),
+        $request->merge([
+            'seats' =>  $request->get('seats') ?? 0,
         ]);
+
+        $request->validate([
+            'status' => ['required', 'string'],
+        ]);
+
+        $reserve = Reserv::where('event_id', $request->get('event_id'))->where('table', $request->get('name'))->first();
+        if ($reserve && $reserve->id != $request->get('id')) return MoonShineJsonResponse::make()->toast('Этот стол уже занят!', ToastType::ERROR);
+
+        if ($request->get('status') == ReservStatusEnum::FREE->value) {
+            if ($reserve) $reserve->delete();
+        } else {
+            Reserv::updateOrCreate(['id' => $request->get('id')], [
+                'event_id' => $request->get('event_id'),
+                'table' => $request->get('name'),
+                'name' => $request->get('fio'),
+                'phone' => $request->get('phone'),
+                'seats' => $request->get('seats'),
+                'status' => $request->get('status'),
+            ]);
+        }
 
         return MoonShineJsonResponse::make()->toast('Обновленно', ToastType::SUCCESS);
     }
 
-    private function productUpdateEvents(): array
+    private function productUpdateEvents($id): array
     {
         return [
-            AlpineJs::event(JsEvent::TABLE_UPDATED, 'rk-product-list'),
+            AlpineJs::event(JsEvent::FRAGMENT_UPDATED, 'event-reserv-fragment', ['id' => 2]),
             AlpineJs::event(JsEvent::FORM_RESET, 'rk-product-form'),
         ];
     }

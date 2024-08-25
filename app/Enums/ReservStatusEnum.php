@@ -7,6 +7,7 @@ enum ReservStatusEnum: string
     case FREE = 'free';
     case PENDING = 'pending';
     case RESERV = 'reserv';
+    case REMOVED = 'removed';
 
     public function toString(): ?string
     {
@@ -14,6 +15,7 @@ enum ReservStatusEnum: string
             self::FREE => 'Свободен',
             self::PENDING => 'Ожидает подтверждения',
             self::RESERV => 'Зарезервирован',
+            self::REMOVED => 'Убран',
         };
     }
 
@@ -23,15 +25,27 @@ enum ReservStatusEnum: string
             self::FREE => 'white',
             self::PENDING => 'yellow',
             self::RESERV => 'red',
+            self::REMOVED => 'black',
+        };
+    }
+
+    public function getColorAdmin(): ?string
+    {
+        return match ($this) {
+            self::FREE => null,
+            self::PENDING => 'yellow',
+            self::RESERV => 'red',
+            self::REMOVED => 'black',
         };
     }
 
     public function getColorNotFree(): ?string
     {
         return match ($this) {
-            self::FREE => null,
+            self::FREE => 'white',
             self::PENDING => 'yellow',
-            self::RESERV => 'white'
+            self::RESERV => 'white',
+            self::REMOVED => 'black',
         };
     }
 }
