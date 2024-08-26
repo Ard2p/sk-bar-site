@@ -64,6 +64,7 @@ class ReservPage extends Page
         if (moonshineRequest()->filled('id')) {
             $event = Event::find(moonshineRequest()->id);
         }
+
         $reservService = new ReservService();
         $reservs = $reservService->show($event, true);
 
@@ -77,6 +78,7 @@ class ReservPage extends Page
 
                 Column::make([
                     Fragment::make([
+
                         Grid::make([
 
                             Column::make([
@@ -183,10 +185,10 @@ class ReservPage extends Page
         return MoonShineJsonResponse::make()->toast('Обновленно', ToastType::SUCCESS);
     }
 
-    private function productUpdateEvents($id): array
+    private function productUpdateEvents($eventId): array
     {
         return [
-            AlpineJs::event(JsEvent::FRAGMENT_UPDATED, 'event-reserv-fragment', ['id' => 2]),
+            AlpineJs::event(JsEvent::FRAGMENT_UPDATED, 'event-reserv-fragment', ['id' => $eventId]),
             AlpineJs::event(JsEvent::FORM_RESET, 'rk-product-form'),
         ];
     }
