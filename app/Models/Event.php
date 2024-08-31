@@ -27,7 +27,8 @@ class Event extends Model
         'age_limit',
         'place_id',
         'genre_id',
-        'tickets_link'
+        'tickets_link',
+        'on_reserve'
     ];
 
     protected $with = ['place'];
@@ -88,5 +89,4 @@ class Event extends Model
     {
         $query->active()->actual()->orderBy('event_start');
     }
-
 }

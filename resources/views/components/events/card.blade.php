@@ -46,11 +46,16 @@
 
         <div class="d-flex justify-content-between mt-3">
 
-                <a href="{{ route('events.show', $item->id) }}" class="btn btn-primary text-white">Подробнее</a>
+            <a href="{{ route('events.show', $item->id) }}" @class([
+                'btn btn-primary text-white',
+                'w-100' => !$item->tickets_link,
+            ])>Подробнее</a>
 
-                <a href="{{ route('events.show', $item->id) }}?buytikets" class="btn btn-primary text-white">
+            @if ($item->tickets_link)
+                <a href="{{ route('events.show', $item->id) }}?tikets" class="btn btn-primary text-white">
                     Купить Билеты
                 </a>
+            @endif
 
         </div>
 

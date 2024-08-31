@@ -35,13 +35,19 @@ class ReservController extends Controller
 
     public function reserv(ReservStoreRequest $request, Nutgram $bot)
     {
-        $reserv = Reserv::create([
-            ...$request->validated(),
-            'status' => ReservStatusEnum::PENDING->value
-        ]);
+        $event = Event::general()->where('id', $request->event_id)->first();
+        if ($event && $event->on_reserve) {
 
-        ReservHandler::reserv($bot, $reserv);
+            $reserv = Reserv::create([
+                ...$request->validated(),
+                'status' => ReservStatusEnum::PENDING->value
+            ]);
 
-        return response('ok');
+            ReservHandler::reserv($bot, $reserv);
+
+            return response('ok');
+        }
+
+        return abort(404);
     }
 }

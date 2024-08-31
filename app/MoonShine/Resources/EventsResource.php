@@ -7,6 +7,7 @@ namespace App\MoonShine\Resources;
 use App\Models\Seo;
 use App\Models\Event;
 use MoonShine\Fields\ID;
+use MoonShine\Fields\Td;
 use MoonShine\Fields\Code;
 use MoonShine\Fields\Date;
 use MoonShine\Fields\Enum;
@@ -14,12 +15,15 @@ use MoonShine\Fields\Json;
 use MoonShine\Fields\Text;
 use App\Enums\AgeLimitEnum;
 use MoonShine\Fields\Image;
+use MoonShine\Fields\Select;
+use MoonShine\Fields\Preview;
 use MoonShine\Fields\TinyMce;
 use App\Enums\EventStatusEnum;
 use MoonShine\Decorations\Tab;
 use MoonShine\Fields\Switcher;
 use MoonShine\Fields\Template;
 use MoonShine\Fields\Textarea;
+use App\Enums\ReservStatusEnum;
 use MoonShine\Decorations\Flex;
 use MoonShine\Decorations\Grid;
 use MoonShine\Decorations\Tabs;
@@ -27,6 +31,7 @@ use MoonShine\Decorations\Block;
 use MoonShine\Decorations\Column;
 use MoonShine\QueryTags\QueryTag;
 use MoonShine\Components\Components;
+use MoonShine\Components\TableBuilder;
 use MoonShine\Resources\ModelResource;
 use Illuminate\Database\Eloquent\Model;
 use MoonShine\Components\FlexibleRender;
@@ -85,6 +90,14 @@ class EventsResource extends ModelResource
     public function formFields(): array
     {
         return [
+            FlexibleRender::make(<<<'HTML'
+                <style>
+                    .height-code { min-height: 654px; }
+                    /* tr>th:first-child,tr>td:first-child {
+                        width: 70px;
+                    } */
+                </style>
+            HTML),
             Grid::make([
                 Column::make([
                     Block::make([
@@ -107,23 +120,52 @@ class EventsResource extends ModelResource
                                 //             ->required(),
                                 //         Text::make('Value', 'value')
                                 //     ])->removable()->hideOnIndex(),
-
-                                // Layouts::make('Content')
-                                //     ->addLayout('Contact information', 'gallery', [
-                                //         Text::make('Name'),
-                                //         Text::make('Name'),
-                                //     ]),
                             ]),
 
                             Tab::make('Билеты', [
                                 Text::make(__('Tickets link'), 'tickets_link'),
                             ]),
 
-                            Tab::make('Метрика', [
-                                FlexibleRender::make(<<<'HTML'
-                                    <style>.height-code {min-height: 654px;}</style>
-                                HTML),
+                            Tab::make('Бронирование', [
+                                Column::make([
 
+                                    Switcher::make(__('Включить'), 'on_reserve')->xModel('on_reserve')->default(true),
+
+                                    // TableBuilder::make()->xIf('on_reserve', '1')
+                                    //     ->fields([
+
+                                    //         Td::make('№', function ($data) {
+                                    //             return [
+                                    //                 Preview::make('№', 'name')->fill('1'),
+                                    //             ];
+                                    //         })->customAttributes(['style' => 'width: 70px;']),
+
+                                    //         // Td::make('№',[
+                                    //         //     Preview::make('№', 'name')->fill('1'),
+                                    //         // ])->customAttributes(['style' => 'width: 70px;']),
+
+                                    //         Select::make('Статус', 'status')->options([
+                                    //             ReservStatusEnum::FREE->value => ReservStatusEnum::FREE->toString(),
+                                    //             ReservStatusEnum::RESERV->value => ReservStatusEnum::RESERV->toString(),
+                                    //             ReservStatusEnum::REMOVED->value => ReservStatusEnum::REMOVED->toString(),
+                                    //         ])
+                                    //     ])
+                                    //     ->items([
+                                    //         [
+                                    //             'name' => '1',
+                                    //             'status' =>  ReservStatusEnum::REMOVED->value
+                                    //         ]
+                                    //     ])->editable()
+                                    // ->reorderable(false)
+                                    // ->customAttributes(['style' => 'width: 300px;'])
+                                    // ->creatable(false)
+
+                                ])->xData([
+                                    'on_reserve' => '1'
+                                ]),
+                            ]),
+
+                            Tab::make('Метрика', [
                                 Code::make('Код для вставки', 'metrics')
                                     ->language('js')
                                     ->lineNumbers()
@@ -161,7 +203,6 @@ class EventsResource extends ModelResource
 
                             Tab::make('Параметры', [
 
-                                // Flex::make([
                                 Enum::make(__('Status'), 'status')
                                     ->attach(EventStatusEnum::class)
                                     ->default(EventStatusEnum::DRAFT->name)
@@ -175,12 +216,9 @@ class EventsResource extends ModelResource
                                     ->placeholder('-')
                                     ->nullable()
                                     ->required(),
-                                // ]),
 
-                                // Flex::make([
                                 Date::make(__('Event start'), 'event_start')->withTime()->required(),
                                 Date::make(__('Guest start'), 'guest_start')->withTime()->required(),
-                                // ]),
 
                                 BelongsTo::make(__('Place event'), 'place', fn($item) => "$item->name, $item->city")
                                     ->searchable()
@@ -208,8 +246,6 @@ class EventsResource extends ModelResource
                                 //         fn ($field) => $field->required()
                                 //     )
                             ]),
-
-                            Tab::make('Социальные сети', []),
                         ]),
                     ])
                 ])->columnSpan(4),

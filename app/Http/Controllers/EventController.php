@@ -14,9 +14,10 @@ class EventController extends Controller
         ]);
     }
 
-    public function show(Event $event)
+    public function show($id)
     {
-        if ($event->status == EventStatusEnum::DRAFT->value) abort(404);
+        $event = Event::general()->where('id', $id)->first();
+        if (!$event) return to_route('events.index');
 
         return view('events.show', [
             'event' => $event,

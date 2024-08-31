@@ -45,10 +45,10 @@
                     <img src="{{ asset('storage/' . $event->image) }}" class="object-fit-cover">
                 </div>
 
-                <div class="row tickets">
+                <div class="row tickets" id="buyTiketsHeader">
 
-                    <span class="text-primary mb-3 d-block text-uppercase fw-semibold ls-xl"
-                        id="buyTiketsHeader">Билеты</span>
+                    {{-- <span class="text-primary mb-3 d-block text-uppercase fw-semibold ls-xl"
+                        id="buyTiketsHeader">Билеты</span> --}}
 
                     @if ($event->tickets_link)
                         <div class="col">
@@ -57,10 +57,12 @@
                         </div>
                     @endif
 
-                    <div class="col">
-                        <button class="btn btn-primary text-white w-100" data-bs-toggle="modal"
-                            data-bs-target="#reservTable">Бронь стола</button>
-                    </div>
+                    @if ($event->on_reserve)
+                        <div class="col">
+                            <button class="btn btn-primary text-white w-100" data-bs-toggle="modal"
+                                data-bs-target="#reservTable">Бронь стола</button>
+                        </div>
+                    @endif
 
                     @if ($event->tickets_link)
                         <div class="modal" id="buyTikets" tabindex="-1">
@@ -81,20 +83,22 @@
                         </div>
                     @endif
 
-                    <div class="modal" id="reservTable" tabindex="-1">
-                        <div class="modal-dialog modal-dialog-centered modal-xl">
-                            <div class="modal-content pb-3">
+                    @if ($event->on_reserve)
+                        <div class="modal" id="reservTable" tabindex="-1">
+                            <div class="modal-dialog modal-dialog-centered modal-xl">
+                                <div class="modal-content pb-3">
 
-                                <div class="modal-header">
-                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                        aria-label="Close"></button>
+                                    <div class="modal-header">
+                                        <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                            aria-label="Close"></button>
+                                    </div>
+
+                                    <x-events.reserv :event="$event" />
+
                                 </div>
-
-                                <x-events.reserv :event="$event" />
-
                             </div>
                         </div>
-                    </div>
+                    @endif
 
                     @if (false)
                         <div class="row mb-3">
@@ -175,14 +179,36 @@
 
         <script>
             window.addEventListener('load', function() {
-                const url = new URL(document.location);
+                const url = new URL(document.location)
                 const searchParams = url.searchParams;
-                if (searchParams.has('buytikets')) {
-                    searchParams.delete('buytikets');
+
+                let modalId = null
+
+                // switch (url.hash) {
+                //     case 'tikets':
+                //         modalId = 'buyTikets'
+                //         break;
+                //     case 'reserve':
+                //         modalId = 'reservTable'
+                //         break;
+                // }
+
+                if (searchParams.has('tikets')) {
+                    searchParams.delete('tikets');
+                    modalId = 'buyTikets';
+                }
+
+                if (searchParams.has('reserve')) {
+                    searchParams.delete('reserve');
+                    modalId = 'reservTable';
+                }
+
+                if (modalId) {
+                    // url.hash = ''
                     window.history.pushState({}, '', url.toString());
-                    const elementModal = document.getElementById('buyTikets')
-                    if (elementModal.classList.contains('modal')) {
-                        const myModal = new window.bootstrap.Modal('#buyTikets')
+                    const elementModal = document.getElementById(modalId)
+                    if (elementModal && elementModal.classList.contains('modal')) {
+                        const myModal = new window.bootstrap.Modal('#' + modalId)
                         myModal.show()
                     } else {
                         const element = document.getElementById('buyTiketsHeader')
