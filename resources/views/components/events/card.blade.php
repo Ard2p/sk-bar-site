@@ -39,7 +39,7 @@
 
         <div class="small mt-2">
             <div>{{ $item->place->name }}, {{ $item->place->city }}</div>
-            <div>Запуск гостей: {{ $item->guest_start->format('H:i') }}</div>
+            <div>Вход: {{ $item->guest_start->format('H:i') }}</div>
             <div>Начало: {{ $item->event_start->format('H:i') }}</div>
         </div>
 
