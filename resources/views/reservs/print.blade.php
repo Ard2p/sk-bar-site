@@ -39,6 +39,12 @@
 </x-blank-layout>
 
 
+<script type="text/javascript">
+    window.onafterprint = window.close;
+    window.print();
+</script>
+
+
 <style>
     @page {
         size: A4 landscape;

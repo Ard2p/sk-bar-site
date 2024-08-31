@@ -86,7 +86,11 @@ class ReservPage extends Page
                                     Heading::make(htmlspecialchars_decode($event->name))->h(2),
                                     Heading::make($event->guest_start->format('d.m.Y'))->h(4),
 
-                                    FlexibleRender::make(view('reservs.admin', ['event' => $event]))
+                                    ActionButton::make('Печать', route('events.print', [$event]))->blank()->success()
+                                        ->customAttributes(['style' => 'margin-bottom: 1.5rem;']),
+
+                                    // FlexibleRender::make(view('reservs.admin', ['event' => $event]))
+
                                 ]),
                             ])->customAttributes(['class' => 'col-span-12 2xl:col-span-4 xl:col-span-5 md:col-span-6']),
 

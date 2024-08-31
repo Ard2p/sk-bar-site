@@ -9,6 +9,7 @@ use App\Enums\ReservStatusEnum;
 use App\Enums\ReservTablesEnum;
 use App\Services\ReservService;
 use App\Http\Handlers\ReservHandler;
+use Illuminate\Support\Facades\Auth;
 use App\Http\Requests\ReservStoreRequest;
 
 class ReservController extends Controller
@@ -25,6 +26,8 @@ class ReservController extends Controller
 
     public function print(Event $event)
     {
+        if (!Auth::user()) abort(401);
+
         $reservs = $this->reservService->show($event, true);
 
         return view('reservs.print', [

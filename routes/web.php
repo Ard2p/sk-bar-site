@@ -14,7 +14,7 @@ Route::get('menu', [RKMenuController::class, 'index'])->name('rkmenu');
 Route::resource('events', EventController::class)->only(['index', 'show']);
 Route::resource('albums', AlbumController::class)->only(['index', 'show']);
 
-Route::get('/reserv/{event}/print', [ReservController::class, 'print']);
+Route::get('/reserv/{event}/print', [ReservController::class, 'print'])->name('events.print');
 
 
 // Route::middleware('auth')->group(function () {
