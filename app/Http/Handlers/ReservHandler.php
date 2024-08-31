@@ -62,7 +62,7 @@ class ReservHandler
             'status' => $status,
             'table' => $reserv->table,
             'name' => $reserv->name,
-            'phone' => $reserv->phone,
+            'phone' => preg_replace('/[^0-9+]/', '', $reserv->phone),
             'seats' => $reserv->seats,
             'event' => $reserv->event->name,
             'date' => $reserv->event->guest_start->format('d.m'),
