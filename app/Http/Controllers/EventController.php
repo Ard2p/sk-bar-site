@@ -14,9 +14,9 @@ class EventController extends Controller
         ]);
     }
 
-    public function show($id)
+    public function show(Event $event)
     {
-        $event = Event::general()->where('id', $id)->first();
+        $event = Event::general()->where('id', $event->id)->first();
         if (!$event) return to_route('events.index');
 
         return view('events.show', [
