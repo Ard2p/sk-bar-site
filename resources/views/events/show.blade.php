@@ -7,8 +7,9 @@
 
             <div class="col-auto text-primary">
                 <p>{{ $event->place->name }}, {{ $event->place->city }}, {{ $event->place->adress }}</p>
-                <span
-                    class="badge text-black bg-body-secondary">{{ $event->event_start->translatedFormat('d F') }}</span>
+                <span class="badge text-black bg-body-secondary">
+                    {{ Str::ucfirst($event->event_start->minDayName) }} {{ $event->event_start->translatedFormat('d F') }}
+                </span>
                 <span class="badge text-white bg-info">{{ $event->age_limit }} +</span>
                 {{-- <span class="badge text-white bg-primary">от 1 300 ₽</span> --}}
             </div>
@@ -146,7 +147,7 @@
                 <div>{{ $event->place->name }}</div>
                 <div>{{ $event->place->adress }}</div>
                 @if ($event->place->content)
-                    <div>{{ $event->place->content }}</div>
+                    <div>{!! $event->place->content !!}</div>
                 @endif
             </div>
 

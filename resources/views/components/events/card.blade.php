@@ -32,7 +32,9 @@
             class="fs-5 link-body-emphasis my-auto text-decoration-none">{!! $item->name !!}</a>
 
         <div>
-            <span class="badge text-black bg-body-secondary">{{ $item->event_start->translatedFormat('d F') }}</span>
+            <span class="badge text-black bg-body-secondary">
+                {{ Str::ucfirst($item->event_start->minDayName) }} {{ $item->event_start->translatedFormat('d F') }}
+            </span>
             <span class="badge text-white bg-info">{{ $item->age_limit }} +</span>
             {{-- <span class="badge text-white bg-primary">от 1 300 ₽</span> --}}
         </div>
