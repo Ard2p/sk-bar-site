@@ -27,6 +27,7 @@ class Event extends Model
         'age_limit',
         'place_id',
         'genre_id',
+        'tickets_type',
         'tickets_link',
         'on_reserve'
     ];

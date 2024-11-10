@@ -5,7 +5,7 @@
             <h2>{!! $event->name !!}</h2>
             <h4>Дата: {{ $event->event_start->translatedFormat('d.m.Y') }}</h4>
 
-            <x-events.reserv :event="$event" :isAdmin="true" />
+            {!! file_get_contents(public_path('shemes/skbar-1.svg')) !!}
 
         </div>
 

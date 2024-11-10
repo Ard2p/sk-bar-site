@@ -8,7 +8,8 @@
             <div class="col-auto text-primary">
                 <p>{{ $event->place->name }}, {{ $event->place->city }}, {{ $event->place->adress }}</p>
                 <span class="badge text-black bg-body-secondary">
-                    {{ Str::ucfirst($event->event_start->minDayName) }} {{ $event->event_start->translatedFormat('d F') }}
+                    {{ Str::ucfirst($event->event_start->minDayName) }}
+                    {{ $event->event_start->translatedFormat('d F') }}
                 </span>
                 <span class="badge text-white bg-info">{{ $event->age_limit }} +</span>
                 {{-- <span class="badge text-white bg-primary">от 1 300 ₽</span> --}}
@@ -76,7 +77,17 @@
                                     </div>
 
                                     <div class="ratio ratio-16x9">
-                                        <iframe class="w-100" src="{{ $event->tickets_link }}"></iframe>
+
+                                        @switch($event->tickets_type)
+                                            @case('ticketscloud')
+                                                {!! html_entity_decode($event->tickets_link) !!}
+                                            @break
+
+                                            @default
+                                                {{-- Qtickets --}}
+                                                <iframe class="w-100" src="{{ $event->tickets_link }}"></iframe>
+                                        @endswitch
+
                                     </div>
 
                                 </div>
@@ -177,6 +188,12 @@
         @if ($event->metrics)
             {!! $event->metrics !!}
         @endif
+
+        @switch($event->tickets_type)
+            @case('ticketscloud')
+                <script src="https://ticketscloud.com/static/scripts/widget/tcwidget.js"></script>
+            @break
+        @endswitch
 
         <script>
             window.addEventListener('load', function() {

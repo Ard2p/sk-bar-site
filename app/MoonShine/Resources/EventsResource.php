@@ -24,6 +24,7 @@ use MoonShine\Fields\Switcher;
 use MoonShine\Fields\Template;
 use MoonShine\Fields\Textarea;
 use App\Enums\ReservStatusEnum;
+use App\Enums\TicketsTypetEnum;
 use MoonShine\Decorations\Flex;
 use MoonShine\Decorations\Grid;
 use MoonShine\Decorations\Tabs;
@@ -123,6 +124,10 @@ class EventsResource extends ModelResource
                             ]),
 
                             Tab::make('Билеты', [
+                                Enum::make(__('Tickets type'), 'tickets_type')
+                                    ->attach(TicketsTypetEnum::class)
+                                    ->default(TicketsTypetEnum::QTICKETS->name),
+
                                 Text::make(__('Tickets link'), 'tickets_link'),
                             ]),
 
