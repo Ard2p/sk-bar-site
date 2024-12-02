@@ -13,4 +13,9 @@ return [
         'pass' => env('RK_PASSWORD'),
     ],
 
+    'sms' => [
+        'login' => env('SMS_LOGIN'),
+        'password' => env('SMS_PASSWORD'),
+    ],
+
 ];
