@@ -43,7 +43,7 @@ class ReservController extends Controller
 
             $reserv = Reserv::create([
                 ...$request->validated(),
-                'status' => ReservStatusEnum::RESERV->value
+                'status' => ReservStatusEnum::PENDING->value
             ]);
 
             ReservHandler::reserv($bot, $reserv);

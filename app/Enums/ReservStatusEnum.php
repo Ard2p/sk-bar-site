@@ -43,7 +43,7 @@ enum ReservStatusEnum: string
     {
         return match ($this) {
             self::FREE => 'white',
-            self::PENDING => 'yellow',
+            self::PENDING => 'white',
             self::RESERV => 'white',
             self::REMOVED => 'black',
         };
