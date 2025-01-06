@@ -61,6 +61,11 @@ class Event extends Model
         return $this->morphOne(Seo::class, 'model');
     }
 
+    public function reservs()
+    {
+        return $this->hasMany(Reserv::class);
+    }
+
     public function scopeRecommendation(Builder $query): void
     {
         $query->where('recommendation', 1);

@@ -14,6 +14,7 @@ use MoonShine\Fields\Enum;
 use MoonShine\Fields\Json;
 use MoonShine\Fields\Text;
 use App\Enums\AgeLimitEnum;
+use MoonShine\Fields\Color;
 use MoonShine\Fields\Image;
 use MoonShine\Fields\Select;
 use MoonShine\Fields\Preview;
@@ -25,6 +26,7 @@ use MoonShine\Fields\Template;
 use MoonShine\Fields\Textarea;
 use App\Enums\ReservStatusEnum;
 use App\Enums\TicketsTypetEnum;
+use App\Services\ReservService;
 use MoonShine\Decorations\Flex;
 use MoonShine\Decorations\Grid;
 use MoonShine\Decorations\Tabs;
@@ -37,6 +39,8 @@ use MoonShine\Resources\ModelResource;
 use Illuminate\Database\Eloquent\Model;
 use MoonShine\Components\FlexibleRender;
 use Illuminate\Database\Eloquent\Builder;
+use MoonShine\ActionButtons\ActionButton;
+use MoonShine\Fields\Relationships\HasMany;
 use MoonShine\Fields\Relationships\BelongsTo;
 use Sweet1s\MoonshineRBAC\Traits\WithRolePermissions;
 
@@ -278,6 +282,11 @@ class EventsResource extends ModelResource
 
     public function detailFields(): array
     {
+        $reservService = new ReservService();
+        $reservs = $reservService->show($this->item, true);
+
+        // dd($reservs);
+
         return [
             ID::make(),
             Image::make(__('Image'), 'image'),
@@ -289,6 +298,49 @@ class EventsResource extends ModelResource
             BelongsTo::make(__('Place event'), 'place', fn($item) => "$item->name, $item->city"),
             Switcher::make(__('Recommendation'), 'recommendation'),
             TinyMce::make(__('Description'), 'description'),
+
+            // Template::make('МоеПоле')
+            //     ->setLabel('Мое Поле')
+            //     ->fields([
+            //         Text::make('Заголовок')
+            //     ]),
+
+            // TableBuilder::make($this->productlistFields(), $reservs)
+
+            HasMany::make('Бронирование столов', 'reservs', resource: new ReservResource())->fields([
+                Text::make('Стол', 'table'),
+                Text::make('Гостей', 'seats'),
+                Text::make('ФИО', 'name'),
+                Text::make('Телефон', 'phone'),
+
+                Td::make('Статус', function ($data) use($reservs) {
+                    return [
+                        Color::make('Статус', 'color')->changePreview(fn() => view('moonshine::fields.color', [
+                            'color' => $reservs->get($data['table'])['color'],
+                            'status' => ReservStatusEnum::from($data['status'])->toString(),
+                        ]))
+                    ];
+                })
+            ])->searchable(false)->modifyItemButtons(fn() => [])
+        ];
+    }
+
+    private function productListFields(): array
+    {
+        return [
+            Text::make('Стол', 'name'),
+            Text::make('Гостей', 'seats'),
+            Text::make('ФИО', 'fio'),
+            Text::make('Телефон', 'phone'),
+
+            // Td::make('Статус', function ($data) {
+            //     return [
+            //         Color::make('Статус', 'color')->changePreview(fn() => view('moonshine::fields.color', [
+            //             'color' => $data['color'],
+            //             'status' => ReservStatusEnum::from($data['status'])->toString(),
+            //         ]))
+            //     ];
+            // })
         ];
     }
 

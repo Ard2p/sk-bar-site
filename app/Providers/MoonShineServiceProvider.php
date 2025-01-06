@@ -13,6 +13,7 @@ use App\MoonShine\Resources\RoleResource;
 use App\MoonShine\Resources\UserResource;
 use App\MoonShine\Resources\PlaceResource;
 use App\MoonShine\Resources\EventsResource;
+use App\MoonShine\Resources\ReservResource;
 use App\MoonShine\Resources\SliderResource;
 use Sweet1s\MoonshineRBAC\Components\MenuRBAC;
 use MoonShine\Providers\MoonShineApplicationServiceProvider;
@@ -22,7 +23,7 @@ class MoonShineServiceProvider extends MoonShineApplicationServiceProvider
     protected function resources(): array
     {
         return [
-            // new PageResource()
+             new ReservResource()
         ];
     }
 
