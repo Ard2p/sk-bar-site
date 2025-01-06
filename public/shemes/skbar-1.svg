@@ -9,8 +9,8 @@
     <ellipse cx="820" cy="627" rx="15" ry="15" fill="#a77af1" />
     <text x="840" y="634" font-family="Helvetica" font-weight="bold" text-anchor="left" font-size="26">- 3000р депозит</text>
 
-    <ellipse cx="820" cy="667" rx="15" ry="15" fill="yellow" />
-    <text x="840" y="674" font-family="Helvetica" font-weight="bold" text-anchor="left" font-size="26">- не подтверждён</text>
+    <!-- <ellipse cx="820" cy="667" rx="15" ry="15" fill="yellow" />
+    <text x="840" y="674" font-family="Helvetica" font-weight="bold" text-anchor="left" font-size="26">- не подтверждён</text> -->
 
     <ellipse cx="820" cy="707" rx="15" ry="15" fill="#fff" stroke="#000" />
     <text x="840" y="714" font-family="Helvetica" font-weight="bold" text-anchor="left" font-size="26">- занят</text>
