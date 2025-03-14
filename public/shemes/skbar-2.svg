@@ -1,0 +1,2617 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   viewBox="0 0 850 770.00983"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.4 (86a8ad7, 2024-10-11)"
+   sodipodi:docname="рисунок.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#fff"
+     bordercolor="#000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="true"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="px"
+     showborder="true"
+     labelstyle="default"
+     showgrid="true"
+     inkscape:zoom="2.0334082"
+     inkscape:cx="544.1603"
+     inkscape:cy="350.88872"
+     inkscape:window-width="1920"
+     inkscape:window-height="1009"
+     inkscape:window-x="1912"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="bar" />
+  <defs
+     id="defs1">
+    <inkscape:path-effect
+       effect="fillet_chamfer"
+       id="path-effect21"
+       is_visible="true"
+       lpeversion="1"
+       nodesatellites_param="F,0,0,1,0,0,0,1 @ F,0,0,1,0,194.42744,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1"
+       radius="0"
+       unit="px"
+       method="auto"
+       mode="F"
+       chamfer_steps="1"
+       flexible="false"
+       use_knot_distance="true"
+       apply_no_radius="true"
+       apply_with_radius="true"
+       only_selected="false"
+       hide_knots="false" />
+    <inkscape:path-effect
+       effect="fillet_chamfer"
+       id="path-effect51"
+       is_visible="true"
+       lpeversion="1"
+       nodesatellites_param=""
+       radius="0"
+       unit="px"
+       method="auto"
+       mode="F"
+       chamfer_steps="1"
+       flexible="false"
+       use_knot_distance="true"
+       apply_no_radius="true"
+       apply_with_radius="true"
+       only_selected="false"
+       hide_knots="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect47"
+       is_visible="true"
+       lpeversion="1.3"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false"
+       uniform="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect46"
+       is_visible="true"
+       lpeversion="1.3"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false"
+       uniform="false" />
+    <linearGradient
+       id="swatch43"
+       inkscape:swatch="solid">
+      <stop
+         style="stop-color:#000;stop-opacity:1;"
+         offset="0"
+         id="stop43" />
+    </linearGradient>
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect6"
+       is_visible="true"
+       lpeversion="1.3"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false"
+       uniform="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect5"
+       is_visible="true"
+       lpeversion="1.3"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false"
+       uniform="false" />
+    <inkscape:path-effect
+       effect="fillet_chamfer"
+       id="path-effect4"
+       is_visible="true"
+       lpeversion="1"
+       nodesatellites_param="F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1"
+       radius="0"
+       unit="px"
+       method="auto"
+       mode="F"
+       chamfer_steps="1"
+       flexible="false"
+       use_knot_distance="true"
+       apply_no_radius="true"
+       apply_with_radius="true"
+       only_selected="false"
+       hide_knots="false" />
+    <inkscape:path-effect
+       effect="fillet_chamfer"
+       id="path-effect3"
+       is_visible="true"
+       lpeversion="1"
+       nodesatellites_param="F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1 @ F,0,0,1,0,0,0,1"
+       radius="0"
+       unit="px"
+       method="auto"
+       mode="F"
+       chamfer_steps="1"
+       flexible="false"
+       use_knot_distance="true"
+       apply_no_radius="true"
+       apply_with_radius="true"
+       only_selected="false"
+       hide_knots="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect2"
+       is_visible="true"
+       lpeversion="1.3"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false"
+       uniform="false" />
+    <inkscape:path-effect
+       effect="bspline"
+       id="path-effect1"
+       is_visible="true"
+       lpeversion="1.3"
+       weight="33.333333"
+       steps="2"
+       helper_size="0"
+       apply_no_weight="true"
+       apply_with_weight="true"
+       only_selected="false"
+       uniform="false" />
+  </defs>
+    <g class="prefix__legends">
+    <ellipse cx="660" cy="525" rx="15" ry="15" fill="#ff69b4" />
+    <text x="680" y="534" font-family="Helvetica" font-weight="bold" text-anchor="left" font-size="20">- 1500р депозит</text>
+
+    <ellipse cx="660" cy="565" rx="15" ry="15" fill="#7ae8f1" />
+    <text x="680" y="574" font-family="Helvetica" font-weight="bold" text-anchor="left" font-size="20">- 2000р депозит</text>
+
+    <ellipse cx="660" cy="605" rx="15" ry="15" fill="#a77af1" />
+    <text x="680" y="614" font-family="Helvetica" font-weight="bold" text-anchor="left" font-size="20">- 3000р депозит</text>
+
+    <ellipse cx="660" cy="645" rx="15" ry="15" fill="#a77af1" />
+    <text x="680" y="654" font-family="Helvetica" font-weight="bold" text-anchor="left" font-size="20">- 3500р депозит</text>
+
+    <!-- <ellipse cx="660" cy="685" rx="15" ry="15" fill="yellow" />
+    <text x="680" y="694" font-family="Helvetica" font-weight="bold" text-anchor="left" font-size="20">- не подтвержд.</text> -->
+
+    <ellipse cx="660" cy="685" rx="15" ry="15" fill="#fff" stroke="#000" />
+    <text x="680" y="694" font-family="Helvetica" font-weight="bold" text-anchor="left" font-size="20">- занят</text>
+  </g>
+  <g
+     id="skbar"
+     inkscape:label="SK Bar"
+     inkscape:groupmode="layer"
+     transform="translate(-15,-14.99022)">
+    <g
+       inkscape:groupmode="layer"
+       id="walls"
+       inkscape:label="Стены"
+       transform="translate(10,10)"
+       inkscape:highlight-color="#000000">
+      <g
+         id="bar"
+         inkscape:label="Бар">
+        <path
+           style="fill:#ffffff;fill-opacity:0;stroke:#000000;stroke-width:1.9799;stroke-dasharray:none;stroke-opacity:1"
+           d="m 658.00856,489.81803 0.42371,-53.85168 c 0.84483,-107.37598 66.20614,-188.42212 144.15592,-200.20277 12.81922,-1.93739 26.78859,-3.00585 42.01202,-2.8597 l 5.20457,255.93058"
+           id="path21"
+           sodipodi:nodetypes="cccc"
+           inkscape:path-effect="#path-effect21"
+           inkscape:original-d="m 658.00856,489.81803 1.95342,-248.2731 c 4.67436,114.13249 29.74073,-10.12811 184.63823,-8.64105 l 5.20457,255.93058"
+           transform="matrix(1.0063173,0,0,1.0080429,-1.1692276,1.2342021)" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:20.82px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1.95187;stroke-dasharray:none;stroke-opacity:1"
+           x="763.89301"
+           y="377.4917"
+           id="text21"
+           transform="scale(0.9662787,1.0348981)"><tspan
+             sodipodi:role="line"
+             id="tspan21"
+             x="763.89301"
+             y="377.4917"
+             style="stroke-width:1.95187">Бар</tspan></text>
+        <path
+           cell-id="ZRJKuEp7t05sZtK5OItD-66"
+           d="m 640.35237,457.24254 9.88115,1.18915 c 1.45369,0.22094 2.90738,-0.39638 3.70626,-1.58554 0.66136,-4.06782 0.66136,-8.21363 0,-12.28146 -0.79888,-1.18915 -2.25257,-1.81297 -3.70626,-1.58554 l -9.88115,1.18916 c -1.09354,0.22743 -1.93825,1.35811 -2.06267,2.7682 v 7.53133 c 0.12442,1.41009 0.96913,2.54726 2.06267,2.7747 z m -2.06267,-10.63094 -2.61271,-2.03391 m 2.61271,4.30176 -2.97941,-0.6823 m 2.97941,3.39202 -2.97941,0.90324 m 2.97941,1.35811 -2.61271,2.26134 m 0.14406,0.68231 c -0.68101,-4.19129 -0.68101,-8.48006 0,-12.66485 l -1.65013,-1.81298 c -1.12629,5.36096 -1.12629,10.92985 0,16.28431 z"
+           fill="#ffffff"
+           stroke="#000000"
+           stroke-linejoin="round"
+           stroke-miterlimit="10"
+           pointer-events="none"
+           id="path217"
+           inkscape:label="Стул"
+           style="stroke-width:0.652309" />
+        <path
+           cell-id="ZRJKuEp7t05sZtK5OItD-69"
+           d="m 640.88568,429.72448 9.73991,2.04583 c 1.4289,0.3468 2.93086,-0.14148 3.83034,-1.25648 1.01338,-3.99471 1.37471,-8.12474 1.0704,-12.23473 -0.6922,-1.25426 -2.08598,-2.00241 -3.55397,-1.90253 l -9.94719,0.32344 c -1.1092,0.13125 -2.04924,1.184 -2.29608,2.57789 l -0.6564,7.50266 c 0.001,1.41558 0.74343,2.62204 1.81299,2.94392 z m -1.12827,-10.77025 -2.42551,-2.25389 m 2.22785,4.51311 -2.90861,-0.93939 m 2.67244,3.6388 -3.04679,0.64012 m 2.8497,1.61261 -2.79986,2.02503 m 0.0841,0.69226 c -0.31312,-4.23469 0.0607,-8.50713 1.10381,-12.61664 l -1.48584,-1.9499 c -1.58924,5.24238 -2.0746,10.79009 -1.41927,16.22233 z"
+           fill="#ffffff"
+           stroke="#000000"
+           stroke-linejoin="round"
+           stroke-miterlimit="10"
+           pointer-events="none"
+           id="path219"
+           inkscape:label="Стул"
+           style="stroke-width:0.652309" />
+        <path
+           cell-id="ZRJKuEp7t05sZtK5OItD-70"
+           d="m 642.72638,401.95726 9.61951,2.55277 c 1.40879,0.4211 2.93425,0.0121 3.89083,-1.0543 1.22106,-3.93621 1.79805,-8.04164 1.70926,-12.16194 -0.6256,-1.28876 -1.97832,-2.10882 -3.44952,-2.0859 l -9.95048,-0.19762 c -1.11456,0.073 -2.10842,1.07513 -2.42785,2.45418 l -1.04816,7.45804 c -0.0731,1.41369 0.60517,2.65735 1.65641,3.03477 z m -0.56304,-10.81455 -2.30422,-2.37774 m 1.98859,4.62352 -2.85544,-1.09031 m 2.47832,3.77366 -3.07607,0.48012 m 2.7614,1.75953 -2.90199,1.87573 m 0.0477,0.69571 c -0.0911,-4.24527 0.50581,-8.49232 1.76261,-12.5416 l -1.38177,-2.02499 c -1.86141,5.15205 -2.63646,10.66674 -2.26633,16.12582 z"
+           fill="#ffffff"
+           stroke="#000000"
+           stroke-linejoin="round"
+           stroke-miterlimit="10"
+           pointer-events="none"
+           id="path220"
+           inkscape:label="Стул"
+           style="stroke-width:0.652309" />
+        <path
+           cell-id="ZRJKuEp7t05sZtK5OItD-71"
+           d="m 648.65018,376.32754 9.23669,3.70607 c 1.34529,0.59593 2.9109,0.3696 3.99033,-0.57227 1.69165,-3.75804 2.76299,-7.75631 3.17867,-11.86297 -0.46387,-1.35541 -1.70825,-2.32793 -3.16959,-2.49077 l -9.85224,-1.4088 c -1.11515,-0.0633 -2.2254,0.81646 -2.71053,2.1463 l -1.94925,7.27471 c -0.24478,1.39424 0.2785,2.70502 1.27592,3.20773 z m 0.75743,-10.79628 -1.99727,-2.64082 m 1.41199,4.82512 -2.70298,-1.4239 m 1.99997,4.04757 -3.11167,0.10133 m 2.52639,2.08296 -3.10896,1.50807 m -0.0358,0.69007 c 0.42531,-4.21846 1.53533,-8.36109 3.27791,-12.23331 l -1.12635,-2.17201 c -2.47374,4.88051 -3.91508,10.25964 -4.21469,15.72944 z"
+           fill="#ffffff"
+           stroke="#000000"
+           stroke-linejoin="round"
+           stroke-miterlimit="10"
+           pointer-events="none"
+           id="path221"
+           inkscape:label="Стул"
+           style="stroke-width:0.652309" />
+        <path
+           cell-id="ZRJKuEp7t05sZtK5OItD-72"
+           d="m 656.59508,350.44774 8.87948,4.49043 c 1.29055,0.70383 2.86836,0.62011 4.02668,-0.22441 2.02166,-3.59378 3.44229,-7.48885 4.20847,-11.53866 -0.34338,-1.38995 -1.49586,-2.47229 -2.94006,-2.75488 l -9.69445,-2.25597 c -1.1057,-0.15962 -2.28707,0.61431 -2.88105,1.89888 l -2.58074,7.07582 c -0.37201,1.36516 0.0318,2.72181 0.98167,3.30879 z m 1.71042,-10.68988 -1.75865,-2.80281 m 0.98153,4.9335 -2.5726,-1.66038 m 1.64406,4.20622 -3.1159,-0.17072 m 2.34101,2.2953 -3.23049,1.23265 m -0.10453,0.68799 c 0.80231,-4.16803 2.27196,-8.19741 4.33985,-11.89886 l -0.9235,-2.26441 c -2.89558,4.65223 -4.80387,9.88431 -5.58013,15.29941 z"
+           fill="#ffffff"
+           stroke="#000000"
+           stroke-linejoin="round"
+           stroke-miterlimit="10"
+           pointer-events="none"
+           id="path222"
+           inkscape:label="Стул"
+           style="stroke-width:0.652309" />
+        <path
+           cell-id="ZRJKuEp7t05sZtK5OItD-76"
+           d="m 667.36056,324.05459 7.97142,5.96082 c 1.14559,0.92189 2.71787,1.10697 4.00614,0.47611 2.61209,-3.19112 4.68694,-6.77397 6.15616,-10.63044 -0.0961,-1.42773 -1.04629,-2.6871 -2.41988,-3.21527 l -9.16031,-3.90786 c -1.06477,-0.34295 -2.35779,0.21773 -3.17241,1.3762 l -3.77513,6.51888 c -0.59902,1.28258 -0.43952,2.6793 0.39401,3.42156 z m 3.54397,-10.22167 -1.24434,-3.06359 m 0.11084,5.02094 -2.24284,-2.07093 m 0.88131,4.422 -3.03435,-0.70418 m 1.90084,2.66153 -3.39738,0.65425 m -0.21716,0.66244 c 1.51078,-3.96752 3.6606,-7.67972 6.35159,-10.96791 l -0.52429,-2.38664 c -3.65986,4.07291 -6.45455,8.89879 -8.16261,14.09517 z"
+           fill="#ffffff"
+           stroke="#000000"
+           stroke-linejoin="round"
+           stroke-miterlimit="10"
+           pointer-events="none"
+           id="path224"
+           inkscape:label="Стул"
+           style="stroke-width:0.652309" />
+        <path
+           cell-id="ZRJKuEp7t05sZtK5OItD-74"
+           d="m 680.37566,301.80458 6.80955,7.23063 c 0.9679,1.10391 2.48565,1.55643 3.86641,1.1575 3.13472,-2.68964 5.81262,-5.86203 7.93296,-9.3978 0.15553,-1.42095 -0.5564,-2.82819 -1.8181,-3.58403 l -8.34578,-5.41074 c -0.98553,-0.52546 -2.36364,-0.20076 -3.37408,0.80379 l -4.86051,5.75803 c -0.81542,1.15858 -0.90215,2.56909 -0.21044,3.44262 z m 5.28083,-9.44926 -0.68066,-3.22841 m -0.78003,4.9588 -1.84413,-2.42794 m 0.0938,4.50142 -2.86827,-1.21467 m 1.40761,2.94506 -3.46349,0.0683 m -0.33107,0.6051 c 2.18503,-3.64282 4.95528,-6.92459 8.1806,-9.69118 l -0.0944,-2.44283 c -4.32652,3.38176 -7.92363,7.6431 -10.51852,12.46078 z"
+           fill="#ffffff"
+           stroke="#000000"
+           stroke-linejoin="round"
+           stroke-miterlimit="10"
+           pointer-events="none"
+           id="path223"
+           inkscape:label="Стул"
+           style="stroke-width:0.652309" />
+        <path
+           cell-id="ZRJKuEp7t05sZtK5OItD-77"
+           d="m 696.47283,280.67316 5.8731,7.99419 c 0.82543,1.21182 2.27709,1.84387 3.69748,1.6148 3.44424,-2.28966 6.49419,-5.11327 9.03514,-8.36466 0.32924,-1.39075 -0.20452,-2.87256 -1.36461,-3.77459 l -7.62275,-6.37435 c -0.91411,-0.64017 -2.32757,-0.47981 -3.4499,0.3901 l -5.5358,5.12501 c -0.95718,1.05527 -1.21214,2.43951 -0.63264,3.3895 z m 6.40748,-8.73579 -0.28348,-3.28012 m -1.38012,4.82026 -1.53749,-2.62649 m -0.46078,4.47646 -2.69916,-1.55106 m 1.03553,3.09123 -3.44338,-0.3547 m -0.40325,0.56027 c 2.61803,-3.34057 5.77316,-6.26155 9.31718,-8.62579 l 0.21129,-2.42979 c -4.71305,2.83236 -8.80994,6.62523 -11.98469,11.09535 z"
+           fill="#ffffff"
+           stroke="#000000"
+           stroke-linejoin="round"
+           stroke-miterlimit="10"
+           pointer-events="none"
+           id="path225"
+           inkscape:label="Стул"
+           style="stroke-width:0.652309" />
+        <path
+           cell-id="ZRJKuEp7t05sZtK5OItD-78"
+           d="m 715.60033,261.73316 5.13566,8.45722 c 0.71383,1.27654 2.10384,2.02871 3.53999,1.92072 3.63805,-1.98872 6.92594,-4.5385 9.75525,-7.56527 0.45299,-1.35704 0.0488,-2.87374 -1.02118,-3.87408 l -7.02475,-6.9922 c -0.85356,-0.7148 -2.2766,-0.67465 -3.4732,0.0967 l -5.98219,4.63923 c -1.0435,0.96587 -1.42182,2.32271 -0.92958,3.3177 z m 7.16985,-8.15707 0.008,-3.29539 m -1.80408,4.68835 -1.29653,-2.74548 m -0.86097,4.41866 -2.55079,-1.77279 m 0.75457,3.16577 -3.40389,-0.64955 m -0.44814,0.5289 c 2.90496,-3.11019 6.31156,-5.75202 10.05978,-7.80144 l 0.41952,-2.40279 c -4.94614,2.41782 -9.36956,5.84821 -12.93475,10.03099 z"
+           fill="#ffffff"
+           stroke="#000000"
+           stroke-linejoin="round"
+           stroke-miterlimit="10"
+           pointer-events="none"
+           id="path226"
+           inkscape:label="Стул"
+           style="stroke-width:0.652309" />
+      </g>
+      <g
+         id="g46"
+         inkscape:label="Сцена"
+         style="fill:#ffffff;fill-opacity:1">
+        <rect
+           style="display:inline;fill:#ffffff;fill-opacity:0;stroke:#000000;stroke-width:1.94257;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+           id="rect44"
+           width="303.05743"
+           height="98.057426"
+           x="330.97128"
+           y="675.97131" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:22.5107px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;display:inline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:2.11038;stroke-dasharray:none;stroke-opacity:1"
+           x="479.02139"
+           y="722.4209"
+           id="text46"
+           transform="scale(0.98704288,1.0131272)"><tspan
+             sodipodi:role="line"
+             id="tspan46"
+             x="479.02139"
+             y="722.4209"
+             style="fill:#000000;fill-opacity:1;stroke-width:2.11038">Сцена</tspan></text>
+      </g>
+      <g
+         id="g46-8"
+         inkscape:label="Туалет"
+         style="fill:#ffffff;fill-opacity:1"
+         transform="matrix(1.1474918,0,0,1.5002133,-373.66481,-1007.6538)">
+        <rect
+           style="display:inline;fill:#ffffff;fill-opacity:0;stroke:#000000;stroke-width:1.94257;stroke-linecap:butt;stroke-linejoin:miter;stroke-dasharray:none;stroke-opacity:1;paint-order:normal"
+           id="rect44-9"
+           width="303.05743"
+           height="98.057426"
+           x="330.97128"
+           y="675.97131" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:21.0658px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000000;stroke:none;stroke-width:1.97493;stroke-dasharray:none;stroke-opacity:1"
+           x="142.77313"
+           y="83.75412"
+           id="text25"
+           transform="matrix(0.85202244,0,0,0.68178332,325.63615,671.67369)"><tspan
+             sodipodi:role="line"
+             id="tspan25"
+             x="142.77313"
+             y="83.75412"
+             style="stroke-width:1.97493">Туалет</tspan></text>
+      </g>
+      <rect
+         style="fill:#000000;stroke-width:1.01809"
+         id="wall-1"
+         width="10"
+         height="710"
+         x="5"
+         y="5"
+         inkscape:label="Стена"
+         sodipodi:type="rect" />
+      <rect
+         id="wall-2"
+         width="850"
+         height="10"
+         x="5"
+         y="5"
+         sodipodi:type="rect"
+         inkscape:label="Стена" />
+      <rect
+         id="wall-3"
+         width="10"
+         height="490"
+         x="845"
+         y="5"
+         inkscape:label="Стена"
+         sodipodi:type="rect"
+         style="stroke-width:1.80739" />
+      <rect
+         id="wall-4"
+         width="350"
+         height="10"
+         x="5"
+         y="145"
+         sodipodi:type="rect"
+         inkscape:label="Стена" />
+      <rect
+         id="wall-5"
+         width="10"
+         height="150"
+         x="345"
+         y="5"
+         inkscape:label="Стена"
+         sodipodi:type="rect" />
+      <rect
+         id="wall-6"
+         width="10"
+         height="100"
+         x="285"
+         y="145"
+         inkscape:label="Стена"
+         sodipodi:type="rect" />
+      <rect
+         id="wall-7"
+         width="290"
+         height="10"
+         x="5"
+         y="235"
+         sodipodi:type="rect"
+         inkscape:label="Стена" />
+      <rect
+         id="wall-7-4"
+         width="325"
+         height="10"
+         x="5"
+         y="705"
+         sodipodi:type="rect"
+         inkscape:label="Стена"
+         style="stroke-width:1.05863" />
+      <rect
+         id="wall-6-0"
+         width="10"
+         height="70"
+         x="320"
+         y="705"
+         inkscape:label="Стена"
+         sodipodi:type="rect"
+         style="stroke-width:0.83666" />
+      <rect
+         id="wall-7-5-7"
+         width="314"
+         height="10"
+         x="320"
+         y="765"
+         sodipodi:type="rect"
+         inkscape:label="Стена"
+         style="stroke-width:1.04056" />
+      <rect
+         id="wall-7-5-2"
+         width="230"
+         height="10"
+         x="625"
+         y="485"
+         sodipodi:type="rect"
+         inkscape:label="Стена"
+         style="stroke-width:0.890563" />
+      <rect
+         id="wall-6-0-5"
+         width="10"
+         height="290"
+         x="625"
+         y="485"
+         inkscape:label="Стена"
+         sodipodi:type="rect"
+         style="stroke-width:1.70292" />
+      <g
+         id="col-1"
+         inkscape:label="Колонна"
+         transform="translate(5)">
+        <rect
+           style="fill:#000000;stroke-width:1.1744"
+           id="rect2"
+           width="20"
+           height="20"
+           x="275"
+           y="480" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:13.3333px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ffffff;stroke-width:1.007"
+           x="284.90298"
+           y="494.71353"
+           id="text3"><tspan
+             sodipodi:role="line"
+             id="tspan3"
+             x="284.90298"
+             y="494.71353">К</tspan></text>
+      </g>
+      <g
+         id="col-1-4"
+         inkscape:label="Колонна"
+         transform="translate(345,-250)">
+        <rect
+           style="fill:#000000;stroke-width:1.1744"
+           id="rect2-4"
+           width="20"
+           height="20"
+           x="275"
+           y="480" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:13.3333px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#ffffff;stroke-width:1.007"
+           x="284.90298"
+           y="494.71353"
+           id="text3-4"><tspan
+             sodipodi:role="line"
+             id="tspan3-4"
+             x="284.90298"
+             y="494.71353">К</tspan></text>
+      </g>
+      <g
+         id="g44"
+         inkscape:label="Вход">
+        <rect
+           style="fill:#ffffff;stroke:#000000;stroke-width:2;stroke-dasharray:none;stroke-opacity:1"
+           id="rect43"
+           width="80"
+           height="30"
+           x="216"
+           y="695" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:21.3333px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000000;stroke:none;stroke-width:2;stroke-dasharray:none;stroke-opacity:1"
+           x="252.97913"
+           y="715.51038"
+           id="text43"><tspan
+             sodipodi:role="line"
+             id="tspan43"
+             x="252.97913"
+             y="715.51038">Вход</tspan></text>
+      </g>
+    </g>
+    <g
+       inkscape:groupmode="layer"
+       id="tables"
+       inkscape:label="Столы"
+       transform="translate(10,10)"
+       inkscape:highlight-color="#e3933e"
+       sodipodi:insensitive="true">
+      <g
+         id="table-107"
+         data-table="107"
+         inkscape:label="Стол 107"
+         transform="translate(545,-405)">
+        <path
+           cell-id="uU37CldTd9HsUWmvafEx-199"
+           d="m 842.54,117.8 1.83,15.09 c 0.35,2.22 -0.61,4.44 -2.44,5.66 -6.26,1.01 -12.64,1.01 -18.9,0 -1.83,-1.22 -2.79,-3.44 -2.44,-5.66 l 1.83,-15.09 c 0.35,-1.67 2.1,-2.96 4.27,-3.15 h 11.58 c 2.18,0.19 3.92,1.48 4.27,3.15 z m -16.35,-3.15 -3.13,-3.99 m 6.61,3.99 -1.04,-4.55 m 5.22,4.55 1.39,-4.55 m 2.09,4.55 3.48,-3.99 m 1.04,0.22 c -6.44,-1.04 -13.04,-1.04 -19.49,0 l -2.79,-2.52 c 8.25,-1.72 16.82,-1.72 25.07,0 z"
+           fill="#fff"
+           stroke="#000"
+           stroke-linejoin="round"
+           stroke-miterlimit="10"
+           pointer-events="none"
+           id="path132-4"
+           transform="translate(-632.0749,406.43007)"
+           inkscape:label="Стул" />
+        <path
+           cell-id="uU37CldTd9HsUWmvafEx-200"
+           d="m 842.54,165.51 1.83,15.09 c 0.35,2.22 -0.61,4.44 -2.44,5.66 -6.26,1.01 -12.64,1.01 -18.9,0 -1.83,-1.22 -2.79,-3.44 -2.44,-5.66 l 1.83,-15.09 c 0.35,-1.67 2.1,-2.96 4.27,-3.15 h 11.58 c 2.18,0.19 3.92,1.48 4.27,3.15 z m -16.35,-3.15 -3.13,-3.98 m 6.61,3.98 -1.04,-4.55 m 5.22,4.55 1.39,-4.55 m 2.09,4.55 3.48,-3.98 m 1.04,0.21 c -6.44,-1.03 -13.04,-1.03 -19.49,0 l -2.79,-2.51 c 8.25,-1.72 16.82,-1.72 25.07,0 z"
+           fill="#fff"
+           stroke="#000"
+           stroke-linejoin="round"
+           stroke-miterlimit="10"
+           transform="rotate(180,516.11255,374.02504)"
+           pointer-events="none"
+           id="path133-9"
+           inkscape:label="Стул" />
+        <path
+           cell-id="uU37CldTd9HsUWmvafEx-201"
+           d="m 818.96,141.69 1.84,14.98 c 0.35,2.21 -0.61,4.41 -2.46,5.62 -6.3,1.01 -12.72,1.01 -19.03,0 -1.85,-1.21 -2.81,-3.41 -2.46,-5.62 l 1.84,-14.98 c 0.36,-1.66 2.11,-2.93 4.3,-3.12 h 11.67 c 2.19,0.19 3.95,1.46 4.3,3.12 z m -16.47,-3.12 -3.16,-3.96 m 6.67,3.96 -1.05,-4.52 m 5.25,4.52 1.4,-4.52 m 2.11,4.52 3.5,-3.96 m 1.05,0.21 c -6.49,-1.03 -13.13,-1.03 -19.63,0 l -2.8,-2.5 c 8.3,-1.7 16.94,-1.7 25.24,0 z"
+           fill="#fff"
+           stroke="#000"
+           stroke-linejoin="round"
+           stroke-miterlimit="10"
+           transform="rotate(-90,695.66759,666.21249)"
+           pointer-events="none"
+           id="path134-9"
+           inkscape:label="Стул" />
+        <path
+           cell-id="uU37CldTd9HsUWmvafEx-202"
+           d="m 866.27,141.69 1.84,14.98 c 0.36,2.21 -0.61,4.41 -2.45,5.62 -6.31,1.01 -12.73,1.01 -19.04,0 -1.84,-1.21 -2.8,-3.41 -2.45,-5.62 l 1.84,-14.98 c 0.35,-1.66 2.11,-2.93 4.3,-3.12 h 11.66 c 2.19,0.19 3.95,1.46 4.3,3.12 z m -16.47,-3.12 -3.15,-3.96 m 6.66,3.96 -1.05,-4.52 m 5.26,4.52 1.4,-4.52 m 2.1,4.52 3.51,-3.96 m 1.05,0.21 c -6.49,-1.03 -13.14,-1.03 -19.63,0 l -2.81,-2.5 c 8.31,-1.7 16.94,-1.7 25.24,0 z"
+           fill="#fff"
+           stroke="#000"
+           stroke-linejoin="round"
+           stroke-miterlimit="10"
+           transform="rotate(90,336.54751,34.137585)"
+           pointer-events="none"
+           id="path135-2"
+           inkscape:label="Стул" />
+        <ellipse
+           table="true"
+           cell-id="uU37CldTd9HsUWmvafEx-203"
+           cx="832.15002"
+           cy="146.96001"
+           rx="22"
+           ry="22.16"
+           fill="#fff"
+           stroke="#000"
+           pointer-events="none"
+           id="ellipse136-5"
+           transform="translate(-632.0749,406.43007)"
+           inkscape:label="Стол" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:21.3333px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000;stroke-width:1.00788;stroke-dasharray:none"
+           x="199.34026"
+           y="561.33051"
+           id="text35-5"
+           transform="scale(1.0008867,0.99911408)"
+           inkscape:label="Номер"><tspan
+             sodipodi:role="line"
+             id="tspan35-3"
+             x="199.34026"
+             y="561.33051"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:21.3333px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';stroke-width:1.00788">107</tspan></text>
+      </g>
+      <g
+         id="table-106"
+         data-table="106"
+         inkscape:label="Стол 106"
+         transform="translate(460,-405)">
+        <path
+           cell-id="uU37CldTd9HsUWmvafEx-199"
+           d="m 842.54,117.8 1.83,15.09 c 0.35,2.22 -0.61,4.44 -2.44,5.66 -6.26,1.01 -12.64,1.01 -18.9,0 -1.83,-1.22 -2.79,-3.44 -2.44,-5.66 l 1.83,-15.09 c 0.35,-1.67 2.1,-2.96 4.27,-3.15 h 11.58 c 2.18,0.19 3.92,1.48 4.27,3.15 z m -16.35,-3.15 -3.13,-3.99 m 6.61,3.99 -1.04,-4.55 m 5.22,4.55 1.39,-4.55 m 2.09,4.55 3.48,-3.99 m 1.04,0.22 c -6.44,-1.04 -13.04,-1.04 -19.49,0 l -2.79,-2.52 c 8.25,-1.72 16.82,-1.72 25.07,0 z"
+           fill="#fff"
+           stroke="#000"
+           stroke-linejoin="round"
+           stroke-miterlimit="10"
+           pointer-events="none"
+           id="path132-1"
+           transform="translate(-632.0749,406.43007)"
+           inkscape:label="Стул" />
+        <path
+           cell-id="uU37CldTd9HsUWmvafEx-200"
+           d="m 842.54,165.51 1.83,15.09 c 0.35,2.22 -0.61,4.44 -2.44,5.66 -6.26,1.01 -12.64,1.01 -18.9,0 -1.83,-1.22 -2.79,-3.44 -2.44,-5.66 l 1.83,-15.09 c 0.35,-1.67 2.1,-2.96 4.27,-3.15 h 11.58 c 2.18,0.19 3.92,1.48 4.27,3.15 z m -16.35,-3.15 -3.13,-3.98 m 6.61,3.98 -1.04,-4.55 m 5.22,4.55 1.39,-4.55 m 2.09,4.55 3.48,-3.98 m 1.04,0.21 c -6.44,-1.03 -13.04,-1.03 -19.49,0 l -2.79,-2.51 c 8.25,-1.72 16.82,-1.72 25.07,0 z"
+           fill="#fff"
+           stroke="#000"
+           stroke-linejoin="round"
+           stroke-miterlimit="10"
+           transform="rotate(180,516.11255,374.02504)"
+           pointer-events="none"
+           id="path133-24"
+           inkscape:label="Стул" />
+        <path
+           cell-id="uU37CldTd9HsUWmvafEx-201"
+           d="m 818.96,141.69 1.84,14.98 c 0.35,2.21 -0.61,4.41 -2.46,5.62 -6.3,1.01 -12.72,1.01 -19.03,0 -1.85,-1.21 -2.81,-3.41 -2.46,-5.62 l 1.84,-14.98 c 0.36,-1.66 2.11,-2.93 4.3,-3.12 h 11.67 c 2.19,0.19 3.95,1.46 4.3,3.12 z m -16.47,-3.12 -3.16,-3.96 m 6.67,3.96 -1.05,-4.52 m 5.25,4.52 1.4,-4.52 m 2.11,4.52 3.5,-3.96 m 1.05,0.21 c -6.49,-1.03 -13.13,-1.03 -19.63,0 l -2.8,-2.5 c 8.3,-1.7 16.94,-1.7 25.24,0 z"
+           fill="#fff"
+           stroke="#000"
+           stroke-linejoin="round"
+           stroke-miterlimit="10"
+           transform="rotate(-90,695.66759,666.21249)"
+           pointer-events="none"
+           id="path134-25"
+           inkscape:label="Стул" />
+        <path
+           cell-id="uU37CldTd9HsUWmvafEx-202"
+           d="m 866.27,141.69 1.84,14.98 c 0.36,2.21 -0.61,4.41 -2.45,5.62 -6.31,1.01 -12.73,1.01 -19.04,0 -1.84,-1.21 -2.8,-3.41 -2.45,-5.62 l 1.84,-14.98 c 0.35,-1.66 2.11,-2.93 4.3,-3.12 h 11.66 c 2.19,0.19 3.95,1.46 4.3,3.12 z m -16.47,-3.12 -3.15,-3.96 m 6.66,3.96 -1.05,-4.52 m 5.26,4.52 1.4,-4.52 m 2.1,4.52 3.51,-3.96 m 1.05,0.21 c -6.49,-1.03 -13.14,-1.03 -19.63,0 l -2.81,-2.5 c 8.31,-1.7 16.94,-1.7 25.24,0 z"
+           fill="#fff"
+           stroke="#000"
+           stroke-linejoin="round"
+           stroke-miterlimit="10"
+           transform="rotate(90,336.54751,34.137585)"
+           pointer-events="none"
+           id="path135-86"
+           inkscape:label="Стул" />
+        <ellipse
+           table="true"
+           cell-id="uU37CldTd9HsUWmvafEx-203"
+           cx="832.15002"
+           cy="146.96001"
+           rx="22"
+           ry="22.16"
+           fill="#fff"
+           stroke="#000"
+           pointer-events="none"
+           id="ellipse136-2"
+           transform="translate(-632.0749,406.43007)"
+           inkscape:label="Стол" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:21.3333px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000;stroke-width:1.00788;stroke-dasharray:none"
+           x="199.34026"
+           y="561.33051"
+           id="text35-6"
+           transform="scale(1.0008867,0.99911408)"
+           inkscape:label="Номер"><tspan
+             sodipodi:role="line"
+             id="tspan35-5"
+             x="199.34026"
+             y="561.33051"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:21.3333px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';stroke-width:1.00788">106</tspan></text>
+      </g>
+      <g
+         id="table-105"
+         data-table="105"
+         inkscape:label="Стол 105"
+         transform="translate(375,-405)">
+        <path
+           cell-id="uU37CldTd9HsUWmvafEx-199"
+           d="m 842.54,117.8 1.83,15.09 c 0.35,2.22 -0.61,4.44 -2.44,5.66 -6.26,1.01 -12.64,1.01 -18.9,0 -1.83,-1.22 -2.79,-3.44 -2.44,-5.66 l 1.83,-15.09 c 0.35,-1.67 2.1,-2.96 4.27,-3.15 h 11.58 c 2.18,0.19 3.92,1.48 4.27,3.15 z m -16.35,-3.15 -3.13,-3.99 m 6.61,3.99 -1.04,-4.55 m 5.22,4.55 1.39,-4.55 m 2.09,4.55 3.48,-3.99 m 1.04,0.22 c -6.44,-1.04 -13.04,-1.04 -19.49,0 l -2.79,-2.52 c 8.25,-1.72 16.82,-1.72 25.07,0 z"
+           fill="#fff"
+           stroke="#000"
+           stroke-linejoin="round"
+           stroke-miterlimit="10"
+           pointer-events="none"
+           id="path132-3"
+           transform="translate(-632.0749,406.43007)"
+           inkscape:label="Стул" />
+        <path
+           cell-id="uU37CldTd9HsUWmvafEx-200"
+           d="m 842.54,165.51 1.83,15.09 c 0.35,2.22 -0.61,4.44 -2.44,5.66 -6.26,1.01 -12.64,1.01 -18.9,0 -1.83,-1.22 -2.79,-3.44 -2.44,-5.66 l 1.83,-15.09 c 0.35,-1.67 2.1,-2.96 4.27,-3.15 h 11.58 c 2.18,0.19 3.92,1.48 4.27,3.15 z m -16.35,-3.15 -3.13,-3.98 m 6.61,3.98 -1.04,-4.55 m 5.22,4.55 1.39,-4.55 m 2.09,4.55 3.48,-3.98 m 1.04,0.21 c -6.44,-1.03 -13.04,-1.03 -19.49,0 l -2.79,-2.51 c 8.25,-1.72 16.82,-1.72 25.07,0 z"
+           fill="#fff"
+           stroke="#000"
+           stroke-linejoin="round"
+           stroke-miterlimit="10"
+           transform="rotate(180,516.11255,374.02504)"
+           pointer-events="none"
+           id="path133-8"
+           inkscape:label="Стул" />
+        <path
+           cell-id="uU37CldTd9HsUWmvafEx-201"
+           d="m 818.96,141.69 1.84,14.98 c 0.35,2.21 -0.61,4.41 -2.46,5.62 -6.3,1.01 -12.72,1.01 -19.03,0 -1.85,-1.21 -2.81,-3.41 -2.46,-5.62 l 1.84,-14.98 c 0.36,-1.66 2.11,-2.93 4.3,-3.12 h 11.67 c 2.19,0.19 3.95,1.46 4.3,3.12 z m -16.47,-3.12 -3.16,-3.96 m 6.67,3.96 -1.05,-4.52 m 5.25,4.52 1.4,-4.52 m 2.11,4.52 3.5,-3.96 m 1.05,0.21 c -6.49,-1.03 -13.13,-1.03 -19.63,0 l -2.8,-2.5 c 8.3,-1.7 16.94,-1.7 25.24,0 z"
+           fill="#fff"
+           stroke="#000"
+           stroke-linejoin="round"
+           stroke-miterlimit="10"
+           transform="rotate(-90,695.66759,666.21249)"
+           pointer-events="none"
+           id="path134-0"
+           inkscape:label="Стул" />
+        <path
+           cell-id="uU37CldTd9HsUWmvafEx-202"
+           d="m 866.27,141.69 1.84,14.98 c 0.36,2.21 -0.61,4.41 -2.45,5.62 -6.31,1.01 -12.73,1.01 -19.04,0 -1.84,-1.21 -2.8,-3.41 -2.45,-5.62 l 1.84,-14.98 c 0.35,-1.66 2.11,-2.93 4.3,-3.12 h 11.66 c 2.19,0.19 3.95,1.46 4.3,3.12 z m -16.47,-3.12 -3.15,-3.96 m 6.66,3.96 -1.05,-4.52 m 5.26,4.52 1.4,-4.52 m 2.1,4.52 3.51,-3.96 m 1.05,0.21 c -6.49,-1.03 -13.14,-1.03 -19.63,0 l -2.81,-2.5 c 8.31,-1.7 16.94,-1.7 25.24,0 z"
+           fill="#fff"
+           stroke="#000"
+           stroke-linejoin="round"
+           stroke-miterlimit="10"
+           transform="rotate(90,336.54751,34.137585)"
+           pointer-events="none"
+           id="path135-8"
+           inkscape:label="Стул" />
+        <ellipse
+           table="true"
+           cell-id="uU37CldTd9HsUWmvafEx-203"
+           cx="832.15002"
+           cy="146.96001"
+           rx="22"
+           ry="22.16"
+           fill="#fff"
+           stroke="#000"
+           pointer-events="none"
+           id="ellipse136-8"
+           transform="translate(-632.0749,406.43007)"
+           inkscape:label="Стол" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:21.3333px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000;stroke-width:1.00788;stroke-dasharray:none"
+           x="199.34026"
+           y="561.33051"
+           id="text35-0"
+           transform="scale(1.0008867,0.99911408)"
+           inkscape:label="Номер"><tspan
+             sodipodi:role="line"
+             id="tspan35-6"
+             x="199.34026"
+             y="561.33051"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:21.3333px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';stroke-width:1.00788">105</tspan></text>
+      </g>
+      <g
+         id="table-104"
+         data-table="104"
+         inkscape:label="Стол 104"
+         transform="translate(290,-405)">
+        <path
+           cell-id="uU37CldTd9HsUWmvafEx-199"
+           d="m 842.54,117.8 1.83,15.09 c 0.35,2.22 -0.61,4.44 -2.44,5.66 -6.26,1.01 -12.64,1.01 -18.9,0 -1.83,-1.22 -2.79,-3.44 -2.44,-5.66 l 1.83,-15.09 c 0.35,-1.67 2.1,-2.96 4.27,-3.15 h 11.58 c 2.18,0.19 3.92,1.48 4.27,3.15 z m -16.35,-3.15 -3.13,-3.99 m 6.61,3.99 -1.04,-4.55 m 5.22,4.55 1.39,-4.55 m 2.09,4.55 3.48,-3.99 m 1.04,0.22 c -6.44,-1.04 -13.04,-1.04 -19.49,0 l -2.79,-2.52 c 8.25,-1.72 16.82,-1.72 25.07,0 z"
+           fill="#fff"
+           stroke="#000"
+           stroke-linejoin="round"
+           stroke-miterlimit="10"
+           pointer-events="none"
+           id="path132-7"
+           transform="translate(-632.0749,406.43007)"
+           inkscape:label="Стул" />
+        <path
+           cell-id="uU37CldTd9HsUWmvafEx-200"
+           d="m 842.54,165.51 1.83,15.09 c 0.35,2.22 -0.61,4.44 -2.44,5.66 -6.26,1.01 -12.64,1.01 -18.9,0 -1.83,-1.22 -2.79,-3.44 -2.44,-5.66 l 1.83,-15.09 c 0.35,-1.67 2.1,-2.96 4.27,-3.15 h 11.58 c 2.18,0.19 3.92,1.48 4.27,3.15 z m -16.35,-3.15 -3.13,-3.98 m 6.61,3.98 -1.04,-4.55 m 5.22,4.55 1.39,-4.55 m 2.09,4.55 3.48,-3.98 m 1.04,0.21 c -6.44,-1.03 -13.04,-1.03 -19.49,0 l -2.79,-2.51 c 8.25,-1.72 16.82,-1.72 25.07,0 z"
+           fill="#fff"
+           stroke="#000"
+           stroke-linejoin="round"
+           stroke-miterlimit="10"
+           transform="rotate(180,516.11255,374.02504)"
+           pointer-events="none"
+           id="path133-2"
+           inkscape:label="Стул" />
+        <path
+           cell-id="uU37CldTd9HsUWmvafEx-201"
+           d="m 818.96,141.69 1.84,14.98 c 0.35,2.21 -0.61,4.41 -2.46,5.62 -6.3,1.01 -12.72,1.01 -19.03,0 -1.85,-1.21 -2.81,-3.41 -2.46,-5.62 l 1.84,-14.98 c 0.36,-1.66 2.11,-2.93 4.3,-3.12 h 11.67 c 2.19,0.19 3.95,1.46 4.3,3.12 z m -16.47,-3.12 -3.16,-3.96 m 6.67,3.96 -1.05,-4.52 m 5.25,4.52 1.4,-4.52 m 2.11,4.52 3.5,-3.96 m 1.05,0.21 c -6.49,-1.03 -13.13,-1.03 -19.63,0 l -2.8,-2.5 c 8.3,-1.7 16.94,-1.7 25.24,0 z"
+           fill="#fff"
+           stroke="#000"
+           stroke-linejoin="round"
+           stroke-miterlimit="10"
+           transform="rotate(-90,695.66759,666.21249)"
+           pointer-events="none"
+           id="path134-2"
+           inkscape:label="Стул" />
+        <path
+           cell-id="uU37CldTd9HsUWmvafEx-202"
+           d="m 866.27,141.69 1.84,14.98 c 0.36,2.21 -0.61,4.41 -2.45,5.62 -6.31,1.01 -12.73,1.01 -19.04,0 -1.84,-1.21 -2.8,-3.41 -2.45,-5.62 l 1.84,-14.98 c 0.35,-1.66 2.11,-2.93 4.3,-3.12 h 11.66 c 2.19,0.19 3.95,1.46 4.3,3.12 z m -16.47,-3.12 -3.15,-3.96 m 6.66,3.96 -1.05,-4.52 m 5.26,4.52 1.4,-4.52 m 2.1,4.52 3.51,-3.96 m 1.05,0.21 c -6.49,-1.03 -13.14,-1.03 -19.63,0 l -2.81,-2.5 c 8.31,-1.7 16.94,-1.7 25.24,0 z"
+           fill="#fff"
+           stroke="#000"
+           stroke-linejoin="round"
+           stroke-miterlimit="10"
+           transform="rotate(90,336.54751,34.137585)"
+           pointer-events="none"
+           id="path135-82"
+           inkscape:label="Стул" />
+        <ellipse
+           table="true"
+           cell-id="uU37CldTd9HsUWmvafEx-203"
+           cx="832.15002"
+           cy="146.96001"
+           rx="22"
+           ry="22.16"
+           fill="#fff"
+           stroke="#000"
+           pointer-events="none"
+           id="ellipse136-89"
+           transform="translate(-632.0749,406.43007)"
+           inkscape:label="Стол" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:21.3333px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000;stroke-width:1.00788;stroke-dasharray:none"
+           x="199.34026"
+           y="561.33051"
+           id="text35-07"
+           transform="scale(1.0008867,0.99911408)"
+           inkscape:label="Номер"><tspan
+             sodipodi:role="line"
+             id="tspan35-8"
+             x="199.34026"
+             y="561.33051"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:21.3333px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';stroke-width:1.00788">104</tspan></text>
+      </g>
+      <g
+         id="table-103"
+         data-table="103"
+         inkscape:label="Стол 103"
+         transform="translate(205,-405)">
+        <path
+           cell-id="uU37CldTd9HsUWmvafEx-199"
+           d="m 842.54,117.8 1.83,15.09 c 0.35,2.22 -0.61,4.44 -2.44,5.66 -6.26,1.01 -12.64,1.01 -18.9,0 -1.83,-1.22 -2.79,-3.44 -2.44,-5.66 l 1.83,-15.09 c 0.35,-1.67 2.1,-2.96 4.27,-3.15 h 11.58 c 2.18,0.19 3.92,1.48 4.27,3.15 z m -16.35,-3.15 -3.13,-3.99 m 6.61,3.99 -1.04,-4.55 m 5.22,4.55 1.39,-4.55 m 2.09,4.55 3.48,-3.99 m 1.04,0.22 c -6.44,-1.04 -13.04,-1.04 -19.49,0 l -2.79,-2.52 c 8.25,-1.72 16.82,-1.72 25.07,0 z"
+           fill="#fff"
+           stroke="#000"
+           stroke-linejoin="round"
+           stroke-miterlimit="10"
+           pointer-events="none"
+           id="path132-18"
+           transform="translate(-632.0749,406.43007)"
+           inkscape:label="Стул" />
+        <path
+           cell-id="uU37CldTd9HsUWmvafEx-200"
+           d="m 842.54,165.51 1.83,15.09 c 0.35,2.22 -0.61,4.44 -2.44,5.66 -6.26,1.01 -12.64,1.01 -18.9,0 -1.83,-1.22 -2.79,-3.44 -2.44,-5.66 l 1.83,-15.09 c 0.35,-1.67 2.1,-2.96 4.27,-3.15 h 11.58 c 2.18,0.19 3.92,1.48 4.27,3.15 z m -16.35,-3.15 -3.13,-3.98 m 6.61,3.98 -1.04,-4.55 m 5.22,4.55 1.39,-4.55 m 2.09,4.55 3.48,-3.98 m 1.04,0.21 c -6.44,-1.03 -13.04,-1.03 -19.49,0 l -2.79,-2.51 c 8.25,-1.72 16.82,-1.72 25.07,0 z"
+           fill="#fff"
+           stroke="#000"
+           stroke-linejoin="round"
+           stroke-miterlimit="10"
+           transform="rotate(180,516.11255,374.02504)"
+           pointer-events="none"
+           id="path133-21"
+           inkscape:label="Стул" />
+        <path
+           cell-id="uU37CldTd9HsUWmvafEx-201"
+           d="m 818.96,141.69 1.84,14.98 c 0.35,2.21 -0.61,4.41 -2.46,5.62 -6.3,1.01 -12.72,1.01 -19.03,0 -1.85,-1.21 -2.81,-3.41 -2.46,-5.62 l 1.84,-14.98 c 0.36,-1.66 2.11,-2.93 4.3,-3.12 h 11.67 c 2.19,0.19 3.95,1.46 4.3,3.12 z m -16.47,-3.12 -3.16,-3.96 m 6.67,3.96 -1.05,-4.52 m 5.25,4.52 1.4,-4.52 m 2.11,4.52 3.5,-3.96 m 1.05,0.21 c -6.49,-1.03 -13.13,-1.03 -19.63,0 l -2.8,-2.5 c 8.3,-1.7 16.94,-1.7 25.24,0 z"
+           fill="#fff"
+           stroke="#000"
+           stroke-linejoin="round"
+           stroke-miterlimit="10"
+           transform="rotate(-90,695.66759,666.21249)"
+           pointer-events="none"
+           id="path134-1"
+           inkscape:label="Стул" />
+        <path
+           cell-id="uU37CldTd9HsUWmvafEx-202"
+           d="m 866.27,141.69 1.84,14.98 c 0.36,2.21 -0.61,4.41 -2.45,5.62 -6.31,1.01 -12.73,1.01 -19.04,0 -1.84,-1.21 -2.8,-3.41 -2.45,-5.62 l 1.84,-14.98 c 0.35,-1.66 2.11,-2.93 4.3,-3.12 h 11.66 c 2.19,0.19 3.95,1.46 4.3,3.12 z m -16.47,-3.12 -3.15,-3.96 m 6.66,3.96 -1.05,-4.52 m 5.26,4.52 1.4,-4.52 m 2.1,4.52 3.51,-3.96 m 1.05,0.21 c -6.49,-1.03 -13.14,-1.03 -19.63,0 l -2.81,-2.5 c 8.31,-1.7 16.94,-1.7 25.24,0 z"
+           fill="#fff"
+           stroke="#000"
+           stroke-linejoin="round"
+           stroke-miterlimit="10"
+           transform="rotate(90,336.54751,34.137585)"
+           pointer-events="none"
+           id="path135-9"
+           inkscape:label="Стул" />
+        <ellipse
+           table="true"
+           cell-id="uU37CldTd9HsUWmvafEx-203"
+           cx="832.15002"
+           cy="146.96001"
+           rx="22"
+           ry="22.16"
+           fill="#fff"
+           stroke="#000"
+           pointer-events="none"
+           id="ellipse136-7"
+           transform="translate(-632.0749,406.43007)"
+           inkscape:label="Стол" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:21.3333px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000;stroke-width:1.00788;stroke-dasharray:none"
+           x="199.34026"
+           y="561.33051"
+           id="text35-62"
+           transform="scale(1.0008867,0.99911408)"
+           inkscape:label="Номер"><tspan
+             sodipodi:role="line"
+             id="tspan35-9"
+             x="199.34026"
+             y="561.33051"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:21.3333px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';stroke-width:1.00788">103</tspan></text>
+      </g>
+      <g
+         id="table-102"
+         data-table="102"
+         inkscape:label="Стол 102"
+         transform="translate(70,-260)">
+        <path
+           cell-id="uU37CldTd9HsUWmvafEx-199"
+           d="m 842.54,117.8 1.83,15.09 c 0.35,2.22 -0.61,4.44 -2.44,5.66 -6.26,1.01 -12.64,1.01 -18.9,0 -1.83,-1.22 -2.79,-3.44 -2.44,-5.66 l 1.83,-15.09 c 0.35,-1.67 2.1,-2.96 4.27,-3.15 h 11.58 c 2.18,0.19 3.92,1.48 4.27,3.15 z m -16.35,-3.15 -3.13,-3.99 m 6.61,3.99 -1.04,-4.55 m 5.22,4.55 1.39,-4.55 m 2.09,4.55 3.48,-3.99 m 1.04,0.22 c -6.44,-1.04 -13.04,-1.04 -19.49,0 l -2.79,-2.52 c 8.25,-1.72 16.82,-1.72 25.07,0 z"
+           fill="#fff"
+           stroke="#000"
+           stroke-linejoin="round"
+           stroke-miterlimit="10"
+           pointer-events="none"
+           id="path132"
+           transform="translate(-632.0749,406.43007)"
+           inkscape:label="Стул" />
+        <path
+           cell-id="uU37CldTd9HsUWmvafEx-201"
+           d="m 818.96,141.69 1.84,14.98 c 0.35,2.21 -0.61,4.41 -2.46,5.62 -6.3,1.01 -12.72,1.01 -19.03,0 -1.85,-1.21 -2.81,-3.41 -2.46,-5.62 l 1.84,-14.98 c 0.36,-1.66 2.11,-2.93 4.3,-3.12 h 11.67 c 2.19,0.19 3.95,1.46 4.3,3.12 z m -16.47,-3.12 -3.16,-3.96 m 6.67,3.96 -1.05,-4.52 m 5.25,4.52 1.4,-4.52 m 2.11,4.52 3.5,-3.96 m 1.05,0.21 c -6.49,-1.03 -13.13,-1.03 -19.63,0 l -2.8,-2.5 c 8.3,-1.7 16.94,-1.7 25.24,0 z"
+           fill="#fff"
+           stroke="#000"
+           stroke-linejoin="round"
+           stroke-miterlimit="10"
+           transform="rotate(-90,695.66759,666.21249)"
+           pointer-events="none"
+           id="path134"
+           inkscape:label="Стул" />
+        <path
+           cell-id="uU37CldTd9HsUWmvafEx-202"
+           d="m 866.27,141.69 1.84,14.98 c 0.36,2.21 -0.61,4.41 -2.45,5.62 -6.31,1.01 -12.73,1.01 -19.04,0 -1.84,-1.21 -2.8,-3.41 -2.45,-5.62 l 1.84,-14.98 c 0.35,-1.66 2.11,-2.93 4.3,-3.12 h 11.66 c 2.19,0.19 3.95,1.46 4.3,3.12 z m -16.47,-3.12 -3.15,-3.96 m 6.66,3.96 -1.05,-4.52 m 5.26,4.52 1.4,-4.52 m 2.1,4.52 3.51,-3.96 m 1.05,0.21 c -6.49,-1.03 -13.14,-1.03 -19.63,0 l -2.81,-2.5 c 8.31,-1.7 16.94,-1.7 25.24,0 z"
+           fill="#fff"
+           stroke="#000"
+           stroke-linejoin="round"
+           stroke-miterlimit="10"
+           transform="rotate(90,336.54751,34.137585)"
+           pointer-events="none"
+           id="path135"
+           inkscape:label="Стул" />
+        <ellipse
+           table="true"
+           cell-id="uU37CldTd9HsUWmvafEx-203"
+           cx="832.15002"
+           cy="146.96001"
+           rx="22"
+           ry="22.16"
+           fill="#fff"
+           stroke="#000"
+           pointer-events="none"
+           id="ellipse136"
+           transform="translate(-632.0749,406.43007)"
+           inkscape:label="Стол" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:21.3333px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000;stroke-width:1.00788;stroke-dasharray:none"
+           x="199.34026"
+           y="561.33051"
+           id="text35"
+           transform="scale(1.0008867,0.99911408)"
+           inkscape:label="Номер"><tspan
+             sodipodi:role="line"
+             id="tspan35"
+             x="199.34026"
+             y="561.33051"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:21.3333px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';stroke-width:1.00788">102</tspan></text>
+      </g>
+      <g
+         id="table-101"
+         data-table="101"
+         inkscape:label="Стол 101"
+         transform="translate(50,-65)">
+        <path
+           cell-id="uU37CldTd9HsUWmvafEx-199"
+           d="m 842.54,117.8 1.83,15.09 c 0.35,2.22 -0.61,4.44 -2.44,5.66 -6.26,1.01 -12.64,1.01 -18.9,0 -1.83,-1.22 -2.79,-3.44 -2.44,-5.66 l 1.83,-15.09 c 0.35,-1.67 2.1,-2.96 4.27,-3.15 h 11.58 c 2.18,0.19 3.92,1.48 4.27,3.15 z m -16.35,-3.15 -3.13,-3.99 m 6.61,3.99 -1.04,-4.55 m 5.22,4.55 1.39,-4.55 m 2.09,4.55 3.48,-3.99 m 1.04,0.22 c -6.44,-1.04 -13.04,-1.04 -19.49,0 l -2.79,-2.52 c 8.25,-1.72 16.82,-1.72 25.07,0 z"
+           fill="#fff"
+           stroke="#000"
+           stroke-linejoin="round"
+           stroke-miterlimit="10"
+           pointer-events="none"
+           id="path132-6"
+           transform="translate(-632.0749,406.43007)"
+           inkscape:label="Стул" />
+        <path
+           cell-id="uU37CldTd9HsUWmvafEx-200"
+           d="m 842.54,165.51 1.83,15.09 c 0.35,2.22 -0.61,4.44 -2.44,5.66 -6.26,1.01 -12.64,1.01 -18.9,0 -1.83,-1.22 -2.79,-3.44 -2.44,-5.66 l 1.83,-15.09 c 0.35,-1.67 2.1,-2.96 4.27,-3.15 h 11.58 c 2.18,0.19 3.92,1.48 4.27,3.15 z m -16.35,-3.15 -3.13,-3.98 m 6.61,3.98 -1.04,-4.55 m 5.22,4.55 1.39,-4.55 m 2.09,4.55 3.48,-3.98 m 1.04,0.21 c -6.44,-1.03 -13.04,-1.03 -19.49,0 l -2.79,-2.51 c 8.25,-1.72 16.82,-1.72 25.07,0 z"
+           fill="#fff"
+           stroke="#000"
+           stroke-linejoin="round"
+           stroke-miterlimit="10"
+           transform="rotate(180,516.11255,374.02504)"
+           pointer-events="none"
+           id="path133-3"
+           inkscape:label="Стул" />
+        <path
+           cell-id="uU37CldTd9HsUWmvafEx-201"
+           d="m 818.96,141.69 1.84,14.98 c 0.35,2.21 -0.61,4.41 -2.46,5.62 -6.3,1.01 -12.72,1.01 -19.03,0 -1.85,-1.21 -2.81,-3.41 -2.46,-5.62 l 1.84,-14.98 c 0.36,-1.66 2.11,-2.93 4.3,-3.12 h 11.67 c 2.19,0.19 3.95,1.46 4.3,3.12 z m -16.47,-3.12 -3.16,-3.96 m 6.67,3.96 -1.05,-4.52 m 5.25,4.52 1.4,-4.52 m 2.11,4.52 3.5,-3.96 m 1.05,0.21 c -6.49,-1.03 -13.13,-1.03 -19.63,0 l -2.8,-2.5 c 8.3,-1.7 16.94,-1.7 25.24,0 z"
+           fill="#fff"
+           stroke="#000"
+           stroke-linejoin="round"
+           stroke-miterlimit="10"
+           transform="rotate(-90,695.66759,666.21249)"
+           pointer-events="none"
+           id="path134-4"
+           inkscape:label="Стул" />
+        <ellipse
+           table="true"
+           cell-id="uU37CldTd9HsUWmvafEx-203"
+           cx="832.15002"
+           cy="146.96001"
+           rx="22"
+           ry="22.16"
+           fill="#fff"
+           stroke="#000"
+           pointer-events="none"
+           id="ellipse136-87"
+           transform="translate(-632.0749,406.43007)"
+           inkscape:label="Стол" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:21.3333px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000;stroke-width:1.00788;stroke-dasharray:none"
+           x="199.34026"
+           y="561.33051"
+           id="text35-58"
+           transform="scale(1.0008867,0.99911408)"
+           inkscape:label="Номер"><tspan
+             sodipodi:role="line"
+             id="tspan35-1"
+             x="199.34026"
+             y="561.33051"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:21.3333px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';stroke-width:1.00788">101</tspan><tspan
+             sodipodi:role="line"
+             x="199.34026"
+             y="587.99713"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:21.3333px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';stroke-width:1.00788"
+             id="tspan2" /></text>
+      </g>
+      <g
+         id="table-18"
+         data-table="18"
+         inkscape:label="Стол 18"
+         transform="matrix(1,0,0,1,45,-155)">
+        <path
+           cell-id="uU37CldTd9HsUWmvafEx-66"
+           d="m 327.65,416.48 1.28,10.25 c 0.24,1.51 -0.43,3.02 -1.7,3.85 -4.36,0.69 -8.79,0.69 -13.15,0 -1.27,-0.83 -1.94,-2.34 -1.7,-3.85 l 1.27,-10.25 c 0.25,-1.13 1.46,-2 2.97,-2.13 h 8.06 c 1.52,0.13 2.73,1 2.97,2.13 z"
+           fill="#fff"
+           stroke="#000"
+           stroke-miterlimit="10"
+           transform="rotate(90,213.15,434.61)"
+           pointer-events="none"
+           id="path13-8"
+           inkscape:label="Стул" />
+        <path
+           cell-id="uU37CldTd9HsUWmvafEx-66"
+           d="m 327.32,414.14 c 0.36,0.13 0.55,0.56 0.43,0.95 -0.12,0.4 -0.5,0.61 -0.85,0.48 -4.19,-1.03 -8.54,-1.03 -12.73,0 -0.26,-0.08 -0.47,-0.3 -0.56,-0.59 -0.08,-0.29 -0.03,-0.6 0.14,-0.84 4.46,-1.18 9.11,-1.18 13.57,0"
+           fill="#fff"
+           stroke="#000"
+           stroke-miterlimit="10"
+           transform="rotate(90,213.15,434.61)"
+           pointer-events="none"
+           id="path14-1"
+           inkscape:label="Спинка" />
+        <path
+           cell-id="uU37CldTd9HsUWmvafEx-67"
+           d="m 286.35,416.48 1.28,10.25 c 0.24,1.51 -0.43,3.02 -1.7,3.85 -4.36,0.69 -8.79,0.69 -13.15,0 -1.27,-0.83 -1.94,-2.34 -1.7,-3.85 l 1.27,-10.25 c 0.25,-1.13 1.46,-2 2.97,-2.13 h 8.06 c 1.52,0.13 2.73,1 2.97,2.13 z"
+           fill="#fff"
+           stroke="#000"
+           stroke-miterlimit="10"
+           transform="rotate(-90,291.85,529.61)"
+           pointer-events="none"
+           id="path15-9"
+           inkscape:label="Стул" />
+        <path
+           cell-id="uU37CldTd9HsUWmvafEx-67"
+           d="m 286.02,414.14 c 0.36,0.13 0.55,0.56 0.43,0.95 -0.12,0.4 -0.5,0.61 -0.85,0.48 -4.19,-1.03 -8.54,-1.03 -12.73,0 -0.26,-0.08 -0.47,-0.3 -0.56,-0.59 -0.08,-0.29 -0.03,-0.6 0.14,-0.84 4.46,-1.18 9.11,-1.18 13.57,0"
+           fill="#fff"
+           stroke="#000"
+           stroke-miterlimit="10"
+           transform="rotate(-90,291.85,529.61)"
+           pointer-events="none"
+           id="path16-5"
+           inkscape:label="Спинка" />
+        <path
+           cell-id="uU37CldTd9HsUWmvafEx-70"
+           d="m 327.65,441.98 1.28,10.25 c 0.24,1.51 -0.43,3.02 -1.7,3.85 -4.36,0.69 -8.79,0.69 -13.15,0 -1.27,-0.83 -1.94,-2.34 -1.7,-3.85 l 1.27,-10.25 c 0.25,-1.13 1.46,-2 2.97,-2.13 h 8.06 c 1.52,0.13 2.73,1 2.97,2.13 z"
+           fill="#fff"
+           stroke="#000"
+           stroke-miterlimit="10"
+           transform="rotate(90,213.15,460.11)"
+           pointer-events="none"
+           id="path17-3"
+           inkscape:label="Стул" />
+        <path
+           cell-id="uU37CldTd9HsUWmvafEx-70"
+           d="m 327.32,439.64 c 0.36,0.13 0.55,0.56 0.43,0.95 -0.12,0.4 -0.5,0.61 -0.85,0.48 -4.19,-1.03 -8.54,-1.03 -12.73,0 -0.26,-0.08 -0.47,-0.3 -0.56,-0.59 -0.08,-0.29 -0.03,-0.6 0.14,-0.84 4.46,-1.18 9.11,-1.18 13.57,0"
+           fill="#fff"
+           stroke="#000"
+           stroke-miterlimit="10"
+           transform="rotate(90,213.15,460.11)"
+           pointer-events="none"
+           id="path18-2"
+           inkscape:label="Спинка" />
+        <path
+           cell-id="uU37CldTd9HsUWmvafEx-71"
+           d="m 286.35,441.98 1.28,10.25 c 0.24,1.51 -0.43,3.02 -1.7,3.85 -4.36,0.69 -8.79,0.69 -13.15,0 -1.27,-0.83 -1.94,-2.34 -1.7,-3.85 l 1.27,-10.25 c 0.25,-1.13 1.46,-2 2.97,-2.13 h 8.06 c 1.52,0.13 2.73,1 2.97,2.13 z"
+           fill="#fff"
+           stroke="#000"
+           stroke-miterlimit="10"
+           transform="rotate(-90,291.85,555.11)"
+           pointer-events="none"
+           id="path19-5"
+           inkscape:label="Стул" />
+        <path
+           cell-id="uU37CldTd9HsUWmvafEx-71"
+           d="m 286.02,439.64 c 0.36,0.13 0.55,0.56 0.43,0.95 -0.12,0.4 -0.5,0.61 -0.85,0.48 -4.19,-1.03 -8.54,-1.03 -12.73,0 -0.26,-0.08 -0.47,-0.3 -0.56,-0.59 -0.08,-0.29 -0.03,-0.6 0.14,-0.84 4.46,-1.18 9.11,-1.18 13.57,0"
+           fill="#fff"
+           stroke="#000"
+           stroke-miterlimit="10"
+           transform="rotate(-90,291.85,555.11)"
+           pointer-events="none"
+           id="path20-2"
+           inkscape:label="Спинка" />
+        <rect
+           table="true"
+           cell-id="uU37CldTd9HsUWmvafEx-72"
+           x="265.94"
+           y="413.56"
+           width="68.110001"
+           height="42.57"
+           fill="#fff"
+           stroke="#000"
+           transform="matrix(0,1,1,0,-229.85,254.85)"
+           pointer-events="none"
+           id="rect20-5"
+           inkscape:label="Стол" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:21.3333px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000;stroke:none;stroke-width:2;stroke-dasharray:none;stroke-opacity:1"
+           x="234.22917"
+           y="412.86456"
+           id="text24"
+           transform="matrix(1.00016,0,0,0.98728642,-45.040063,154.99403)"><tspan
+             sodipodi:role="line"
+             id="tspan24"
+             x="237"
+             y="412">18</tspan></text>
+      </g>
+      <g
+         id="table-17"
+         data-table="17"
+         inkscape:label="Стол 17"
+         transform="matrix(1,0,0,1,-35,-155)">
+        <path
+           cell-id="uU37CldTd9HsUWmvafEx-66"
+           d="m 327.65,416.48 1.28,10.25 c 0.24,1.51 -0.43,3.02 -1.7,3.85 -4.36,0.69 -8.79,0.69 -13.15,0 -1.27,-0.83 -1.94,-2.34 -1.7,-3.85 l 1.27,-10.25 c 0.25,-1.13 1.46,-2 2.97,-2.13 h 8.06 c 1.52,0.13 2.73,1 2.97,2.13 z"
+           fill="#fff"
+           stroke="#000"
+           stroke-miterlimit="10"
+           transform="rotate(90,213.15,434.61)"
+           pointer-events="none"
+           id="path13"
+           inkscape:label="Стул" />
+        <path
+           cell-id="uU37CldTd9HsUWmvafEx-66"
+           d="m 327.32,414.14 c 0.36,0.13 0.55,0.56 0.43,0.95 -0.12,0.4 -0.5,0.61 -0.85,0.48 -4.19,-1.03 -8.54,-1.03 -12.73,0 -0.26,-0.08 -0.47,-0.3 -0.56,-0.59 -0.08,-0.29 -0.03,-0.6 0.14,-0.84 4.46,-1.18 9.11,-1.18 13.57,0"
+           fill="#fff"
+           stroke="#000"
+           stroke-miterlimit="10"
+           transform="rotate(90,213.15,434.61)"
+           pointer-events="none"
+           id="path14"
+           inkscape:label="Спинка" />
+        <path
+           cell-id="uU37CldTd9HsUWmvafEx-67"
+           d="m 286.35,416.48 1.28,10.25 c 0.24,1.51 -0.43,3.02 -1.7,3.85 -4.36,0.69 -8.79,0.69 -13.15,0 -1.27,-0.83 -1.94,-2.34 -1.7,-3.85 l 1.27,-10.25 c 0.25,-1.13 1.46,-2 2.97,-2.13 h 8.06 c 1.52,0.13 2.73,1 2.97,2.13 z"
+           fill="#fff"
+           stroke="#000"
+           stroke-miterlimit="10"
+           transform="rotate(-90,291.85,529.61)"
+           pointer-events="none"
+           id="path15"
+           inkscape:label="Стул" />
+        <path
+           cell-id="uU37CldTd9HsUWmvafEx-67"
+           d="m 286.02,414.14 c 0.36,0.13 0.55,0.56 0.43,0.95 -0.12,0.4 -0.5,0.61 -0.85,0.48 -4.19,-1.03 -8.54,-1.03 -12.73,0 -0.26,-0.08 -0.47,-0.3 -0.56,-0.59 -0.08,-0.29 -0.03,-0.6 0.14,-0.84 4.46,-1.18 9.11,-1.18 13.57,0"
+           fill="#fff"
+           stroke="#000"
+           stroke-miterlimit="10"
+           transform="rotate(-90,291.85,529.61)"
+           pointer-events="none"
+           id="path16"
+           inkscape:label="Спинка" />
+        <path
+           cell-id="uU37CldTd9HsUWmvafEx-70"
+           d="m 327.65,441.98 1.28,10.25 c 0.24,1.51 -0.43,3.02 -1.7,3.85 -4.36,0.69 -8.79,0.69 -13.15,0 -1.27,-0.83 -1.94,-2.34 -1.7,-3.85 l 1.27,-10.25 c 0.25,-1.13 1.46,-2 2.97,-2.13 h 8.06 c 1.52,0.13 2.73,1 2.97,2.13 z"
+           fill="#fff"
+           stroke="#000"
+           stroke-miterlimit="10"
+           transform="rotate(90,213.15,460.11)"
+           pointer-events="none"
+           id="path17"
+           inkscape:label="Стул" />
+        <path
+           cell-id="uU37CldTd9HsUWmvafEx-70"
+           d="m 327.32,439.64 c 0.36,0.13 0.55,0.56 0.43,0.95 -0.12,0.4 -0.5,0.61 -0.85,0.48 -4.19,-1.03 -8.54,-1.03 -12.73,0 -0.26,-0.08 -0.47,-0.3 -0.56,-0.59 -0.08,-0.29 -0.03,-0.6 0.14,-0.84 4.46,-1.18 9.11,-1.18 13.57,0"
+           fill="#fff"
+           stroke="#000"
+           stroke-miterlimit="10"
+           transform="rotate(90,213.15,460.11)"
+           pointer-events="none"
+           id="path18"
+           inkscape:label="Спинка" />
+        <path
+           cell-id="uU37CldTd9HsUWmvafEx-71"
+           d="m 286.35,441.98 1.28,10.25 c 0.24,1.51 -0.43,3.02 -1.7,3.85 -4.36,0.69 -8.79,0.69 -13.15,0 -1.27,-0.83 -1.94,-2.34 -1.7,-3.85 l 1.27,-10.25 c 0.25,-1.13 1.46,-2 2.97,-2.13 h 8.06 c 1.52,0.13 2.73,1 2.97,2.13 z"
+           fill="#fff"
+           stroke="#000"
+           stroke-miterlimit="10"
+           transform="rotate(-90,291.85,555.11)"
+           pointer-events="none"
+           id="path19"
+           inkscape:label="Стул" />
+        <path
+           cell-id="uU37CldTd9HsUWmvafEx-71"
+           d="m 286.02,439.64 c 0.36,0.13 0.55,0.56 0.43,0.95 -0.12,0.4 -0.5,0.61 -0.85,0.48 -4.19,-1.03 -8.54,-1.03 -12.73,0 -0.26,-0.08 -0.47,-0.3 -0.56,-0.59 -0.08,-0.29 -0.03,-0.6 0.14,-0.84 4.46,-1.18 9.11,-1.18 13.57,0"
+           fill="#fff"
+           stroke="#000"
+           stroke-miterlimit="10"
+           transform="rotate(-90,291.85,555.11)"
+           pointer-events="none"
+           id="path20"
+           inkscape:label="Спинка" />
+        <rect
+           table="true"
+           cell-id="uU37CldTd9HsUWmvafEx-72"
+           x="265.94"
+           y="413.56"
+           width="68.110001"
+           height="42.57"
+           fill="#fff"
+           stroke="#000"
+           transform="matrix(0,1,1,0,-229.85,254.85)"
+           pointer-events="none"
+           id="rect20"
+           inkscape:label="Стол" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:21.3333px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000;stroke:none;stroke-width:2;stroke-dasharray:none;stroke-opacity:1"
+           x="154.22917"
+           y="412.55206"
+           id="text23"
+           transform="matrix(1.00016,0,0,0.98728642,34.97274,154.99398)"><tspan
+             sodipodi:role="line"
+             id="tspan23"
+             x="157"
+             y="412">17</tspan></text>
+      </g>
+      <g
+         id="table-16"
+         data-table="16"
+         inkscape:label="Стол 16"
+         transform="matrix(0,1,-1,0,715,300)">
+        <path
+           cell-id="uU37CldTd9HsUWmvafEx-66"
+           d="m 327.65,416.48 1.28,10.25 c 0.24,1.51 -0.43,3.02 -1.7,3.85 -4.36,0.69 -8.79,0.69 -13.15,0 -1.27,-0.83 -1.94,-2.34 -1.7,-3.85 l 1.27,-10.25 c 0.25,-1.13 1.46,-2 2.97,-2.13 h 8.06 c 1.52,0.13 2.73,1 2.97,2.13 z"
+           fill="#fff"
+           stroke="#000"
+           stroke-miterlimit="10"
+           transform="rotate(90,213.15,434.61)"
+           pointer-events="none"
+           id="path13-2-3"
+           inkscape:label="Стул" />
+        <path
+           cell-id="uU37CldTd9HsUWmvafEx-66"
+           d="m 327.32,414.14 c 0.36,0.13 0.55,0.56 0.43,0.95 -0.12,0.4 -0.5,0.61 -0.85,0.48 -4.19,-1.03 -8.54,-1.03 -12.73,0 -0.26,-0.08 -0.47,-0.3 -0.56,-0.59 -0.08,-0.29 -0.03,-0.6 0.14,-0.84 4.46,-1.18 9.11,-1.18 13.57,0"
+           fill="#fff"
+           stroke="#000"
+           stroke-miterlimit="10"
+           transform="rotate(90,213.15,434.61)"
+           pointer-events="none"
+           id="path14-2-3"
+           inkscape:label="Спинка" />
+        <path
+           cell-id="uU37CldTd9HsUWmvafEx-67"
+           d="m 286.35,416.48 1.28,10.25 c 0.24,1.51 -0.43,3.02 -1.7,3.85 -4.36,0.69 -8.79,0.69 -13.15,0 -1.27,-0.83 -1.94,-2.34 -1.7,-3.85 l 1.27,-10.25 c 0.25,-1.13 1.46,-2 2.97,-2.13 h 8.06 c 1.52,0.13 2.73,1 2.97,2.13 z"
+           fill="#fff"
+           stroke="#000"
+           stroke-miterlimit="10"
+           transform="rotate(-90,291.85,529.61)"
+           pointer-events="none"
+           id="path15-94-55"
+           inkscape:label="Стул" />
+        <path
+           cell-id="uU37CldTd9HsUWmvafEx-67"
+           d="m 286.02,414.14 c 0.36,0.13 0.55,0.56 0.43,0.95 -0.12,0.4 -0.5,0.61 -0.85,0.48 -4.19,-1.03 -8.54,-1.03 -12.73,0 -0.26,-0.08 -0.47,-0.3 -0.56,-0.59 -0.08,-0.29 -0.03,-0.6 0.14,-0.84 4.46,-1.18 9.11,-1.18 13.57,0"
+           fill="#fff"
+           stroke="#000"
+           stroke-miterlimit="10"
+           transform="rotate(-90,291.85,529.61)"
+           pointer-events="none"
+           id="path16-1-3"
+           inkscape:label="Спинка" />
+        <path
+           cell-id="uU37CldTd9HsUWmvafEx-70"
+           d="m 327.65,441.98 1.28,10.25 c 0.24,1.51 -0.43,3.02 -1.7,3.85 -4.36,0.69 -8.79,0.69 -13.15,0 -1.27,-0.83 -1.94,-2.34 -1.7,-3.85 l 1.27,-10.25 c 0.25,-1.13 1.46,-2 2.97,-2.13 h 8.06 c 1.52,0.13 2.73,1 2.97,2.13 z"
+           fill="#fff"
+           stroke="#000"
+           stroke-miterlimit="10"
+           transform="rotate(90,213.15,460.11)"
+           pointer-events="none"
+           id="path17-9-2"
+           inkscape:label="Стул" />
+        <path
+           cell-id="uU37CldTd9HsUWmvafEx-70"
+           d="m 327.32,439.64 c 0.36,0.13 0.55,0.56 0.43,0.95 -0.12,0.4 -0.5,0.61 -0.85,0.48 -4.19,-1.03 -8.54,-1.03 -12.73,0 -0.26,-0.08 -0.47,-0.3 -0.56,-0.59 -0.08,-0.29 -0.03,-0.6 0.14,-0.84 4.46,-1.18 9.11,-1.18 13.57,0"
+           fill="#fff"
+           stroke="#000"
+           stroke-miterlimit="10"
+           transform="rotate(90,213.15,460.11)"
+           pointer-events="none"
+           id="path18-6-8"
+           inkscape:label="Спинка" />
+        <path
+           cell-id="uU37CldTd9HsUWmvafEx-71"
+           d="m 286.35,441.98 1.28,10.25 c 0.24,1.51 -0.43,3.02 -1.7,3.85 -4.36,0.69 -8.79,0.69 -13.15,0 -1.27,-0.83 -1.94,-2.34 -1.7,-3.85 l 1.27,-10.25 c 0.25,-1.13 1.46,-2 2.97,-2.13 h 8.06 c 1.52,0.13 2.73,1 2.97,2.13 z"
+           fill="#fff"
+           stroke="#000"
+           stroke-miterlimit="10"
+           transform="rotate(-90,291.85,555.11)"
+           pointer-events="none"
+           id="path19-9-2"
+           inkscape:label="Стул" />
+        <path
+           cell-id="uU37CldTd9HsUWmvafEx-71"
+           d="m 286.02,439.64 c 0.36,0.13 0.55,0.56 0.43,0.95 -0.12,0.4 -0.5,0.61 -0.85,0.48 -4.19,-1.03 -8.54,-1.03 -12.73,0 -0.26,-0.08 -0.47,-0.3 -0.56,-0.59 -0.08,-0.29 -0.03,-0.6 0.14,-0.84 4.46,-1.18 9.11,-1.18 13.57,0"
+           fill="#fff"
+           stroke="#000"
+           stroke-miterlimit="10"
+           transform="rotate(-90,291.85,555.11)"
+           pointer-events="none"
+           id="path20-8-53"
+           inkscape:label="Спинка" />
+        <rect
+           table="true"
+           cell-id="uU37CldTd9HsUWmvafEx-72"
+           x="265.94"
+           y="413.56"
+           width="68.110001"
+           height="42.57"
+           fill="#fff"
+           stroke="#000"
+           transform="matrix(0,1,1,0,-229.85,254.85)"
+           pointer-events="none"
+           id="rect20-2-6"
+           inkscape:label="Стол" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:20.7364px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000;stroke:none;stroke-width:1.94404;stroke-dasharray:none;stroke-opacity:1"
+           x="139.20102"
+           y="514.98206"
+           id="text22-52"
+           transform="matrix(0,-0.99497994,0.99242647,0,-300.08088,707.87437)"><tspan
+             sodipodi:role="line"
+             id="tspan22-7"
+             x="139.20102"
+             y="514.98206"
+             style="stroke-width:1.94404">16</tspan></text>
+      </g>
+      <g
+         id="table-15"
+         data-table="15"
+         inkscape:label="Стол 15"
+         transform="matrix(0,1,-1,0,715,375)">
+        <path
+           cell-id="uU37CldTd9HsUWmvafEx-66"
+           d="m 327.65,416.48 1.28,10.25 c 0.24,1.51 -0.43,3.02 -1.7,3.85 -4.36,0.69 -8.79,0.69 -13.15,0 -1.27,-0.83 -1.94,-2.34 -1.7,-3.85 l 1.27,-10.25 c 0.25,-1.13 1.46,-2 2.97,-2.13 h 8.06 c 1.52,0.13 2.73,1 2.97,2.13 z"
+           fill="#fff"
+           stroke="#000"
+           stroke-miterlimit="10"
+           transform="rotate(90,213.15,434.61)"
+           pointer-events="none"
+           id="path13-2-1-8"
+           inkscape:label="Стул" />
+        <path
+           cell-id="uU37CldTd9HsUWmvafEx-66"
+           d="m 327.32,414.14 c 0.36,0.13 0.55,0.56 0.43,0.95 -0.12,0.4 -0.5,0.61 -0.85,0.48 -4.19,-1.03 -8.54,-1.03 -12.73,0 -0.26,-0.08 -0.47,-0.3 -0.56,-0.59 -0.08,-0.29 -0.03,-0.6 0.14,-0.84 4.46,-1.18 9.11,-1.18 13.57,0"
+           fill="#fff"
+           stroke="#000"
+           stroke-miterlimit="10"
+           transform="rotate(90,213.15,434.61)"
+           pointer-events="none"
+           id="path14-2-2-6"
+           inkscape:label="Спинка" />
+        <path
+           cell-id="uU37CldTd9HsUWmvafEx-67"
+           d="m 286.35,416.48 1.28,10.25 c 0.24,1.51 -0.43,3.02 -1.7,3.85 -4.36,0.69 -8.79,0.69 -13.15,0 -1.27,-0.83 -1.94,-2.34 -1.7,-3.85 l 1.27,-10.25 c 0.25,-1.13 1.46,-2 2.97,-2.13 h 8.06 c 1.52,0.13 2.73,1 2.97,2.13 z"
+           fill="#fff"
+           stroke="#000"
+           stroke-miterlimit="10"
+           transform="rotate(-90,291.85,529.61)"
+           pointer-events="none"
+           id="path15-94-5-2"
+           inkscape:label="Стул" />
+        <path
+           cell-id="uU37CldTd9HsUWmvafEx-67"
+           d="m 286.02,414.14 c 0.36,0.13 0.55,0.56 0.43,0.95 -0.12,0.4 -0.5,0.61 -0.85,0.48 -4.19,-1.03 -8.54,-1.03 -12.73,0 -0.26,-0.08 -0.47,-0.3 -0.56,-0.59 -0.08,-0.29 -0.03,-0.6 0.14,-0.84 4.46,-1.18 9.11,-1.18 13.57,0"
+           fill="#fff"
+           stroke="#000"
+           stroke-miterlimit="10"
+           transform="rotate(-90,291.85,529.61)"
+           pointer-events="none"
+           id="path16-1-0-1"
+           inkscape:label="Спинка" />
+        <path
+           cell-id="uU37CldTd9HsUWmvafEx-70"
+           d="m 327.65,441.98 1.28,10.25 c 0.24,1.51 -0.43,3.02 -1.7,3.85 -4.36,0.69 -8.79,0.69 -13.15,0 -1.27,-0.83 -1.94,-2.34 -1.7,-3.85 l 1.27,-10.25 c 0.25,-1.13 1.46,-2 2.97,-2.13 h 8.06 c 1.52,0.13 2.73,1 2.97,2.13 z"
+           fill="#fff"
+           stroke="#000"
+           stroke-miterlimit="10"
+           transform="rotate(90,213.15,460.11)"
+           pointer-events="none"
+           id="path17-9-8-4"
+           inkscape:label="Стул" />
+        <path
+           cell-id="uU37CldTd9HsUWmvafEx-70"
+           d="m 327.32,439.64 c 0.36,0.13 0.55,0.56 0.43,0.95 -0.12,0.4 -0.5,0.61 -0.85,0.48 -4.19,-1.03 -8.54,-1.03 -12.73,0 -0.26,-0.08 -0.47,-0.3 -0.56,-0.59 -0.08,-0.29 -0.03,-0.6 0.14,-0.84 4.46,-1.18 9.11,-1.18 13.57,0"
+           fill="#fff"
+           stroke="#000"
+           stroke-miterlimit="10"
+           transform="rotate(90,213.15,460.11)"
+           pointer-events="none"
+           id="path18-6-3-6"
+           inkscape:label="Спинка" />
+        <path
+           cell-id="uU37CldTd9HsUWmvafEx-71"
+           d="m 286.35,441.98 1.28,10.25 c 0.24,1.51 -0.43,3.02 -1.7,3.85 -4.36,0.69 -8.79,0.69 -13.15,0 -1.27,-0.83 -1.94,-2.34 -1.7,-3.85 l 1.27,-10.25 c 0.25,-1.13 1.46,-2 2.97,-2.13 h 8.06 c 1.52,0.13 2.73,1 2.97,2.13 z"
+           fill="#fff"
+           stroke="#000"
+           stroke-miterlimit="10"
+           transform="rotate(-90,291.85,555.11)"
+           pointer-events="none"
+           id="path19-9-9-2"
+           inkscape:label="Стул" />
+        <path
+           cell-id="uU37CldTd9HsUWmvafEx-71"
+           d="m 286.02,439.64 c 0.36,0.13 0.55,0.56 0.43,0.95 -0.12,0.4 -0.5,0.61 -0.85,0.48 -4.19,-1.03 -8.54,-1.03 -12.73,0 -0.26,-0.08 -0.47,-0.3 -0.56,-0.59 -0.08,-0.29 -0.03,-0.6 0.14,-0.84 4.46,-1.18 9.11,-1.18 13.57,0"
+           fill="#fff"
+           stroke="#000"
+           stroke-miterlimit="10"
+           transform="rotate(-90,291.85,555.11)"
+           pointer-events="none"
+           id="path20-8-3-9"
+           inkscape:label="Спинка" />
+        <rect
+           table="true"
+           cell-id="uU37CldTd9HsUWmvafEx-72"
+           x="265.94"
+           y="413.56"
+           width="68.110001"
+           height="42.57"
+           fill="#fff"
+           stroke="#000"
+           transform="matrix(0,1,1,0,-229.85,254.85)"
+           pointer-events="none"
+           id="rect20-2-9-1"
+           inkscape:label="Стол" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:20.7364px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000;stroke:none;stroke-width:1.94404;stroke-dasharray:none;stroke-opacity:1"
+           x="139.20097"
+           y="591.57428"
+           id="text22-2"
+           transform="matrix(0,-0.99497994,0.99242647,0,-375.09288,707.87437)"><tspan
+             sodipodi:role="line"
+             id="tspan22-3"
+             x="139.20097"
+             y="591.57428"
+             style="stroke-width:1.94404">15</tspan></text>
+      </g>
+      <g
+         id="table-14"
+         data-table="14"
+         inkscape:label="Стол 14"
+         transform="matrix(0,1,-1,0,715,450)">
+        <path
+           cell-id="uU37CldTd9HsUWmvafEx-66"
+           d="m 327.65,416.48 1.28,10.25 c 0.24,1.51 -0.43,3.02 -1.7,3.85 -4.36,0.69 -8.79,0.69 -13.15,0 -1.27,-0.83 -1.94,-2.34 -1.7,-3.85 l 1.27,-10.25 c 0.25,-1.13 1.46,-2 2.97,-2.13 h 8.06 c 1.52,0.13 2.73,1 2.97,2.13 z"
+           fill="#fff"
+           stroke="#000"
+           stroke-miterlimit="10"
+           transform="rotate(90,213.15,434.61)"
+           pointer-events="none"
+           id="path13-2-6-0"
+           inkscape:label="Стул" />
+        <path
+           cell-id="uU37CldTd9HsUWmvafEx-66"
+           d="m 327.32,414.14 c 0.36,0.13 0.55,0.56 0.43,0.95 -0.12,0.4 -0.5,0.61 -0.85,0.48 -4.19,-1.03 -8.54,-1.03 -12.73,0 -0.26,-0.08 -0.47,-0.3 -0.56,-0.59 -0.08,-0.29 -0.03,-0.6 0.14,-0.84 4.46,-1.18 9.11,-1.18 13.57,0"
+           fill="#fff"
+           stroke="#000"
+           stroke-miterlimit="10"
+           transform="rotate(90,213.15,434.61)"
+           pointer-events="none"
+           id="path14-2-9-3"
+           inkscape:label="Спинка" />
+        <path
+           cell-id="uU37CldTd9HsUWmvafEx-67"
+           d="m 286.35,416.48 1.28,10.25 c 0.24,1.51 -0.43,3.02 -1.7,3.85 -4.36,0.69 -8.79,0.69 -13.15,0 -1.27,-0.83 -1.94,-2.34 -1.7,-3.85 l 1.27,-10.25 c 0.25,-1.13 1.46,-2 2.97,-2.13 h 8.06 c 1.52,0.13 2.73,1 2.97,2.13 z"
+           fill="#fff"
+           stroke="#000"
+           stroke-miterlimit="10"
+           transform="rotate(-90,291.85,529.61)"
+           pointer-events="none"
+           id="path15-94-3-6"
+           inkscape:label="Стул" />
+        <path
+           cell-id="uU37CldTd9HsUWmvafEx-67"
+           d="m 286.02,414.14 c 0.36,0.13 0.55,0.56 0.43,0.95 -0.12,0.4 -0.5,0.61 -0.85,0.48 -4.19,-1.03 -8.54,-1.03 -12.73,0 -0.26,-0.08 -0.47,-0.3 -0.56,-0.59 -0.08,-0.29 -0.03,-0.6 0.14,-0.84 4.46,-1.18 9.11,-1.18 13.57,0"
+           fill="#fff"
+           stroke="#000"
+           stroke-miterlimit="10"
+           transform="rotate(-90,291.85,529.61)"
+           pointer-events="none"
+           id="path16-1-5-4"
+           inkscape:label="Спинка" />
+        <path
+           cell-id="uU37CldTd9HsUWmvafEx-70"
+           d="m 327.65,441.98 1.28,10.25 c 0.24,1.51 -0.43,3.02 -1.7,3.85 -4.36,0.69 -8.79,0.69 -13.15,0 -1.27,-0.83 -1.94,-2.34 -1.7,-3.85 l 1.27,-10.25 c 0.25,-1.13 1.46,-2 2.97,-2.13 h 8.06 c 1.52,0.13 2.73,1 2.97,2.13 z"
+           fill="#fff"
+           stroke="#000"
+           stroke-miterlimit="10"
+           transform="rotate(90,213.15,460.11)"
+           pointer-events="none"
+           id="path17-9-7-9"
+           inkscape:label="Стул" />
+        <path
+           cell-id="uU37CldTd9HsUWmvafEx-70"
+           d="m 327.32,439.64 c 0.36,0.13 0.55,0.56 0.43,0.95 -0.12,0.4 -0.5,0.61 -0.85,0.48 -4.19,-1.03 -8.54,-1.03 -12.73,0 -0.26,-0.08 -0.47,-0.3 -0.56,-0.59 -0.08,-0.29 -0.03,-0.6 0.14,-0.84 4.46,-1.18 9.11,-1.18 13.57,0"
+           fill="#fff"
+           stroke="#000"
+           stroke-miterlimit="10"
+           transform="rotate(90,213.15,460.11)"
+           pointer-events="none"
+           id="path18-6-6-2"
+           inkscape:label="Спинка" />
+        <path
+           cell-id="uU37CldTd9HsUWmvafEx-71"
+           d="m 286.35,441.98 1.28,10.25 c 0.24,1.51 -0.43,3.02 -1.7,3.85 -4.36,0.69 -8.79,0.69 -13.15,0 -1.27,-0.83 -1.94,-2.34 -1.7,-3.85 l 1.27,-10.25 c 0.25,-1.13 1.46,-2 2.97,-2.13 h 8.06 c 1.52,0.13 2.73,1 2.97,2.13 z"
+           fill="#fff"
+           stroke="#000"
+           stroke-miterlimit="10"
+           transform="rotate(-90,291.85,555.11)"
+           pointer-events="none"
+           id="path19-9-6-9"
+           inkscape:label="Стул" />
+        <path
+           cell-id="uU37CldTd9HsUWmvafEx-71"
+           d="m 286.02,439.64 c 0.36,0.13 0.55,0.56 0.43,0.95 -0.12,0.4 -0.5,0.61 -0.85,0.48 -4.19,-1.03 -8.54,-1.03 -12.73,0 -0.26,-0.08 -0.47,-0.3 -0.56,-0.59 -0.08,-0.29 -0.03,-0.6 0.14,-0.84 4.46,-1.18 9.11,-1.18 13.57,0"
+           fill="#fff"
+           stroke="#000"
+           stroke-miterlimit="10"
+           transform="rotate(-90,291.85,555.11)"
+           pointer-events="none"
+           id="path20-8-5-3"
+           inkscape:label="Спинка" />
+        <rect
+           table="true"
+           cell-id="uU37CldTd9HsUWmvafEx-72"
+           x="265.94"
+           y="413.56"
+           width="68.110001"
+           height="42.57"
+           fill="#fff"
+           stroke="#000"
+           transform="matrix(0,1,1,0,-229.85,254.85)"
+           pointer-events="none"
+           id="rect20-2-8-4"
+           inkscape:label="Стол" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:20.7364px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000;stroke:none;stroke-width:1.94404;stroke-dasharray:none;stroke-opacity:1"
+           x="139.20097"
+           y="667.15875"
+           id="text22-6"
+           transform="matrix(0,-0.99497994,0.99242647,0,-450.10489,707.87437)"><tspan
+             sodipodi:role="line"
+             id="tspan22-85"
+             x="139.20097"
+             y="667.15875"
+             style="stroke-width:1.94404">14</tspan></text>
+      </g>
+      <g
+         id="table-13"
+         data-table="13"
+         inkscape:label="Стол 13"
+         transform="matrix(0,1,-1,0,620,300)">
+        <path
+           cell-id="uU37CldTd9HsUWmvafEx-66"
+           d="m 327.65,416.48 1.28,10.25 c 0.24,1.51 -0.43,3.02 -1.7,3.85 -4.36,0.69 -8.79,0.69 -13.15,0 -1.27,-0.83 -1.94,-2.34 -1.7,-3.85 l 1.27,-10.25 c 0.25,-1.13 1.46,-2 2.97,-2.13 h 8.06 c 1.52,0.13 2.73,1 2.97,2.13 z"
+           fill="#fff"
+           stroke="#000"
+           stroke-miterlimit="10"
+           transform="rotate(90,213.15,434.61)"
+           pointer-events="none"
+           id="path13-2"
+           inkscape:label="Стул" />
+        <path
+           cell-id="uU37CldTd9HsUWmvafEx-66"
+           d="m 327.32,414.14 c 0.36,0.13 0.55,0.56 0.43,0.95 -0.12,0.4 -0.5,0.61 -0.85,0.48 -4.19,-1.03 -8.54,-1.03 -12.73,0 -0.26,-0.08 -0.47,-0.3 -0.56,-0.59 -0.08,-0.29 -0.03,-0.6 0.14,-0.84 4.46,-1.18 9.11,-1.18 13.57,0"
+           fill="#fff"
+           stroke="#000"
+           stroke-miterlimit="10"
+           transform="rotate(90,213.15,434.61)"
+           pointer-events="none"
+           id="path14-2"
+           inkscape:label="Спинка" />
+        <path
+           cell-id="uU37CldTd9HsUWmvafEx-67"
+           d="m 286.35,416.48 1.28,10.25 c 0.24,1.51 -0.43,3.02 -1.7,3.85 -4.36,0.69 -8.79,0.69 -13.15,0 -1.27,-0.83 -1.94,-2.34 -1.7,-3.85 l 1.27,-10.25 c 0.25,-1.13 1.46,-2 2.97,-2.13 h 8.06 c 1.52,0.13 2.73,1 2.97,2.13 z"
+           fill="#fff"
+           stroke="#000"
+           stroke-miterlimit="10"
+           transform="rotate(-90,291.85,529.61)"
+           pointer-events="none"
+           id="path15-94"
+           inkscape:label="Стул" />
+        <path
+           cell-id="uU37CldTd9HsUWmvafEx-67"
+           d="m 286.02,414.14 c 0.36,0.13 0.55,0.56 0.43,0.95 -0.12,0.4 -0.5,0.61 -0.85,0.48 -4.19,-1.03 -8.54,-1.03 -12.73,0 -0.26,-0.08 -0.47,-0.3 -0.56,-0.59 -0.08,-0.29 -0.03,-0.6 0.14,-0.84 4.46,-1.18 9.11,-1.18 13.57,0"
+           fill="#fff"
+           stroke="#000"
+           stroke-miterlimit="10"
+           transform="rotate(-90,291.85,529.61)"
+           pointer-events="none"
+           id="path16-1"
+           inkscape:label="Спинка" />
+        <path
+           cell-id="uU37CldTd9HsUWmvafEx-70"
+           d="m 327.65,441.98 1.28,10.25 c 0.24,1.51 -0.43,3.02 -1.7,3.85 -4.36,0.69 -8.79,0.69 -13.15,0 -1.27,-0.83 -1.94,-2.34 -1.7,-3.85 l 1.27,-10.25 c 0.25,-1.13 1.46,-2 2.97,-2.13 h 8.06 c 1.52,0.13 2.73,1 2.97,2.13 z"
+           fill="#fff"
+           stroke="#000"
+           stroke-miterlimit="10"
+           transform="rotate(90,213.15,460.11)"
+           pointer-events="none"
+           id="path17-9"
+           inkscape:label="Стул" />
+        <path
+           cell-id="uU37CldTd9HsUWmvafEx-70"
+           d="m 327.32,439.64 c 0.36,0.13 0.55,0.56 0.43,0.95 -0.12,0.4 -0.5,0.61 -0.85,0.48 -4.19,-1.03 -8.54,-1.03 -12.73,0 -0.26,-0.08 -0.47,-0.3 -0.56,-0.59 -0.08,-0.29 -0.03,-0.6 0.14,-0.84 4.46,-1.18 9.11,-1.18 13.57,0"
+           fill="#fff"
+           stroke="#000"
+           stroke-miterlimit="10"
+           transform="rotate(90,213.15,460.11)"
+           pointer-events="none"
+           id="path18-6"
+           inkscape:label="Спинка" />
+        <path
+           cell-id="uU37CldTd9HsUWmvafEx-71"
+           d="m 286.35,441.98 1.28,10.25 c 0.24,1.51 -0.43,3.02 -1.7,3.85 -4.36,0.69 -8.79,0.69 -13.15,0 -1.27,-0.83 -1.94,-2.34 -1.7,-3.85 l 1.27,-10.25 c 0.25,-1.13 1.46,-2 2.97,-2.13 h 8.06 c 1.52,0.13 2.73,1 2.97,2.13 z"
+           fill="#fff"
+           stroke="#000"
+           stroke-miterlimit="10"
+           transform="rotate(-90,291.85,555.11)"
+           pointer-events="none"
+           id="path19-9"
+           inkscape:label="Стул" />
+        <path
+           cell-id="uU37CldTd9HsUWmvafEx-71"
+           d="m 286.02,439.64 c 0.36,0.13 0.55,0.56 0.43,0.95 -0.12,0.4 -0.5,0.61 -0.85,0.48 -4.19,-1.03 -8.54,-1.03 -12.73,0 -0.26,-0.08 -0.47,-0.3 -0.56,-0.59 -0.08,-0.29 -0.03,-0.6 0.14,-0.84 4.46,-1.18 9.11,-1.18 13.57,0"
+           fill="#fff"
+           stroke="#000"
+           stroke-miterlimit="10"
+           transform="rotate(-90,291.85,555.11)"
+           pointer-events="none"
+           id="path20-8"
+           inkscape:label="Спинка" />
+        <rect
+           table="true"
+           cell-id="uU37CldTd9HsUWmvafEx-72"
+           x="265.94"
+           y="413.56"
+           width="68.110001"
+           height="42.57"
+           fill="#fff"
+           stroke="#000"
+           transform="matrix(0,1,1,0,-229.85,254.85)"
+           pointer-events="none"
+           id="rect20-2"
+           inkscape:label="Стол" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:20.7364px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000;stroke:none;stroke-width:1.94404;stroke-dasharray:none;stroke-opacity:1"
+           x="43.943279"
+           y="514.98199"
+           id="text22-5"
+           transform="matrix(0,-0.99497994,0.99242647,0,-300.08088,614.08216)"><tspan
+             sodipodi:role="line"
+             id="tspan22-1"
+             x="43.943279"
+             y="514.98199"
+             style="stroke-width:1.94404">13</tspan></text>
+      </g>
+      <g
+         id="table-12"
+         data-table="12"
+         inkscape:label="Стол 12"
+         transform="matrix(0,1,-1,0,620,375)">
+        <path
+           cell-id="uU37CldTd9HsUWmvafEx-66"
+           d="m 327.65,416.48 1.28,10.25 c 0.24,1.51 -0.43,3.02 -1.7,3.85 -4.36,0.69 -8.79,0.69 -13.15,0 -1.27,-0.83 -1.94,-2.34 -1.7,-3.85 l 1.27,-10.25 c 0.25,-1.13 1.46,-2 2.97,-2.13 h 8.06 c 1.52,0.13 2.73,1 2.97,2.13 z"
+           fill="#fff"
+           stroke="#000"
+           stroke-miterlimit="10"
+           transform="rotate(90,213.15,434.61)"
+           pointer-events="none"
+           id="path13-2-1"
+           inkscape:label="Стул" />
+        <path
+           cell-id="uU37CldTd9HsUWmvafEx-66"
+           d="m 327.32,414.14 c 0.36,0.13 0.55,0.56 0.43,0.95 -0.12,0.4 -0.5,0.61 -0.85,0.48 -4.19,-1.03 -8.54,-1.03 -12.73,0 -0.26,-0.08 -0.47,-0.3 -0.56,-0.59 -0.08,-0.29 -0.03,-0.6 0.14,-0.84 4.46,-1.18 9.11,-1.18 13.57,0"
+           fill="#fff"
+           stroke="#000"
+           stroke-miterlimit="10"
+           transform="rotate(90,213.15,434.61)"
+           pointer-events="none"
+           id="path14-2-2"
+           inkscape:label="Спинка" />
+        <path
+           cell-id="uU37CldTd9HsUWmvafEx-67"
+           d="m 286.35,416.48 1.28,10.25 c 0.24,1.51 -0.43,3.02 -1.7,3.85 -4.36,0.69 -8.79,0.69 -13.15,0 -1.27,-0.83 -1.94,-2.34 -1.7,-3.85 l 1.27,-10.25 c 0.25,-1.13 1.46,-2 2.97,-2.13 h 8.06 c 1.52,0.13 2.73,1 2.97,2.13 z"
+           fill="#fff"
+           stroke="#000"
+           stroke-miterlimit="10"
+           transform="rotate(-90,291.85,529.61)"
+           pointer-events="none"
+           id="path15-94-5"
+           inkscape:label="Стул" />
+        <path
+           cell-id="uU37CldTd9HsUWmvafEx-67"
+           d="m 286.02,414.14 c 0.36,0.13 0.55,0.56 0.43,0.95 -0.12,0.4 -0.5,0.61 -0.85,0.48 -4.19,-1.03 -8.54,-1.03 -12.73,0 -0.26,-0.08 -0.47,-0.3 -0.56,-0.59 -0.08,-0.29 -0.03,-0.6 0.14,-0.84 4.46,-1.18 9.11,-1.18 13.57,0"
+           fill="#fff"
+           stroke="#000"
+           stroke-miterlimit="10"
+           transform="rotate(-90,291.85,529.61)"
+           pointer-events="none"
+           id="path16-1-0"
+           inkscape:label="Спинка" />
+        <path
+           cell-id="uU37CldTd9HsUWmvafEx-70"
+           d="m 327.65,441.98 1.28,10.25 c 0.24,1.51 -0.43,3.02 -1.7,3.85 -4.36,0.69 -8.79,0.69 -13.15,0 -1.27,-0.83 -1.94,-2.34 -1.7,-3.85 l 1.27,-10.25 c 0.25,-1.13 1.46,-2 2.97,-2.13 h 8.06 c 1.52,0.13 2.73,1 2.97,2.13 z"
+           fill="#fff"
+           stroke="#000"
+           stroke-miterlimit="10"
+           transform="rotate(90,213.15,460.11)"
+           pointer-events="none"
+           id="path17-9-8"
+           inkscape:label="Стул" />
+        <path
+           cell-id="uU37CldTd9HsUWmvafEx-70"
+           d="m 327.32,439.64 c 0.36,0.13 0.55,0.56 0.43,0.95 -0.12,0.4 -0.5,0.61 -0.85,0.48 -4.19,-1.03 -8.54,-1.03 -12.73,0 -0.26,-0.08 -0.47,-0.3 -0.56,-0.59 -0.08,-0.29 -0.03,-0.6 0.14,-0.84 4.46,-1.18 9.11,-1.18 13.57,0"
+           fill="#fff"
+           stroke="#000"
+           stroke-miterlimit="10"
+           transform="rotate(90,213.15,460.11)"
+           pointer-events="none"
+           id="path18-6-3"
+           inkscape:label="Спинка" />
+        <path
+           cell-id="uU37CldTd9HsUWmvafEx-71"
+           d="m 286.35,441.98 1.28,10.25 c 0.24,1.51 -0.43,3.02 -1.7,3.85 -4.36,0.69 -8.79,0.69 -13.15,0 -1.27,-0.83 -1.94,-2.34 -1.7,-3.85 l 1.27,-10.25 c 0.25,-1.13 1.46,-2 2.97,-2.13 h 8.06 c 1.52,0.13 2.73,1 2.97,2.13 z"
+           fill="#fff"
+           stroke="#000"
+           stroke-miterlimit="10"
+           transform="rotate(-90,291.85,555.11)"
+           pointer-events="none"
+           id="path19-9-9"
+           inkscape:label="Стул" />
+        <path
+           cell-id="uU37CldTd9HsUWmvafEx-71"
+           d="m 286.02,439.64 c 0.36,0.13 0.55,0.56 0.43,0.95 -0.12,0.4 -0.5,0.61 -0.85,0.48 -4.19,-1.03 -8.54,-1.03 -12.73,0 -0.26,-0.08 -0.47,-0.3 -0.56,-0.59 -0.08,-0.29 -0.03,-0.6 0.14,-0.84 4.46,-1.18 9.11,-1.18 13.57,0"
+           fill="#fff"
+           stroke="#000"
+           stroke-miterlimit="10"
+           transform="rotate(-90,291.85,555.11)"
+           pointer-events="none"
+           id="path20-8-3"
+           inkscape:label="Спинка" />
+        <rect
+           table="true"
+           cell-id="uU37CldTd9HsUWmvafEx-72"
+           x="265.94"
+           y="413.56"
+           width="68.110001"
+           height="42.57"
+           fill="#fff"
+           stroke="#000"
+           transform="matrix(0,1,1,0,-229.85,254.85)"
+           pointer-events="none"
+           id="rect20-2-9"
+           inkscape:label="Стол" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:20.7364px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000;stroke:none;stroke-width:1.94404;stroke-dasharray:none;stroke-opacity:1"
+           x="43.943279"
+           y="591.57422"
+           id="text22-8"
+           transform="matrix(0,-0.99497994,0.99242647,0,-375.09288,614.08216)"><tspan
+             sodipodi:role="line"
+             id="tspan22-8"
+             x="43.943279"
+             y="591.57422"
+             style="stroke-width:1.94404">12</tspan></text>
+      </g>
+      <g
+         id="table-11"
+         data-table="11"
+         inkscape:label="Стол 11"
+         transform="matrix(0,1,-1,0,620,450)">
+        <path
+           cell-id="uU37CldTd9HsUWmvafEx-66"
+           d="m 327.65,416.48 1.28,10.25 c 0.24,1.51 -0.43,3.02 -1.7,3.85 -4.36,0.69 -8.79,0.69 -13.15,0 -1.27,-0.83 -1.94,-2.34 -1.7,-3.85 l 1.27,-10.25 c 0.25,-1.13 1.46,-2 2.97,-2.13 h 8.06 c 1.52,0.13 2.73,1 2.97,2.13 z"
+           fill="#fff"
+           stroke="#000"
+           stroke-miterlimit="10"
+           transform="rotate(90,213.15,434.61)"
+           pointer-events="none"
+           id="path13-2-6"
+           inkscape:label="Стул" />
+        <path
+           cell-id="uU37CldTd9HsUWmvafEx-66"
+           d="m 327.32,414.14 c 0.36,0.13 0.55,0.56 0.43,0.95 -0.12,0.4 -0.5,0.61 -0.85,0.48 -4.19,-1.03 -8.54,-1.03 -12.73,0 -0.26,-0.08 -0.47,-0.3 -0.56,-0.59 -0.08,-0.29 -0.03,-0.6 0.14,-0.84 4.46,-1.18 9.11,-1.18 13.57,0"
+           fill="#fff"
+           stroke="#000"
+           stroke-miterlimit="10"
+           transform="rotate(90,213.15,434.61)"
+           pointer-events="none"
+           id="path14-2-9"
+           inkscape:label="Спинка" />
+        <path
+           cell-id="uU37CldTd9HsUWmvafEx-67"
+           d="m 286.35,416.48 1.28,10.25 c 0.24,1.51 -0.43,3.02 -1.7,3.85 -4.36,0.69 -8.79,0.69 -13.15,0 -1.27,-0.83 -1.94,-2.34 -1.7,-3.85 l 1.27,-10.25 c 0.25,-1.13 1.46,-2 2.97,-2.13 h 8.06 c 1.52,0.13 2.73,1 2.97,2.13 z"
+           fill="#fff"
+           stroke="#000"
+           stroke-miterlimit="10"
+           transform="rotate(-90,291.85,529.61)"
+           pointer-events="none"
+           id="path15-94-3"
+           inkscape:label="Стул" />
+        <path
+           cell-id="uU37CldTd9HsUWmvafEx-67"
+           d="m 286.02,414.14 c 0.36,0.13 0.55,0.56 0.43,0.95 -0.12,0.4 -0.5,0.61 -0.85,0.48 -4.19,-1.03 -8.54,-1.03 -12.73,0 -0.26,-0.08 -0.47,-0.3 -0.56,-0.59 -0.08,-0.29 -0.03,-0.6 0.14,-0.84 4.46,-1.18 9.11,-1.18 13.57,0"
+           fill="#fff"
+           stroke="#000"
+           stroke-miterlimit="10"
+           transform="rotate(-90,291.85,529.61)"
+           pointer-events="none"
+           id="path16-1-5"
+           inkscape:label="Спинка" />
+        <path
+           cell-id="uU37CldTd9HsUWmvafEx-70"
+           d="m 327.65,441.98 1.28,10.25 c 0.24,1.51 -0.43,3.02 -1.7,3.85 -4.36,0.69 -8.79,0.69 -13.15,0 -1.27,-0.83 -1.94,-2.34 -1.7,-3.85 l 1.27,-10.25 c 0.25,-1.13 1.46,-2 2.97,-2.13 h 8.06 c 1.52,0.13 2.73,1 2.97,2.13 z"
+           fill="#fff"
+           stroke="#000"
+           stroke-miterlimit="10"
+           transform="rotate(90,213.15,460.11)"
+           pointer-events="none"
+           id="path17-9-7"
+           inkscape:label="Стул" />
+        <path
+           cell-id="uU37CldTd9HsUWmvafEx-70"
+           d="m 327.32,439.64 c 0.36,0.13 0.55,0.56 0.43,0.95 -0.12,0.4 -0.5,0.61 -0.85,0.48 -4.19,-1.03 -8.54,-1.03 -12.73,0 -0.26,-0.08 -0.47,-0.3 -0.56,-0.59 -0.08,-0.29 -0.03,-0.6 0.14,-0.84 4.46,-1.18 9.11,-1.18 13.57,0"
+           fill="#fff"
+           stroke="#000"
+           stroke-miterlimit="10"
+           transform="rotate(90,213.15,460.11)"
+           pointer-events="none"
+           id="path18-6-6"
+           inkscape:label="Спинка" />
+        <path
+           cell-id="uU37CldTd9HsUWmvafEx-71"
+           d="m 286.35,441.98 1.28,10.25 c 0.24,1.51 -0.43,3.02 -1.7,3.85 -4.36,0.69 -8.79,0.69 -13.15,0 -1.27,-0.83 -1.94,-2.34 -1.7,-3.85 l 1.27,-10.25 c 0.25,-1.13 1.46,-2 2.97,-2.13 h 8.06 c 1.52,0.13 2.73,1 2.97,2.13 z"
+           fill="#fff"
+           stroke="#000"
+           stroke-miterlimit="10"
+           transform="rotate(-90,291.85,555.11)"
+           pointer-events="none"
+           id="path19-9-6"
+           inkscape:label="Стул" />
+        <path
+           cell-id="uU37CldTd9HsUWmvafEx-71"
+           d="m 286.02,439.64 c 0.36,0.13 0.55,0.56 0.43,0.95 -0.12,0.4 -0.5,0.61 -0.85,0.48 -4.19,-1.03 -8.54,-1.03 -12.73,0 -0.26,-0.08 -0.47,-0.3 -0.56,-0.59 -0.08,-0.29 -0.03,-0.6 0.14,-0.84 4.46,-1.18 9.11,-1.18 13.57,0"
+           fill="#fff"
+           stroke="#000"
+           stroke-miterlimit="10"
+           transform="rotate(-90,291.85,555.11)"
+           pointer-events="none"
+           id="path20-8-5"
+           inkscape:label="Спинка" />
+        <rect
+           table="true"
+           cell-id="uU37CldTd9HsUWmvafEx-72"
+           x="265.94"
+           y="413.56"
+           width="68.110001"
+           height="42.57"
+           fill="#fff"
+           stroke="#000"
+           transform="matrix(0,1,1,0,-229.85,254.85)"
+           pointer-events="none"
+           id="rect20-2-8"
+           inkscape:label="Стол" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:20.7364px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000;stroke:none;stroke-width:1.94404;stroke-dasharray:none;stroke-opacity:1"
+           x="43.943283"
+           y="667.15869"
+           id="text22"
+           transform="matrix(0,-0.99497994,0.99242647,0,-450.10489,614.08216)"><tspan
+             sodipodi:role="line"
+             id="tspan22"
+             x="43.943283"
+             y="667.15869"
+             style="stroke-width:1.94404">11</tspan></text>
+      </g>
+      <g
+         id="table-7"
+         data-table="7"
+         inkscape:label="Стол 7"
+         transform="matrix(1,0,0,1,300,-375)">
+        <path
+           cell-id="ZRJKuEp7t05sZtK5OItD-40"
+           d="m 405.85263,438.61025 14.87308,-3.13821 c 2.18192,-0.5322 4.47627,0.2207 5.85112,1.93741 1.55176,6.14815 2.10781,12.50387 1.64725,18.82808 -1.05587,1.92937 -3.18375,3.0792 -5.4258,2.92402 l -15.19208,-0.50786 c -1.69415,-0.20312 -3.13089,-1.82407 -3.50929,-3.96925 l -1.01014,-11.5459 c 1.5e-4,-2.1783 1.13272,-4.03407 2.76586,-4.52829 z m -1.71215,16.57229 -3.70202,3.46584 m 3.39785,-6.94256 -4.44117,1.44256 m 4.07773,-5.59669 -4.65383,-0.98815 m 4.35053,-2.47861 -4.27812,-3.11901 m 0.12765,-1.06518 c -0.47389,6.5161 0.10134,13.09099 1.69866,19.41584 l -2.26724,2.99902 c -2.43249,-8.0687 -3.17942,-16.60609 -2.18412,-24.96464 z"
+           fill="#fff"
+           stroke="#000"
+           stroke-linejoin="round"
+           stroke-miterlimit="10"
+           pointer-events="none"
+           id="path190-8"
+           inkscape:label="Стул" />
+        <path
+           cell-id="ZRJKuEp7t05sZtK5OItD-43"
+           d="m 476.00827,435.0461 -12.05306,9.08349 c -1.72525,1.41177 -4.12417,1.67672 -6.09206,0.68824 -4.02969,-4.95962 -7.23969,-10.51951 -9.52,-16.48913 0.12789,-2.19848 1.56181,-4.13487 3.64206,-4.93176 l 13.89306,-5.89651 c 1.6126,-0.52689 3.60112,0.35731 4.86066,2.15891 l 5.83,10.09785 c 0.93046,1.9916 0.70194,4.1558 -0.56066,5.28891 z m -5.52434,-15.82843 1.85446,-4.70798 m -0.0995,7.74772 3.38944,-3.16932 m -1.28444,6.81529 4.61444,-1.04756 m -2.86444,4.07865 5.18446,1.05975 m 0.33448,1.01933 c -2.353,-6.13551 -5.678,-11.89458 -9.815,-17.00008 l 0.76006,-3.68353 c 5.6359,6.34167 9.9509,13.81547 12.62,21.85848 z"
+           fill="#fff"
+           stroke="#000"
+           stroke-linejoin="round"
+           stroke-miterlimit="10"
+           pointer-events="none"
+           id="path193-7"
+           inkscape:label="Стул" />
+        <path
+           cell-id="ZRJKuEp7t05sZtK5OItD-42"
+           d="m 474.82144,459.3311 -15.19207,0.50786 c -2.24119,0.14522 -4.36994,-0.99465 -5.4258,-2.92402 -0.46056,-6.32421 0.0955,-12.67993 1.64724,-18.82808 1.37485,-1.71671 3.67008,-2.47957 5.85112,-1.93741 l 14.87309,3.13821 c 1.63314,0.49422 2.76658,2.34003 2.76673,4.51833 l -1.01014,11.5459 c -0.3784,2.14518 -1.81602,3.77609 -3.51017,3.97921 z m 4.56388,-16.0232 4.24762,-2.77034 m -4.55179,6.24706 4.6242,-0.64945 m -4.98764,4.80358 4.41154,1.78127 m -4.71484,1.68549 3.67151,3.8145 m -0.31067,1.02683 c 1.59819,-6.33481 2.17342,-12.90969 1.69866,-19.41583 l 2.75358,-2.55975 c 0.99442,8.36851 0.24749,16.9059 -2.18412,24.96464 z"
+           fill="#fff"
+           stroke="#000"
+           stroke-linejoin="round"
+           stroke-miterlimit="10"
+           pointer-events="none"
+           id="path192-7"
+           inkscape:label="Стул" />
+        <path
+           cell-id="ZRJKuEp7t05sZtK5OItD-41"
+           d="m 462.92089,415.06638 -4.66321,14.35411 c -0.60349,2.14602 -2.4166,3.73902 -4.59557,4.05804 -6.14565,-1.75135 -11.96414,-4.46456 -17.2561,-8.04666 -1.15624,-1.87425 -1.09231,-4.2829 0.15466,-6.12886 l 7.99843,-12.79887 c 1.01875,-1.35656 3.1548,-1.77282 5.21992,-1.01949 l 10.56754,4.92773 c 1.90452,1.09773 2.95867,3.00162 2.57433,4.654 z m -13.60409,-9.79726 -1.1813,-4.92023 m 4.36244,6.40362 0.95861,-4.54026 m 2.85694,6.31948 3.17907,-3.50485 m -0.007,4.98401 4.85471,-2.10558 m 0.85865,0.64313 c -5.44664,-3.67629 -11.47359,-6.4867 -17.79082,-8.29599 l -1.49018,-3.45333 c 8.25409,1.96217 16.07553,5.60937 22.87521,10.66688 z"
+           fill="#fff"
+           stroke="#000"
+           stroke-linejoin="round"
+           stroke-miterlimit="10"
+           pointer-events="none"
+           id="path191-83"
+           inkscape:label="Стул" />
+        <path
+           cell-id="ZRJKuEp7t05sZtK5OItD-39"
+           d="m 416.18858,417.01147 13.89306,5.89651 c 2.08526,0.78823 3.51418,2.73327 3.64207,4.93176 -2.28032,5.96962 -5.49032,11.5295 -9.52,16.48912 -1.96789,0.98849 -4.36181,0.71488 -6.09207,-0.68823 l -12.05306,-9.08349 c -1.2626,-1.13311 -1.49111,-3.29731 -0.56066,-5.28891 l 5.83,-10.09786 c 1.25955,-1.80159 3.24806,-2.6858 4.86066,-2.1589 z m -10.94566,12.69843 -5.00446,0.74798 m 6.75946,-3.78773 -4.43943,-1.35067 m 6.54443,-2.29529 -3.21443,-3.47244 m 4.96443,0.44135 -1.67446,-5.01975 m 0.71553,-0.79933 c -4.13701,5.10551 -7.46201,10.86458 -9.815,17.00008 l -3.57007,1.18353 c 2.6741,-8.05167 6.9891,-15.52547 12.62,-21.85848 z"
+           fill="#fff"
+           stroke="#000"
+           stroke-linejoin="round"
+           stroke-miterlimit="10"
+           pointer-events="none"
+           id="path189-8"
+           inkscape:label="Стул" />
+        <path
+           cell-id="ZRJKuEp7t05sZtK5OItD-38"
+           d="m 437.37494,406.21677 7.99843,12.79888 c 1.25603,1.84173 1.3109,4.25461 0.15466,6.12886 -5.29196,3.58209 -11.11045,6.2953 -17.2561,8.04665 -2.17897,-0.31901 -3.98302,-1.91624 -4.59557,-4.05803 l -4.66321,-14.35411 c -0.38434,-1.65239 0.66981,-3.55627 2.57433,-4.654 l 10.56754,-4.92773 c 2.06512,-0.75334 4.20117,-0.33707 5.21992,1.01948 z m -16.24968,4.12378 -4.52844,-2.25773 m 7.70958,0.77434 -2.86186,-3.65276 m 6.67741,1.87354 -0.6414,-4.68818 m 3.81348,3.20901 1.50757,-5.07236 m 1.0446,-0.24437 c -6.31723,1.8093 -12.34418,4.61971 -17.79082,8.296 l -3.60327,-1.07821 c 6.80874,-5.06175 14.63018,-8.70894 22.87521,-10.66689 z"
+           fill="#fff"
+           stroke="#000"
+           stroke-linejoin="round"
+           stroke-miterlimit="10"
+           pointer-events="none"
+           id="path188-3"
+           inkscape:label="Стул" />
+        <ellipse
+           table="true"
+           cell-id="ZRJKuEp7t05sZtK5OItD-44"
+           cx="-440.73465"
+           cy="441.24652"
+           rx="30.275108"
+           ry="31.294495"
+           fill="#fff"
+           stroke="#000"
+           transform="rotate(-90)"
+           pointer-events="none"
+           id="ellipse194-7"
+           inkscape:label="Стол"
+           style="stroke-width:0.975878" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:21.1766px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000"
+           x="440.66742"
+           y="447.94391"
+           id="text6-1"
+           inkscape:label="Номер"><tspan
+             sodipodi:role="line"
+             id="tspan6-0"
+             x="440.66742"
+             y="447.94391"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:21.1766px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:center;writing-mode:lr-tb;baseline-shift:baseline;text-anchor:middle">7</tspan></text>
+      </g>
+      <g
+         id="table-6"
+         data-table="6"
+         inkscape:label="Стол 6"
+         transform="matrix(1,0,0,1,190,-375)">
+        <path
+           cell-id="ZRJKuEp7t05sZtK5OItD-40"
+           d="m 405.85263,438.61025 14.87308,-3.13821 c 2.18192,-0.5322 4.47627,0.2207 5.85112,1.93741 1.55176,6.14815 2.10781,12.50387 1.64725,18.82808 -1.05587,1.92937 -3.18375,3.0792 -5.4258,2.92402 l -15.19208,-0.50786 c -1.69415,-0.20312 -3.13089,-1.82407 -3.50929,-3.96925 l -1.01014,-11.5459 c 1.5e-4,-2.1783 1.13272,-4.03407 2.76586,-4.52829 z m -1.71215,16.57229 -3.70202,3.46584 m 3.39785,-6.94256 -4.44117,1.44256 m 4.07773,-5.59669 -4.65383,-0.98815 m 4.35053,-2.47861 -4.27812,-3.11901 m 0.12765,-1.06518 c -0.47389,6.5161 0.10134,13.09099 1.69866,19.41584 l -2.26724,2.99902 c -2.43249,-8.0687 -3.17942,-16.60609 -2.18412,-24.96464 z"
+           fill="#fff"
+           stroke="#000"
+           stroke-linejoin="round"
+           stroke-miterlimit="10"
+           pointer-events="none"
+           id="path190-5"
+           inkscape:label="Стул" />
+        <path
+           cell-id="ZRJKuEp7t05sZtK5OItD-43"
+           d="m 476.00827,435.0461 -12.05306,9.08349 c -1.72525,1.41177 -4.12417,1.67672 -6.09206,0.68824 -4.02969,-4.95962 -7.23969,-10.51951 -9.52,-16.48913 0.12789,-2.19848 1.56181,-4.13487 3.64206,-4.93176 l 13.89306,-5.89651 c 1.6126,-0.52689 3.60112,0.35731 4.86066,2.15891 l 5.83,10.09785 c 0.93046,1.9916 0.70194,4.1558 -0.56066,5.28891 z m -5.52434,-15.82843 1.85446,-4.70798 m -0.0995,7.74772 3.38944,-3.16932 m -1.28444,6.81529 4.61444,-1.04756 m -2.86444,4.07865 5.18446,1.05975 m 0.33448,1.01933 c -2.353,-6.13551 -5.678,-11.89458 -9.815,-17.00008 l 0.76006,-3.68353 c 5.6359,6.34167 9.9509,13.81547 12.62,21.85848 z"
+           fill="#fff"
+           stroke="#000"
+           stroke-linejoin="round"
+           stroke-miterlimit="10"
+           pointer-events="none"
+           id="path193-0"
+           inkscape:label="Стул" />
+        <path
+           cell-id="ZRJKuEp7t05sZtK5OItD-42"
+           d="m 474.82144,459.3311 -15.19207,0.50786 c -2.24119,0.14522 -4.36994,-0.99465 -5.4258,-2.92402 -0.46056,-6.32421 0.0955,-12.67993 1.64724,-18.82808 1.37485,-1.71671 3.67008,-2.47957 5.85112,-1.93741 l 14.87309,3.13821 c 1.63314,0.49422 2.76658,2.34003 2.76673,4.51833 l -1.01014,11.5459 c -0.3784,2.14518 -1.81602,3.77609 -3.51017,3.97921 z m 4.56388,-16.0232 4.24762,-2.77034 m -4.55179,6.24706 4.6242,-0.64945 m -4.98764,4.80358 4.41154,1.78127 m -4.71484,1.68549 3.67151,3.8145 m -0.31067,1.02683 c 1.59819,-6.33481 2.17342,-12.90969 1.69866,-19.41583 l 2.75358,-2.55975 c 0.99442,8.36851 0.24749,16.9059 -2.18412,24.96464 z"
+           fill="#fff"
+           stroke="#000"
+           stroke-linejoin="round"
+           stroke-miterlimit="10"
+           pointer-events="none"
+           id="path192-9"
+           inkscape:label="Стул" />
+        <path
+           cell-id="ZRJKuEp7t05sZtK5OItD-41"
+           d="m 462.92089,415.06638 -4.66321,14.35411 c -0.60349,2.14602 -2.4166,3.73902 -4.59557,4.05804 -6.14565,-1.75135 -11.96414,-4.46456 -17.2561,-8.04666 -1.15624,-1.87425 -1.09231,-4.2829 0.15466,-6.12886 l 7.99843,-12.79887 c 1.01875,-1.35656 3.1548,-1.77282 5.21992,-1.01949 l 10.56754,4.92773 c 1.90452,1.09773 2.95867,3.00162 2.57433,4.654 z m -13.60409,-9.79726 -1.1813,-4.92023 m 4.36244,6.40362 0.95861,-4.54026 m 2.85694,6.31948 3.17907,-3.50485 m -0.007,4.98401 4.85471,-2.10558 m 0.85865,0.64313 c -5.44664,-3.67629 -11.47359,-6.4867 -17.79082,-8.29599 l -1.49018,-3.45333 c 8.25409,1.96217 16.07553,5.60937 22.87521,10.66688 z"
+           fill="#fff"
+           stroke="#000"
+           stroke-linejoin="round"
+           stroke-miterlimit="10"
+           pointer-events="none"
+           id="path191-4"
+           inkscape:label="Стул" />
+        <path
+           cell-id="ZRJKuEp7t05sZtK5OItD-39"
+           d="m 416.18858,417.01147 13.89306,5.89651 c 2.08526,0.78823 3.51418,2.73327 3.64207,4.93176 -2.28032,5.96962 -5.49032,11.5295 -9.52,16.48912 -1.96789,0.98849 -4.36181,0.71488 -6.09207,-0.68823 l -12.05306,-9.08349 c -1.2626,-1.13311 -1.49111,-3.29731 -0.56066,-5.28891 l 5.83,-10.09786 c 1.25955,-1.80159 3.24806,-2.6858 4.86066,-2.1589 z m -10.94566,12.69843 -5.00446,0.74798 m 6.75946,-3.78773 -4.43943,-1.35067 m 6.54443,-2.29529 -3.21443,-3.47244 m 4.96443,0.44135 -1.67446,-5.01975 m 0.71553,-0.79933 c -4.13701,5.10551 -7.46201,10.86458 -9.815,17.00008 l -3.57007,1.18353 c 2.6741,-8.05167 6.9891,-15.52547 12.62,-21.85848 z"
+           fill="#fff"
+           stroke="#000"
+           stroke-linejoin="round"
+           stroke-miterlimit="10"
+           pointer-events="none"
+           id="path189-7"
+           inkscape:label="Стул" />
+        <path
+           cell-id="ZRJKuEp7t05sZtK5OItD-38"
+           d="m 437.37494,406.21677 7.99843,12.79888 c 1.25603,1.84173 1.3109,4.25461 0.15466,6.12886 -5.29196,3.58209 -11.11045,6.2953 -17.2561,8.04665 -2.17897,-0.31901 -3.98302,-1.91624 -4.59557,-4.05803 l -4.66321,-14.35411 c -0.38434,-1.65239 0.66981,-3.55627 2.57433,-4.654 l 10.56754,-4.92773 c 2.06512,-0.75334 4.20117,-0.33707 5.21992,1.01948 z m -16.24968,4.12378 -4.52844,-2.25773 m 7.70958,0.77434 -2.86186,-3.65276 m 6.67741,1.87354 -0.6414,-4.68818 m 3.81348,3.20901 1.50757,-5.07236 m 1.0446,-0.24437 c -6.31723,1.8093 -12.34418,4.61971 -17.79082,8.296 l -3.60327,-1.07821 c 6.80874,-5.06175 14.63018,-8.70894 22.87521,-10.66689 z"
+           fill="#fff"
+           stroke="#000"
+           stroke-linejoin="round"
+           stroke-miterlimit="10"
+           pointer-events="none"
+           id="path188-8"
+           inkscape:label="Стул" />
+        <ellipse
+           table="true"
+           cell-id="ZRJKuEp7t05sZtK5OItD-44"
+           cx="-440.73465"
+           cy="441.24652"
+           rx="30.275108"
+           ry="31.294495"
+           fill="#fff"
+           stroke="#000"
+           transform="rotate(-90)"
+           pointer-events="none"
+           id="ellipse194-3"
+           inkscape:label="Стол"
+           style="stroke-width:0.975878" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:21.1766px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000"
+           x="440.66742"
+           y="447.94391"
+           id="text6-5"
+           inkscape:label="Номер"><tspan
+             sodipodi:role="line"
+             id="tspan6-1"
+             x="440.66742"
+             y="447.94391"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:21.1766px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:center;writing-mode:lr-tb;baseline-shift:baseline;text-anchor:middle">6</tspan></text>
+      </g>
+      <g
+         id="table-5"
+         data-table="5"
+         inkscape:label="Стол 5"
+         transform="matrix(1,0,0,1,80,-375)">
+        <path
+           cell-id="ZRJKuEp7t05sZtK5OItD-40"
+           d="m 405.85263,438.61025 14.87308,-3.13821 c 2.18192,-0.5322 4.47627,0.2207 5.85112,1.93741 1.55176,6.14815 2.10781,12.50387 1.64725,18.82808 -1.05587,1.92937 -3.18375,3.0792 -5.4258,2.92402 l -15.19208,-0.50786 c -1.69415,-0.20312 -3.13089,-1.82407 -3.50929,-3.96925 l -1.01014,-11.5459 c 1.5e-4,-2.1783 1.13272,-4.03407 2.76586,-4.52829 z m -1.71215,16.57229 -3.70202,3.46584 m 3.39785,-6.94256 -4.44117,1.44256 m 4.07773,-5.59669 -4.65383,-0.98815 m 4.35053,-2.47861 -4.27812,-3.11901 m 0.12765,-1.06518 c -0.47389,6.5161 0.10134,13.09099 1.69866,19.41584 l -2.26724,2.99902 c -2.43249,-8.0687 -3.17942,-16.60609 -2.18412,-24.96464 z"
+           fill="#fff"
+           stroke="#000"
+           stroke-linejoin="round"
+           stroke-miterlimit="10"
+           pointer-events="none"
+           id="path190-4"
+           inkscape:label="Стул"
+           style="fill:#fff" />
+        <path
+           cell-id="ZRJKuEp7t05sZtK5OItD-43"
+           d="m 476.00827,435.0461 -12.05306,9.08349 c -1.72525,1.41177 -4.12417,1.67672 -6.09206,0.68824 -4.02969,-4.95962 -7.23969,-10.51951 -9.52,-16.48913 0.12789,-2.19848 1.56181,-4.13487 3.64206,-4.93176 l 13.89306,-5.89651 c 1.6126,-0.52689 3.60112,0.35731 4.86066,2.15891 l 5.83,10.09785 c 0.93046,1.9916 0.70194,4.1558 -0.56066,5.28891 z m -5.52434,-15.82843 1.85446,-4.70798 m -0.0995,7.74772 3.38944,-3.16932 m -1.28444,6.81529 4.61444,-1.04756 m -2.86444,4.07865 5.18446,1.05975 m 0.33448,1.01933 c -2.353,-6.13551 -5.678,-11.89458 -9.815,-17.00008 l 0.76006,-3.68353 c 5.6359,6.34167 9.9509,13.81547 12.62,21.85848 z"
+           fill="#fff"
+           stroke="#000"
+           stroke-linejoin="round"
+           stroke-miterlimit="10"
+           pointer-events="none"
+           id="path193-06"
+           inkscape:label="Стул"
+           style="fill:#fff" />
+        <path
+           cell-id="ZRJKuEp7t05sZtK5OItD-42"
+           d="m 474.82144,459.3311 -15.19207,0.50786 c -2.24119,0.14522 -4.36994,-0.99465 -5.4258,-2.92402 -0.46056,-6.32421 0.0955,-12.67993 1.64724,-18.82808 1.37485,-1.71671 3.67008,-2.47957 5.85112,-1.93741 l 14.87309,3.13821 c 1.63314,0.49422 2.76658,2.34003 2.76673,4.51833 l -1.01014,11.5459 c -0.3784,2.14518 -1.81602,3.77609 -3.51017,3.97921 z m 4.56388,-16.0232 4.24762,-2.77034 m -4.55179,6.24706 4.6242,-0.64945 m -4.98764,4.80358 4.41154,1.78127 m -4.71484,1.68549 3.67151,3.8145 m -0.31067,1.02683 c 1.59819,-6.33481 2.17342,-12.90969 1.69866,-19.41583 l 2.75358,-2.55975 c 0.99442,8.36851 0.24749,16.9059 -2.18412,24.96464 z"
+           fill="#fff"
+           stroke="#000"
+           stroke-linejoin="round"
+           stroke-miterlimit="10"
+           pointer-events="none"
+           id="path192-1"
+           inkscape:label="Стул"
+           style="fill:#fff" />
+        <path
+           cell-id="ZRJKuEp7t05sZtK5OItD-41"
+           d="m 462.92089,415.06638 -4.66321,14.35411 c -0.60349,2.14602 -2.4166,3.73902 -4.59557,4.05804 -6.14565,-1.75135 -11.96414,-4.46456 -17.2561,-8.04666 -1.15624,-1.87425 -1.09231,-4.2829 0.15466,-6.12886 l 7.99843,-12.79887 c 1.01875,-1.35656 3.1548,-1.77282 5.21992,-1.01949 l 10.56754,4.92773 c 1.90452,1.09773 2.95867,3.00162 2.57433,4.654 z m -13.60409,-9.79726 -1.1813,-4.92023 m 4.36244,6.40362 0.95861,-4.54026 m 2.85694,6.31948 3.17907,-3.50485 m -0.007,4.98401 4.85471,-2.10558 m 0.85865,0.64313 c -5.44664,-3.67629 -11.47359,-6.4867 -17.79082,-8.29599 l -1.49018,-3.45333 c 8.25409,1.96217 16.07553,5.60937 22.87521,10.66688 z"
+           fill="#fff"
+           stroke="#000"
+           stroke-linejoin="round"
+           stroke-miterlimit="10"
+           pointer-events="none"
+           id="path191-8"
+           inkscape:label="Стул"
+           style="fill:#fff" />
+        <path
+           cell-id="ZRJKuEp7t05sZtK5OItD-39"
+           d="m 416.18858,417.01147 13.89306,5.89651 c 2.08526,0.78823 3.51418,2.73327 3.64207,4.93176 -2.28032,5.96962 -5.49032,11.5295 -9.52,16.48912 -1.96789,0.98849 -4.36181,0.71488 -6.09207,-0.68823 l -12.05306,-9.08349 c -1.2626,-1.13311 -1.49111,-3.29731 -0.56066,-5.28891 l 5.83,-10.09786 c 1.25955,-1.80159 3.24806,-2.6858 4.86066,-2.1589 z m -10.94566,12.69843 -5.00446,0.74798 m 6.75946,-3.78773 -4.43943,-1.35067 m 6.54443,-2.29529 -3.21443,-3.47244 m 4.96443,0.44135 -1.67446,-5.01975 m 0.71553,-0.79933 c -4.13701,5.10551 -7.46201,10.86458 -9.815,17.00008 l -3.57007,1.18353 c 2.6741,-8.05167 6.9891,-15.52547 12.62,-21.85848 z"
+           fill="#fff"
+           stroke="#000"
+           stroke-linejoin="round"
+           stroke-miterlimit="10"
+           pointer-events="none"
+           id="path189-9"
+           inkscape:label="Стул"
+           style="fill:#fff" />
+        <path
+           cell-id="ZRJKuEp7t05sZtK5OItD-38"
+           d="m 437.37494,406.21677 7.99843,12.79888 c 1.25603,1.84173 1.3109,4.25461 0.15466,6.12886 -5.29196,3.58209 -11.11045,6.2953 -17.2561,8.04665 -2.17897,-0.31901 -3.98302,-1.91624 -4.59557,-4.05803 l -4.66321,-14.35411 c -0.38434,-1.65239 0.66981,-3.55627 2.57433,-4.654 l 10.56754,-4.92773 c 2.06512,-0.75334 4.20117,-0.33707 5.21992,1.01948 z m -16.24968,4.12378 -4.52844,-2.25773 m 7.70958,0.77434 -2.86186,-3.65276 m 6.67741,1.87354 -0.6414,-4.68818 m 3.81348,3.20901 1.50757,-5.07236 m 1.0446,-0.24437 c -6.31723,1.8093 -12.34418,4.61971 -17.79082,8.296 l -3.60327,-1.07821 c 6.80874,-5.06175 14.63018,-8.70894 22.87521,-10.66689 z"
+           fill="#fff"
+           stroke="#000"
+           stroke-linejoin="round"
+           stroke-miterlimit="10"
+           pointer-events="none"
+           id="path188-84"
+           inkscape:label="Стул"
+           style="fill:#fff" />
+        <ellipse
+           table="true"
+           cell-id="ZRJKuEp7t05sZtK5OItD-44"
+           cx="-440.73465"
+           cy="441.24652"
+           rx="30.275108"
+           ry="31.294495"
+           fill="#fff"
+           stroke="#000"
+           transform="rotate(-90)"
+           pointer-events="none"
+           id="ellipse194-1"
+           inkscape:label="Стол"
+           style="fill:#fff;stroke-width:0.975878" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:21.1766px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000"
+           x="440.66742"
+           y="447.94391"
+           id="text6-4"
+           inkscape:label="Номер"><tspan
+             sodipodi:role="line"
+             id="tspan6-3"
+             x="440.66742"
+             y="447.94391"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:21.1766px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:center;writing-mode:lr-tb;baseline-shift:baseline;text-anchor:middle;fill:#000">5</tspan></text>
+      </g>
+      <g
+         id="table-4"
+         data-table="4"
+         inkscape:label="Стол 4"
+         transform="matrix(1,0,0,1,-30,-375)">
+        <path
+           cell-id="ZRJKuEp7t05sZtK5OItD-40"
+           d="m 405.85263,438.61025 14.87308,-3.13821 c 2.18192,-0.5322 4.47627,0.2207 5.85112,1.93741 1.55176,6.14815 2.10781,12.50387 1.64725,18.82808 -1.05587,1.92937 -3.18375,3.0792 -5.4258,2.92402 l -15.19208,-0.50786 c -1.69415,-0.20312 -3.13089,-1.82407 -3.50929,-3.96925 l -1.01014,-11.5459 c 1.5e-4,-2.1783 1.13272,-4.03407 2.76586,-4.52829 z m -1.71215,16.57229 -3.70202,3.46584 m 3.39785,-6.94256 -4.44117,1.44256 m 4.07773,-5.59669 -4.65383,-0.98815 m 4.35053,-2.47861 -4.27812,-3.11901 m 0.12765,-1.06518 c -0.47389,6.5161 0.10134,13.09099 1.69866,19.41584 l -2.26724,2.99902 c -2.43249,-8.0687 -3.17942,-16.60609 -2.18412,-24.96464 z"
+           fill="#fff"
+           stroke="#000"
+           stroke-linejoin="round"
+           stroke-miterlimit="10"
+           pointer-events="none"
+           id="path190"
+           inkscape:label="Стул" />
+        <path
+           cell-id="ZRJKuEp7t05sZtK5OItD-43"
+           d="m 476.00827,435.0461 -12.05306,9.08349 c -1.72525,1.41177 -4.12417,1.67672 -6.09206,0.68824 -4.02969,-4.95962 -7.23969,-10.51951 -9.52,-16.48913 0.12789,-2.19848 1.56181,-4.13487 3.64206,-4.93176 l 13.89306,-5.89651 c 1.6126,-0.52689 3.60112,0.35731 4.86066,2.15891 l 5.83,10.09785 c 0.93046,1.9916 0.70194,4.1558 -0.56066,5.28891 z m -5.52434,-15.82843 1.85446,-4.70798 m -0.0995,7.74772 3.38944,-3.16932 m -1.28444,6.81529 4.61444,-1.04756 m -2.86444,4.07865 5.18446,1.05975 m 0.33448,1.01933 c -2.353,-6.13551 -5.678,-11.89458 -9.815,-17.00008 l 0.76006,-3.68353 c 5.6359,6.34167 9.9509,13.81547 12.62,21.85848 z"
+           fill="#fff"
+           stroke="#000"
+           stroke-linejoin="round"
+           stroke-miterlimit="10"
+           pointer-events="none"
+           id="path193"
+           inkscape:label="Стул" />
+        <path
+           cell-id="ZRJKuEp7t05sZtK5OItD-42"
+           d="m 474.82144,459.3311 -15.19207,0.50786 c -2.24119,0.14522 -4.36994,-0.99465 -5.4258,-2.92402 -0.46056,-6.32421 0.0955,-12.67993 1.64724,-18.82808 1.37485,-1.71671 3.67008,-2.47957 5.85112,-1.93741 l 14.87309,3.13821 c 1.63314,0.49422 2.76658,2.34003 2.76673,4.51833 l -1.01014,11.5459 c -0.3784,2.14518 -1.81602,3.77609 -3.51017,3.97921 z m 4.56388,-16.0232 4.24762,-2.77034 m -4.55179,6.24706 4.6242,-0.64945 m -4.98764,4.80358 4.41154,1.78127 m -4.71484,1.68549 3.67151,3.8145 m -0.31067,1.02683 c 1.59819,-6.33481 2.17342,-12.90969 1.69866,-19.41583 l 2.75358,-2.55975 c 0.99442,8.36851 0.24749,16.9059 -2.18412,24.96464 z"
+           fill="#fff"
+           stroke="#000"
+           stroke-linejoin="round"
+           stroke-miterlimit="10"
+           pointer-events="none"
+           id="path192"
+           inkscape:label="Стул" />
+        <path
+           cell-id="ZRJKuEp7t05sZtK5OItD-41"
+           d="m 462.92089,415.06638 -4.66321,14.35411 c -0.60349,2.14602 -2.4166,3.73902 -4.59557,4.05804 -6.14565,-1.75135 -11.96414,-4.46456 -17.2561,-8.04666 -1.15624,-1.87425 -1.09231,-4.2829 0.15466,-6.12886 l 7.99843,-12.79887 c 1.01875,-1.35656 3.1548,-1.77282 5.21992,-1.01949 l 10.56754,4.92773 c 1.90452,1.09773 2.95867,3.00162 2.57433,4.654 z m -13.60409,-9.79726 -1.1813,-4.92023 m 4.36244,6.40362 0.95861,-4.54026 m 2.85694,6.31948 3.17907,-3.50485 m -0.007,4.98401 4.85471,-2.10558 m 0.85865,0.64313 c -5.44664,-3.67629 -11.47359,-6.4867 -17.79082,-8.29599 l -1.49018,-3.45333 c 8.25409,1.96217 16.07553,5.60937 22.87521,10.66688 z"
+           fill="#fff"
+           stroke="#000"
+           stroke-linejoin="round"
+           stroke-miterlimit="10"
+           pointer-events="none"
+           id="path191"
+           inkscape:label="Стул" />
+        <path
+           cell-id="ZRJKuEp7t05sZtK5OItD-39"
+           d="m 416.18858,417.01147 13.89306,5.89651 c 2.08526,0.78823 3.51418,2.73327 3.64207,4.93176 -2.28032,5.96962 -5.49032,11.5295 -9.52,16.48912 -1.96789,0.98849 -4.36181,0.71488 -6.09207,-0.68823 l -12.05306,-9.08349 c -1.2626,-1.13311 -1.49111,-3.29731 -0.56066,-5.28891 l 5.83,-10.09786 c 1.25955,-1.80159 3.24806,-2.6858 4.86066,-2.1589 z m -10.94566,12.69843 -5.00446,0.74798 m 6.75946,-3.78773 -4.43943,-1.35067 m 6.54443,-2.29529 -3.21443,-3.47244 m 4.96443,0.44135 -1.67446,-5.01975 m 0.71553,-0.79933 c -4.13701,5.10551 -7.46201,10.86458 -9.815,17.00008 l -3.57007,1.18353 c 2.6741,-8.05167 6.9891,-15.52547 12.62,-21.85848 z"
+           fill="#fff"
+           stroke="#000"
+           stroke-linejoin="round"
+           stroke-miterlimit="10"
+           pointer-events="none"
+           id="path189"
+           inkscape:label="Стул" />
+        <path
+           cell-id="ZRJKuEp7t05sZtK5OItD-38"
+           d="m 437.37494,406.21677 7.99843,12.79888 c 1.25603,1.84173 1.3109,4.25461 0.15466,6.12886 -5.29196,3.58209 -11.11045,6.2953 -17.2561,8.04665 -2.17897,-0.31901 -3.98302,-1.91624 -4.59557,-4.05803 l -4.66321,-14.35411 c -0.38434,-1.65239 0.66981,-3.55627 2.57433,-4.654 l 10.56754,-4.92773 c 2.06512,-0.75334 4.20117,-0.33707 5.21992,1.01948 z m -16.24968,4.12378 -4.52844,-2.25773 m 7.70958,0.77434 -2.86186,-3.65276 m 6.67741,1.87354 -0.6414,-4.68818 m 3.81348,3.20901 1.50757,-5.07236 m 1.0446,-0.24437 c -6.31723,1.8093 -12.34418,4.61971 -17.79082,8.296 l -3.60327,-1.07821 c 6.80874,-5.06175 14.63018,-8.70894 22.87521,-10.66689 z"
+           fill="#fff"
+           stroke="#000"
+           stroke-linejoin="round"
+           stroke-miterlimit="10"
+           pointer-events="none"
+           id="path188"
+           inkscape:label="Стул" />
+        <ellipse
+           table="true"
+           cell-id="ZRJKuEp7t05sZtK5OItD-44"
+           cx="-440.73465"
+           cy="441.24652"
+           rx="30.275108"
+           ry="31.294495"
+           fill="#fff"
+           stroke="#000"
+           transform="rotate(-90)"
+           pointer-events="none"
+           id="ellipse194"
+           inkscape:label="Стол"
+           style="stroke-width:0.975878"/>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:21.1766px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000"
+           x="440.66742"
+           y="447.94391"
+           id="text6"
+           inkscape:label="Номер"><tspan
+             sodipodi:role="line"
+             id="tspan6"
+             x="440.66742"
+             y="447.94391"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:21.1766px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:center;writing-mode:lr-tb;baseline-shift:baseline;text-anchor:middle">4</tspan></text>
+      </g>
+      <g
+         id="table-3"
+         data-table="3"
+         inkscape:label="Стол 3"
+         transform="matrix(1,0,0,1,-275,-145)">
+        <path
+           cell-id="ZRJKuEp7t05sZtK5OItD-40"
+           d="m 405.85263,438.61025 14.87308,-3.13821 c 2.18192,-0.5322 4.47627,0.2207 5.85112,1.93741 1.55176,6.14815 2.10781,12.50387 1.64725,18.82808 -1.05587,1.92937 -3.18375,3.0792 -5.4258,2.92402 l -15.19208,-0.50786 c -1.69415,-0.20312 -3.13089,-1.82407 -3.50929,-3.96925 l -1.01014,-11.5459 c 1.5e-4,-2.1783 1.13272,-4.03407 2.76586,-4.52829 z m -1.71215,16.57229 -3.70202,3.46584 m 3.39785,-6.94256 -4.44117,1.44256 m 4.07773,-5.59669 -4.65383,-0.98815 m 4.35053,-2.47861 -4.27812,-3.11901 m 0.12765,-1.06518 c -0.47389,6.5161 0.10134,13.09099 1.69866,19.41584 l -2.26724,2.99902 c -2.43249,-8.0687 -3.17942,-16.60609 -2.18412,-24.96464 z"
+           fill="#fff"
+           stroke="#000"
+           stroke-linejoin="round"
+           stroke-miterlimit="10"
+           pointer-events="none"
+           id="path29"
+           inkscape:label="Стул" />
+        <path
+           cell-id="ZRJKuEp7t05sZtK5OItD-43"
+           d="m 476.00827,435.0461 -12.05306,9.08349 c -1.72525,1.41177 -4.12417,1.67672 -6.09206,0.68824 -4.02969,-4.95962 -7.23969,-10.51951 -9.52,-16.48913 0.12789,-2.19848 1.56181,-4.13487 3.64206,-4.93176 l 13.89306,-5.89651 c 1.6126,-0.52689 3.60112,0.35731 4.86066,2.15891 l 5.83,10.09785 c 0.93046,1.9916 0.70194,4.1558 -0.56066,5.28891 z m -5.52434,-15.82843 1.85446,-4.70798 m -0.0995,7.74772 3.38944,-3.16932 m -1.28444,6.81529 4.61444,-1.04756 m -2.86444,4.07865 5.18446,1.05975 m 0.33448,1.01933 c -2.353,-6.13551 -5.678,-11.89458 -9.815,-17.00008 l 0.76006,-3.68353 c 5.6359,6.34167 9.9509,13.81547 12.62,21.85848 z"
+           fill="#fff"
+           stroke="#000"
+           stroke-linejoin="round"
+           stroke-miterlimit="10"
+           pointer-events="none"
+           id="path30"
+           inkscape:label="Стул" />
+        <path
+           cell-id="ZRJKuEp7t05sZtK5OItD-42"
+           d="m 474.82144,459.3311 -15.19207,0.50786 c -2.24119,0.14522 -4.36994,-0.99465 -5.4258,-2.92402 -0.46056,-6.32421 0.0955,-12.67993 1.64724,-18.82808 1.37485,-1.71671 3.67008,-2.47957 5.85112,-1.93741 l 14.87309,3.13821 c 1.63314,0.49422 2.76658,2.34003 2.76673,4.51833 l -1.01014,11.5459 c -0.3784,2.14518 -1.81602,3.77609 -3.51017,3.97921 z m 4.56388,-16.0232 4.24762,-2.77034 m -4.55179,6.24706 4.6242,-0.64945 m -4.98764,4.80358 4.41154,1.78127 m -4.71484,1.68549 3.67151,3.8145 m -0.31067,1.02683 c 1.59819,-6.33481 2.17342,-12.90969 1.69866,-19.41583 l 2.75358,-2.55975 c 0.99442,8.36851 0.24749,16.9059 -2.18412,24.96464 z"
+           fill="#fff"
+           stroke="#000"
+           stroke-linejoin="round"
+           stroke-miterlimit="10"
+           pointer-events="none"
+           id="path31"
+           inkscape:label="Стул" />
+        <path
+           cell-id="ZRJKuEp7t05sZtK5OItD-41"
+           d="m 462.92089,415.06638 -4.66321,14.35411 c -0.60349,2.14602 -2.4166,3.73902 -4.59557,4.05804 -6.14565,-1.75135 -11.96414,-4.46456 -17.2561,-8.04666 -1.15624,-1.87425 -1.09231,-4.2829 0.15466,-6.12886 l 7.99843,-12.79887 c 1.01875,-1.35656 3.1548,-1.77282 5.21992,-1.01949 l 10.56754,4.92773 c 1.90452,1.09773 2.95867,3.00162 2.57433,4.654 z m -13.60409,-9.79726 -1.1813,-4.92023 m 4.36244,6.40362 0.95861,-4.54026 m 2.85694,6.31948 3.17907,-3.50485 m -0.007,4.98401 4.85471,-2.10558 m 0.85865,0.64313 c -5.44664,-3.67629 -11.47359,-6.4867 -17.79082,-8.29599 l -1.49018,-3.45333 c 8.25409,1.96217 16.07553,5.60937 22.87521,10.66688 z"
+           fill="#fff"
+           stroke="#000"
+           stroke-linejoin="round"
+           stroke-miterlimit="10"
+           pointer-events="none"
+           id="path32"
+           inkscape:label="Стул" />
+        <path
+           cell-id="ZRJKuEp7t05sZtK5OItD-39"
+           d="m 416.18858,417.01147 13.89306,5.89651 c 2.08526,0.78823 3.51418,2.73327 3.64207,4.93176 -2.28032,5.96962 -5.49032,11.5295 -9.52,16.48912 -1.96789,0.98849 -4.36181,0.71488 -6.09207,-0.68823 l -12.05306,-9.08349 c -1.2626,-1.13311 -1.49111,-3.29731 -0.56066,-5.28891 l 5.83,-10.09786 c 1.25955,-1.80159 3.24806,-2.6858 4.86066,-2.1589 z m -10.94566,12.69843 -5.00446,0.74798 m 6.75946,-3.78773 -4.43943,-1.35067 m 6.54443,-2.29529 -3.21443,-3.47244 m 4.96443,0.44135 -1.67446,-5.01975 m 0.71553,-0.79933 c -4.13701,5.10551 -7.46201,10.86458 -9.815,17.00008 l -3.57007,1.18353 c 2.6741,-8.05167 6.9891,-15.52547 12.62,-21.85848 z"
+           fill="#fff"
+           stroke="#000"
+           stroke-linejoin="round"
+           stroke-miterlimit="10"
+           pointer-events="none"
+           id="path33"
+           inkscape:label="Стул" />
+        <path
+           cell-id="ZRJKuEp7t05sZtK5OItD-38"
+           d="m 437.37494,406.21677 7.99843,12.79888 c 1.25603,1.84173 1.3109,4.25461 0.15466,6.12886 -5.29196,3.58209 -11.11045,6.2953 -17.2561,8.04665 -2.17897,-0.31901 -3.98302,-1.91624 -4.59557,-4.05803 l -4.66321,-14.35411 c -0.38434,-1.65239 0.66981,-3.55627 2.57433,-4.654 l 10.56754,-4.92773 c 2.06512,-0.75334 4.20117,-0.33707 5.21992,1.01948 z m -16.24968,4.12378 -4.52844,-2.25773 m 7.70958,0.77434 -2.86186,-3.65276 m 6.67741,1.87354 -0.6414,-4.68818 m 3.81348,3.20901 1.50757,-5.07236 m 1.0446,-0.24437 c -6.31723,1.8093 -12.34418,4.61971 -17.79082,8.296 l -3.60327,-1.07821 c 6.80874,-5.06175 14.63018,-8.70894 22.87521,-10.66689 z"
+           fill="#fff"
+           stroke="#000"
+           stroke-linejoin="round"
+           stroke-miterlimit="10"
+           pointer-events="none"
+           id="path34"
+           inkscape:label="Стул" />
+        <ellipse
+           table="true"
+           cell-id="ZRJKuEp7t05sZtK5OItD-44"
+           cx="-440.73465"
+           cy="441.24652"
+           rx="30.275108"
+           ry="31.294495"
+           fill="#fff"
+           stroke="#000"
+           transform="rotate(-90)"
+           pointer-events="none"
+           id="ellipse34"
+           inkscape:label="Стол"
+           style="stroke-width:0.975878" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:21.1766px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000"
+           x="440.66742"
+           y="447.94391"
+           id="text34"
+           inkscape:label="Номер"><tspan
+             sodipodi:role="line"
+             id="tspan34"
+             x="440.66742"
+             y="447.94391"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:21.1766px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:center;writing-mode:lr-tb;baseline-shift:baseline;text-anchor:middle">3</tspan></text>
+      </g>
+      <g
+         id="table-2"
+         data-table="2"
+         inkscape:label="Стол 2"
+         transform="matrix(0.7,-0.7,0.7,0.7,-550,295)">
+        <path
+           cell-id="ZRJKuEp7t05sZtK5OItD-40"
+           d="m 405.85263,438.61025 14.87308,-3.13821 c 2.18192,-0.5322 4.47627,0.2207 5.85112,1.93741 1.55176,6.14815 2.10781,12.50387 1.64725,18.82808 -1.05587,1.92937 -3.18375,3.0792 -5.4258,2.92402 l -15.19208,-0.50786 c -1.69415,-0.20312 -3.13089,-1.82407 -3.50929,-3.96925 l -1.01014,-11.5459 c 1.5e-4,-2.1783 1.13272,-4.03407 2.76586,-4.52829 z m -1.71215,16.57229 -3.70202,3.46584 m 3.39785,-6.94256 -4.44117,1.44256 m 4.07773,-5.59669 -4.65383,-0.98815 m 4.35053,-2.47861 -4.27812,-3.11901 m 0.12765,-1.06518 c -0.47389,6.5161 0.10134,13.09099 1.69866,19.41584 l -2.26724,2.99902 c -2.43249,-8.0687 -3.17942,-16.60609 -2.18412,-24.96464 z"
+           fill="#fff"
+           stroke="#000"
+           stroke-linejoin="round"
+           stroke-miterlimit="10"
+           pointer-events="none"
+           id="path23"
+           inkscape:label="Стул" />
+        <path
+           cell-id="ZRJKuEp7t05sZtK5OItD-43"
+           d="m 476.00827,435.0461 -12.05306,9.08349 c -1.72525,1.41177 -4.12417,1.67672 -6.09206,0.68824 -4.02969,-4.95962 -7.23969,-10.51951 -9.52,-16.48913 0.12789,-2.19848 1.56181,-4.13487 3.64206,-4.93176 l 13.89306,-5.89651 c 1.6126,-0.52689 3.60112,0.35731 4.86066,2.15891 l 5.83,10.09785 c 0.93046,1.9916 0.70194,4.1558 -0.56066,5.28891 z m -5.52434,-15.82843 1.85446,-4.70798 m -0.0995,7.74772 3.38944,-3.16932 m -1.28444,6.81529 4.61444,-1.04756 m -2.86444,4.07865 5.18446,1.05975 m 0.33448,1.01933 c -2.353,-6.13551 -5.678,-11.89458 -9.815,-17.00008 l 0.76006,-3.68353 c 5.6359,6.34167 9.9509,13.81547 12.62,21.85848 z"
+           fill="#fff"
+           stroke="#000"
+           stroke-linejoin="round"
+           stroke-miterlimit="10"
+           pointer-events="none"
+           id="path24"
+           inkscape:label="Стул" />
+        <path
+           cell-id="ZRJKuEp7t05sZtK5OItD-42"
+           d="m 474.82144,459.3311 -15.19207,0.50786 c -2.24119,0.14522 -4.36994,-0.99465 -5.4258,-2.92402 -0.46056,-6.32421 0.0955,-12.67993 1.64724,-18.82808 1.37485,-1.71671 3.67008,-2.47957 5.85112,-1.93741 l 14.87309,3.13821 c 1.63314,0.49422 2.76658,2.34003 2.76673,4.51833 l -1.01014,11.5459 c -0.3784,2.14518 -1.81602,3.77609 -3.51017,3.97921 z m 4.56388,-16.0232 4.24762,-2.77034 m -4.55179,6.24706 4.6242,-0.64945 m -4.98764,4.80358 4.41154,1.78127 m -4.71484,1.68549 3.67151,3.8145 m -0.31067,1.02683 c 1.59819,-6.33481 2.17342,-12.90969 1.69866,-19.41583 l 2.75358,-2.55975 c 0.99442,8.36851 0.24749,16.9059 -2.18412,24.96464 z"
+           fill="#fff"
+           stroke="#000"
+           stroke-linejoin="round"
+           stroke-miterlimit="10"
+           pointer-events="none"
+           id="path25"
+           inkscape:label="Стул" />
+        <path
+           cell-id="ZRJKuEp7t05sZtK5OItD-41"
+           d="m 462.92089,415.06638 -4.66321,14.35411 c -0.60349,2.14602 -2.4166,3.73902 -4.59557,4.05804 -6.14565,-1.75135 -11.96414,-4.46456 -17.2561,-8.04666 -1.15624,-1.87425 -1.09231,-4.2829 0.15466,-6.12886 l 7.99843,-12.79887 c 1.01875,-1.35656 3.1548,-1.77282 5.21992,-1.01949 l 10.56754,4.92773 c 1.90452,1.09773 2.95867,3.00162 2.57433,4.654 z m -13.60409,-9.79726 -1.1813,-4.92023 m 4.36244,6.40362 0.95861,-4.54026 m 2.85694,6.31948 3.17907,-3.50485 m -0.007,4.98401 4.85471,-2.10558 m 0.85865,0.64313 c -5.44664,-3.67629 -11.47359,-6.4867 -17.79082,-8.29599 l -1.49018,-3.45333 c 8.25409,1.96217 16.07553,5.60937 22.87521,10.66688 z"
+           fill="#fff"
+           stroke="#000"
+           stroke-linejoin="round"
+           stroke-miterlimit="10"
+           pointer-events="none"
+           id="path26"
+           inkscape:label="Стул" />
+        <path
+           cell-id="ZRJKuEp7t05sZtK5OItD-39"
+           d="m 416.18858,417.01147 13.89306,5.89651 c 2.08526,0.78823 3.51418,2.73327 3.64207,4.93176 -2.28032,5.96962 -5.49032,11.5295 -9.52,16.48912 -1.96789,0.98849 -4.36181,0.71488 -6.09207,-0.68823 l -12.05306,-9.08349 c -1.2626,-1.13311 -1.49111,-3.29731 -0.56066,-5.28891 l 5.83,-10.09786 c 1.25955,-1.80159 3.24806,-2.6858 4.86066,-2.1589 z m -10.94566,12.69843 -5.00446,0.74798 m 6.75946,-3.78773 -4.43943,-1.35067 m 6.54443,-2.29529 -3.21443,-3.47244 m 4.96443,0.44135 -1.67446,-5.01975 m 0.71553,-0.79933 c -4.13701,5.10551 -7.46201,10.86458 -9.815,17.00008 l -3.57007,1.18353 c 2.6741,-8.05167 6.9891,-15.52547 12.62,-21.85848 z"
+           fill="#fff"
+           stroke="#000"
+           stroke-linejoin="round"
+           stroke-miterlimit="10"
+           pointer-events="none"
+           id="path27"
+           inkscape:label="Стул" />
+        <path
+           cell-id="ZRJKuEp7t05sZtK5OItD-38"
+           d="m 437.37494,406.21677 7.99843,12.79888 c 1.25603,1.84173 1.3109,4.25461 0.15466,6.12886 -5.29196,3.58209 -11.11045,6.2953 -17.2561,8.04665 -2.17897,-0.31901 -3.98302,-1.91624 -4.59557,-4.05803 l -4.66321,-14.35411 c -0.38434,-1.65239 0.66981,-3.55627 2.57433,-4.654 l 10.56754,-4.92773 c 2.06512,-0.75334 4.20117,-0.33707 5.21992,1.01948 z m -16.24968,4.12378 -4.52844,-2.25773 m 7.70958,0.77434 -2.86186,-3.65276 m 6.67741,1.87354 -0.6414,-4.68818 m 3.81348,3.20901 1.50757,-5.07236 m 1.0446,-0.24437 c -6.31723,1.8093 -12.34418,4.61971 -17.79082,8.296 l -3.60327,-1.07821 c 6.80874,-5.06175 14.63018,-8.70894 22.87521,-10.66689 z"
+           fill="#fff"
+           stroke="#000"
+           stroke-linejoin="round"
+           stroke-miterlimit="10"
+           pointer-events="none"
+           id="path28"
+           inkscape:label="Стул" />
+        <ellipse
+           table="true"
+           cell-id="ZRJKuEp7t05sZtK5OItD-44"
+           cx="-455.39023"
+           cy="425.07028"
+           rx="30.276352"
+           ry="31.293291"
+           fill="#fff"
+           stroke="#000"
+           transform="matrix(-0.03605447,-0.99934983,0.99942924,-0.03378143,0,0)"
+           pointer-events="none"
+           id="ellipse28"
+           inkscape:label="Стол"
+           style="stroke-width:0.975879" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:21.1766px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000"
+           x="631.40143"
+           y="52.620899"
+           id="text28"
+           inkscape:label="Номер"
+           transform="matrix(0.74663819,0.64389382,-0.6872739,0.74663819,0,0)"><tspan
+             sodipodi:role="line"
+             id="tspan28"
+             x="631.40143"
+             y="52.620899"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:21.1766px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:center;writing-mode:lr-tb;baseline-shift:baseline;text-anchor:middle">2</tspan></text>
+      </g>
+      <g
+         id="table-1"
+         data-table="1"
+         inkscape:label="Стол 1"
+         transform="matrix(0,-1,1,0,-375,840)">
+        <path
+           cell-id="ZRJKuEp7t05sZtK5OItD-40"
+           d="m 405.85263,438.61025 14.87308,-3.13821 c 2.18192,-0.5322 4.47627,0.2207 5.85112,1.93741 1.55176,6.14815 2.10781,12.50387 1.64725,18.82808 -1.05587,1.92937 -3.18375,3.0792 -5.4258,2.92402 l -15.19208,-0.50786 c -1.69415,-0.20312 -3.13089,-1.82407 -3.50929,-3.96925 l -1.01014,-11.5459 c 1.5e-4,-2.1783 1.13272,-4.03407 2.76586,-4.52829 z m -1.71215,16.57229 -3.70202,3.46584 m 3.39785,-6.94256 -4.44117,1.44256 m 4.07773,-5.59669 -4.65383,-0.98815 m 4.35053,-2.47861 -4.27812,-3.11901 m 0.12765,-1.06518 c -0.47389,6.5161 0.10134,13.09099 1.69866,19.41584 l -2.26724,2.99902 c -2.43249,-8.0687 -3.17942,-16.60609 -2.18412,-24.96464 z"
+           fill="#fff"
+           stroke="#000"
+           stroke-linejoin="round"
+           stroke-miterlimit="10"
+           pointer-events="none"
+           id="path6"
+           inkscape:label="Стул" />
+        <path
+           cell-id="ZRJKuEp7t05sZtK5OItD-43"
+           d="m 476.00827,435.0461 -12.05306,9.08349 c -1.72525,1.41177 -4.12417,1.67672 -6.09206,0.68824 -4.02969,-4.95962 -7.23969,-10.51951 -9.52,-16.48913 0.12789,-2.19848 1.56181,-4.13487 3.64206,-4.93176 l 13.89306,-5.89651 c 1.6126,-0.52689 3.60112,0.35731 4.86066,2.15891 l 5.83,10.09785 c 0.93046,1.9916 0.70194,4.1558 -0.56066,5.28891 z m -5.52434,-15.82843 1.85446,-4.70798 m -0.0995,7.74772 3.38944,-3.16932 m -1.28444,6.81529 4.61444,-1.04756 m -2.86444,4.07865 5.18446,1.05975 m 0.33448,1.01933 c -2.353,-6.13551 -5.678,-11.89458 -9.815,-17.00008 l 0.76006,-3.68353 c 5.6359,6.34167 9.9509,13.81547 12.62,21.85848 z"
+           fill="#fff"
+           stroke="#000"
+           stroke-linejoin="round"
+           stroke-miterlimit="10"
+           pointer-events="none"
+           id="path7"
+           inkscape:label="Стул" />
+        <path
+           cell-id="ZRJKuEp7t05sZtK5OItD-42"
+           d="m 474.82144,459.3311 -15.19207,0.50786 c -2.24119,0.14522 -4.36994,-0.99465 -5.4258,-2.92402 -0.46056,-6.32421 0.0955,-12.67993 1.64724,-18.82808 1.37485,-1.71671 3.67008,-2.47957 5.85112,-1.93741 l 14.87309,3.13821 c 1.63314,0.49422 2.76658,2.34003 2.76673,4.51833 l -1.01014,11.5459 c -0.3784,2.14518 -1.81602,3.77609 -3.51017,3.97921 z m 4.56388,-16.0232 4.24762,-2.77034 m -4.55179,6.24706 4.6242,-0.64945 m -4.98764,4.80358 4.41154,1.78127 m -4.71484,1.68549 3.67151,3.8145 m -0.31067,1.02683 c 1.59819,-6.33481 2.17342,-12.90969 1.69866,-19.41583 l 2.75358,-2.55975 c 0.99442,8.36851 0.24749,16.9059 -2.18412,24.96464 z"
+           fill="#fff"
+           stroke="#000"
+           stroke-linejoin="round"
+           stroke-miterlimit="10"
+           pointer-events="none"
+           id="path8"
+           inkscape:label="Стул" />
+        <path
+           cell-id="ZRJKuEp7t05sZtK5OItD-41"
+           d="m 462.92089,415.06638 -4.66321,14.35411 c -0.60349,2.14602 -2.4166,3.73902 -4.59557,4.05804 -6.14565,-1.75135 -11.96414,-4.46456 -17.2561,-8.04666 -1.15624,-1.87425 -1.09231,-4.2829 0.15466,-6.12886 l 7.99843,-12.79887 c 1.01875,-1.35656 3.1548,-1.77282 5.21992,-1.01949 l 10.56754,4.92773 c 1.90452,1.09773 2.95867,3.00162 2.57433,4.654 z m -13.60409,-9.79726 -1.1813,-4.92023 m 4.36244,6.40362 0.95861,-4.54026 m 2.85694,6.31948 3.17907,-3.50485 m -0.007,4.98401 4.85471,-2.10558 m 0.85865,0.64313 c -5.44664,-3.67629 -11.47359,-6.4867 -17.79082,-8.29599 l -1.49018,-3.45333 c 8.25409,1.96217 16.07553,5.60937 22.87521,10.66688 z"
+           fill="#fff"
+           stroke="#000"
+           stroke-linejoin="round"
+           stroke-miterlimit="10"
+           pointer-events="none"
+           id="path9"
+           inkscape:label="Стул" />
+        <path
+           cell-id="ZRJKuEp7t05sZtK5OItD-39"
+           d="m 416.18858,417.01147 13.89306,5.89651 c 2.08526,0.78823 3.51418,2.73327 3.64207,4.93176 -2.28032,5.96962 -5.49032,11.5295 -9.52,16.48912 -1.96789,0.98849 -4.36181,0.71488 -6.09207,-0.68823 l -12.05306,-9.08349 c -1.2626,-1.13311 -1.49111,-3.29731 -0.56066,-5.28891 l 5.83,-10.09786 c 1.25955,-1.80159 3.24806,-2.6858 4.86066,-2.1589 z m -10.94566,12.69843 -5.00446,0.74798 m 6.75946,-3.78773 -4.43943,-1.35067 m 6.54443,-2.29529 -3.21443,-3.47244 m 4.96443,0.44135 -1.67446,-5.01975 m 0.71553,-0.79933 c -4.13701,5.10551 -7.46201,10.86458 -9.815,17.00008 l -3.57007,1.18353 c 2.6741,-8.05167 6.9891,-15.52547 12.62,-21.85848 z"
+           fill="#fff"
+           stroke="#000"
+           stroke-linejoin="round"
+           stroke-miterlimit="10"
+           pointer-events="none"
+           id="path10"
+           inkscape:label="Стул" />
+        <path
+           cell-id="ZRJKuEp7t05sZtK5OItD-38"
+           d="m 437.37494,406.21677 7.99843,12.79888 c 1.25603,1.84173 1.3109,4.25461 0.15466,6.12886 -5.29196,3.58209 -11.11045,6.2953 -17.2561,8.04665 -2.17897,-0.31901 -3.98302,-1.91624 -4.59557,-4.05803 l -4.66321,-14.35411 c -0.38434,-1.65239 0.66981,-3.55627 2.57433,-4.654 l 10.56754,-4.92773 c 2.06512,-0.75334 4.20117,-0.33707 5.21992,1.01948 z m -16.24968,4.12378 -4.52844,-2.25773 m 7.70958,0.77434 -2.86186,-3.65276 m 6.67741,1.87354 -0.6414,-4.68818 m 3.81348,3.20901 1.50757,-5.07236 m 1.0446,-0.24437 c -6.31723,1.8093 -12.34418,4.61971 -17.79082,8.296 l -3.60327,-1.07821 c 6.80874,-5.06175 14.63018,-8.70894 22.87521,-10.66689 z"
+           fill="#fff"
+           stroke="#000"
+           stroke-linejoin="round"
+           stroke-miterlimit="10"
+           pointer-events="none"
+           id="path11"
+           inkscape:label="Стул" />
+        <ellipse
+           table="true"
+           cell-id="ZRJKuEp7t05sZtK5OItD-44"
+           cx="-440.73465"
+           cy="441.24652"
+           rx="30.275108"
+           ry="31.294495"
+           fill="#fff"
+           stroke="#000"
+           transform="rotate(-90)"
+           pointer-events="none"
+           id="ellipse11"
+           inkscape:label="Стол"
+           style="stroke-width:0.975878" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:21.1766px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:start;writing-mode:tb-rl;direction:ltr;text-anchor:start;white-space:pre;inline-size:0;fill:#000"
+           x="440.66742"
+           y="447.94391"
+           id="text11"
+           inkscape:label="Номер"
+           transform="translate(-2.5560439e-8,-7.8128372)"><tspan
+             id="tspan11"
+             x="440.66742"
+             y="447.94391"
+             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:21.1766px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:center;writing-mode:tb-rl;direction:ltr;baseline-shift:baseline;text-anchor:middle">1</tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>

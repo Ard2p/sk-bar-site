@@ -3,7 +3,7 @@
 <div class="col-span-10 bg-white" x-show="view" x-data="initData()" x-init="getReservs">
 
 
-    {!! file_get_contents(public_path('shemes/skbar-1.svg')) !!}
+    {!! file_get_contents(public_path('shemes/skbar-2.svg')) !!}
 
 
 </div>
