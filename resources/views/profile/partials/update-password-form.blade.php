@@ -13,36 +13,51 @@
         @csrf
         @method('put')
 
-        <div>
-            <input-label for="update_password_current_password" :value="__('Current Password')" />
-            <input-text id="update_password_current_password" name="current_password" type="password" class="mt-1 block w-full" autocomplete="current-password" />
+        <div class="mb-4 col-lg-6 col-12">
+            <label for="update_password_current_password" class="form-label">{{ __('Current Password') }}</label>
+
+            <input type="password" id="update_password_current_password" name="current_password" class="form-control"
+                autocomplete="current-password">
+
             <x-input-error :messages="$errors->updatePassword->get('current_password')" class="mt-2" />
         </div>
 
-        <div>
-            <input-label for="update_password_password" :value="__('New Password')" />
-            <input-text id="update_password_password" name="password" type="password" class="mt-1 block w-full" autocomplete="new-password" />
+        <div class="mb-4 col-lg-6 col-12">
+            <label for="update_password_password" class="form-label">{{ __('Password') }}</label>
+
+            <input type="password" id="update_password_password" name="password" class="form-control"
+                autocomplete="new-password">
+
             <x-input-error :messages="$errors->updatePassword->get('password')" class="mt-2" />
         </div>
 
-        <div>
-            <input-label for="update_password_password_confirmation" :value="__('Confirm Password')" />
-            <input-text id="update_password_password_confirmation" name="password_confirmation" type="password" class="mt-1 block w-full" autocomplete="new-password" />
+        <div class="mb-4 col-lg-6 col-12">
+            <label for="update_password_password_confirmation" class="form-label">{{ __('Confirm Password') }}</label>
+
+            <input type="password" id="update_password_password_confirmation" name="password_confirmation"
+                class="form-control" autocomplete="new-password">
+
             <x-input-error :messages="$errors->updatePassword->get('password_confirmation')" class="mt-2" />
         </div>
 
         <div class="flex items-center gap-4">
-            <button>{{ __('Save') }}</button>
+            <button class="btn btn-primary text-white">{{ __('Save') }}</button>
 
-            @if (session('status') === 'password-updated')
-                <p
-                    x-data="{ show: true }"
-                    x-show="show"
-                    x-transition
-                    x-init="setTimeout(() => show = false, 2000)"
-                    class="text-sm text-gray-600 dark:text-gray-400"
-                >{{ __('Saved.') }}</p>
+            @if (session('status') === 'profile-updated')
+                {{-- <span x-data="{ show: true }" x-show="show" x-transition x-init="setTimeout(() => show = false, 2000)"
+            class="badge bg-success">{{ __('Saved.') }}</span> --}}
+                <span x-data x-init="saved()"></span>
             @endif
         </div>
     </form>
 </section>
+
+<script>
+    function saved() {
+        new window.bs5.Toast({
+            body: "{{ __('Saved.') }}",
+            delay: 5000,
+            className: 'border-0 bg-success text-white',
+        }).show()
+    }
+</script>

@@ -39,39 +39,39 @@
                         <div>чт-вс: <span class="text-primary fw-bold">17:00 - 02:00</span></div>
                     </div>
 
-                    @if (false)
-                        <div class="col-12 col-lg-2 d-flex justify-content-lg-end">
-                            @auth
-                                <div class="dropdown">
-                                    <a href="#" class="dropdown-toggle text-primary text-decoration-none"
-                                        id="dropdownUserMenu" data-bs-toggle="dropdown" aria-expanded="false">
-                                        {{ Auth::user()->name }}
-                                    </a>
+                    <div class="col-12 col-lg-3 d-flex justify-content-lg-end">
+                        @auth
+                            <div class="dropdown">
+                                <a href="#" class="dropdown-toggle text-primary text-decoration-none"
+                                    id="dropdownUserMenu" data-bs-toggle="dropdown" aria-expanded="false">
+                                    {{ Auth::user()->name }}
+                                </a>
 
-                                    <ul class="dropdown-menu bg-body-secondary" aria-labelledby="dropdownUserMenu">
-                                        <li><a class="dropdown-item"
-                                                href="{{ route('profile.edit') }}">{{ __('Profile') }}</a>
-                                        </li>
-                                        <li><a class="dropdown-item" href="{{ route('home') }}">{{ __('Home') }}</a></li>
+                                <ul class="dropdown-menu shadow-sm py-3" aria-labelledby="dropdownUserMenu">
 
-                                        <div class="dropdown-divider"></div>
+                                    <li>
+                                        <a class="dropdown-item" href="{{ route('profile.edit') }}">{{ __('Profile') }}</a>
+                                    </li>
 
-                                        <form class="px-3" method="POST" action="{{ route('logout') }}">
-                                            @csrf
-                                            <button class="btn btn-primary" type="submit">{{ __('Log Out') }}</button>
-                                        </form>
-                                    </ul>
-                                </div>
-                            @else
-                                <div>
-                                    <a href="{{ route('login') }}" class="btn btn-primary">{{ __('Log in') }}</a>
-                                    {{-- @if (Route::has('register'))
+                                    {{-- <li>
+                                        <a class="dropdown-item" href="{{ route('home') }}">{{ __('Home') }}</a>
+                                    </li> --}}
+
+                                    <form class="px-3 mt-3" method="POST" action="{{ route('logout') }}">
+                                        @csrf
+                                        <button class="btn btn-primary text-white w-100" type="submit">{{ __('Log Out') }}</button>
+                                    </form>
+                                </ul>
+                            </div>
+                        @else
+                            <div>
+                                <a href="{{ route('login') }}" class="btn btn-primary text-white">{{ __('Log in') }}</a>
+                                {{-- @if (Route::has('register'))
                                 <a href="{{ route('register') }}" class="btn btn-primary">{{ __('Register') }}</a>
                             @endif --}}
-                                </div>
-                            @endauth
-                        </div>
-                    @endif
+                            </div>
+                        @endauth
+                    </div>
 
                 </div>
 

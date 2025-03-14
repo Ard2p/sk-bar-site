@@ -12,6 +12,7 @@ class HomeController extends Controller
 {
     public function index()
     {
+        dd($_SERVER['HTTP_USER_AGENT']);
         $vkService = new VkService();
 
         return view('home', [

@@ -16,6 +16,7 @@ use App\MoonShine\Resources\EventsResource;
 use App\MoonShine\Resources\ReservResource;
 use App\MoonShine\Resources\SliderResource;
 use Sweet1s\MoonshineRBAC\Components\MenuRBAC;
+use App\MoonShine\Resources\MuzlotoGameResource;
 use MoonShine\Providers\MoonShineApplicationServiceProvider;
 
 class MoonShineServiceProvider extends MoonShineApplicationServiceProvider
@@ -61,6 +62,8 @@ class MoonShineServiceProvider extends MoonShineApplicationServiceProvider
             // computer-desktop
 
             MenuItem::make(__('Users'), new UserResource(), 'heroicons.outline.user-group'),
+
+            MenuItem::make('Музлото', new MuzlotoGameResource(), 'heroicons.outline.user-group'),
 
             MenuGroup::make(__('Настройки'), [
 
