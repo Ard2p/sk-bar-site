@@ -26,7 +26,7 @@
             </div>
 
             <div x-show="step == 1" class="col-lg-8 col-12">
-                {!! file_get_contents(public_path('shemes/skbar-1.svg')) !!}
+                {!! file_get_contents(public_path('shemes/skbar-2.svg')) !!}
             </div>
 
             <div x-show="step == 2" class="col-lg-4 col-12 ms-auto me-auto">
@@ -83,7 +83,7 @@
     </div>
 @else
     <div class="col-span-10 bg-white" x-show="view" x-data="initData()" x-init="getReservs">
-        {!! file_get_contents(public_path('shemes/skbar-1.svg')) !!}
+        {!! file_get_contents(public_path('shemes/skbar-2.svg')) !!}
     </div>
 @endif
 
@@ -242,6 +242,8 @@
                     const tableId = element.getAttribute("data-table");
                     const tableInfo = this.tables[tableId];
                     const table = element.querySelector("[table]");
+
+                    console.log(table, tableInfo)
 
                     if (tableInfo.status == 'removed') element.style.display = 'none';
                     else element.style.display = 'block';
