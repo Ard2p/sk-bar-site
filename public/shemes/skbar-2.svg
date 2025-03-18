@@ -559,7 +559,8 @@
        inkscape:label="Столы"
        transform="translate(10,10)"
        inkscape:highlight-color="#e3933e"
-       sodipodi:insensitive="true">
+       sodipodi:insensitive="true"
+       style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:21.1766px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000">
       <g
          id="table-107"
          data-table="107"
@@ -624,17 +625,10 @@
            inkscape:label="Стол" />
         <text
            xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:21.3333px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000;stroke-width:1.00788;stroke-dasharray:none"
-           x="199.34026"
-           y="561.33051"
+           x="182"
+           y="562"
            id="text35-5"
-           transform="scale(1.0008867,0.99911408)"
-           inkscape:label="Номер"><tspan
-             sodipodi:role="line"
-             id="tspan35-3"
-             x="199.34026"
-             y="561.33051"
-             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:21.3333px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';stroke-width:1.00788">107</tspan></text>
+           inkscape:label="Номер">107</text>
       </g>
       <g
          id="table-106"
@@ -700,17 +694,10 @@
            inkscape:label="Стол" />
         <text
            xml:space="preserve"
-           style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:21.3333px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:center;writing-mode:lr-tb;direction:ltr;text-anchor:middle;fill:#000;stroke-width:1.00788;stroke-dasharray:none"
-           x="199.34026"
-           y="561.33051"
+           x="182"
+           y="562"
            id="text35-6"
-           transform="scale(1.0008867,0.99911408)"
-           inkscape:label="Номер"><tspan
-             sodipodi:role="line"
-             id="tspan35-5"
-             x="199.34026"
-             y="561.33051"
-             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:21.3333px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';stroke-width:1.00788">106</tspan></text>
+           inkscape:label="Номер">106</text>
       </g>
       <g
          id="table-105"
@@ -2127,8 +2114,8 @@
         <text
            xml:space="preserve"
            style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:21.1766px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000"
-           x="440.66742"
-           y="447.94391"
+           x="365"
+           y="448"
            id="text6-5"
            inkscape:label="Номер">
            <tspan
