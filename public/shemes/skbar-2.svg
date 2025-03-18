@@ -620,7 +620,7 @@
            stroke="#000"
            pointer-events="none"
            id="ellipse136-5"
-           transform="translate(-632.0749,406.43007)"
+           transform="translate(-632,406)"
            inkscape:label="Стол" />
         <text
            xml:space="preserve"
@@ -1729,15 +1729,12 @@
         <text
            xml:space="preserve"
            style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:20.7364px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000;stroke:none;stroke-width:1.94404;stroke-dasharray:none;stroke-opacity:1"
-           x="43.943279"
-           y="514.98199"
+           x="48"
+           y="512"
            id="text22-5"
-           transform="matrix(0,-0.99497994,0.99242647,0,-300.08088,614.08216)"><tspan
+           transform="matrix(0,-1,1,0,-300,615)"><tspan
              sodipodi:role="line"
-             id="tspan22-1"
-             x="43.943279"
-             y="514.98199"
-             style="stroke-width:1.94404">13</tspan></text>
+             id="tspan22-1">13</tspan></text>
       </g>
       <g
          id="table-12"
@@ -1840,15 +1837,12 @@
         <text
            xml:space="preserve"
            style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:20.7364px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000;stroke:none;stroke-width:1.94404;stroke-dasharray:none;stroke-opacity:1"
-           x="43.943279"
-           y="591.57422"
+           x="48"
+           y="588"
            id="text22-8"
-           transform="matrix(0,-0.99497994,0.99242647,0,-375.09288,614.08216)"><tspan
+           transform="matrix(0,-1,1,0,-375,615)"><tspan
              sodipodi:role="line"
-             id="tspan22-8"
-             x="43.943279"
-             y="591.57422"
-             style="stroke-width:1.94404">12</tspan></text>
+             id="tspan22-8">12</tspan></text>
       </g>
       <g
          id="table-11"
@@ -1951,15 +1945,13 @@
         <text
            xml:space="preserve"
            style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:20.7364px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000;stroke:none;stroke-width:1.94404;stroke-dasharray:none;stroke-opacity:1"
-           x="43.943283"
-           y="667.15869"
+           x="48"
+           y="663"
            id="text22"
-           transform="matrix(0,-0.99497994,0.99242647,0,-450.10489,614.08216)"><tspan
+           transform="matrix(0,-1,1,0,-450,615)"><tspan
              sodipodi:role="line"
              id="tspan22"
-             x="43.943283"
-             y="667.15869"
-             style="stroke-width:1.94404">11</tspan></text>
+             >11</tspan></text>
       </g>
       <g
          id="table-7"
@@ -2138,12 +2130,11 @@
            x="440.66742"
            y="447.94391"
            id="text6-5"
-           inkscape:label="Номер"><tspan
-             sodipodi:role="line"
-             id="tspan6-1"
-             x="440.66742"
-             y="447.94391"
-             style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:21.1766px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:center;writing-mode:lr-tb;baseline-shift:baseline;text-anchor:middle">6</tspan></text>
+           inkscape:label="Номер">
+           <tspan
+               sodipodi:role="line"
+               id="tspan6-1"
+               style="text-anchor:middle">6</tspan></text>
       </g>
       <g
          id="table-5"
@@ -2159,8 +2150,7 @@
            stroke-miterlimit="10"
            pointer-events="none"
            id="path190-4"
-           inkscape:label="Стул"
-           style="fill:#fff" />
+           inkscape:label="Стул"/>
         <path
            cell-id="ZRJKuEp7t05sZtK5OItD-43"
            d="m 476.00827,435.0461 -12.05306,9.08349 c -1.72525,1.41177 -4.12417,1.67672 -6.09206,0.68824 -4.02969,-4.95962 -7.23969,-10.51951 -9.52,-16.48913 0.12789,-2.19848 1.56181,-4.13487 3.64206,-4.93176 l 13.89306,-5.89651 c 1.6126,-0.52689 3.60112,0.35731 4.86066,2.15891 l 5.83,10.09785 c 0.93046,1.9916 0.70194,4.1558 -0.56066,5.28891 z m -5.52434,-15.82843 1.85446,-4.70798 m -0.0995,7.74772 3.38944,-3.16932 m -1.28444,6.81529 4.61444,-1.04756 m -2.86444,4.07865 5.18446,1.05975 m 0.33448,1.01933 c -2.353,-6.13551 -5.678,-11.89458 -9.815,-17.00008 l 0.76006,-3.68353 c 5.6359,6.34167 9.9509,13.81547 12.62,21.85848 z"
@@ -2170,8 +2160,7 @@
            stroke-miterlimit="10"
            pointer-events="none"
            id="path193-06"
-           inkscape:label="Стул"
-           style="fill:#fff" />
+           inkscape:label="Стул"/>
         <path
            cell-id="ZRJKuEp7t05sZtK5OItD-42"
            d="m 474.82144,459.3311 -15.19207,0.50786 c -2.24119,0.14522 -4.36994,-0.99465 -5.4258,-2.92402 -0.46056,-6.32421 0.0955,-12.67993 1.64724,-18.82808 1.37485,-1.71671 3.67008,-2.47957 5.85112,-1.93741 l 14.87309,3.13821 c 1.63314,0.49422 2.76658,2.34003 2.76673,4.51833 l -1.01014,11.5459 c -0.3784,2.14518 -1.81602,3.77609 -3.51017,3.97921 z m 4.56388,-16.0232 4.24762,-2.77034 m -4.55179,6.24706 4.6242,-0.64945 m -4.98764,4.80358 4.41154,1.78127 m -4.71484,1.68549 3.67151,3.8145 m -0.31067,1.02683 c 1.59819,-6.33481 2.17342,-12.90969 1.69866,-19.41583 l 2.75358,-2.55975 c 0.99442,8.36851 0.24749,16.9059 -2.18412,24.96464 z"
@@ -2181,8 +2170,7 @@
            stroke-miterlimit="10"
            pointer-events="none"
            id="path192-1"
-           inkscape:label="Стул"
-           style="fill:#fff" />
+           inkscape:label="Стул"/>
         <path
            cell-id="ZRJKuEp7t05sZtK5OItD-41"
            d="m 462.92089,415.06638 -4.66321,14.35411 c -0.60349,2.14602 -2.4166,3.73902 -4.59557,4.05804 -6.14565,-1.75135 -11.96414,-4.46456 -17.2561,-8.04666 -1.15624,-1.87425 -1.09231,-4.2829 0.15466,-6.12886 l 7.99843,-12.79887 c 1.01875,-1.35656 3.1548,-1.77282 5.21992,-1.01949 l 10.56754,4.92773 c 1.90452,1.09773 2.95867,3.00162 2.57433,4.654 z m -13.60409,-9.79726 -1.1813,-4.92023 m 4.36244,6.40362 0.95861,-4.54026 m 2.85694,6.31948 3.17907,-3.50485 m -0.007,4.98401 4.85471,-2.10558 m 0.85865,0.64313 c -5.44664,-3.67629 -11.47359,-6.4867 -17.79082,-8.29599 l -1.49018,-3.45333 c 8.25409,1.96217 16.07553,5.60937 22.87521,10.66688 z"
@@ -2192,8 +2180,7 @@
            stroke-miterlimit="10"
            pointer-events="none"
            id="path191-8"
-           inkscape:label="Стул"
-           style="fill:#fff" />
+           inkscape:label="Стул"/>
         <path
            cell-id="ZRJKuEp7t05sZtK5OItD-39"
            d="m 416.18858,417.01147 13.89306,5.89651 c 2.08526,0.78823 3.51418,2.73327 3.64207,4.93176 -2.28032,5.96962 -5.49032,11.5295 -9.52,16.48912 -1.96789,0.98849 -4.36181,0.71488 -6.09207,-0.68823 l -12.05306,-9.08349 c -1.2626,-1.13311 -1.49111,-3.29731 -0.56066,-5.28891 l 5.83,-10.09786 c 1.25955,-1.80159 3.24806,-2.6858 4.86066,-2.1589 z m -10.94566,12.69843 -5.00446,0.74798 m 6.75946,-3.78773 -4.43943,-1.35067 m 6.54443,-2.29529 -3.21443,-3.47244 m 4.96443,0.44135 -1.67446,-5.01975 m 0.71553,-0.79933 c -4.13701,5.10551 -7.46201,10.86458 -9.815,17.00008 l -3.57007,1.18353 c 2.6741,-8.05167 6.9891,-15.52547 12.62,-21.85848 z"
@@ -2203,8 +2190,7 @@
            stroke-miterlimit="10"
            pointer-events="none"
            id="path189-9"
-           inkscape:label="Стул"
-           style="fill:#fff" />
+           inkscape:label="Стул"/>
         <path
            cell-id="ZRJKuEp7t05sZtK5OItD-38"
            d="m 437.37494,406.21677 7.99843,12.79888 c 1.25603,1.84173 1.3109,4.25461 0.15466,6.12886 -5.29196,3.58209 -11.11045,6.2953 -17.2561,8.04665 -2.17897,-0.31901 -3.98302,-1.91624 -4.59557,-4.05803 l -4.66321,-14.35411 c -0.38434,-1.65239 0.66981,-3.55627 2.57433,-4.654 l 10.56754,-4.92773 c 2.06512,-0.75334 4.20117,-0.33707 5.21992,1.01948 z m -16.24968,4.12378 -4.52844,-2.25773 m 7.70958,0.77434 -2.86186,-3.65276 m 6.67741,1.87354 -0.6414,-4.68818 m 3.81348,3.20901 1.50757,-5.07236 m 1.0446,-0.24437 c -6.31723,1.8093 -12.34418,4.61971 -17.79082,8.296 l -3.60327,-1.07821 c 6.80874,-5.06175 14.63018,-8.70894 22.87521,-10.66689 z"
@@ -2214,8 +2200,7 @@
            stroke-miterlimit="10"
            pointer-events="none"
            id="path188-84"
-           inkscape:label="Стул"
-           style="fill:#fff" />
+           inkscape:label="Стул"/>
         <ellipse
            table="true"
            cell-id="ZRJKuEp7t05sZtK5OItD-44"
@@ -2228,8 +2213,7 @@
            transform="rotate(-90)"
            pointer-events="none"
            id="ellipse194-1"
-           inkscape:label="Стол"
-           style="fill:#fff;stroke-width:0.975878" />
+           inkscape:label="Стол"/>
         <text
            xml:space="preserve"
            style="font-style:normal;font-variant:normal;font-weight:bold;font-stretch:normal;font-size:21.1766px;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:start;writing-mode:lr-tb;direction:ltr;text-anchor:start;fill:#000"
