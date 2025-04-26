@@ -28,7 +28,9 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        config(['domain.places' => $this->getPlacesByDomain()]);
+        if (!app()->runningInConsole() || !str_contains(implode(' ', $_SERVER['argv'] ?? []), 'migrate')) {
+            config(['domain.places' => $this->getPlacesByDomain()]);
+        }
 
         Paginator::useBootstrap();
 
