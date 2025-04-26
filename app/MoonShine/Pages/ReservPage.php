@@ -118,7 +118,7 @@ class ReservPage extends Page
 
     private function eventsItems(): Collection
     {
-        return Event::General()->skbar()->get();
+        return Event::skbar()->get();
     }
 
     private function productListFields(): array

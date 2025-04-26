@@ -17,8 +17,8 @@ class HomeController extends Controller
         return view('home', [
             'vk_albums' => $vkService->getCacheAlbums('-64982861')?->slice(0, 18),
             'slider' => Slider::active()->period()->get(),
-            'coming_events' => Event::general()->skbar()->limit(4)->get(),
-            'recommended_events' => Event::general()->skbar()->recommendation()->limit(4)->get()
+            'coming_events' => Event::limit(4)->get(),
+            'recommended_events' => Event::recommendation()->limit(4)->get()
         ]);
     }
 

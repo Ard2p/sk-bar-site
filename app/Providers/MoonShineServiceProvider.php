@@ -12,6 +12,7 @@ use App\MoonShine\Resources\SeoResource;
 use App\MoonShine\Resources\RoleResource;
 use App\MoonShine\Resources\UserResource;
 use App\MoonShine\Resources\PlaceResource;
+use App\MoonShine\Resources\DomainResource;
 use App\MoonShine\Resources\EventsResource;
 use App\MoonShine\Resources\ReservResource;
 use App\MoonShine\Resources\SliderResource;
@@ -23,7 +24,8 @@ class MoonShineServiceProvider extends MoonShineApplicationServiceProvider
     protected function resources(): array
     {
         return [
-             new ReservResource()
+            new ReservResource(),
+            new DomainResource(),
         ];
     }
 
@@ -53,8 +55,8 @@ class MoonShineServiceProvider extends MoonShineApplicationServiceProvider
             MenuItem::make(__('RKeeper Меню'), RKMenuPage::make('Меню'), 'heroicons.outline.shopping-cart'),
 
             MenuItem::make(__('Бронирование'), ReservPage::make('Бронирование'), 'heroicons.outline.calendar-days')
-                // ->canSee(fn() => false)
-                ,
+            // ->canSee(fn() => false)
+            ,
 
             // book-open
             // calendar-days
@@ -69,6 +71,8 @@ class MoonShineServiceProvider extends MoonShineApplicationServiceProvider
                 MenuItem::make(__('Permissions'), new RoleResource(), 'heroicons.outline.shield-exclamation'),
 
                 MenuItem::make(__('Places event'), new PlaceResource(), 'heroicons.outline.map-pin'),
+
+                MenuItem::make(__('Домены'), new DomainResource(), 'heroicons.outline.map-pin'),
 
             ], 'heroicons.outline.cog-8-tooth'),
 

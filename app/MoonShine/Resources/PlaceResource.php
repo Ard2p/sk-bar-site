@@ -15,6 +15,7 @@ use MoonShine\Decorations\Block;
 use MoonShine\Decorations\Column;
 use MoonShine\Resources\ModelResource;
 use Illuminate\Database\Eloquent\Model;
+use MoonShine\Fields\Relationships\BelongsToMany;
 use Sweet1s\MoonshineRBAC\Traits\WithRolePermissions;
 
 /**
@@ -52,14 +53,16 @@ class PlaceResource extends ModelResource
             Grid::make([
                 Column::make([
                     Block::make([
-
                         ID::make()->sortable(),
                         Text::make(__('Title'), 'name')->required()->sortable(),
                         Text::make(__('City'), 'city')->required()->sortable(),
                         Text::make(__('Adress'), 'adress')->required(),
+                        BelongsToMany::make('Отображать на домене', 'domains', 'domain', new DomainResource())
+                            ->creatable()
+                            ->selectMode()
+                            ->inLine(', '),
                         TinyMce::make(__('Content'), 'content')->hideOnIndex(),
                         Text::make(__('Map'), 'map')->hideOnIndex(),
-
                     ])
                 ])
             ]),

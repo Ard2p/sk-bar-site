@@ -38,7 +38,7 @@ class ReservController extends Controller
 
     public function reserv(ReservStoreRequest $request, Nutgram $bot)
     {
-        $event = Event::general()->where('id', $request->event_id)->first();
+        $event = Event::skbar()->where('id', $request->event_id)->first();
         if ($event && $event->on_reserve) {
 
             $reserv = Reserv::create([

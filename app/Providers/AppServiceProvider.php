@@ -3,7 +3,10 @@
 namespace App\Providers;
 
 // use Jenssegers\Date;
+
 use App\Models\User;
+use App\Models\Domain;
+use Illuminate\Support\Facades\DB;
 use Illuminate\Pagination\Paginator;
 use Illuminate\Support\Facades\Gate;
 use Illuminate\Support\ServiceProvider;
@@ -25,6 +28,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
+        config(['domain.places' => $this->getPlacesByDomain()]);
+
         Paginator::useBootstrap();
 
         Gate::define('viewPulse', function (User $user) {
@@ -35,5 +40,13 @@ class AppServiceProvider extends ServiceProvider
             return Limit::perSecond(3);
             // perMinute(2);
         });
+    }
+
+    protected function getPlacesByDomain()
+    {
+        $domain = request()->getHost();
+        $domain = Domain::domain($domain)->first();
+        $placesIds = $domain->places()->allRelatedIds()->toArray();
+        return $placesIds;
     }
 }

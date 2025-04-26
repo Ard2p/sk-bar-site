@@ -21,4 +21,9 @@ class Place extends Model
     {
         return $this->hasMany(Event::class);
     }
+
+    public function domains()
+    {
+        return $this->belongsToMany(Domain::class);
+    }
 }

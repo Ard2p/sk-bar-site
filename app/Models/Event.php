@@ -51,6 +51,21 @@ class Event extends Model
         //     : $this->where('slug', $value)->firstOrFail();
     }
 
+    protected static function booted()
+    {
+        static::addGlobalScope('active', function ($query) {
+            $query->active();
+        });
+
+        static::addGlobalScope('actual', function ($query) {
+            $query->actual();
+        });
+
+        static::addGlobalScope('domain', function ($query) {
+            $query->domain();
+        });
+    }
+
     public function place()
     {
         return $this->belongsTo(Place::class);
@@ -91,8 +106,8 @@ class Event extends Model
         $query->where('place_id', 1);
     }
 
-    public function scopeGeneral(Builder $query): void
+    public function scopeDomain(Builder $query): void
     {
-        $query->active()->actual()->orderBy('event_start');
+        $query->whereIn('place_id', config('domain.places'));
     }
 }
