@@ -73,6 +73,11 @@ class EventsResource extends ModelResource
         ];
     }
 
+    protected function modifyQueryBuilder(Builder $builder): Builder
+    {
+        return $builder->withoutGlobalScopes();
+    }
+
     public function queryTags(): array
     {
         return [
@@ -313,7 +318,7 @@ class EventsResource extends ModelResource
                 Text::make('ФИО', 'name'),
                 Text::make('Телефон', 'phone'),
 
-                Td::make('Статус', function ($data) use($reservs) {
+                Td::make('Статус', function ($data) use ($reservs) {
                     return [
                         Color::make('Статус', 'color')->changePreview(fn() => view('moonshine::fields.color', [
                             'color' => $reservs->get($data['table'])['color'],
