@@ -73,9 +73,9 @@ class EventsResource extends ModelResource
         ];
     }
 
-    protected function modifyQueryBuilder(Builder $builder): Builder
+     public function query(): Builder
     {
-        return $builder->withoutGlobalScopes();
+        return parent::query()->withoutGlobalScopes();
     }
 
     public function queryTags(): array
