@@ -89,7 +89,7 @@ class EventsResource extends ModelResource
 
     protected function resolveOrder(): static
     {
-        if (request('query-tag') == 'actual') {
+        if (request('query-tag') == 'actual' && !request('sort')) {
             $this->query()->orderBy('event_start', 'ASC');
             return $this;
         }
