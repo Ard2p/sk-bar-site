@@ -108,6 +108,6 @@ class Event extends Model
 
     public function scopeDomain(Builder $query): void
     {
-        $query->whereIn('place_id', config('domain.places'));
+        $query->whereIn('place_id', config('domain.places') ?? []);
     }
 }

@@ -48,7 +48,8 @@ class AppServiceProvider extends ServiceProvider
     {
         $domain = request()->getHost();
         $domain = Domain::domain($domain)->first();
-        $placesIds = $domain->places()->allRelatedIds()->toArray();
+        $placesIds = $domain?->places()->allRelatedIds()->toArray();
+        // dd($placesIds ?? []);
         return $placesIds;
     }
 }
