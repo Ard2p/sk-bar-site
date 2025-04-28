@@ -64,6 +64,10 @@ class Event extends Model
         static::addGlobalScope('domain', function ($query) {
             $query->domain();
         });
+
+        static::addGlobalScope('order', function ($query) {
+            $query->orderBy('event_start');
+        });
     }
 
     public function place()
