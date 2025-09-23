@@ -11,6 +11,7 @@ enum ReservTablesEnum: string
     case TABLE_5 = '5';
     case TABLE_6 = '6';
     case TABLE_7 = '7';
+    case TABLE_8 = '8';
 
     case TABLE_11 = '11';
     case TABLE_12 = '12';
@@ -35,10 +36,11 @@ enum ReservTablesEnum: string
             self::TABLE_1 => 3000,
             self::TABLE_2 => 3000,
             self::TABLE_3 => 3000,
-            self::TABLE_4 => 3500,
-            self::TABLE_5 => 3500,
-            self::TABLE_6 => 3000,
-            self::TABLE_7 => 3000,
+            self::TABLE_4 => 3000,
+            self::TABLE_5 => 3000,
+            self::TABLE_6 => 3500,
+            self::TABLE_7 => 3500,
+            self::TABLE_8 => 3000,
 
             self::TABLE_11 => 2000,
             self::TABLE_12 => 2000,
@@ -49,11 +51,11 @@ enum ReservTablesEnum: string
             self::TABLE_17 => 2000,
             self::TABLE_18 => 2000,
 
-            self::TABLE_101 => 1500,
-            self::TABLE_102 => 1500,
-            self::TABLE_103 => 2000,
-            self::TABLE_104 => 2000,
-            self::TABLE_105 => 2000,
+            self::TABLE_101 => 2000,
+            self::TABLE_102 => 2000,
+            self::TABLE_103 => 1500,
+            self::TABLE_104 => 2500,
+            self::TABLE_105 => 2500,
             self::TABLE_106 => 1500,
             self::TABLE_107 => 1500,
         };
@@ -62,9 +64,10 @@ enum ReservTablesEnum: string
     public function color(): ?string
     {
         return match ($this->price()) {
-            1500 => '#ff69b4',
-            2000 => '#7ae8f1',
-            3000 => '#a77af1',
+            1500 => '#79d44f',
+            2000 => '#f1ef7a',
+            2500 => '#7ae8f1',
+            3000 => '#ff69b4',
             3500 => '#a77af1',
         };
     }
@@ -79,6 +82,7 @@ enum ReservTablesEnum: string
             self::TABLE_5 => '5',
             self::TABLE_6 => '6',
             self::TABLE_7 => '7',
+            self::TABLE_8 => '8',
 
             self::TABLE_11 => '11',
             self::TABLE_12 => '12',
