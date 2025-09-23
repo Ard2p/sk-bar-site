@@ -4,44 +4,41 @@ declare(strict_types=1);
 
 namespace App\MoonShine\Resources;
 
-use App\Models\Seo;
-use App\Models\Event;
-use MoonShine\Fields\ID;
-use MoonShine\Fields\Td;
-use MoonShine\Fields\Code;
-use MoonShine\Fields\Date;
-use MoonShine\Fields\Enum;
-use MoonShine\Fields\Json;
-use MoonShine\Fields\Text;
 use App\Enums\AgeLimitEnum;
-use MoonShine\Fields\Color;
-use MoonShine\Fields\Image;
-use MoonShine\Fields\Select;
-use MoonShine\Fields\Preview;
-use MoonShine\Fields\TinyMce;
 use App\Enums\EventStatusEnum;
-use MoonShine\Decorations\Tab;
-use MoonShine\Fields\Switcher;
-use MoonShine\Fields\Template;
-use MoonShine\Fields\Textarea;
 use App\Enums\ReservStatusEnum;
 use App\Enums\TicketsTypetEnum;
+use App\Models\Event;
+use App\Models\Seo;
 use App\Services\ReservService;
-use MoonShine\Decorations\Flex;
-use MoonShine\Decorations\Grid;
-use MoonShine\Decorations\Tabs;
+use Illuminate\Database\Eloquent\Builder;
+use Illuminate\Database\Eloquent\Model;
+use MoonShine\Components\Components;
+use MoonShine\Components\FlexibleRender;
+use MoonShine\Components\TableBuilder;
 use MoonShine\Decorations\Block;
 use MoonShine\Decorations\Column;
-use MoonShine\QueryTags\QueryTag;
-use MoonShine\Components\Components;
-use MoonShine\Components\TableBuilder;
-use MoonShine\Resources\ModelResource;
-use Illuminate\Database\Eloquent\Model;
-use MoonShine\Components\FlexibleRender;
-use Illuminate\Database\Eloquent\Builder;
-use MoonShine\ActionButtons\ActionButton;
-use MoonShine\Fields\Relationships\HasMany;
+use MoonShine\Decorations\Grid;
+use MoonShine\Decorations\Tab;
+use MoonShine\Decorations\Tabs;
+use MoonShine\Fields\Code;
+use MoonShine\Fields\Color;
+use MoonShine\Fields\Date;
+use MoonShine\Fields\Enum;
+use MoonShine\Fields\ID;
+use MoonShine\Fields\Image;
+use MoonShine\Fields\Json;
+use MoonShine\Fields\Preview;
 use MoonShine\Fields\Relationships\BelongsTo;
+use MoonShine\Fields\Relationships\HasMany;
+use MoonShine\Fields\Select;
+use MoonShine\Fields\Switcher;
+use MoonShine\Fields\Td;
+use MoonShine\Fields\Template;
+use MoonShine\Fields\Text;
+use MoonShine\Fields\TinyMce;
+use MoonShine\QueryTags\QueryTag;
+use MoonShine\Resources\ModelResource;
 use Sweet1s\MoonshineRBAC\Traits\WithRolePermissions;
 
 /**
@@ -73,24 +70,30 @@ class EventsResource extends ModelResource
         ];
     }
 
-     public function query(): Builder
+    public function query(): Builder
     {
         return parent::query()->withoutGlobalScopes();
+    }
+
+    public function resolveItemQuery(): Builder
+    {
+        return parent::resolveItemQuery()->withoutGlobalScopes();
     }
 
     public function queryTags(): array
     {
         return [
-            QueryTag::make('Актуальные', fn(Builder $query) => $query->actual())->alias('actual')->default(),
-            QueryTag::make('Архив', fn(Builder $query) => $query->arhive())->alias('arhive'),
-            QueryTag::make('Все', fn(Builder $query) => $query)->alias('all')
+            QueryTag::make('Актуальные', fn (Builder $query) => $query->actual())->alias('actual')->default(),
+            QueryTag::make('Архив', fn (Builder $query) => $query->arhive())->alias('arhive'),
+            QueryTag::make('Все', fn (Builder $query) => $query)->alias('all'),
         ];
     }
 
     protected function resolveOrder(): static
     {
-        if (request('query-tag') == 'actual' && !request('sort')) {
+        if (request('query-tag') == 'actual' && ! request('sort')) {
             $this->query()->orderBy('event_start', 'ASC');
+
             return $this;
         }
 
@@ -175,7 +178,7 @@ class EventsResource extends ModelResource
                                     // ->creatable(false)
 
                                 ])->xData([
-                                    'on_reserve' => '1'
+                                    'on_reserve' => '1',
                                 ]),
                             ]),
 
@@ -188,27 +191,29 @@ class EventsResource extends ModelResource
 
                             Tab::make(__('Seo'), [
                                 Template::make(column: 'seo')
-                                    ->changeFill(fn(Event $data) => $data->seo)
-                                    ->changePreview(fn($data) => $data?->id ?? '-')
-                                    ->fields((new SeoResource())->getMorphFields())
+                                    ->changeFill(fn (Event $data) => $data->seo)
+                                    ->changePreview(fn ($data) => $data?->id ?? '-')
+                                    ->fields((new SeoResource)->getMorphFields())
                                     ->changeRender(function (?Seo $data, Template $field) {
                                         $fields = $field->preparedFields();
-                                        $fields->fill($data?->toArray() ?? [], $data ?? new Seo());
+                                        $fields->fill($data?->toArray() ?? [], $data ?? new Seo);
+
                                         return Components::make($fields);
                                     })
                                     ->onAfterApply(function (Event $item, $value) {
                                         if ($value['title']) {
                                             $value['url'] = route('events.show', ['event' => $item->id]);
                                             $item->seo()->updateOrCreate([
-                                                'id' => $value['id']
+                                                'id' => $value['id'],
                                             ], $value);
                                         }
+
                                         return $item;
                                     }),
                             ]),
 
                         ]),
-                    ])
+                    ]),
                 ])->columnSpan(8),
 
                 Column::make([
@@ -234,7 +239,7 @@ class EventsResource extends ModelResource
                                 Date::make(__('Event start'), 'event_start')->withTime()->required(),
                                 Date::make(__('Guest start'), 'guest_start')->withTime()->required(),
 
-                                BelongsTo::make(__('Place event'), 'place', fn($item) => "$item->name, $item->city")
+                                BelongsTo::make(__('Place event'), 'place', fn ($item) => "$item->name, $item->city")
                                     ->searchable()
                                     ->placeholder('-')
                                     ->nullable()
@@ -243,8 +248,8 @@ class EventsResource extends ModelResource
                                 Switcher::make(__('Recommendation'), 'recommendation')->default(false),
 
                                 Image::make(__('Image'), 'image')->when(
-                                    fn($field) => $field->isNowOnCreateForm(),
-                                    fn($field) => $field->required()
+                                    fn ($field) => $field->isNowOnCreateForm(),
+                                    fn ($field) => $field->required()
                                 )
                                     ->disk(config('moonshine.disk', 'public'))->dir('events')
                                     ->allowedExtensions(['jpg', 'png', 'jpeg', 'gif', 'webp']),
@@ -261,7 +266,7 @@ class EventsResource extends ModelResource
                                 //     )
                             ]),
                         ]),
-                    ])
+                    ]),
                 ])->columnSpan(4),
             ]),
         ];
@@ -277,9 +282,9 @@ class EventsResource extends ModelResource
             //     Date::make(__('Event start'), 'event_start')->format('d.m H.i')->sortable(),
             // ])->sortable(),
             Date::make(__('Event start'), 'event_start')->format('d.m H.i')->sortable(),
-            Text::make(__('Title'), 'name', fn($item) => htmlspecialchars_decode($item->name))->sortable(),
+            Text::make(__('Title'), 'name', fn ($item) => htmlspecialchars_decode($item->name))->sortable(),
             Enum::make(__('Status'), 'status')->attach(EventStatusEnum::class)->sortable(),
-            BelongsTo::make(__('Place event'), 'place', fn($item) => "$item->name, $item->city")->sortable(),
+            BelongsTo::make(__('Place event'), 'place', fn ($item) => "$item->name, $item->city")->sortable(),
             Enum::make(__('Age'), 'age_limit')->attach(AgeLimitEnum::class)->sortable(),
             Switcher::make('⭐️', 'recommendation')->sortable(),
         ];
@@ -287,7 +292,7 @@ class EventsResource extends ModelResource
 
     public function detailFields(): array
     {
-        $reservService = new ReservService();
+        $reservService = new ReservService;
         $reservs = $reservService->show($this->item, true);
 
         // dd($reservs);
@@ -295,12 +300,12 @@ class EventsResource extends ModelResource
         return [
             ID::make(),
             Image::make(__('Image'), 'image'),
-            Text::make(__('Title'), 'name', fn($item) => htmlspecialchars_decode($item->name)),
+            Text::make(__('Title'), 'name', fn ($item) => htmlspecialchars_decode($item->name)),
             Enum::make(__('Age limit'), 'age_limit')->attach(AgeLimitEnum::class),
             Enum::make(__('Status'), 'status')->attach(EventStatusEnum::class),
             Date::make(__('Event start'), 'event_start')->format('d.m H.i'),
             Date::make(__('Guest start'), 'guest_start')->format('d.m H.i'),
-            BelongsTo::make(__('Place event'), 'place', fn($item) => "$item->name, $item->city"),
+            BelongsTo::make(__('Place event'), 'place', fn ($item) => "$item->name, $item->city"),
             Switcher::make(__('Recommendation'), 'recommendation'),
             TinyMce::make(__('Description'), 'description'),
 
@@ -312,7 +317,7 @@ class EventsResource extends ModelResource
 
             // TableBuilder::make($this->productlistFields(), $reservs)
 
-            HasMany::make('Бронирование столов', 'reservs', resource: new ReservResource())->fields([
+            HasMany::make('Бронирование столов', 'reservs', resource: new ReservResource)->fields([
                 Text::make('Стол', 'table'),
                 Text::make('Гостей', 'seats'),
                 Text::make('ФИО', 'name'),
@@ -320,13 +325,13 @@ class EventsResource extends ModelResource
 
                 Td::make('Статус', function ($data) use ($reservs) {
                     return [
-                        Color::make('Статус', 'color')->changePreview(fn() => view('moonshine::fields.color', [
+                        Color::make('Статус', 'color')->changePreview(fn () => view('moonshine::fields.color', [
                             'color' => $reservs->get($data['table'])['color'],
                             'status' => ReservStatusEnum::from($data['status'])->toString(),
-                        ]))
+                        ])),
                     ];
-                })
-            ])->searchable(false)->modifyItemButtons(fn() => [])
+                }),
+            ])->searchable(false)->modifyItemButtons(fn () => []),
         ];
     }
 
@@ -360,10 +365,10 @@ class EventsResource extends ModelResource
                 ->placeholder('-')
                 ->nullable(),
             Date::make(__('Date start'), 'event_start')->format('d.m H.i'),
-            BelongsTo::make(__('Place event'), 'place', fn($item) => "$item->name, $item->city")
+            BelongsTo::make(__('Place event'), 'place', fn ($item) => "$item->name, $item->city")
                 ->nullable()
                 ->placeholder('-'),
-            Switcher::make(__('Recommendation'), 'recommendation')
+            Switcher::make(__('Recommendation'), 'recommendation'),
         ];
     }
 

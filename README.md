@@ -1,31 +1,29 @@
 ## Запуск проекта
 
+### Админка
+
+-   Создать администратора
+-   URL для входа https://site.ru/admin
+
+### AI Генерация названий событий
+
+Для работы AI-предложений названий событий добавьте в файл `.env`:
+
+```
+OPENROUTER_API_KEY=your_openrouter_api_key_here
+OPENROUTER_API_URL=https://openrouter.ai/api/v1/chat/completions
+OPENROUTER_MODEL=anthropic/claude-3.5-sonnet
+```
+
+Получить API ключ можно на [OpenRouter.ai](https://openrouter.ai/)
+
 ### Телеграм Бот
 
-Для работы бота нужно установить вебхук на ваш домен 
+Для работы бота нужно установить вебхук на ваш домен
 
-- php artisan nutgram:hook:set https://site.ru/api/telegram/webhook
-- php artisan nutgram:hook:remove
+-   php artisan nutgram:hook:set https://site.ru/api/telegram/webhook
+-   php artisan nutgram:hook:remove
 
-<!-- <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400" alt="Laravel Logo"></a></p>
+### Схема бара
 
-<p align="center">
-<a href="https://github.com/laravel/framework/actions"><img src="https://github.com/laravel/framework/workflows/tests/badge.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/dt/laravel/framework" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/v/laravel/framework" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
-</p> -->
-
-<!-- ## About Laravel
-
-Laravel is a web application framework with expressive, elegant syntax. We believe development must be an enjoyable and creative experience to be truly fulfilling. Laravel takes the pain out of development by easing common tasks used in many web projects, such as:
-
-- [Simple, fast routing engine](https://laravel.com/docs/routing).
-- [Powerful dependency injection container](https://laravel.com/docs/container).
-- Multiple back-ends for [session](https://laravel.com/docs/session) and [cache](https://laravel.com/docs/cache) storage.
-- Expressive, intuitive [database ORM](https://laravel.com/docs/eloquent).
-- Database agnostic [schema migrations](https://laravel.com/docs/migrations).
-- [Robust background job processing](https://laravel.com/docs/queues).
-- [Real-time event broadcasting](https://laravel.com/docs/broadcasting). -->
-
-
+Использую инскейп
