@@ -180,7 +180,7 @@ class ReservPage extends Page
                 'event_id' => $request->get('event_id'),
                 'table' => $request->get('name'),
                 'name' => $request->get('fio'),
-                'phone' => $request->get('phone'),
+                'phone' => $this->normalizePhone($request->get('phone')),
                 'seats' => $request->get('seats'),
                 'status' => $request->get('status'),
             ]);
@@ -195,6 +195,18 @@ class ReservPage extends Page
             AlpineJs::event(JsEvent::FRAGMENT_UPDATED, 'event-reserv-fragment', ['id' => $eventId]),
             AlpineJs::event(JsEvent::FORM_RESET, 'rk-product-form'),
         ];
+    }
+
+    private function normalizePhone(?string $phone): ?string
+    {
+        if (empty($phone)) {
+            return null;
+        }
+
+        // Удаляем все символы кроме цифр и знака +
+        $normalized = preg_replace('/[^\d+]/', '', $phone);
+
+        return $normalized;
     }
 
     private function styles(): FlexibleRender
