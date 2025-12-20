@@ -127,7 +127,9 @@ class ReservPage extends Page
             Text::make('Стол', 'name'),
             Text::make('Гостей', 'seats'),
             Text::make('ФИО', 'fio'),
-            Text::make('Телефон', 'phone', fn($item) => $this->normalizePhone($item->phone)),
+            Text::make('Телефон', 'phone'),
+            // Text::make('Телефон', 'phone', fn($item) => $this->normalizePhone($item->phone)),
+
 
             Td::make('Статус', function ($data) {
                 return [
