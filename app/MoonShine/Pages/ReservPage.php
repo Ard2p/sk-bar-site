@@ -127,7 +127,7 @@ class ReservPage extends Page
             Text::make('Стол', 'name'),
             Text::make('Гостей', 'seats'),
             Text::make('ФИО', 'fio'),
-            Text::make('Телефон', 'phone'),
+            Text::make('Телефон', 'phone', fn($item) => $this->normalizePhone($item->phone)),
 
             Td::make('Статус', function ($data) {
                 return [
@@ -180,7 +180,7 @@ class ReservPage extends Page
                 'event_id' => $request->get('event_id'),
                 'table' => $request->get('name'),
                 'name' => $request->get('fio'),
-                'phone' => $this->normalizePhone($request->get('phone')),
+                'phone' => $request->get('phone'),
                 'seats' => $request->get('seats'),
                 'status' => $request->get('status'),
             ]);
