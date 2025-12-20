@@ -65,6 +65,12 @@ class ReservPage extends Page
             $event = Event::find(moonshineRequest()->id);
         }
 
+        if (!$event) {
+            return [
+                Block::make('События не найдены')
+            ];
+        }
+
         $reservService = new ReservService();
         $reservs = $reservService->show($event, true);
 
@@ -126,9 +132,8 @@ class ReservPage extends Page
         return [
             Text::make('Стол', 'name'),
             Text::make('Гостей', 'seats'),
-            Text::make('ФИО', 'fio'),
-            Text::make('Телефон', 'phone'),
-            // Text::make('Телефон', 'phone', fn($item) => $this->normalizePhone($item->phone)),
+            Text::make('ФИО', 'fio'),     
+            Text::make('Телефон', 'phone', fn($item) => $this->normalizePhone($item['phone'])),
 
 
             Td::make('Статус', function ($data) {
