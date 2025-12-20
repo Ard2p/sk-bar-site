@@ -7,10 +7,25 @@ use Illuminate\Http\RedirectResponse;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Redirect;
+use Illuminate\Support\Facades\Validator;
 use Illuminate\View\View;
 
 class ProfileController extends Controller
 {
+    /**
+     * Display the user's dashboard with reservations history.
+     */
+    public function dashboard(Request $request): View
+    {
+        $user = $request->user();
+        $reservations = $user->reservations()->with('event')->orderBy('created_at', 'desc')->paginate(10);
+
+        return view('profile.dashboard', [
+            'user' => $user,
+            'reservations' => $reservations,
+        ]);
+    }
+
     /**
      * Display the user's profile form.
      */
@@ -24,17 +39,27 @@ class ProfileController extends Controller
     /**
      * Update the user's profile information.
      */
-    public function update(ProfileUpdateRequest $request): RedirectResponse
+    public function update(Request $request): RedirectResponse
     {
-        $request->user()->fill($request->validated());
+        $validator = Validator::make($request->all(), [
+            'name' => ['required', 'string', 'max:255'],
+            'email' => ['nullable', 'string', 'lowercase', 'email', 'max:255'],
+        ]);
 
-        if ($request->user()->isDirty('email')) {
-            $request->user()->email_verified_at = null;
+        if ($validator->fails()) {
+            return back()->withErrors($validator)->withInput();
         }
 
-        $request->user()->save();
+        $user = $request->user();
+        $user->fill($request->only(['name', 'email']));
 
-        return Redirect::route('profile.edit')->with('status', 'profile-updated');
+        if ($user->isDirty('email')) {
+            $user->email_verified_at = null;
+        }
+
+        $user->save();
+
+        return Redirect::route('profile.edit')->with('success', 'Профиль успешно обновлен');
     }
 
     /**

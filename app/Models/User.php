@@ -23,8 +23,12 @@ class User extends Authenticatable
      */
     protected $fillable = [
         'name',
+        'phone',
         'email',
         'password',
+        'phone_verified_at',
+        'sms_code',
+        'sms_code_expires_at',
     ];
 
     /**
@@ -46,7 +50,27 @@ class User extends Authenticatable
     {
         return [
             'email_verified_at' => 'datetime',
+            'phone_verified_at' => 'datetime',
+            'sms_code_expires_at' => 'datetime',
             'password' => 'hashed',
         ];
+    }
+
+    /**
+     * Get user's reservations
+     */
+    public function reservations()
+    {
+        return $this->hasMany(Reserv::class, 'phone', 'phone');
+    }
+
+    /**
+     * Check if SMS code is valid and not expired
+     */
+    public function isSmsCodeValid($code)
+    {
+        return $this->sms_code === $code &&
+            $this->sms_code_expires_at &&
+            $this->sms_code_expires_at->isFuture();
     }
 }

@@ -9,9 +9,30 @@ use App\Http\Controllers\Auth\PasswordController;
 use App\Http\Controllers\Auth\PasswordResetLinkController;
 use App\Http\Controllers\Auth\RegisteredUserController;
 use App\Http\Controllers\Auth\VerifyEmailController;
+use App\Http\Controllers\Auth\SmsAuthController;
 use Illuminate\Support\Facades\Route;
 
 Route::middleware('guest')->group(function () {
+    // SMS авторизация
+    Route::get('auth/sms-register', [SmsAuthController::class, 'showRegister'])
+        ->name('auth.sms-register');
+    Route::post('auth/send-sms-code', [SmsAuthController::class, 'sendSmsCode'])
+        ->name('auth.send-sms-code');
+    Route::get('auth/verify-sms', [SmsAuthController::class, 'showVerifySms'])
+        ->name('auth.verify-sms');
+    Route::post('auth/verify-sms-code', [SmsAuthController::class, 'verifySmsCode'])
+        ->name('auth.verify-sms-code');
+
+    Route::get('auth/sms-login', [SmsAuthController::class, 'showLogin'])
+        ->name('auth.sms-login');
+    Route::post('auth/send-login-sms', [SmsAuthController::class, 'sendLoginSms'])
+        ->name('auth.send-login-sms');
+    Route::get('auth/verify-login-sms', [SmsAuthController::class, 'showVerifyLoginSms'])
+        ->name('auth.verify-login-sms');
+    Route::post('auth/verify-login-sms-code', [SmsAuthController::class, 'verifyLoginSms'])
+        ->name('auth.verify-login-sms-code');
+
+    // Обычная авторизация (оставляем для совместимости)
     Route::get('register', [RegisteredUserController::class, 'create'])
         ->name('register');
 
