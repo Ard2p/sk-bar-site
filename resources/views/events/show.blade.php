@@ -78,6 +78,23 @@
 
                                     <div class="ratio ratio-16x9">
 
+                                        @php
+                                            // Получаем UTM параметры из текущего запроса или cookies
+                                            $utmParamNames = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content'];
+                                            $utmParams = [];
+                                            
+                                            foreach ($utmParamNames as $param) {
+                                                // Приоритет: сначала из запроса, потом из cookies
+                                                $value = request()->get($param);
+                                                if (empty($value)) {
+                                                    $value = request()->cookie($param);
+                                                }
+                                                if (!empty($value)) {
+                                                    $utmParams[$param] = $value;
+                                                }
+                                            }
+                                        @endphp
+
                                         @switch($event->tickets_type)
                                             @case('ticketscloud')
                                                 {!! html_entity_decode($event->tickets_link) !!}
@@ -85,7 +102,39 @@
 
                                             @default
                                                 {{-- Qtickets --}}
-                                                <iframe class="w-100" src="{{ $event->tickets_link }}"></iframe>
+                                                @php
+                                                    $ticketsUrl = $event->tickets_link;
+                                                    if (!empty($utmParams)) {
+                                                        $urlParts = parse_url($ticketsUrl);
+                                                        if ($urlParts !== false) {
+                                                            $query = [];
+                                                            if (isset($urlParts['query'])) {
+                                                                parse_str($urlParts['query'], $query);
+                                                            }
+                                                            $query = array_merge($query, $utmParams);
+                                                            
+                                                            $newUrl = '';
+                                                            if (isset($urlParts['scheme'])) {
+                                                                $newUrl .= $urlParts['scheme'] . '://';
+                                                            }
+                                                            if (isset($urlParts['host'])) {
+                                                                $newUrl .= $urlParts['host'];
+                                                            }
+                                                            if (isset($urlParts['port'])) {
+                                                                $newUrl .= ':' . $urlParts['port'];
+                                                            }
+                                                            if (isset($urlParts['path'])) {
+                                                                $newUrl .= $urlParts['path'];
+                                                            }
+                                                            $newUrl .= '?' . http_build_query($query);
+                                                            if (isset($urlParts['fragment'])) {
+                                                                $newUrl .= '#' . $urlParts['fragment'];
+                                                            }
+                                                            $ticketsUrl = $newUrl;
+                                                        }
+                                                    }
+                                                @endphp
+                                                <iframe class="w-100" src="{{ $ticketsUrl }}"></iframe>
                                         @endswitch
 
                                     </div>
@@ -231,6 +280,78 @@
                     } else {
                         const element = document.getElementById('buyTiketsHeader')
                         element.scrollIntoView()
+                    }
+                }
+
+                // Функция для получения значения из cookie
+                function getCookie(name) {
+                    const value = `; ${document.cookie}`;
+                    const parts = value.split(`; ${name}=`);
+                    if (parts.length === 2) return parts.pop().split(';').shift();
+                    return null;
+                }
+
+                // Функция для добавления UTM параметров к ссылкам и iframe
+                function addUtmParamsToTickets(element) {
+                    const currentUrl = new URL(window.location.href);
+                    const utmParams = {};
+                    const utmParamNames = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content'];
+                    
+                    // Получаем UTM параметры: сначала из URL, потом из cookies
+                    utmParamNames.forEach(key => {
+                        let value = null;
+                        if (currentUrl.searchParams.has(key)) {
+                            value = currentUrl.searchParams.get(key);
+                        } else {
+                            value = getCookie(key);
+                        }
+                        if (value) {
+                            utmParams[key] = value;
+                        }
+                    });
+
+                    if (Object.keys(utmParams).length === 0) {
+                        return;
+                    }
+
+                    // Добавляем UTM параметры к ссылкам
+                    const links = element.querySelectorAll('a[href]');
+                    links.forEach(link => {
+                        try {
+                            const linkUrl = new URL(link.href);
+                            Object.keys(utmParams).forEach(key => {
+                                linkUrl.searchParams.set(key, utmParams[key]);
+                            });
+                            link.href = linkUrl.toString();
+                        } catch (e) {
+                            // Игнорируем невалидные URL
+                        }
+                    });
+
+                    // Добавляем UTM параметры к iframe
+                    const iframes = element.querySelectorAll('iframe[src]');
+                    iframes.forEach(iframe => {
+                        try {
+                            const iframeUrl = new URL(iframe.src);
+                            Object.keys(utmParams).forEach(key => {
+                                iframeUrl.searchParams.set(key, utmParams[key]);
+                            });
+                            iframe.src = iframeUrl.toString();
+                        } catch (e) {
+                            // Игнорируем невалидные URL
+                        }
+                    });
+                }
+
+                // Обрабатываем UTM параметры для ticketscloud при открытии модального окна
+                const buyTiketsModal = document.getElementById('buyTikets');
+                if (buyTiketsModal) {
+                    buyTiketsModal.addEventListener('shown.bs.modal', function() {
+                        addUtmParamsToTickets(buyTiketsModal);
+                    });
+                    // Также обрабатываем сразу, если модальное окно уже видимо
+                    if (buyTiketsModal.classList.contains('show')) {
+                        addUtmParamsToTickets(buyTiketsModal);
                     }
                 }
             })
