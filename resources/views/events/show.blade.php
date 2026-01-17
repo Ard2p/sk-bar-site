@@ -78,64 +78,17 @@
 
                                     <div class="ratio ratio-16x9">
 
-                                        @php
-                                            // Получаем UTM параметры из текущего запроса или cookies
-                                            $utmParamNames = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content'];
-                                            $utmParams = [];
-                                            
-                                            foreach ($utmParamNames as $param) {
-                                                // Приоритет: сначала из запроса, потом из cookies
-                                                $value = request()->get($param);
-                                                if (empty($value)) {
-                                                    $value = request()->cookie($param);
-                                                }
-                                                if (!empty($value)) {
-                                                    $utmParams[$param] = $value;
-                                                }
-                                            }
-                                        @endphp
-
-                                        @switch($event->tickets_type)
+                                        {{-- @switch($event->tickets_type)
                                             @case('ticketscloud')
-                                                {!! html_entity_decode($event->tickets_link) !!}
+                                               {!! html_entity_decode($event->tickets_link) !!}                                              
                                             @break
 
                                             @default
-                                                {{-- Qtickets --}}
-                                                @php
-                                                    $ticketsUrl = $event->tickets_link;
-                                                    if (!empty($utmParams)) {
-                                                        $urlParts = parse_url($ticketsUrl);
-                                                        if ($urlParts !== false) {
-                                                            $query = [];
-                                                            if (isset($urlParts['query'])) {
-                                                                parse_str($urlParts['query'], $query);
-                                                            }
-                                                            $query = array_merge($query, $utmParams);
-                                                            
-                                                            $newUrl = '';
-                                                            if (isset($urlParts['scheme'])) {
-                                                                $newUrl .= $urlParts['scheme'] . '://';
-                                                            }
-                                                            if (isset($urlParts['host'])) {
-                                                                $newUrl .= $urlParts['host'];
-                                                            }
-                                                            if (isset($urlParts['port'])) {
-                                                                $newUrl .= ':' . $urlParts['port'];
-                                                            }
-                                                            if (isset($urlParts['path'])) {
-                                                                $newUrl .= $urlParts['path'];
-                                                            }
-                                                            $newUrl .= '?' . http_build_query($query);
-                                                            if (isset($urlParts['fragment'])) {
-                                                                $newUrl .= '#' . $urlParts['fragment'];
-                                                            }
-                                                            $ticketsUrl = $newUrl;
-                                                        }
-                                                    }
-                                                @endphp
-                                                <iframe class="w-100" src="{{ $ticketsUrl }}"></iframe>
-                                        @endswitch
+                                               // Qtickets
+                                                <iframe class="w-100" src="{!! $event->tickets_link !!}"></iframe>
+                                        @endswitch --}}
+
+                                        <iframe class="w-100" src="@linkWithUTM($event->tickets_link)"></iframe>
 
                                     </div>
 
@@ -238,11 +191,11 @@
             {!! $event->metrics !!}
         @endif
 
-        @switch($event->tickets_type)
+        {{-- @switch($event->tickets_type)
             @case('ticketscloud')
                 <script src="https://ticketscloud.com/static/scripts/widget/tcwidget.js"></script>
             @break
-        @endswitch
+        @endswitch --}}
 
         <script>
             window.addEventListener('load', function() {

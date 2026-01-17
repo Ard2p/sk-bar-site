@@ -4,6 +4,7 @@ namespace App\Providers;
 
 // use Jenssegers\Date;
 
+use App\Helpers\UtmHelper;
 use App\Models\User;
 use App\Models\Domain;
 use Illuminate\Support\Facades\DB;
@@ -20,7 +21,10 @@ class AppServiceProvider extends ServiceProvider
      */
     public function register(): void
     {
-        //
+        // Регистрируем UtmHelper как singleton
+        $this->app->singleton(UtmHelper::class, function ($app) {
+            return new UtmHelper();
+        });
     }
 
     /**
@@ -28,6 +32,8 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
+        UtmHelper::registerBladeDirective();
+
         if (!app()->runningInConsole() || !str_contains(implode(' ', $_SERVER['argv'] ?? []), 'migrate')) {
             config(['domain.places' => $this->getPlacesByDomain()]);
         }
