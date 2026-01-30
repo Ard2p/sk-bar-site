@@ -33,42 +33,42 @@ enum ReservTablesEnum: string
     public function price(): ?int
     {
         return match ($this) {
-            self::TABLE_1 => 3000,
-            self::TABLE_2 => 3000,
-            self::TABLE_3 => 3000,
-            self::TABLE_4 => 3000,
-            self::TABLE_5 => 3000,
-            self::TABLE_6 => 3500,
+            self::TABLE_1 => 4000,
+            self::TABLE_2 => 3500,
+            self::TABLE_3 => 3500,
+            self::TABLE_4 => 3500,
+            self::TABLE_5 => 4000,
+            self::TABLE_6 => 4000,
             self::TABLE_7 => 3500,
-            self::TABLE_8 => 3000,
+            self::TABLE_8 => 3500,
 
-            self::TABLE_11 => 2000,
-            self::TABLE_12 => 2000,
-            self::TABLE_13 => 2000,
-            self::TABLE_14 => 2000,
-            self::TABLE_15 => 2000,
-            self::TABLE_16 => 2000,
-            self::TABLE_17 => 2000,
-            self::TABLE_18 => 2000,
+            self::TABLE_11 => 2500,
+            self::TABLE_12 => 2500,
+            self::TABLE_13 => 2500,
+            self::TABLE_14 => 2500,
+            self::TABLE_15 => 3000,
+            self::TABLE_16 => 3000,
+            self::TABLE_17 => 2500,
+            self::TABLE_18 => 2500,
 
-            self::TABLE_101 => 2000,
-            self::TABLE_102 => 2000,
-            self::TABLE_103 => 1500,
+            self::TABLE_101 => 2500,
+            self::TABLE_102 => 2500,
+            self::TABLE_103 => 2000,
             self::TABLE_104 => 2500,
             self::TABLE_105 => 2500,
-            self::TABLE_106 => 1500,
-            self::TABLE_107 => 1500,
+            self::TABLE_106 => 2500,
+            self::TABLE_107 => 2000,
         };
     }
 
     public function color(): ?string
     {
         return match ($this->price()) {
-            1500 => '#79d44f',
-            2000 => '#f1ef7a',
-            2500 => '#7ae8f1',
-            3000 => '#ff69b4',
-            3500 => '#a77af1',
+            2000 => '#79d44f',
+            2500 => '#f1ef7a',
+            3000 => '#7ae8f1',
+            3500 => '#ff69b4',
+            4000 => '#a77af1',
         };
     }
 
